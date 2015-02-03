@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+	font-family: Meiryo;
+	background-color: #F1FAAE;
+}
+
+img {
+	text-align: center;
+	float: right;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #F0700F;
+	border: 3px;
+}
+
+h2 {	
+	border-radius: 20px;
+	border: purple 3px dotted;
+	font-weight: bold;
+	background-color: purple;
+	color: white;
+	text-align: center;
+}
+
+p {
+	font-size: 15px;
+}
+
+table {
+	border-collapse: collapse;
+
+}
