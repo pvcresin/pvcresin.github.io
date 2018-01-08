@@ -14,6 +14,53 @@ body, h1, h2, h3, h4, h5, h6, p, ul, a {
 
 $smWidth: 600px;
 $pageMaxWidth: 960px;
+
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: $pageMaxWidth;
+	padding: 2rem 0;
+}
+
+ul.social {
+	display: block;
+	padding: 1rem 0;
+	& li {
+		padding: 1rem 0;
+		display: inline-block;
+		$iconColor: #525252;
+		$hoverColor: white;
+		vertical-align: middle;
+		& a {
+			color: $iconColor;
+			&.resources {
+				vertical-align: sub;
+				& svg {
+					width: 2rem;
+					& path {
+						fill: $iconColor;
+					}
+					& polygon {
+						fill: $iconColor;
+					}
+				}
+			}
+			&:hover {
+				color: $hoverColor;
+				&.resources {
+					& path {
+						fill: $hoverColor;
+					}
+					& polygon {
+						fill: $hoverColor;
+					}
+				}
+			}
+		}
+	}
+}
+
 body {
 	min-height: 100vh;
 	& header {
@@ -52,33 +99,20 @@ body {
 				font-size: 1.5rem;
 				font-family: serif;
 			}
-			& ul {
-				display: block;
-				padding: 1rem 0;
-				& li {
-					display: inline-block;
-					& a {
-						display: inline-block;
-						width: 3rem;
-					}
-				}
-			}
 		}
 	}
 	& main {
 		& section {
 			& .container {
-				margin: 0 auto;
-				width: 100%;
-				max-width: $pageMaxWidth;
-				padding: 3rem 0;
 				& h2 {
 					text-align: center;
 					font-size: calc(1rem + 0.5vw);
-					margin-bottom: 1rem;
+					margin: 1rem 0;
+				}
+				& > div {
+					padding: 1rem;
 				}
 				& .about-img {
-					padding: 0 1rem;
 					text-align: center;
 					& > div {
 						& img {
@@ -88,7 +122,6 @@ body {
 					}
 				}
 				& .about-text {
-					padding: 0 1rem;
 					text-align: justify;
 				}
 			}
@@ -102,22 +135,8 @@ body {
 		background: #0f0f0f;
 		color: white;
 		& .container {
-			margin: 0 auto;
-			width: 100%;
-			max-width: $pageMaxWidth;
 			text-align: center;
-			& ul {
-				padding: 1rem 0;
-				display: block;
-				& li {
-					display: inline-block;
-					& a {
-						color: #525252;
-						display: inline-block;
-						width: 3rem;
-					}
-				}
-			}
+			padding: 1rem 0;
 			& p {
 				color: #525252;
 				padding-bottom: 1rem;
