@@ -13,8 +13,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, a {
 }
 
 $smWidth: 600px;
-$pageMaxWidth: 960px;
-
+$pageMaxWidth: 1200px;
 
 .container {
 	margin: 0 auto;
