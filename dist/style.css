@@ -17,8 +17,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul, a {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
-	padding: 32px 0;
-	padding: 2rem 0;
+	padding: 16px 0;
+	padding: 1rem 0;
 }
 
 ul.social {
@@ -136,27 +136,14 @@ body main section .container h2 {
 	margin: 1rem 0;
 }
 
-body main section .container > div {
-	padding: 16px;
-	padding: 1rem;
-}
-
-body main section .container .about-img {
-	text-align: center;
-}
-
-body main section .container .about-img > div img {
-	border-radius: 50%;
-	width: 100%;
-}
-
-body main section .container .about-text {
-	text-align: justify;
-}
-
 body main > :nth-child(2n+1) {
 	background: #2b2b2b;
-	color: white;
+	color: #efefef;
+}
+
+body main > :nth-child(2n) {
+	background: #eeeeee;
+	color: #222222;
 }
 
 body footer {
