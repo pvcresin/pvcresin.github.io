@@ -2,21 +2,21 @@ skills
 	.container.pure-g
 		h2.pure-u-1-1 Skills
 		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
-			li(each="{ s in skills }")
+			li(each='{ s in skills }')
 				.skill-info
 					span.name {s.name}
 					span.sub {s.sub}
 				.bar
 					.level(style='width:{s.level};')
 		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
-			li(each="{ s in skills1 }")
+			li(each='{ s in skills1 }')
 				.skill-info
 					span.name {s.name}
 					span.sub {s.sub}
 				.bar
 					.level(style='width:{s.level};')
 		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
-			li(each="{ s in skills2 }")
+			li(each='{ s in skills2 }')
 				.skill-info
 					span.name {s.name}
 					span.sub {s.sub}
@@ -45,9 +45,11 @@ skills
 		}
 		.skill-box li .bar {
 			background: #4b4b4b;
+			border-radius: 1rem;
 		}
 		.skill-box li .bar .level {
 			height: 1rem;
+			border-radius: 1rem;
 			background: #eaeaea;
 		}
 
@@ -63,7 +65,7 @@ skills
 		},{
 			name: 'Java',
 			sub: '',
-			level: '80%'
+			level: '85%'
 		},{
 			name: 'Processing',
 			sub: '',
@@ -73,7 +75,7 @@ skills
 		this.skills1 = [{
 			name: 'HTML',
 			sub: 'Pug Markdown',
-			level: '90%'
+			level: '85%'
 		},{
 			name: 'CSS',
 			sub: 'Sass PostCSS CSS-Modules',

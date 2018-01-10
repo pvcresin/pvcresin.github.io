@@ -39,10 +39,10 @@ social
 			background: white;
 		}
 		.hatena {
-			mask-image: url(resources/hatena.svg);
-			-webkit-mask-image: url(resources/hatena.svg);
+			mask-image: url(resources/icon-hatena.svg);
+			-webkit-mask-image: url(resources/icon-hatena.svg);
 		}
 		.wantedly {
-			mask-image: url(resources/wantedly.svg);
-			-webkit-mask-image: url(resources/wantedly.svg);
+			mask-image: url(resources/icon-wantedly.svg);
+			-webkit-mask-image: url(resources/icon-wantedly.svg);
 		}

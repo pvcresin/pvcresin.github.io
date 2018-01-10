@@ -3,7 +3,7 @@ about
 		h2.pure-u-1-1 About Me
 		.about-img.pure-u-sm-1-4.pure-u-1-1.pure-g
 			.pure-u-sm-1-1.pure-u-1-2
-				img(src="resources/pvcresin.svg")
+				img(src="resources/icon-pvcresin.svg")
 		.about-text.pure-u-sm-3-4.pure-u-1-1
 			| texttexttexttexttexttexttexttexttexttext
 			| Sed ut perspiciatis unde omnis iste natus error sit voluptatem
