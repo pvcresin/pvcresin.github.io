@@ -25,8 +25,8 @@ works
 	.container
 		h2.pure-u-1-1 Awards
 		ul
-			li MiddleDrive
-			li Ichimonitto
+			li 2015年　Cloud n アプリケーションコンテスト（WebRTC賞）http://www.cloudn-service.com/cam04-deven/decon/tohyo/
+			li 2017年　信州未来アプリコンテスト0（信越情報通信懇談会会長賞，「起業家甲子園・万博」への出場権）http://www.pref.nagano.lg.jp/joho/app-contest/app-contest0
 	.container
 		h2.pure-u-1-1 Publication
 		ul
@@ -74,21 +74,29 @@ works
 		this.works = [{
 			name: 'SensorPipe',
 			sub: 'スマートフォン側のプログラミングを一切行わないスマートフォン連携プログラミング',
-			img: 'project-sensorpipe.jpg'
+			img: 'project-SensorPipe-16-9.jpg'
 		},{
 			name: 'SoumuSSML',
 			sub: '総務省',
-			img: 'project-sensorpipe.jpg'
+			img: 'project-SensorPipe-16-9.jpg'
 		},{
 			name: 'MiddleDrive',
-			sub: 'Bluetooth',
-			img: 'project-sensorpipe.jpg'
+			sub: 'Bluetooth通信によるアドホック型ドキュメント共同編集アプリ',
+			img: 'project-MiddleDrive-16-9.png'
 		},{
 			name: 'Ichimonitto',
 			sub: 'ビデオチャットをしながらクイズ番組形式で回答する学習支援システム',
-			img: 'project-sensorpipe.jpg'
+			img: 'project-SensorPipe-16-9.jpg'
 		},{
 			name: 'GeoMelody',
-			sub: 'ビデオチャットをしながらクイズ番組形式で回答する学習支援システムビデオチャットをしながらクイズ番組形式で回答する学習支援システム',
-			img: 'project-sensorpipe.jpg'
+			sub: '環境音を録音してネット上に集約するサウンドスケープSNS',
+			img: 'project-SensorPipe-16-9.jpg'
+		},{
+			name: 'WristSlide',
+			sub: '手首を滑らせることによるスマートウォッチの片手操作手法',
+			img: 'project-SensorPipe-16-9.jpg'
+		},{
+			name: 'ThumbSurface',
+			sub: '手首を滑らせることによるスマートウォッチの片手操作手法',
+			img: 'project-SensorPipe-16-9.jpg'
 		}]

@@ -28,7 +28,7 @@ skills
 			padding: 1.5rem;
 		}
 		.skill-box li {
-			margin-bottom: 1rem;
+			margin-bottom: 1.2rem;
 		}
 		.skill-box li .skill-info {
 			display: flex;
@@ -48,7 +48,7 @@ skills
 			border-radius: 1rem;
 		}
 		.skill-box li .bar .level {
-			height: 1rem;
+			height: 0.7rem;
 			border-radius: 1rem;
 			background: #eaeaea;
 		}
