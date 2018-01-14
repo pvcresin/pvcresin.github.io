@@ -28,6 +28,7 @@
     "watch:browser": "live-server ./ --watch=./index.html,/dist"
   },
   "dependencies": {
-    "riot": "^3.7.3"
+    "riot": "^3.7.3",
+    "smooth-scroll": "^12.1.5"
   }
 }

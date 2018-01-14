@@ -1,9 +1,9 @@
-about
+about#about
 	.container.pure-g
 		h2.pure-u-1-1 About Me
-		.about-img.pure-u-sm-1-4.pure-u-1-1.pure-g
+		.about-img.pure-u-sm-1-4.pure-u-1-1
 			.pure-u-sm-1-1.pure-u-1-2
-				img(src="resources/icon-pvcresin.svg")
+				img(src='resources/icon-pvcresin.svg')
 		.about-text.pure-u-sm-3-4.pure-u-1-1
 			| texttexttexttexttexttexttexttexttexttext
 			| Sed ut perspiciatis unde omnis iste natus error sit voluptatem

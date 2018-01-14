@@ -2,13 +2,13 @@ header
 	nav
 		ul
 			li
-				a(href='#') HOME
+				a(href='/') HOME
 			li
-				a(href='#') ABOUT
+				a(href='#about') ABOUT
 			li
-				a(href='#') WORK
+				a(href='#works') WORK
 			li
-				a(href='#') CONTACT
+				a(href='#contact') CONTACT
 	.container
 		h1 Raika Toriyama
 		p Android / Web Developer

@@ -1,4 +1,4 @@
-works
+works#works
 	.container
 		h2 Works
 		.card-box
@@ -22,17 +22,7 @@ works
 					td ビデオチャットをしながらクイズ番組形式で回答する学習支援システム
 					td Web
 					td 意識中くらい
-	.container
-		h2.pure-u-1-1 Awards
-		ul
-			li 2015年　Cloud n アプリケーションコンテスト（WebRTC賞）http://www.cloudn-service.com/cam04-deven/decon/tohyo/
-			li 2017年　信州未来アプリコンテスト0（信越情報通信懇談会会長賞，「起業家甲子園・万博」への出場権）http://www.pref.nagano.lg.jp/joho/app-contest/app-contest0
-	.container
-		h2.pure-u-1-1 Publication
-		ul
-			li
-				| 鳥山 らいか，宮下 芳明. SensorPipe：スマートフォン側のプログラミングを一切行わないスマートフォン連携プログラミング, 第23回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2015),
-				| 2015.
+
 	style(scoped).
 		.card-box {
 			padding: 0.75rem;

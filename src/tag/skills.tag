@@ -1,4 +1,4 @@
-skills
+skills#skills
 	.container.pure-g
 		h2.pure-u-1-1 Skills
 		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
