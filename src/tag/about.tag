@@ -2,50 +2,46 @@ about#about
 	.container.pure-g
 		h2.pure-u-1-1 About Me
 		.about-img.pure-u-sm-1-4.pure-u-1-1
-			.pure-u-sm-1-1.pure-u-1-2
-				img(src='resources/icon-pvcresin.svg')
+			.pure-u-sm-1-1.pure-u-1-2(click='{clickFace}')
+				img(show='{face}' src='resources/my-face.jpg')
+				img(show='{!face}' src='resources/icon-pvcresin.svg')
 		.about-text.pure-u-sm-3-4.pure-u-1-1
-			| texttexttexttexttexttexttexttexttexttext
-			| Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-			| accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-			| illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-			| Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-			| sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-			| Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-			| adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-			| dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-			| exercitationem ullam corporis suscipit laboriosam.
+			|KotlinとJSが好きなので，主にAndroidアプリやWebアプリを作って生きていきたい．
+			br
+			|人と意見を交換し，議論しながらモノを作っていきたい．
+			br
+			| 新しいものが好きなので，貪欲に学んでいく．
 			ul
-				li
-					span
+				li.pure-g
+					.icon.pure-u-1-12.pure-u-lg-1-24
 						i.fa.fa-birthday-cake(aria-hidden='true')
-					| 1994/7/30
-				li
-					span
+					.pure-u-11-12 {birthday} (Age: {age})
+				li.pure-g
+					.icon.pure-u-1-12.pure-u-lg-1-24
 						i.fa.fa-map-marker(aria-hidden='true')
-					| Katsushika, Tokyo
-				li
-					span
+					.pure-u-11-12 Nakano, Tokyo
+				li.pure-g
+					.icon.pure-u-1-12.pure-u-lg-1-24
 						i.fa.fa-envelope(aria-hidden='true')
-					| pvcresin0730@gmail.com
-				li
-					span
+					.pure-u-11-12 pvcresin0730@gmail.com
+				li.pure-g
+					.icon.pure-u-1-12.pure-u-lg-1-24
 						i.fa.fa-graduation-cap(aria-hidden='true')
-					| 明治大学大学院先端数理科学研究科先端メディアサイエンス専攻
-					br
-					span
-					| 宮下研究室
-				li
-					span
+					.pure-u-11-12 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 修士1年{' '}
+						a(href='https://miyashita.com/') 宮下研究室
+				li.pure-g
+					.icon.pure-u-1-12.pure-u-lg-1-24
 						i.fa.fa-suitcase(aria-hidden='true')
-					| 想隆社(フロントエンド)
-				li
-					span
-						i.fa.fa-users(aria-hidden='true')
-					a(href='http://mloa.github.io/', target='_blank') 意識中くらい
-					| ,
-					a(href='http://fumblewaals.com/', target='_blank') ファンブルワールス
+					.pure-u-11-12
+						a(href='http://soryu-sha.jp/') 想隆社
+						|（フロントエンドエンジニア・アルバイト）
 	style(scoped).
+		a {
+			color: #4e9adb;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
 		.container {
 			padding-left: 0.75rem;
 			padding-right: 0.75rem;
@@ -62,4 +58,32 @@ about#about
 		}
 		.about-text {
 			text-align: justify;
+		}
+		ul {
+			margin: 0.75rem 0;
+		}
+		ul > li {
+		    margin: 0.5rem 0;
+		}
+		ul > li > span {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.icon {
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			margin-top: 0.2rem;
+			font-size: 1.2rem;
+		}
+	script.
+		import moment from 'moment'
+
+		this.birthday = '1994-07-30'
+		this.age = moment().diff(this.birthday, 'years')
+		this.face = true
+
+		clickFace() {
+			this.face = !this.face
 		}

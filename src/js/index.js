@@ -2,8 +2,6 @@ import riot from 'riot'
 import app from '../tag/app'
 import SmoothScroll from 'smooth-scroll'
 
-console.log('index.js')
-
 riot.mount('app')
 
 const scroll = new SmoothScroll('a[href*="#"]', {

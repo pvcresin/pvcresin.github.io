@@ -82,7 +82,7 @@ skills#skills
 			level: '80%'
 		},{
 			name: 'JS',
-			sub: 'Riot React Redux Node',
+			sub: 'Riot React Node',
 			level: '90%'
 		},{
 			name: 'PHP',
@@ -102,4 +102,8 @@ skills#skills
 			name: 'Cacoo',
 			sub: '',
 			level: '40%'
+		},{
+			name: 'Prott',
+			sub: '',
+			level: '30%'
 		}]

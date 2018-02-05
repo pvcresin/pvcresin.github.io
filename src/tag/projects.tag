@@ -1,27 +1,13 @@
-works#works
+projects#projects
 	.container
-		h2 Works
+		h2 Projects
 		.card-box
-			div.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1(each='{w in works}')
+			div.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1(each='{w in projects}')
 				div.card
 					img(src='resources/{w.img}')
 					.content
 						h4 {w.name}
 						p {w.sub}
-		table
-			thead
-				tr
-					th Name
-					th Description
-					th Platform
-					th Team
-			tbody
-				tr
-					td
-						a(href='https://ichimonitto.mloa.ml/', target='_blank') Ichimonitto
-					td ビデオチャットをしながらクイズ番組形式で回答する学習支援システム
-					td Web
-					td 意識中くらい
 
 	style(scoped).
 		.card-box {
@@ -61,32 +47,30 @@ works#works
 		}
 
 	script.
-		this.works = [{
+		this.projects = [{
 			name: 'SensorPipe',
 			sub: 'スマートフォン側のプログラミングを一切行わないスマートフォン連携プログラミング',
 			img: 'project-SensorPipe-16-9.jpg'
 		},{
-			name: 'SoumuSSML',
-			sub: '総務省',
-			img: 'project-SensorPipe-16-9.jpg'
+			name: 'GeoMelody',
+			sub: '環境音を録音してネット上に集約するサウンドスケープSNS',
+			img: 'project-GeoMelody-16-9.png'
+		},{
+			name: 'WristSlide',
+			sub: 'イメージセンサを用いた手首を滑らせることによるスマートウォッチの片手操作手法',
+			img: 'project-WristSlide-16-9.png'
 		},{
 			name: 'MiddleDrive',
 			sub: 'Bluetooth通信によるアドホック型ドキュメント共同編集アプリ',
 			img: 'project-MiddleDrive-16-9.png'
 		},{
 			name: 'Ichimonitto',
-			sub: 'ビデオチャットをしながらクイズ番組形式で回答する学習支援システム',
-			img: 'project-SensorPipe-16-9.jpg'
+			sub: 'ビデオチャットをしながらクイズ番組形式で回答する一問一答学習支援サービス',
+			img: 'project-Ichimonitto-16-9.png'
 		},{
-			name: 'GeoMelody',
-			sub: '環境音を録音してネット上に集約するサウンドスケープSNS',
-			img: 'project-SensorPipe-16-9.jpg'
-		},{
-			name: 'WristSlide',
-			sub: '手首を滑らせることによるスマートウォッチの片手操作手法',
-			img: 'project-SensorPipe-16-9.jpg'
-		},{
-			name: 'ThumbSurface',
-			sub: '手首を滑らせることによるスマートウォッチの片手操作手法',
-			img: 'project-SensorPipe-16-9.jpg'
+			name: 'SoumuSSML',
+			sub: '聴覚障害者のための新しい電子書籍フォーマットに対応した出版社用クラウド編集システム',
+			img: 'project-SoumuSSML-16-9.png'
 		}]
+
+		// http://shisonoha.net/portfolio/buddabeautify/
