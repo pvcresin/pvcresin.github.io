@@ -46,3 +46,7 @@ social#social
 			mask-image: url(resources/icon-wantedly.svg);
 			-webkit-mask-image: url(resources/icon-wantedly.svg);
 		}
+		.social {
+			display: block;
+			padding: 1rem 0;
+		}

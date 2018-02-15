@@ -22,53 +22,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, a {
 	padding: 1rem 0;
 }
 
-ul.social {
-	display: block;
-	padding: 16px 0;
-	padding: 1rem 0
-}
-
-ul.social li {
-	padding: 16px 0;
-	padding: 1rem 0;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-ul.social li a {
-	color: #525252;
-}
-
-ul.social li a.resources {
-	vertical-align: sub;
-}
-
-ul.social li a.resources svg {
-	width: 32px;
-	width: 2rem;
-}
-
-ul.social li a.resources svg path {
-	fill: #525252;
-}
-
-ul.social li a.resources svg polygon {
-	fill: #525252;
-}
-
-ul.social li a:hover {
-	color: white;
-}
-
-ul.social li a:hover.resources path {
-	fill: white;
-}
-
-ul.social li a:hover.resources polygon {
-	fill: white;
-}
-
-
 body main section .container h2 {
 	text-align: center;
 	font-size: calc(1rem + 0.5vw);
@@ -76,31 +29,26 @@ body main section .container h2 {
 	margin: 1rem 0;
 }
 
-
 body main > :nth-child(2n+1) {
 	background: #2b2b2b;
 	color: #efefef;
 }
-
 
 body main > :nth-child(2n) {
 	background: #eeeeee;
 	color: #222222;
 }
 
-
 body footer {
 	background: #0f0f0f;
 	color: white;
 }
-
 
 body footer .container {
 	text-align: center;
 	padding: 16px 0;
 	padding: 1rem 0;
 }
-
 
 body footer .container p {
 	color: #525252;
