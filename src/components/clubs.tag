@@ -7,7 +7,7 @@ clubs#clubs
 		import list from './list'
 
 		this.clubs = [{
-			date: '2017-04 - 2019.03',
+			date: '2017-04 - 2019-03',
 			title: 'fumble waals',
 			texts: [
 				'オリジナルのボードゲームの制作サークル',
@@ -18,7 +18,7 @@ clubs#clubs
 			date: '2016-04 - 2017-06',
 			title: 'Nakano Computer Club',
 			texts: [
-				'プログラミングに関する情報共有や勉強会等の実施',
+				'明治大学のプログラミングに関する情報共有サークル',
 				'同人イベントでの頒布（コミックマーケット・技術書典）'
 			],
 			link: 'https://meiji-ncc.tech/',

@@ -14,5 +14,8 @@ header
 	.container
 		a(href='#about')
 			i.fas.fa-chevron-down.fa-3x
+
+	style(scoped).
+
 	script.
 		import social from './social'

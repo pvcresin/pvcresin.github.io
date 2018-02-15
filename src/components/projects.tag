@@ -2,12 +2,14 @@ projects#projects
 	.container
 		h2 Projects
 		.card-box
-			div.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1(each='{w in projects}')
-				div.card
-					img(src='resources/{w.img}')
-					.content
-						h4 {w.name}
-						p {w.sub}
+			.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1(each='{w in projects}')
+				.card
+					a(href='{window.location.origin}/#projects/{w.name}')
+						img.thumbnail(src='resources/{w.img}')
+						.content
+							h4 {w.name}
+							p {w.sub}
+		more(link='{window.location.origin}/#projects/')
 
 	style(scoped).
 		.card-box {
@@ -28,7 +30,7 @@ projects#projects
 		.card:hover {
 			box-shadow: 0 8px 10px rgba(10, 10, 10, 0.1), 0 0 6px 4px rgba(10,10,10,.1);
 		}
-		.card img {
+		.thumbnail {
 			border-radius: 0.3rem 0.3rem 0 0;
 			display: block;
 		    width: 100%;
@@ -47,6 +49,8 @@ projects#projects
 		}
 
 	script.
+		import more from './more'
+
 		this.projects = [{
 			name: 'SensorPipe',
 			sub: 'スマートフォン側のプログラミングを一切行わないスマートフォン連携プログラミング',
@@ -72,10 +76,3 @@ projects#projects
 			sub: '聴覚障害者のための新しい電子書籍フォーマットに対応した出版社用クラウド編集システム',
 			img: 'project-SoumuSSML-16-9.png'
 		}]
-
-		// http://shisonoha.net/portfolio/buddabeautify/
-		// http://www.styleshout.com/templates/preview/Ceevee10/#portfolio
-		// https://www.squarespace.com/templates
-		// https://fontawesome.com/icons/chevron-down?style=solid
-		// http://basscss.com/
-		// https://purecss.io/grids/

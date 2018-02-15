@@ -1,5 +1,5 @@
 import riot from 'riot'
-import app from '../tag/app'
+import app from '../components/app'
 import SmoothScroll from 'smooth-scroll'
 
 riot.mount('app')

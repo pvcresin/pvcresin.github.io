@@ -3451,6 +3451,12 @@ riot-route@^2.5.0:
   dependencies:
     riot-observable "^2.5.0"
 
+riot-route@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/riot-route/-/riot-route-3.1.2.tgz#07ceeb3ba13e94c10c64ddcc327c385f0ef8f544"
+  dependencies:
+    riot-observable "^3.0.0"
+
 riot-tmpl@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/riot-tmpl/-/riot-tmpl-2.4.2.tgz#daa1a86c430dbf5ed79530014355f10692ad67b7"
