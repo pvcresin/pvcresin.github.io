@@ -32,18 +32,18 @@ header
 			max-width: calc(1200px * 0.8);
 			line-height: 3rem;
 		}
-		ul {
+		nav > ul {
 			display: flex;
 			justify-content: space-around;
 		}
-		li {
+		nav > ul > li {
 			display: inline-block;
 		}
-		h1 {
+		.container > h1 {
 			font-size: calc(1.0rem + 250%);
 			font-family: sans-serif;
 		}
-		p {
+		.container > p {
 			font-size: 1.5rem;
 			font-family: serif;
 		}

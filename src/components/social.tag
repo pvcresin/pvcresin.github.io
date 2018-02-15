@@ -20,6 +20,9 @@ social#social
 				.icon-box.wantedly
 
 	style(scoped).
+		li {
+			display: inline-block;
+		}
 		a {
 			color: #525252;
 			vertical-align: sub;
@@ -47,6 +50,8 @@ social#social
 			-webkit-mask-image: url(resources/icon-wantedly.svg);
 		}
 		.social {
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			padding: 1rem 0;
 		}

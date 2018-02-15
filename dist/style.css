@@ -38,20 +38,3 @@ body main > :nth-child(2n) {
 	background: #eeeeee;
 	color: #222222;
 }
-
-body footer {
-	background: #0f0f0f;
-	color: white;
-}
-
-body footer .container {
-	text-align: center;
-	padding: 16px 0;
-	padding: 1rem 0;
-}
-
-body footer .container p {
-	color: #525252;
-	padding-bottom: 16px;
-	padding-bottom: 1rem;
-}
