@@ -13,6 +13,16 @@ top
 				clubs
 		footer
 
+	style(scoped).
+		main > :nth-child(2n+1) {
+			background: #2b2b2b;
+			color: #efefef;
+		}
+		main > :nth-child(2n) {
+			background: #eeeeee;
+			color: #222222;
+		}
+
 	script.
 		import header from '../components/header'
 		import footer from '../components/footer'
