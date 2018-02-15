@@ -68,67 +68,6 @@ ul.social li a:hover.resources polygon {
 	fill: white;
 }
 
-body {
-	min-height: 100vh
-}
-
-body header {
-	background: #1a1819;
-	color: white;
-	min-height: 100vh;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-
-body header nav {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 960px;
-	line-height: 48px;
-	line-height: 3rem;
-}
-
-body header nav ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-}
-
-body header nav ul li {
-	display: inline-block;
-}
-
-body header nav ul li a {
-	// color: white;
-}
-
-body header .container {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
-	text-align: center;
-}
-
-body header .container h1 {
-	font-size: calc(1rem + 250%);
-	font-family: sans-serif;
-}
-
-body header .container p {
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-family: serif;
-}
 
 body main section .container h2 {
 	text-align: center;
@@ -137,26 +76,31 @@ body main section .container h2 {
 	margin: 1rem 0;
 }
 
+
 body main > :nth-child(2n+1) {
 	background: #2b2b2b;
 	color: #efefef;
 }
+
 
 body main > :nth-child(2n) {
 	background: #eeeeee;
 	color: #222222;
 }
 
+
 body footer {
 	background: #0f0f0f;
 	color: white;
 }
+
 
 body footer .container {
 	text-align: center;
 	padding: 16px 0;
 	padding: 1rem 0;
 }
+
 
 body footer .container p {
 	color: #525252;

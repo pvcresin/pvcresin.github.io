@@ -61,46 +61,8 @@ ul.social {
 	}
 }
 
+
 body {
-	min-height: 100vh;
-	& header {
-		background: #1a1819;
-		color: white;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		& nav {
-			margin: 0 auto;
-			width: 100%;
-			max-width: calc($pageMaxWidth * 0.8);
-			line-height: 3rem;
-			& ul {
-				display: flex;
-				justify-content: space-around;
-				& li {
-					display: inline-block;
-					& a {
-						// color: white;
-					}
-				}
-			}
-		}
-		& .container {
-			margin: 0 auto;
-			width: 100%;
-			max-width: $pageMaxWidth;
-			text-align: center;
-			& h1 {
-				font-size: calc(1.0rem + 250%);
-				font-family: sans-serif;
-			}
-			& p {
-				font-size: 1.5rem;
-				font-family: serif;
-			}
-		}
-	}
 	& main {
 		& section {
 			& .container {
