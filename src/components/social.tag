@@ -1,22 +1,22 @@
 social#social
 	ul.social
 		li
-			a(href='https://www.facebook.com/raika.toriyama' title='Facebook')
+			a(href='https://www.facebook.com/raika.toriyama' target='_blank' title='Facebook')
 				i.fab.fa-facebook-f.fa-2x
 		li
-			a(href='https://twitter.com/pvcresin/' title='Twitter')
+			a(href='https://twitter.com/pvcresin/' target='_blank' title='Twitter')
 				i.fab.fa-twitter.fa-2x
 		li
-			a(href='https://github.com/pvcresin/' title='GitHub')
+			a(href='https://github.com/pvcresin/' target='_blank' title='GitHub')
 				i.fab.fa-github.fa-2x
 		li
-			a(href='https://www.instagram.com/pvcresin/' title='Instagram')
+			a(href='https://www.instagram.com/pvcresin/' target='_blank' title='Instagram')
 				i.fab.fa-instagram.fa-2x
 		li
-			a(href='http://pvcresin.hatenablog.com/' title='Hatena Blog')
+			a(href='http://pvcresin.hatenablog.com/' target='_blank' title='Hatena Blog')
 				.icon-box.hatena
 		li
-			a(href='https://www.wantedly.com/users/18220619' title='Wantedly')
+			a(href='https://www.wantedly.com/users/18220619' target='_blank' title='Wantedly')
 				.icon-box.wantedly
 
 	style(scoped).

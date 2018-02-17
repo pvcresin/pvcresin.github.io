@@ -1,30 +1,42 @@
 top
-	div
-		header
-		main
-			section
+	.top-base
+		section
+			first
+		section
+			.container
+				h2.section-title About Me
 				about
 				skills
-			section
-				projects
-			section
+		section
+			.container
+				h2.section-title Projects
+				projects(limit=3)
+				more(link='{window.location.origin}/#projects/')
+		section
+			.container
+				h2.section-title Awards
 				awards
+				h2.section-title Publications
 				publications
+				h2.section-title Clubs
 				clubs
 		footer
 
 	style(scoped).
-		main > :nth-child(2n+1) {
+		.top-base {
+			min-height: 100vh;
+		}
+		.top-base > :nth-child(2n) {
 			background: #2b2b2b;
 			color: #efefef;
 		}
-		main > :nth-child(2n) {
+		.top-base > :nth-child(2n+1) {
 			background: #eeeeee;
 			color: #222222;
 		}
 
 	script.
-		import header from '../components/header'
+		import first from '../components/first'
 		import footer from '../components/footer'
 		import about from '../components/about'
 		import skills from '../components/skills'
@@ -32,3 +44,4 @@ top
 		import awards from '../components/awards'
 		import publications from '../components/publications'
 		import clubs from '../components/clubs'
+		import more from '../components/more'

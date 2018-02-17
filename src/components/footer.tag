@@ -2,7 +2,7 @@ footer
 	.base
 		.container
 			social
-			p © Copyright 2018 pvcresin
+			p © 2018 pvcresin
 
 	style(scoped).
 		.base {

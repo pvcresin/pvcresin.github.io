@@ -1,7 +1,5 @@
-awards#awards
-	.container.pure-g
-		h2.pure-u-1-1 Awards
-		list(items='{awards}')
+awards
+	list(items='{awards}')
 
 	script.
 		import list from './list'

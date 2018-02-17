@@ -1,6 +1,6 @@
-skills#skills
-	.container.pure-g
-		h2.pure-u-1-1 Skills
+skills
+	h2.section-title Skills
+	.pure-g
 		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
 			li(each='{ s in skills }')
 				.skill-info
@@ -38,6 +38,7 @@ skills#skills
 		.skill-box li .name {
 			font-size: 1.3em;
 			margin-right: 0.5rem;
+			font-weight: 300;
 		}
 		.skill-box li .sub {
 			font-size: 0.85rem;

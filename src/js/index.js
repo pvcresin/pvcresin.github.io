@@ -1,8 +1,8 @@
 import riot from 'riot'
-import app from '../components/app'
+import app from '../pages/app'
 import SmoothScroll from 'smooth-scroll'
 
-riot.mount('app')
+riot.mount('div.root', 'app')
 
 const scroll = new SmoothScroll('a[href*="#"]', {
 	// Selectors

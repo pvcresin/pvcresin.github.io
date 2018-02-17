@@ -38,8 +38,10 @@ list.pure-g.pure-u-1-1
 		hr {
 			display: inline-flex;
 			flex-grow: 1;
-			border-bottom: 0.5px solid gray;
+			border: 1.5px solid gray;
+			border-radius: 1rem;
 			min-width: 1rem;
+			background: gray;
 		}
 		.date {
 			padding: 0.75rem;
@@ -58,4 +60,5 @@ list.pure-g.pure-u-1-1
 		.sub {
 			color: #bdbdbd;
 			padding: 0 0.75rem;
+			font-weight: 300;
 		}

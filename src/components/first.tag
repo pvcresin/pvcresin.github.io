@@ -1,5 +1,5 @@
-header
-	.base
+first
+	.first-base
 		nav
 			//- ul
 			//- 	li
@@ -13,11 +13,11 @@ header
 			p Android / Web Developer
 			social
 		.container
-			a(href='#about')
+			.arrow
 				i.fas.fa-chevron-down.fa-3x
 
 	style(scoped).
-		.base {
+		.first-base {
 			text-align: center;
 			background: #1a1819;
 			color: white;
@@ -41,11 +41,25 @@ header
 		}
 		.container > h1 {
 			font-size: calc(1.0rem + 250%);
-			font-family: sans-serif;
+			margin: 0;
 		}
 		.container > p {
 			font-size: 1.5rem;
 			font-family: serif;
+			margin-top: 1rem;
+		}
+		.arrow {
+			padding-bottom: 1rem;
+			display: inline-block;
+		}
+		@media (max-width: 768px) {
+			.container > h1 {
+				font-size: 2.5rem;
+			}
+			.container > p {
+				font-size: 1.2rem;
+				margin-top: 0.5rem;
+			}
 		}
 
 	script.

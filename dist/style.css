@@ -1,9 +1,9 @@
-/* reset */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-}
-body, h1, h2, h3, h4, h5, h6, p, ul, a {
 	margin: 0;
 	padding: 0;
 	outline: none;
@@ -12,19 +12,23 @@ body, h1, h2, h3, h4, h5, h6, p, ul, a {
 	color: unset;
 	list-style-type: none;
 	word-wrap: break-word;
+	vertical-align: bottom;
+	font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+}
+
+.root {
+	min-height: 100vh;
 }
 
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
-	padding: 16px 0;
-	padding: 1rem 0
+	max-width: 1024px;
 }
 
-.container h2 {
+.section-title {
 	text-align: center;
-	font-size: calc(1rem + 0.5vw);
-	margin: 16px 0;
-	margin: 1rem 0;
+	padding-top: 16px;
+	padding-top: 1rem;
+	font-weight: bold;
 }

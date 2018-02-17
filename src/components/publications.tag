@@ -1,7 +1,5 @@
-publications#publications
-	.container.pure-g
-		h2.pure-u-1-1 Publication
-		list(items='{publications}')
+publications
+	list(items='{publications}')
 
 	script.
 		import list from './list'
@@ -19,5 +17,5 @@ publications#publications
 			texts: [
 				'加藤邦拓, 薄羽大樹, 鳥山らいか, 竹内まゆ, 野崎玲那, 細谷美月, 宮下芳明.タッチパネルを拡張する紙製インタフェースを搭載したインタラクティブパッケージの開発, インタラクション2018論文集，pp.??-??, 2018.'
 			],
-			link: 'https://research.miyashita.com/2015/D160/',
+			link: 'http://www.interaction-ipsj.org/2018/',
 		}]

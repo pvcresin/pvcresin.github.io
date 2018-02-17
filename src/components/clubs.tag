@@ -1,7 +1,5 @@
-clubs#clubs
-	.container.pure-g
-		h2.pure-u-1-1 Clubs
-		list(items='{clubs}')
+clubs
+	list(items='{clubs}')
 
 	script.
 		import list from './list'
