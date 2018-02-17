@@ -3,7 +3,7 @@ about
 		.pure-g
 			.about-img.pure-u-sm-1-4.pure-u-1-1
 				.pure-u-sm-1-1.pure-u-1-2(click='{clickFace}')
-					img(show='{face}' src='resources/my-face.jpg')
+					img(show='{face}' src='resources/my-face.png')
 					img(show='{!face}' src='resources/icon-pvcresin.svg')
 			.pure-u-sm-1-24.pure-u-1-1
 			.about-text.pure-u-sm-17-24.pure-u-1-1
@@ -66,6 +66,7 @@ about
 		}
 		ul > li {
 			display: flex;
+			margin-bottom: 0.5rem;
 		}
 		.icon {
 			display: flex;

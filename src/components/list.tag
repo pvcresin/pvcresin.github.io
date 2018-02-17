@@ -45,6 +45,7 @@ list.pure-g.pure-u-1-1
 		}
 		.date {
 			padding: 0.75rem;
+			display: inline-flex;
 		}
 		.date > span {
 			background: gray;
