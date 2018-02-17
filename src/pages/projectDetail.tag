@@ -20,7 +20,6 @@ projectDetail
 					hr
 				p {project.implement}
 
-
 	style(scoped).
 		.detail-base {
 			min-height: 100vh;
@@ -33,9 +32,7 @@ projectDetail
 		}
 		h1 {
 			color: white;
-			font-size: 1.2rem;
 			margin: 1rem 0;
-			color: white;
 			text-align: justify;
 		}
 		h2 {
@@ -72,6 +69,7 @@ projectDetail
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin: 1.5rem 0 1rem 0;
 		}
 		.chapter > hr {
 			flex-grow: 1;
@@ -79,6 +77,11 @@ projectDetail
 			border-radius: 1rem;
 			min-width: 1rem;
 			background: gray;
+		}
+		@media (max-width: 768px) {
+			h1 {
+				font-size: 1.5rem;
+			}
 		}
 
 	script.

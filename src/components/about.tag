@@ -2,7 +2,7 @@ about
 	.base
 		.pure-g
 			.about-img.pure-u-sm-1-4.pure-u-1-1
-				.pure-u-sm-1-1.pure-u-1-2(click='{clickFace}')
+				.face-wrapper.pure-u-sm-1-1.pure-u-1-2(click='{clickFace}')
 					img(show='{face}' src='resources/my-face.png')
 					img(show='{!face}' src='resources/icon-pvcresin.svg')
 			.pure-u-sm-1-24.pure-u-1-1
@@ -49,9 +49,24 @@ about
 			text-align: center;
 			padding: 0.75rem;
 		}
-		.about-img > div img {
+		.face-wrapper {
+			position: relative;
+			width: 100%;
+		}
+		.face-wrapper:before {
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+		.face-wrapper img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
 			border-radius: 50%;
 			width: 100%;
+			background: gray;
 		}
 		.about-text {
 			text-align: justify;

@@ -11,7 +11,7 @@ tags
 		}
 		span {
 			margin: 0 0.5rem 0.5rem 0;
-			padding: 0 0.3rem;
+			padding: 0.1rem 0.3rem;
 			border-radius: 0.2rem;
 			background: #666;
 			color: #eee;
