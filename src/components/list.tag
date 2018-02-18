@@ -5,8 +5,9 @@ list.pure-g.pure-u-1-1
 				a(href='{item.link}').title {item.title}
 				.right
 					hr
-					span.date
-						span {item.date}
+					span
+						span.date(if='{item.date.length <= 7}') {item.date}
+						span.term(if='{item.date.length > 7}') {item.date}
 			p.sub(each='{t in item.texts}') {t}
 
 	style(scoped).
@@ -29,6 +30,7 @@ list.pure-g.pure-u-1-1
 		}
 		.title {
 			padding: 0.75rem;
+			text-align: justify;
 		}
 		.right {
 			display: inline-flex;
@@ -43,23 +45,29 @@ list.pure-g.pure-u-1-1
 			min-width: 1rem;
 			background: gray;
 		}
-		.date {
+		.right > span {
 			padding: 0.75rem;
 			display: inline-flex;
 		}
-		.date > span {
+		.right > span > span {
 			background: gray;
 			color: white;
 			padding: 0.1rem 0.3rem;
 			border-radius: 0.3rem;
 			display: inline-block;
-			min-width: 4rem;
 			text-align: center;
 			font-size: 0.8rem;
 			font-weight: normal;
+		}
+		.date {
+			min-width: 4rem;
+		}
+		.term {
+			min-width: 8rem;
 		}
 		.sub {
 			color: #bdbdbd;
 			padding: 0 0.75rem;
 			font-weight: 300;
+			text-align: justify;
 		}
