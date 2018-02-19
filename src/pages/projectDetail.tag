@@ -36,7 +36,7 @@ projectDetail
 			text-align: justify;
 		}
 		h2 {
-			font-size: 1rem;
+			font-size: 1.5rem;
 			margin-right: 0.5rem;
 			color: white;
 		}
@@ -81,6 +81,9 @@ projectDetail
 		@media (max-width: 768px) {
 			h1 {
 				font-size: 1.5rem;
+			}
+			h2 {
+				font-size: 1.3rem;
 			}
 		}
 

@@ -23,5 +23,4 @@ app
 		import route from 'riot-route/lib/tag'
 		import top from './top'
 		import projectDetail from './projectDetail'
-		import aboutPage from './aboutPage'
 		import other from './other'

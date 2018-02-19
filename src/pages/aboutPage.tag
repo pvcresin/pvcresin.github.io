@@ -1,2 +1,0 @@
-aboutPage
-	p aboutPage
