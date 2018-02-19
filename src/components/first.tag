@@ -24,7 +24,7 @@ first
 			min-height: 100vh;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: space-around;
 		}
 		nav {
 			margin: 0 auto;
@@ -49,7 +49,6 @@ first
 			margin-top: 1rem;
 		}
 		.arrow {
-			padding-bottom: 1rem;
 			display: inline-block;
 		}
 		@media (max-width: 768px) {

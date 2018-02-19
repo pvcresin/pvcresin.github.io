@@ -61,7 +61,7 @@ skills
 			level: '70%'
 		},{
 			name: 'Kotlin',
-			sub: 'Anko Ktor SpringBoot',
+			sub: 'Anko Ktor',
 			level: '80%'
 		},{
 			name: 'Java',
