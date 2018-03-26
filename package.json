@@ -8,21 +8,23 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015-riot": "^1.1.0",
     "live-server": "^1.2.0",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0",
     "postcss-cssnext": "^3.0.2",
-    "postcss-simple-vars": "^4.1.0",
     "pug-cli": "^1.0.0-alpha6",
-    "tag-pug-loader": "^1.0.0",
-    "webpack": "^3.6.0"
+    "riot-compiler": "^3.4.0",
+    "riot-tag-loader": "^2.0.2",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
   },
   "scripts": {
     "build": "run-p build:*",
-    "build:js": "webpack",
+    "build:js": "webpack --mode production",
     "build:pug": "pug src/pug/index.pug -o ./ -P",
-    "build:postcss": "postcss src/postcss/*.css -d dist/ --no-map -u postcss-simple-vars postcss-cssnext",
+    "build:postcss": "postcss src/postcss/*.css -d dist/ --no-map -u postcss-cssnext",
     "watch": "run-p watch:*",
-    "watch:js": "npm run build:js -- -w",
+    "watch:js": "webpack --mode development -w",
     "watch:pug": "npm run build:pug -- -w",
     "watch:postcss": "npm run build:postcss -- -w",
     "watch:browser": "live-server ./ --watch=./index.html,/dist"
@@ -30,7 +32,6 @@
   "dependencies": {
     "moment": "^2.20.1",
     "riot": "^3.7.3",
-    "riot-route": "^3.1.2",
-    "smooth-scroll": "^12.1.5"
+    "riot-route": "^3.1.2"
   }
 }

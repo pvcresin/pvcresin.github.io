@@ -23,35 +23,38 @@ skills
 				.bar
 					.level(style='width:{s.level};')
 
-	style(scoped).
+	style(type='scss').
+		:scope {
+
+		}
 		.skill-box {
 			padding: 1.5rem;
-		}
-		.skill-box li {
-			margin-bottom: 1.2rem;
-		}
-		.skill-box li .skill-info {
-			display: flex;
-			justify-content: space-between;
-			align-items: baseline;
-		}
-		.skill-box li .name {
-			font-size: 1.3em;
-			margin-right: 0.5rem;
-			font-weight: 300;
-		}
-		.skill-box li .sub {
-			font-size: 0.85rem;
-			color: #bdbdbd;
-		}
-		.skill-box li .bar {
-			background: #4b4b4b;
-			border-radius: 1rem;
-		}
-		.skill-box li .bar .level {
-			height: 0.7rem;
-			border-radius: 1rem;
-			background: #eaeaea;
+			> li {
+				margin-bottom: 1.2rem;
+				.skill-info {
+					display: flex;
+					justify-content: space-between;
+					align-items: baseline;
+				}
+				.name {
+					font-size: 1.3em;
+					margin-right: 0.5rem;
+					font-weight: 300;
+				}
+				.sub {
+					font-size: 0.85rem;
+					color: #bdbdbd;
+				}
+				.bar {
+					background: #4b4b4b;
+					border-radius: 1rem;
+					.level {
+						height: 0.7rem;
+						border-radius: 1rem;
+						background: #eaeaea;
+					}
+				}
+			}
 		}
 
 	script.

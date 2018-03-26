@@ -1,5 +1,5 @@
 social#social
-	ul.social
+	ul
 		li
 			a(href='https://www.facebook.com/raika.toriyama' target='_blank' title='Facebook')
 				i.fab.fa-facebook-f.fa-2x
@@ -19,39 +19,41 @@ social#social
 			a(href='https://www.wantedly.com/users/18220619' target='_blank' title='Wantedly')
 				.icon-box.wantedly
 
-	style(scoped).
-		li {
-			display: inline-block;
-		}
-		a {
-			color: #525252;
-			vertical-align: sub;
-			display: inline-block;
-			width: 3rem;
-		}
-		a:hover {
-			color: white;
-		}
-		.icon-box {
-			margin: auto;
-			width: 2rem;
-			height: 2rem;
-			background: #525252;
-		}
-		.icon-box:hover {
-			background: white;
-		}
-		.hatena {
-			mask-image: url(resources/icon-hatena.svg);
-			-webkit-mask-image: url(resources/icon-hatena.svg);
-		}
-		.wantedly {
-			mask-image: url(resources/icon-wantedly.svg);
-			-webkit-mask-image: url(resources/icon-wantedly.svg);
-		}
-		.social {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 1rem 0;
+	style(type='scss').
+		:scope {
+			> ul {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem 0;
+				li {
+					display: inline-block;
+					a {
+						color: #525252;
+						vertical-align: sub;
+						display: inline-block;
+						width: 3rem;
+						&:hover {
+							color: white;
+						}
+						.icon-box {
+							margin: auto;
+							width: 2rem;
+							height: 2rem;
+							background: #525252;
+							&:hover {
+								background: white;
+							}
+							&.hatena {
+								mask-image: url(./resources/icon-hatena.svg);
+								-webkit-mask-image: url(./resources/icon-hatena.svg);
+							}
+							&.wantedly {
+								mask-image: url(./resources/icon-wantedly.svg);
+								-webkit-mask-image: url(./resources/icon-wantedly.svg);
+							}
+						}
+					}
+				}
+			}
 		}

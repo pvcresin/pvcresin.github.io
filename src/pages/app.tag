@@ -12,7 +12,10 @@ app
 		route(path='..')
 			other
 
-	style(scoped).
+	style(type='scss').
+		:scope {
+
+		}
 		.all-projects {
 			background: #eeeeee;
 		    color: #222222;

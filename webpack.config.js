@@ -11,11 +11,17 @@ module.exports = {
 		filename: '[name].js'
 	},
 	module: {
-		loaders: [{
+		rules: [{
 			test: /\.tag$/,
 			enforce: 'pre',
 			exclude: /node_modules/,
-			loader: 'tag-pug-loader'
+			use: {
+				loader: 'riot-tag-loader',
+				query: {
+					hot: false,
+					template: 'pug',
+				}
+			}
 		}, {
 			test: /\.js|\.tag$/,
 			enforce: 'post',
@@ -32,16 +38,11 @@ module.exports = {
 		extensions: ['.js', '.tag']
 	},
 	plugins: [
-		new webpack.DefinePlugin({
-			'process.env': {
-				NODE_ENV: JSON.stringify('production')
-			}
-		}),
-		new webpack.optimize.UglifyJsPlugin({
-			compress: {
-				warnings: false
-			},
-			mangle: true
-		})
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	compress: {
+		// 		warnings: false
+		// 	},
+		// 	mangle: true
+		// })
 	]
 }
