@@ -105,4 +105,11 @@ projectDetail
 			this.update({
 				project: projectsArray.filter(d => d.name === projectName)[0]
 			})
+
+			const path = window.location.hash
+			if (window.scrolls[`${path}`] === undefined) {
+				window.scroll(0, 0)
+			} else {
+				window.scroll(0, window.scrolls[`${path}`])
+			}
 		})

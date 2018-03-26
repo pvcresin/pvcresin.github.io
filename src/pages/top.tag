@@ -48,3 +48,12 @@ top
 		import publications from '../components/publications'
 		import clubs from '../components/clubs'
 		import more from '../components/more'
+
+		this.on('route', () => {
+			const path = window.location.hash
+			if (window.scrolls[`${path}`] === undefined) {
+				window.scroll(0, 0)
+			} else {
+				window.scroll(0, window.scrolls[`${path}`])
+			}
+		})
