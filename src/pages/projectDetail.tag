@@ -1,12 +1,12 @@
 projectDetail
 	.container
 		section
-			.video-frame(if='{project.video.length !== 0}')
+			.video-frame(if='{project.video !== undefined}')
 				iframe(src="https://www.youtube.com/embed/{project.video}?rel=0"
 						frameborder="0"
 						allow="encrypted-media"
 						allowfullscreen)
-			.img-frame(if='{project.video.length === 0}')
+			.img-frame(if='{project.video === undefined}')
 				img(src='../resources/{project.img}')
 			h1 {project.name}: {project.sub}
 			tags(tags='{project.keywords}')
@@ -103,7 +103,7 @@ projectDetail
 
 		this.on('route', projectName => {
 			this.update({
-				project: projectsArray.filter(d => d.name === projectName)[0]
+				project: projectsArray.filter(d => d.name === projectName.replace(/_/g, ' '))[0]
 			})
 
 			const path = window.location.hash

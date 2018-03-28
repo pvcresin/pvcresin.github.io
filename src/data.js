@@ -6,6 +6,7 @@ const projectsArray = [{
 	text: 'スマートフォンのセンサ情報とPCを連携させたプログラミングを実現するには双方でのアプリケーション開発が必要となり、製作時間がかかる上にハードルが高いものであった。これを解決するため、スマートフォンの各種センサ情報をPCに送信し続け、PC側からもスマートフォンにバイブレーションやウェブサイト表示などの所定の動作をさせる事ができるアプリケーションを開発した。これにより、プログラマはスマートフォン側のプログラミングを一切行わずに、PCでのセンサ情報を用いたプログラミングを行うことができる。WISS2015で発表。',
 	implement: 'Androidアプリケーションとして実装。PCとスマートフォンを同じWi-Fiに接続後、UDP通信を確立することによってデータの送受信を行う。アプリケーションはバックグラウンドで動作する。PC側で利用するときは対応するProcessing用のライブラリを利用可能。',
 	keywords: ['Android', 'Programming Experience(PX)', 'UDP', 'cooperation programming', 'sensor'],
+	links: [{ 'プロジェクトページ': 'https://research.miyashita.com/2015/D160/' }]
 }, {
 	name: 'MiddleDrive',
 	sub: 'Bluetooth通信によるアドホック型ドキュメント共同編集アプリ',
@@ -26,7 +27,6 @@ const projectsArray = [{
 	name: 'Ichimonitto',
 	sub: 'ビデオチャットをしながらクイズ番組形式で回答する一問一答学習支援サービス',
 	img: 'project-Ichimonitto-16-9.png',
-	video: '',
 	text: '英単語を知っていても、正確な発音ができなければ相手には伝わらない。そこで、WebRTCを利用した一問一答形式の学習支援サービスを制作した。カメラ映像とボイスチャットによって離れた場所でも一緒に学ぶことが出来る。画面に表示された単語の英語をいち早く、かつ正確に発音できたものがポイントを獲得する。Cloud n アプリケーションコンテストでWebRTC賞を受賞。',
 	implement: 'チームで制作。フロントエンドを担当。Google Speech APIを使うことで、しっかりと認識されるような正確な発音での回答のみ正解とする点がポイント。現在接続しているユーザなどの管理にSkywayのAPIを利用。',
 	keywords: ['Web RTC', 'quiz', 'video chat', 'Google Speech API'],
@@ -34,7 +34,6 @@ const projectsArray = [{
 	name: 'GeoMelody',
 	sub: '環境音を録音してネット上に集約するサウンドスケープSNS',
 	img: 'project-GeoMelody-16-9.png',
-	video: '',
 	text: '位置情報と環境音を組み合わせて登録するサービス。風景には音が欠かせないという考え方、サウンドスケープをサービスとして組み込んだ作品。ユーザがスマートフォンで環境音を録音すると、音声をGPSや日付の情報と共にサーバにアップロードし、マップ上で閲覧することが出来る。Open Hack U 2014発表作品。',
 	implement: 'チームで制作。アプリの大部分を担当した。Androidアプリケーションとして実装。Yahoo Map APIを使用して、録音された音声のマッピングを行っている。',
 	keywords: ['Android', 'soundscape', 'map', 'record', 'microphone', 'GPS'],
@@ -44,7 +43,6 @@ const projectsArray = [{
 	name: 'SoumuSSML',
 	sub: '聴覚障害者のための新しい電子書籍フォーマットに対応した出版社用クラウド編集システム',
 	img: 'project-SoumuSSML-16-9.png',
-	video: '',
 	text: '電子書籍を読む際などに用いられる、OS組み込みの読み上げ機能にはイントネーションの間違いが未だに多く残っている。そのため現在は、音声合成マークアップ言語SSMLを用いてイントネーションを出版社の人間が編集し、合成された音声を電子書籍に同封するというやり方が一般的である。そこで、電子書籍に音声ファイルではなくイントネーションを記したファイルを同封する新しい電子書籍フォーマットの提案を行った。同時に、出版社の人間がイントネーションを編集し、音声をその都度確認しながらクラウド上で編集するシステムを構築した。実証実験により効果的なツールと認められ、W3Cによって電子書籍の形式EPUBの次期仕様に盛り込まれた。総務省とアルバイト先の想隆社との共同プロジェクト。',
 	implement: 'チームで制作。フロントエンドを担当した。サーバはPHPで実装。主な機能は以下の通り。電子書籍のアップロードと初期の発音記号の自動生成、編集した発音記号（イントネーションを表す）のバージョン管理とDiff表示、編集した音声をその場で再生、書籍内の文字検索、編集者の編集権限変更、ゲラ（校正用の印刷）の印刷機能とコメントのPDFアップロード、書籍内の画像表示。',
 	keywords: ['E-book', 'EPUB', 'SSML', 'W3C', 'co-authoring', 'version control'],
@@ -58,6 +56,13 @@ const projectsArray = [{
 	implement: 'チームで制作。Processingで実装。身体にブレの度合いは動体験知によって数値化する。動体検知の実装を担当。顔の美顔化処理には、次のアルゴリズムを利用。（関川 慧, 下野 弘朗, 笹 航太, 松井 啓司, 荒川 薫. ε-フィルタを用いたリアルタイム顔画像美観化システム. 情報・システムソサイエティ特別企画 学生ポスターセッション予稿集.）',
 	keywords: ['media art', 'motion detection', 'image processing'],
 	// https://www.ieice.org/iss/jpn/Publications/issposter_2015/data/pdf/ISS-P-78.pdf
+}, {
+	name: 'Make if',
+	sub: 'カードを並べてif文をつくるプログラミング教育カードゲーム',
+	img: 'project-Makeif-16-9.png',
+	text: 'こここここここ',
+	implement: 'チームで制作。',
+	keywords: ['programming', 'card game', 'analog game'],
 }]
 
 export default projectsArray
