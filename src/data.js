@@ -6,7 +6,9 @@ const projectsArray = [{
 	text: 'スマートフォンのセンサ情報とPCを連携させたプログラミングを実現するには双方でのアプリケーション開発が必要となり、製作時間がかかる上にハードルが高いものであった。これを解決するため、スマートフォンの各種センサ情報をPCに送信し続け、PC側からもスマートフォンにバイブレーションやウェブサイト表示などの所定の動作をさせる事ができるアプリケーションを開発した。これにより、プログラマはスマートフォン側のプログラミングを一切行わずに、PCでのセンサ情報を用いたプログラミングを行うことができる。WISS2015で発表。',
 	implement: 'Androidアプリケーションとして実装。PCとスマートフォンを同じWi-Fiに接続後、UDP通信を確立することによってデータの送受信を行う。アプリケーションはバックグラウンドで動作する。PC側で利用するときは対応するProcessing用のライブラリを利用可能。',
 	keywords: ['Android', 'Programming Experience(PX)', 'UDP', 'cooperation programming', 'sensor'],
-	links: [{ 'プロジェクトページ': 'https://research.miyashita.com/2015/D160/' }]
+	links: {
+		'プロジェクトページ': 'https://research.miyashita.com/2015/D160/',
+	},
 }, {
 	name: 'MiddleDrive',
 	sub: 'Bluetooth通信によるアドホック型ドキュメント共同編集アプリ',
@@ -15,6 +17,9 @@ const projectsArray = [{
 	text: '会議を行う際にその内容を複数人でウェブ上のドキュメントに書き出すことで記録をとったり、議題の整理をしたりすることが多くある。しかし、Wi-Fiの電波がない場所ではこれらのようなウェブアプリケーションは利用することができない。そこで、Wi-Fiなどのネットワーク環境が利用できない状況でも、リアルタイムに共同編集を行うことができるアプリケーションを開発した。ワイヤレスアドホックネットワークを構築し、ネットワーク内のPCとドキュメントの共同編集を行うことが出来る。',
 	implement: 'チームで制作。フロントエンドとWebサーバを担当した。動作プラットフォームはWindowsPC。BluetoothによってPC同士をペアリングし、双方向のデータ通信を行う。各PC内でWebサーバが起動しているため、通常のウェブアプリケーションと同じようにブラウザでアクセスすることが出来る。Bluetooth通信はC#でwin APIを利用することで実現し、WebサーバはNode.jsを用いて実装している。',
 	keywords: ['windows', 'Bluetooth', 'co-authoring', 'CSCW', 'win API', 'Ad-hoc network'],
+	links: {
+		'受賞ページ': 'http://www.pref.nagano.lg.jp/joho/app-contest/app-contest0',
+	},
 }, {
 	name: 'WristSlide',
 	sub: 'イメージセンサを用いた手首を滑らせることによるスマートウォッチの片手操作手法',
@@ -30,6 +35,9 @@ const projectsArray = [{
 	text: '英単語を知っていても、正確な発音ができなければ相手には伝わらない。そこで、WebRTCを利用した一問一答形式の学習支援サービスを制作した。カメラ映像とボイスチャットによって離れた場所でも一緒に学ぶことが出来る。画面に表示された単語の英語をいち早く、かつ正確に発音できたものがポイントを獲得する。Cloud n アプリケーションコンテストでWebRTC賞を受賞。',
 	implement: 'チームで制作。フロントエンドを担当。Google Speech APIを使うことで、しっかりと認識されるような正確な発音での回答のみ正解とする点がポイント。現在接続しているユーザなどの管理にSkywayのAPIを利用。',
 	keywords: ['Web RTC', 'quiz', 'video chat', 'Google Speech API'],
+	links: {
+		'受賞ページ': 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
+	},
 }, {
 	name: 'GeoMelody',
 	sub: '環境音を録音してネット上に集約するサウンドスケープSNS',
@@ -60,9 +68,13 @@ const projectsArray = [{
 	name: 'Make if',
 	sub: 'カードを並べてif文をつくるプログラミング教育カードゲーム',
 	img: 'project-Makeif-16-9.png',
-	text: 'こここここここ',
-	implement: 'チームで制作。',
+	text: 'プログラミングをする時に必ず使う「if文」をカードで遊びながら学べるゲーム。テキストエディタを模したプレイマットの上に順番にカードを置いていき、if文が完成すると条件分岐によってカードを引かなくてはならない。早く手札を使い切った人が勝利。プログラミング未経験者でも遊ぶことが可能。2017年にゲームマーケット、及びコミックマーケットにて頒布。',
+	implement: 'アナログゲームサークルfumblewaals（ファンブルワールス）で制作。主にデザインを担当。Adobe Illustratorを使用。',
 	keywords: ['programming', 'card game', 'analog game'],
+	links: {
+		'商品詳細ページ': 'http://fumblewaals.com/portfolio/make-if/',
+		'fumblewaals': 'http://fumblewaals.com',
+	},
 }]
 
 export default projectsArray
