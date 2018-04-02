@@ -26,7 +26,7 @@ projectDetail
 				.chapter-title
 					h2 Links
 					hr
-				ul
+				ol
 					li(each='{value, key in project.links}')
 						span {key + ': '}
 						span
@@ -90,10 +90,10 @@ projectDetail
 						margin: 0.6rem 0;
 						text-align: justify;
 					}
-					ul {
+					ol {
 						padding-left: 2rem;
 						li {
-							list-style-type: disc;
+							list-style-type: decimal;
 							line-height: 1.8rem;
 							a {
 								color: #4e9adb;

@@ -2,10 +2,10 @@ app
 	router
 		route(path='')
 			top
-		route(path='projects/')
-			projectAll
 		route(path='projects/*')
 			projectDetail
+		route(path='projects..')
+			projectAll
 		route(path='..')
 			other
 

@@ -13,6 +13,7 @@ awards
 				'プロジェクト: Ichimonitto'
 			],
 			link: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
+			//- link: '#projects/Ichimonitto',
 		},{
 			date: '2017-12',
 			title: '信州未来アプリコンテスト0',
@@ -22,4 +23,5 @@ awards
 				'プロジェクト: MiddleDrive'
 			],
 			link: 'http://www.pref.nagano.lg.jp/joho/app-contest/app-contest0',
+			//- link: '#projects/MiddleDrive',
 		}]

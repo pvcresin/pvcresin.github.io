@@ -61,6 +61,7 @@ about.pure-g
 						border-radius: 50%;
 						width: 100%;
 						background: gray;
+						cursor: pointer;
 					}
 				}
 			}

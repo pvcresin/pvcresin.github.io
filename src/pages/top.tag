@@ -11,7 +11,7 @@ top
 			projects(limit=3)
 			more(
 				title='View all projects'
-				link='{window.location.origin}/#projects/')
+				link='{window.location.origin}/#projects')
 	section
 		.container
 			h2.section-title Awards
