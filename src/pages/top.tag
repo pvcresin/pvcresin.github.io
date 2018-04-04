@@ -5,6 +5,7 @@ top
 			h2.section-title About Me
 			about
 			more(
+				text='detail'
 				title='View detailed profile'
 				link='{window.location.origin}/#profile')
 	section

@@ -45,6 +45,7 @@ projectAll
 	script.
 		import projects from '../components/projects'
 		import route from 'riot-route/lib/tag'
+		import scroll from '../js/scroll'
 
 		this.categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
 		this.selectedCategory
@@ -56,12 +57,7 @@ projectAll
 				this.update({ selectedCategory: this.categories[0] })
 			}
 
-			const path = window.location.hash
-			if (window.scrolls[`${path}`] === undefined) {
-				window.scroll(0, 0)
-			} else {
-				window.scroll(0, window.scrolls[`${path}`])
-			}
+			scroll.move()
 		})
 
 		click(p) {

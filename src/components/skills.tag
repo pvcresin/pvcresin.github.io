@@ -25,33 +25,35 @@ skills
 
 	style(type='scss').
 		:scope {
-
-		}
-		.skill-box {
-			padding: 1.5rem;
-			> li {
-				margin-bottom: 1.2rem;
-				.skill-info {
-					display: flex;
-					justify-content: space-between;
-					align-items: baseline;
-				}
-				.name {
-					font-size: 1.3em;
-					margin-right: 0.5rem;
-					font-weight: 300;
-				}
-				.sub {
-					font-size: 0.85rem;
-					color: #bdbdbd;
-				}
-				.bar {
-					background: #4b4b4b;
-					border-radius: 1rem;
-					.level {
-						height: 0.7rem;
-						border-radius: 1rem;
-						background: #eaeaea;
+			> div {
+				padding: 0.75rem;
+				.skill-box {
+					padding: 0.75rem;
+					> li {
+						margin-bottom: 1.2rem;
+						.skill-info {
+							display: flex;
+							justify-content: space-between;
+							align-items: baseline;
+						}
+						.name {
+							font-size: 1.3em;
+							margin-right: 0.5rem;
+							font-weight: 300;
+						}
+						.sub {
+							font-size: 0.85rem;
+							color: #bdbdbd;
+						}
+						.bar {
+							background: #4b4b4b;
+							border-radius: 1rem;
+							.level {
+								height: 0.7rem;
+								border-radius: 1rem;
+								background: #eaeaea;
+							}
+						}
 					}
 				}
 			}

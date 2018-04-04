@@ -118,6 +118,7 @@ projectDetail
 	script.
 		import tags from '../components/tags'
 		import projectsArray from '../data'
+		import scroll from '../js/scroll'
 
 		this.project = {
 			name: '',
@@ -134,10 +135,5 @@ projectDetail
 				project: projectsArray.filter(d => d.name === projectName.replace(/_/g, ' '))[0]
 			})
 
-			const path = window.location.hash
-			if (window.scrolls[`${path}`] === undefined) {
-				window.scroll(0, 0)
-			} else {
-				window.scroll(0, window.scrolls[`${path}`])
-			}
+			scroll.move()
 		})

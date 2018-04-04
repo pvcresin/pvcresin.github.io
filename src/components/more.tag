@@ -1,6 +1,6 @@
 more
 	a(href='{opts.link}' title='{opts.title}')
-		span.more-button more
+		span.more-button {text}
 
 	style(type='scss').
 		:scope {
@@ -20,3 +20,8 @@ more
 				}
 			}
 		}
+
+	script.
+		this.text = (this.opts.text !== undefined)
+			? this.opts.text
+			: 'more'

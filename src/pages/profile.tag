@@ -1,11 +1,11 @@
 profile
 	section
 		.container
-			h2.section-title About Me
+			h2.section-title Profile
 			about
+			like
 			skills
 			education
-			like
 	footer
 
 	style(type='scss').
@@ -20,3 +20,8 @@ profile
 		import education from '../components/education'
 		import skills from '../components/skills'
 		import like from '../components/like'
+		import scroll from '../js/scroll'
+
+		this.on('route', () => {
+			scroll.move()
+		})
