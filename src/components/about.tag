@@ -73,10 +73,9 @@ about.pure-g
 				padding: 0.75rem;
 				font-size: 1.1rem;
 				ul {
-					margin: 0.75rem 0;
 					li {
 						display: flex;
-						margin-bottom: 0.5rem;
+						margin-top: 0.5rem;
 						.icon {
 							display: flex;
 							justify-content: center;

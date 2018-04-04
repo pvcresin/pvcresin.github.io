@@ -31,6 +31,7 @@ projectDetail
 						span {key + ': '}
 						span
 							a(href='{value}') {value}
+	footer
 
 	style(type='scss').
 		:scope {
@@ -38,9 +39,8 @@ projectDetail
 			display: block;
 			background: #2b2b2b;
 			color: #efefef;
-			padding: 0.75rem;
 			> div > section {
-				padding: 0.75rem;
+				padding: 1.5rem;
 				.video-frame {
 					position: relative;
 					width: 100%;

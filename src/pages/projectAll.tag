@@ -7,6 +7,7 @@ projectAll
 					li(if='{selectedCategory !== p}') {p}
 					li.selected(if='{selectedCategory === p}') {p}
 			projects(category='{selectedCategory}')
+	footer
 
 	style(type='scss').
 		:scope {

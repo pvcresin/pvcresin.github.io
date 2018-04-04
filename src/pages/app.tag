@@ -2,6 +2,8 @@ app
 	router
 		route(path='')
 			top
+		route(path='profile..')
+			profile
 		route(path='projects/*')
 			projectDetail
 		route(path='projects..')
@@ -12,6 +14,7 @@ app
 	script.
 		import route from 'riot-route/lib/tag'
 		import top from './top'
+		import profile from './profile'
 		import projectAll from './projectAll'
 		import projectDetail from './projectDetail'
 		import other from './other'
