@@ -7,14 +7,14 @@ top
 			more(
 				text='detail'
 				title='View detailed profile'
-				link='{window.location.origin}/#profile')
+				link='#profile')
 	section
 		.container
 			h2.section-title Projects
 			projects(limit=3)
 			more(
 				title='View all projects'
-				link='{window.location.origin}/#projects')
+				link='#projects')
 	section
 		.container
 			h2.section-title Awards

@@ -1,7 +1,7 @@
 projects
 	.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1(each='{w, i in projects}')
 		.card
-			a(href='{window.location.origin}/#projects/{w.name.replace(/ /g, `_`)}')
+			a(href='#projects/{w.name.replace(/ /g, `_`)}')
 				.wrapper
 					img.thumbnail(src='resources/{w.img}')
 				.content
