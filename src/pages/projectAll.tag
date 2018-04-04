@@ -17,16 +17,18 @@ projectAll
 				.container {
 					ul {
 						display: flex;
-					    justify-content: center;
+						justify-content: space-between;
+						max-width: 400px;
+						padding: 0 1.5rem;
+						margin: 1rem auto 0 auto;
 						li {
+							font-size: 0.8rem;
 							display: inline-block;
 							color: gray;
 							padding: 0.5rem 0.5rem;
-							margin: 1rem 0.3rem 0 0.3rem;
 							cursor: pointer;
 							border: 1px solid;
 							border-radius: 2rem;
-							min-width: 5rem;
 							text-align: center;
 							&.selected {
 								color: white;
@@ -62,9 +64,5 @@ projectAll
 		})
 
 		click(p) {
-			if (p === this.categories[0]) {
-				window.location.href = '/#projects'
-			} else {
-				window.location.href = `/#projects?category=${p}`
-			}
+			this.update({ selectedCategory: p })
 		}

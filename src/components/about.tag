@@ -30,7 +30,7 @@ about.pure-g
 			li.pure-g
 				.icon.pure-u-1-12.pure-u-lg-1-24
 					i.fa.fa-graduation-cap(aria-hidden='true')
-				.right.pure-u-11-12 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 修士1年{' '}
+				.right.pure-u-11-12 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 修士2年
 			li.pure-g
 				.icon.pure-u-1-12.pure-u-lg-1-24
 					i.fa.fa-suitcase(aria-hidden='true')
