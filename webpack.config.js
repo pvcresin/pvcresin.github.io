@@ -44,5 +44,6 @@ module.exports = {
 		// 	},
 		// 	mangle: true
 		// })
-	]
+	],
+	devtool: 'inline-source-map',
 }
