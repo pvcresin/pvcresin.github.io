@@ -9,7 +9,7 @@ like
 				ul
 					li(each='{t, i in do}') {l}
 						span.icon {i}
-						span {t}
+						span.text {t}
 		.like-box.pure-u-1-1.pure-u-sm-1-2.pure-u-md-1-3
 			.like
 				h3 Watch
@@ -17,7 +17,7 @@ like
 				ul
 					li(each='{t, i in watch}')
 						span.icon {i}
-						span {t}
+						span.text {t}
 		.like-box.pure-u-1-1.pure-u-sm-1-2.pure-u-md-1-3
 			.like
 				h3 Eat
@@ -25,7 +25,7 @@ like
 				ul
 					li(each='{t, i in eat}')
 						span.icon {i}
-						span {t}
+						span.text {t}
 
 	style(type='scss').
 		:scope {
@@ -50,12 +50,15 @@ like
 							background: gray;
 						}
 						ul li {
-							font-size: 1.2rem;
 							line-height: 2rem;
 							.icon {
+								font-size: 1.4rem;
 								width: 2rem;
 								display: inline-flex;
 								justify-content: center;
+							}
+							.text {
+								font-size: 1.2rem;
 							}
 						}
 					}

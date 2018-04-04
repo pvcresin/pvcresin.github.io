@@ -7,11 +7,10 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015-riot": "^1.1.0",
+    "cpx": "^1.5.0",
     "live-server": "^1.2.0",
     "node-sass": "^4.8.3",
     "npm-run-all": "^4.1.2",
-    "postcss-cli": "^5.0.0",
-    "postcss-cssnext": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "riot-compiler": "^3.4.0",
     "riot-tag-loader": "^2.0.2",
@@ -21,12 +20,12 @@
   "scripts": {
     "build": "run-p build:*",
     "build:js": "webpack --mode production",
-    "build:pug": "pug src/pug/index.pug -o ./ -P",
-    "build:postcss": "postcss src/postcss/*.css -d dist/ --no-map -u postcss-cssnext",
+    "build:pug": "pug src/index.pug -o ./ -P",
+    "build:css": "cpx src/*.css dist/",
     "watch": "run-p watch:*",
     "watch:js": "webpack --mode development -w",
     "watch:pug": "npm run build:pug -- -w",
-    "watch:postcss": "npm run build:postcss -- -w",
+    "watch:css": "npm run build:css -- -w",
     "watch:browser": "live-server ./ --watch=./index.html,/dist"
   },
   "dependencies": {
