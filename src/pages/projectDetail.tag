@@ -7,7 +7,7 @@ projectDetail
 						allow="encrypted-media"
 						allowfullscreen)
 			.img-frame(if='{project.video === undefined}')
-				img(src='../resources/{project.img}')
+				webp(src='{project.img}')
 			h1
 				p {project.name + ': '}
 				span {project.sub}
@@ -118,6 +118,7 @@ projectDetail
 	script.
 		import tags from '../components/tags'
 		import projectsArray from '../data'
+		import webp from '../components/webp'
 		import scroll from '../js/scroll'
 
 		this.project = {

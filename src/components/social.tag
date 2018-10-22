@@ -1,22 +1,22 @@
 social#social
 	ul
 		li
-			a(href='https://www.facebook.com/raika.toriyama' target='_blank' title='Facebook')
+			a(href='https://www.facebook.com/raika.toriyama' target='_blank' title='Facebook' rel='noopener noreferrer')
 				i.fab.fa-facebook-f.fa-2x
 		li
-			a(href='https://twitter.com/pvcresin/' target='_blank' title='Twitter')
+			a(href='https://twitter.com/pvcresin/' target='_blank' title='Twitter' rel='noopener noreferrer')
 				i.fab.fa-twitter.fa-2x
 		li
-			a(href='https://github.com/pvcresin/' target='_blank' title='GitHub')
+			a(href='https://github.com/pvcresin/' target='_blank' title='GitHub' rel='noopener noreferrer')
 				i.fab.fa-github.fa-2x
 		li
-			a(href='https://www.instagram.com/pvcresin/' target='_blank' title='Instagram')
+			a(href='https://www.instagram.com/pvcresin/' target='_blank' title='Instagram' rel='noopener noreferrer')
 				i.fab.fa-instagram.fa-2x
 		li
-			a(href='http://pvcresin.hatenablog.com/' target='_blank' title='Hatena Blog')
+			a(href='http://pvcresin.hatenablog.com/' target='_blank' title='Hatena Blog' rel='noopener noreferrer')
 				.icon-box.hatena
 		li
-			a(href='https://www.wantedly.com/users/18220619' target='_blank' title='Wantedly')
+			a(href='https://www.wantedly.com/users/18220619' target='_blank' title='Wantedly' rel='noopener noreferrer')
 				.icon-box.wantedly
 
 	style(type='scss').

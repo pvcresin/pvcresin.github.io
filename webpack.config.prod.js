@@ -1,5 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+	.BundleAnalyzerPlugin
 
 module.exports = {
 	context: path.resolve(__dirname, './src/js'),
@@ -32,5 +35,28 @@ module.exports = {
 		]
 	},
 	resolve: { extensions: ['.js', '.tag'] },
-	plugins: [new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)]
+	plugins: [
+		new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+		new BundleAnalyzerPlugin()
+	],
+	optimization: {
+		minimizer: [
+			new UglifyJsPlugin({
+				parallel: true,
+				sourceMap: true,
+				extractComments: true,
+				uglifyOptions: {
+					warnings: false,
+					parse: {},
+					compress: { drop_console: true },
+					mangle: true,
+					output: null,
+					toplevel: false,
+					nameCache: null,
+					ie8: false,
+					keep_fnames: false
+				}
+			})
+		]
+	}
 }

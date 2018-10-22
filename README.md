@@ -2,7 +2,8 @@
 
 # TODO
 
-# image sizing
+## image sizing
 
 - width: 1200 x 720 px
 
+## middle drive video resize

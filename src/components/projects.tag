@@ -3,7 +3,7 @@ projects
 		.card
 			a(href='#projects/{w.name.replace(/ /g, `_`)}')
 				.wrapper
-					img.thumbnail(src='resources/{w.img}')
+					webp.thumbnail(src='{w.img}')
 				.content
 					h4 {w.name}
 					p {w.sub}
@@ -37,8 +37,6 @@ projects
 								position: absolute;
 								top: 0;
 								left: 0;
-								bottom: 0;
-								right: 0;
 								border-radius: 0.3rem 0.3rem 0 0;
 								display: block;
 								width: 100%;
@@ -63,6 +61,7 @@ projects
 
 	script.
 		import projectsArray from '../data'
+		import webp from "./webp"
 
 		this.category = 'All'
 		this.projects = (this.opts.limit === undefined)
