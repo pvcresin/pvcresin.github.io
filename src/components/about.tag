@@ -1,15 +1,12 @@
 about.pure-g
 	.about-img.pure-u-sm-1-4.pure-u-1-2
 		.face-wrapper.pure-u-1-2(click='{clickFace}')
-			webp(show='{face}' src='my-face')
-			img(show='{!face}' src='resources/icon-pvcresin.svg')
+			img(src='resources/icon-pvcresin.svg')
 	.pure-u-sm-1-24.pure-u-1-1
 	.about-text.pure-u-sm-17-24.pure-u-1-1
-		|プログラミングが好きで、ちょっと名前が珍しい学生。
+		|Web Frontendが好きなエンジニア。
 		br
-		|趣味はアナログゲーム作ったり、YouTube見たり、一人カラオケしたり、ミニチュアを集めたりすること。
-		br
-		|当面の目標は有益な情報を提供できるエンジニアになることと、多くの人の生活に役立つサービスを作ること。
+		|学生時代はインタラクション（HCI）について学ぶ。
 		br
 		|人と意見を交換し、議論しながら良いモノを作っていきたい。
 		br
@@ -22,21 +19,17 @@ about.pure-g
 			li.pure-g
 				.icon.pure-u-1-12.pure-u-lg-1-24
 					i.fa.fa-map-marker-alt(aria-hidden='true')
-				.right.pure-u-11-12 Nakano, Tokyo
+				.right.pure-u-11-12 Omotesando, Tokyo
 			li.pure-g
 				.icon.pure-u-1-12.pure-u-lg-1-24
 					i.fa.fa-envelope(aria-hidden='true')
 				.right.pure-u-11-12 pvcresin0730@gmail.com
 			li.pure-g
 				.icon.pure-u-1-12.pure-u-lg-1-24
-					i.fa.fa-graduation-cap(aria-hidden='true')
-				.right.pure-u-11-12 明治大学大学院 先端数理科学研究科 先端メディアサイエンス専攻 修士2年
-			li.pure-g
-				.icon.pure-u-1-12.pure-u-lg-1-24
 					i.fa.fa-suitcase(aria-hidden='true')
 				.right.pure-u-11-12
-					a(href='http://soryu-sha.jp/') 想隆社
-					span （フロントエンドエンジニア・アルバイト）
+					a(href='https://jp.corp-sansan.com/') Sansan, Inc.
+					span （Eight事業部 フロントエンドエンジニア）
 	style(type='scss').
 		:scope {
 			padding: 0.75rem;
@@ -61,7 +54,6 @@ about.pure-g
 						border-radius: 50%;
 						width: 100%;
 						background: gray;
-						cursor: pointer;
 					}
 				}
 			}
