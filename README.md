@@ -1,5 +1,7 @@
 # https://pvcresin.github.io/
 
+Node v8では動いた
+
 # TODO
 
 ## image sizing
