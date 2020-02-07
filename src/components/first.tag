@@ -1,15 +1,8 @@
 first
 	nav
-		//- ul
-		//- 	li
-		//- 		a(href='/') HOME
-		//- 	li
-		//- 		a(href='#about') ABOUT
-		//- 	li
-		//- 		a(href='#projects') PROJECTS
 	.container
 		h1 Raika Toriyama
-		p Android / Web Developer
+		p  Web Developer / Android
 		social
 	.container
 		.arrow
