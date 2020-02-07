@@ -81,14 +81,14 @@ skills
 		this.skills1 = [{
 			name: 'HTML',
 			sub: 'Pug Markdown',
-			level: '85%'
+			level: '90%'
 		},{
 			name: 'CSS',
 			sub: 'Sass PostCSS CSS-Modules',
-			level: '80%'
+			level: '85%'
 		},{
-			name: 'JS',
-			sub: 'Riot React Node',
+			name: 'JavaScript',
+			sub: 'React Vue Node',
 			level: '90%'
 		},{
 			name: 'PHP',
