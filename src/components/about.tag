@@ -1,6 +1,6 @@
 about.pure-g
 	.about-img.pure-u-sm-1-4.pure-u-1-2
-		.face-wrapper.pure-u-1-2(click='{clickFace}')
+		.face-wrapper.pure-u-1-2
 			img(src='resources/icon-pvcresin.svg')
 	.pure-u-sm-1-24.pure-u-1-1
 	.about-text.pure-u-sm-17-24.pure-u-1-1
@@ -94,8 +94,3 @@ about.pure-g
 
 		this.birthday = '1994-07-30'
 		this.age = moment().diff(this.birthday, 'years')
-		this.face = true
-
-		clickFace() {
-			this.face = !this.face
-		}
