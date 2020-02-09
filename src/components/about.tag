@@ -4,13 +4,13 @@ about.pure-g
 			img(src='resources/icon-pvcresin.svg')
 	.pure-u-sm-1-24.pure-u-1-1
 	.about-text.pure-u-sm-17-24.pure-u-1-1
-		|Web Frontend　が好きなエンジニア
+		|Web Frontend　が好きなエンジニア。
 		br
-		|学生時代はインタラクション（HCI）を専攻
+		|学生時代はインタラクション（HCI）を専攻し、主にモバイル / ウェアラブルデバイスに関する研究を行う。
 		br
-		|人と議論しながらモノ作りがしたい
+		|人と意見を交換し、議論しながらモノ作りがしたい。
 		br
-		|新しいものが好きなので、貪欲に学んでいく
+		|新しいものが好きなので、貪欲に学んでいく。
 		ul
 			li.pure-g
 				.icon.pure-u-1-12.pure-u-lg-1-24
@@ -29,7 +29,7 @@ about.pure-g
 					i.fa.fa-suitcase(aria-hidden='true')
 				.right.pure-u-11-12
 					span Frontend Engineer{' '}
-					a(href='https://jp.corp-sansan.com/') @ Sansan
+					a.company(href='https://jp.corp-sansan.com/') @ Sansan
 	style(type='scss').
 		:scope {
 			padding: 0.75rem;
@@ -75,11 +75,17 @@ about.pure-g
 							font-size: 1.5rem;
 						}
 						.right {
+							display: flex;
+							align-items: center;
 							padding-left: 0.5rem;
 							a {
 								color: #4e9adb;
 								&:hover {
 									text-decoration: underline;
+								}
+
+								&.company {
+									margin-left: 0.3rem;
 								}
 							}
 						}
