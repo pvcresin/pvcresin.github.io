@@ -71,9 +71,7 @@ projects
 		this.on('updated', () => {
 			//- console.log(this.projects, this.opts.category)
 
-			// TODO --- CSS !!
-
-			if (this.opts.category !== this.category) {
+			if (this.opts.category && this.opts.category !== this.category) {
 				this.update({
 					category: this.opts.category,
 					projects: (this.opts.category === 'All')
