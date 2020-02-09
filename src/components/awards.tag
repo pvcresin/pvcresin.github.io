@@ -13,7 +13,6 @@ awards
 				'プロジェクト: Ichimonitto'
 			],
 			link: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
-			//- link: '#projects/Ichimonitto',
 		},{
 			date: '2017-12',
 			title: '信州未来アプリコンテスト0',
@@ -23,5 +22,13 @@ awards
 				'プロジェクト: MiddleDrive'
 			],
 			link: 'https://shinshu-futureapp.net/information/contest/',
-			//- link: '#projects/MiddleDrive',
+		},{
+			date: '2010-03',
+			title: '第182回 HCI研究会',
+			texts: [
+				'学生奨励賞 受賞',
+				'スマートウォッチ向けのソフトウェアキーボードに関する研究（修士論文）',
+				'プロジェクト: InvisibleFlick'
+			],
+			link: 'https://shinshu-futureapp.net/information/contest/',
 		}]

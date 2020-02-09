@@ -25,4 +25,11 @@ publications
 				'鳥山らいか, 宮下芳明. スマートウォッチ向けのキートップが透明な日本語かな入力インタフェース, 第26回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2018), 2018.'
 			],
 			link: 'https://research.miyashita.com/papers/D202',
+		},{
+			date: '2019-03',
+			title: 'InvisibleFlick',
+			texts: [
+				'鳥山らいか, 宮下芳明. InvisibleFlick: 小型タッチスクリーン端末におけるキートップが透明な日本語入力キーボード, 研究報告ヒューマンコンピュータインタラクション(HCI), Vol.2019-HCI-182, Issue.27, pp. 1-8, 2019.'
+			],
+			link: 'https://research.miyashita.com/papers/D218',
 		}]
