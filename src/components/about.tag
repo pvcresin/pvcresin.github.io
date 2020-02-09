@@ -29,7 +29,7 @@ about.pure-g
 					i.fa.fa-suitcase(aria-hidden='true')
 				.right.pure-u-11-12
 					span Frontend Engineer{' '}
-					a.company(href='https://jp.corp-sansan.com/') @ Sansan
+					a.company(href='https://jp.corp-sansan.com/' target='_blank') @ Sansan
 	style(type='scss').
 		:scope {
 			padding: 0.75rem;

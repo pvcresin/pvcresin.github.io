@@ -2,7 +2,7 @@ list.pure-g.pure-u-1-1
 	ul
 		li(each='{item in opts.items}')
 			h3
-				a(href='{item.link}') {item.title}
+				a(href='{item.link}' target='_blank') {item.title}
 				.right
 					hr
 					span
