@@ -40,28 +40,31 @@ const projectsArray = [
 		],
 		links: {
 			受賞ページ:
-				'http://www.pref.nagano.lg.jp/joho/app-contest/app-contest0'
+				'https://www.pref.nagano.lg.jp/joho/app-contest/app-contest0'
 		}
 	},
 	{
-		name: 'WristSlide',
-		sub: 'イメージセンサを用いた手首を滑らせるスマートウォッチの片手操作',
-		img: 'project-WristSlide-16-9',
+		name: 'InvisibleFlick',
+		sub:
+			'小型タッチスクリーン端末におけるキートップが透明な日本語入力キーボード',
+		img: 'project-InvisibleFlick-16-9',
 		category: 'Android',
-		video: 'w9eHDKby8ro',
 		text:
-			'スマートウォッチにおいて、スワイプのような連続的な入力を行うには、装着している手と反対の手で操作する必要がある。そこで、手首を机や壁、自身の身体などの上で滑らせることによって、スマートウォッチを片手で操作する手法を提案。バンド下部に埋め込まれたイメージセンサによって、物体に接地した状態での手首の移動量を取得し、片手での2次元方向の入力を可能にした。',
+			'スマートウォッチのような小型タッチスクリーン端末向けの日本語入力キーボードは、キーやテキストエリアが狭いため、ミスタップの頻発による文字入力速度の低下を招いている。そこで、テンキー部分のキートップを透明にし、背景にテキストエリアを表示する手法を提案。フリックキーボードとテキストエリアの2層のレイヤー構造の導入により、キーとテキストエリアを同時に拡大することができる。既存手法との比較して、文字入力速度・エラー率ともに優れていることが示された。第182回HCI研究会で発表し、学生奨励賞を受賞。修士論文。',
 		implement:
-			'Android、Wear OSアプリケーションとして実装。スマートフォンと超小型ワイヤレスマウスをペアリングし、自端末にADBコマンドを発行することによってマウスイベントを監視。スマートフォンとペアリングされたスマートウォッチに移動量を送信してアプリケーションを操作する。',
+			'実験用システムとして、Androidアプリケーションを実装。Google日本語入力APIを使用して、漢字などの文字変換を行っている。',
 		keywords: [
 			'Android',
-			'Wear OS',
-			'Android Debug Bridge',
 			'Human Computer Interaction',
 			'smartwatch',
-			'image sensor',
-			'mouse'
-		]
+			'text input',
+			'flick-keyboard'
+		],
+		links: {
+			プロジェクトページ: 'https://research.miyashita.com/papers/D218',
+			受賞ページ: 'http://www.sighci.jp/contents/page/news',
+			Google日本語入力API: 'https://www.google.co.jp/ime/cgiapi.html'
+		}
 	},
 	{
 		name: 'Ichimonitto',
@@ -97,6 +100,26 @@ const projectsArray = [
 		]
 		// https://www.youtube.com/embed/PYXsetGI7G8?rel=0&amp;start=3217
 		// https://hacku.yahoo.co.jp/open2014/
+	},
+	{
+		name: 'WristSlide',
+		sub: 'イメージセンサを用いた手首を滑らせるスマートウォッチの片手操作',
+		img: 'project-WristSlide-16-9',
+		category: 'Android',
+		video: 'w9eHDKby8ro',
+		text:
+			'スマートウォッチにおいて、スワイプのような連続的な入力を行うには、装着している手と反対の手で操作する必要がある。そこで、手首を机や壁、自身の身体などの上で滑らせることによって、スマートウォッチを片手で操作する手法を提案。バンド下部に埋め込まれたイメージセンサによって、物体に接地した状態での手首の移動量を取得し、片手での2次元方向の入力を可能にした。',
+		implement:
+			'Android、Wear OSアプリケーションとして実装。スマートフォンと超小型ワイヤレスマウスをペアリングし、自端末にADBコマンドを発行することによってマウスイベントを監視。スマートフォンとペアリングされたスマートウォッチに移動量を送信してアプリケーションを操作する。',
+		keywords: [
+			'Android',
+			'Wear OS',
+			'Android Debug Bridge',
+			'Human Computer Interaction',
+			'smartwatch',
+			'image sensor',
+			'mouse'
+		]
 	},
 	{
 		name: 'SoumuSSML',

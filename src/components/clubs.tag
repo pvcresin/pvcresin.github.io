@@ -12,7 +12,7 @@ clubs
 				'同人イベントでの頒布（コミックマーケット・M3）',
 				'設立メンバー＆幹事長'
 			],
-			link: 'https://twitter.com/ccc_sokon',
+			link: 'https://sokon.jp/',
 		},{
 			date: '2016-04 - 2017-06',
 			title: 'Nakano Computer Club',
