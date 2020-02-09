@@ -3,7 +3,7 @@ projectAll
 		.container
 			h2.section-title Projects
 			ul
-				a(each='{p in categories}' click='{click.bind(this, p)}')
+				a(each='{p in categories}' onclick='{click.bind(this, p)}')
 					li(if='{selectedCategory !== p}') {p}
 					li.selected(if='{selectedCategory === p}') {p}
 			projects(category='{selectedCategory}')
