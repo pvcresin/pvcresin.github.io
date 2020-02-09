@@ -2,7 +2,7 @@ first
 	nav
 	.container
 		h1 Raika Toriyama
-		p  Web Developer / Android
+		p  Web / Android Developer
 		social
 	.container
 		.arrow
