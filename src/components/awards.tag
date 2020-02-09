@@ -30,5 +30,5 @@ awards
 				'スマートウォッチ向けのソフトウェアキーボードに関する研究（修士論文）',
 				'プロジェクト: InvisibleFlick'
 			],
-			link: 'https://shinshu-futureapp.net/information/contest/',
+			link: 'http://www.sighci.jp/contents/page/news',
 		}]
