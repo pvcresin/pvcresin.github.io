@@ -22,6 +22,6 @@ awards
 				'チーム：意識中くらいとして参加',
 				'プロジェクト: MiddleDrive'
 			],
-			link: 'http://www.pref.nagano.lg.jp/joho/app-contest/app-contest0',
+			link: 'https://shinshu-futureapp.net/information/contest/',
 			//- link: '#projects/MiddleDrive',
 		}]
