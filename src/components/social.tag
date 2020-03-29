@@ -13,7 +13,7 @@ social#social
 			a(href='https://www.instagram.com/pvcresin/' target='_blank' title='Instagram' rel='noopener noreferrer')
 				i.fab.fa-instagram.fa-2x
 		li
-			a(href='http://pvcresin.hatenablog.com/' target='_blank' title='Hatena Blog' rel='noopener noreferrer')
+			a(href='https://pvcresin.hatenablog.com/' target='_blank' title='Hatena Blog' rel='noopener noreferrer')
 				.icon-box.hatena
 		li
 			a(href='https://www.wantedly.com/users/18220619' target='_blank' title='Wantedly' rel='noopener noreferrer')
