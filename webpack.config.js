@@ -1,17 +1,17 @@
 const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
-const isProd = process.env.NODE_ENV === 'production'
+const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
-	mode: isProd ? 'production' : 'development',
+	mode: isDev ? 'development' : 'production',
 	context: path.resolve(__dirname, './src/js'),
 	entry: './index.js',
 	output: {
 		path: path.join(__dirname, './'),
 		filename: 'index.js'
 	},
-	devtool: 'inline-source-map',
+	devtool: isDev ? 'inline-source-map' : undefined,
 	module: {
 		rules: [
 			{
@@ -35,5 +35,5 @@ module.exports = {
 		]
 	},
 	resolve: { extensions: ['.js', '.tag'] },
-	plugins: isProd ? [new BundleAnalyzerPlugin()] : []
+	plugins: isDev ? [] : [new BundleAnalyzerPlugin()]
 }
