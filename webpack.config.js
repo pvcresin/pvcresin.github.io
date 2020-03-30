@@ -1,7 +1,10 @@
 const path = require('path')
-const webpack = require('webpack')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
+const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
+	mode: isProd ? 'production' : 'development',
 	context: path.resolve(__dirname, './src/js'),
 	entry: './index.js',
 	output: {
@@ -32,5 +35,5 @@ module.exports = {
 		]
 	},
 	resolve: { extensions: ['.js', '.tag'] },
-	plugins: [new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)]
+	plugins: isProd ? [new BundleAnalyzerPlugin()] : []
 }
