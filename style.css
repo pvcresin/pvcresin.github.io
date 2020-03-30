@@ -12,6 +12,10 @@
 	font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
 }
 
+html {
+	background: #1a1819;
+}
+
 .root {
 	min-height: 100vh;
 }
