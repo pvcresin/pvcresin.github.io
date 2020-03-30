@@ -9,7 +9,7 @@
 		"start": "live-server . --watch=index.html,style.css,index.js"
 	},
 	"dependencies": {
-		"moment": "^2.20.1",
+		"dayjs": "^1.8.23",
 		"riot": "^3.7.3",
 		"riot-route": "^3.1.2"
 	},

@@ -95,8 +95,8 @@ about.pure-g
 		}
 
 	script.
-		import moment from 'moment'
+		import dayjs from 'dayjs'
 		import webp from './webp'
 
 		this.birthday = '1994-07-30'
-		this.age = moment().diff(this.birthday, 'years')
+		this.age = dayjs().diff(this.birthday, 'years')
