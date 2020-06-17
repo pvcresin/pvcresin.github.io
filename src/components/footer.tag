@@ -1,7 +1,7 @@
 footer
 	.container
 		social
-		p © 2018 pvcresin
+		p © {this.year} pvcresin
 
 	style(type='scss').
 		:scope {
@@ -19,4 +19,7 @@ footer
 		}
 
 	script.
+		import dayjs from 'dayjs'
 		import social from './social'
+
+		this.year = dayjs().format('YYYY');
