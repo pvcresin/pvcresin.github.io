@@ -1,33 +1,33 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	outline: none;
-	border: none;
-	text-decoration: none;
-	color: unset;
-	list-style-type: none;
-	word-wrap: break-word;
-	vertical-align: bottom;
-	font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: unset;
+  list-style-type: none;
+  word-wrap: break-word;
+  vertical-align: bottom;
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
 }
 
 html {
-	background: #1a1819;
+  background: #1a1819;
 }
 
 .root {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
 }
 
 .section-title {
-	text-align: center;
-	padding-top: 1rem;
-	font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: bold;
 }
