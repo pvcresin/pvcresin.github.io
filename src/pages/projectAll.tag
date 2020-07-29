@@ -1,19 +1,19 @@
 <projectAll>
-    <section>
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <a each="{p in categories}" onclick="{click.bind(this, p)}">
-                    <li if="{selectedCategory !== p}">{p}</li>
-                    <li class="selected" if="{selectedCategory === p}">{p}</li>
-                </a>
-            </ul>
-            <projects category="{selectedCategory}"></projects>
-        </div>
-    </section>
-    <footer></footer>
-    <style type="scss">
+	<section>
+		<div class="container">
+			<h2 class="section-title">Projects</h2>
+			<ul>
+				<a each="{p in categories}" onclick="{click.bind(this, p)}">
+					<li if="{selectedCategory !== p}">{p}</li>
+					<li class="selected" if="{selectedCategory === p}">{p}</li>
+				</a>
+			</ul>
+			<projects category="{selectedCategory}"></projects>
+		</div>
+	</section>
+	<footer></footer>
 
+	<style type="scss">
 		:scope {
 			> section {
 				background: #eeeeee;
@@ -45,8 +45,9 @@
 				}
 			}
 		}
-		</style>
-		<script>
+	</style>
+
+	<script>
 		import route from 'riot-route/lib/tag'
 		import scroll from '../js/scroll'
 		import projects from '../components/projects'
@@ -68,5 +69,5 @@
 		click(p) {
 			this.update({ selectedCategory: p })
 		}
-		</script>
+	</script>
 </projectAll>

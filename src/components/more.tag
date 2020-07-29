@@ -1,5 +1,9 @@
-<more><a href="{opts.link}" title="{opts.title}"><span class="more-button">{text}</span></a>
-    <style type="scss">
+<more>
+	<a href="{opts.link}" title="{opts.title}">
+		<span class="more-button">{text}</span>
+	</a>
+
+	<style type="scss">
 		:scope {
 			padding: 0 1.5rem 1.5rem 1.5rem;
 			display: flex;
@@ -17,10 +21,8 @@
 				}
 			}
 		}
-		</style>
-		<script>
-		this.text = (this.opts.text !== undefined)
-			? this.opts.text
-			: 'more'
-		<script>
+	</style>
+	<script>
+		this.text = this.opts.text !== undefined ? this.opts.text : 'more'
+	</script>
 </more>

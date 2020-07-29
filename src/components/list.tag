@@ -1,15 +1,21 @@
 <list class="pure-g pure-u-1-1">
-    <ul>
-        <li each="{item in opts.items}">
-            <h3><a href="{item.link}" target="_blank">{item.title}</a>
-                <div class="right">
-                    <hr/><span><span class="date" if="{item.date.length &lt;= 7}">{item.date}</span><span class="term" if="{item.date.length &gt; 7}">{item.date}</span></span>
-                </div>
-            </h3>
-            <p class="sub" each="{t in item.texts}">{t}</p>
-        </li>
-    </ul>
-    <style type="scss">
+	<ul>
+		<li each="{item in opts.items}">
+			<h3>
+				<a href="{item.link}" target="_blank">{item.title}</a>
+				<div class="right">
+					<hr />
+					<span>
+						<span class="date" if="{item.date.length &lt;= 7}">{item.date}</span>
+						<span class="term" if="{item.date.length &gt; 7}">{item.date}</span>
+					</span>
+				</div>
+			</h3>
+			<p class="sub" each="{t in item.texts}">{t}</p>
+		</li>
+	</ul>
+
+	<style type="scss">
 		:scope {
 			> ul {
 				padding: 0.75rem;
@@ -32,14 +38,12 @@
 							flex-grow: 1;
 							align-items: center;
 							hr {
-
 								display: inline-flex;
 								flex-grow: 1;
 								border: 1.5px solid gray;
 								border-radius: 1rem;
 								min-width: 1rem;
 								background: gray;
-
 							}
 							span {
 								padding: 0.75rem;
@@ -72,5 +76,5 @@
 				}
 			}
 		}
-		</style>
+	</style>
 </list>

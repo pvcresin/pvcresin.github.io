@@ -14,11 +14,11 @@ const projectsArray = [
 			'Programming Experience(PX)',
 			'UDP',
 			'cooperation programming',
-			'sensor'
+			'sensor',
 		],
 		links: {
-			プロジェクトページ: 'https://research.miyashita.com/2015/D160/'
-		}
+			プロジェクトページ: 'https://research.miyashita.com/2015/D160/',
+		},
 	},
 	{
 		name: 'MiddleDrive',
@@ -30,23 +30,14 @@ const projectsArray = [
 			'会議を行う際にその内容を複数人でウェブ上のドキュメントに書き出すことで記録をとったり、議題の整理をしたりすることが多くある。しかし、Wi-Fiの電波がない場所ではこれらのようなウェブアプリケーションは利用することができない。そこで、Wi-Fiなどのネットワーク環境が利用できない状況でも、リアルタイムに共同編集を行うことができるアプリケーションを開発した。ワイヤレスアドホックネットワークを構築し、ネットワーク内のPCとドキュメントの共同編集を行うことが出来る。',
 		implement:
 			'チームで制作。フロントエンドとWebサーバを担当した。動作プラットフォームはWindowsPC。BluetoothによってPC同士をペアリングし、双方向のデータ通信を行う。各PC内でWebサーバが起動しているため、通常のウェブアプリケーションと同じようにブラウザでアクセスすることが出来る。Bluetooth通信はC#でwin APIを利用することで実現し、WebサーバはNode.jsを用いて実装している。',
-		keywords: [
-			'windows',
-			'Bluetooth',
-			'co-authoring',
-			'CSCW',
-			'win API',
-			'Ad-hoc network'
-		],
+		keywords: ['windows', 'Bluetooth', 'co-authoring', 'CSCW', 'win API', 'Ad-hoc network'],
 		links: {
-			受賞ページ:
-				'https://www.pref.nagano.lg.jp/joho/app-contest/app-contest0'
-		}
+			受賞ページ: 'https://www.pref.nagano.lg.jp/joho/app-contest/app-contest0',
+		},
 	},
 	{
 		name: 'InvisibleFlick',
-		sub:
-			'小型タッチスクリーン端末におけるキートップが透明な日本語入力キーボード',
+		sub: '小型タッチスクリーン端末におけるキートップが透明な日本語入力キーボード',
 		img: 'project-InvisibleFlick-16-9',
 		category: 'Android',
 		text:
@@ -58,18 +49,17 @@ const projectsArray = [
 			'Human Computer Interaction',
 			'smartwatch',
 			'text input',
-			'flick-keyboard'
+			'flick-keyboard',
 		],
 		links: {
 			プロジェクトページ: 'https://research.miyashita.com/papers/D218',
 			受賞ページ: 'http://www.sighci.jp/contents/page/news',
-			Google日本語入力API: 'https://www.google.co.jp/ime/cgiapi.html'
-		}
+			Google日本語入力API: 'https://www.google.co.jp/ime/cgiapi.html',
+		},
 	},
 	{
 		name: 'Ichimonitto',
-		sub:
-			'ビデオチャットをしながらクイズ番組形式で回答する一問一答学習支援サービス',
+		sub: 'ビデオチャットをしながらクイズ番組形式で回答する一問一答学習支援サービス',
 		img: 'project-Ichimonitto-16-9',
 		category: 'Web',
 		text:
@@ -78,8 +68,8 @@ const projectsArray = [
 			'チームで制作。フロントエンドを担当。Google Speech APIを使うことで、しっかりと認識されるような正確な発音での回答のみ正解とする点がポイント。現在接続しているユーザなどの管理にSkywayのAPIを利用。',
 		keywords: ['Web RTC', 'quiz', 'video chat', 'Google Speech API'],
 		links: {
-			受賞ページ: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/'
-		}
+			受賞ページ: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
+		},
 	},
 	{
 		name: 'GeoMelody',
@@ -90,14 +80,7 @@ const projectsArray = [
 			'位置情報と環境音を組み合わせて登録するサービス。風景には音が欠かせないという考え方、サウンドスケープをサービスとして組み込んだ作品。ユーザがスマートフォンで環境音を録音すると、音声をGPSや日付の情報と共にサーバにアップロードし、マップ上で閲覧することが出来る。Open Hack U 2014発表作品。',
 		implement:
 			'チームで制作。アプリの大部分を担当した。Androidアプリケーションとして実装。Yahoo Map APIを使用して、録音された音声のマッピングを行っている。',
-		keywords: [
-			'Android',
-			'soundscape',
-			'map',
-			'record',
-			'microphone',
-			'GPS'
-		]
+		keywords: ['Android', 'soundscape', 'map', 'record', 'microphone', 'GPS'],
 		// https://www.youtube.com/embed/PYXsetGI7G8?rel=0&amp;start=3217
 		// https://hacku.yahoo.co.jp/open2014/
 	},
@@ -118,30 +101,22 @@ const projectsArray = [
 			'Human Computer Interaction',
 			'smartwatch',
 			'image sensor',
-			'mouse'
-		]
+			'mouse',
+		],
 	},
 	{
 		name: 'SoumuSSML',
-		sub:
-			'視覚障害者のための新しい電子書籍形式に対応したクラウド編集システム',
+		sub: '視覚障害者のための新しい電子書籍形式に対応したクラウド編集システム',
 		img: 'project-SoumuSSML-16-9',
 		category: 'Web',
 		text:
 			'電子書籍を読む際などに用いられる、OS組み込みの読み上げ機能にはイントネーションの間違いが未だに多く残っている。そのため現在は、音声合成マークアップ言語SSMLを用いてイントネーションを出版社の人間が編集し、合成された音声を電子書籍に同封するというやり方が一般的である。そこで、電子書籍に音声ファイルではなくイントネーションを記したデータを同封する新しい電子書籍フォーマットの提案を行った。同時に、出版社の人間がイントネーションを編集し、音声をその都度確認しながらクラウド上で編集するシステムを構築した。実証実験により効果的なツールと認められ、W3Cによって電子書籍の形式EPUBの次期仕様に盛り込まれた。総務省とアルバイト先の想隆社との共同プロジェクト。',
 		implement:
 			'チームで制作。フロントエンドを担当した。サーバはPHPで実装。主な機能は以下の通り。電子書籍のアップロードと初期の発音記号の自動生成、編集した発音記号（イントネーションを表す）のバージョン管理とDiff表示、編集した音声をその場で再生、書籍内の文字検索、編集者の編集権限変更、ゲラ（校正用の印刷）の印刷機能とコメントのPDFアップロード、書籍内の画像表示。',
-		keywords: [
-			'E-book',
-			'EPUB',
-			'SSML',
-			'W3C',
-			'co-authoring',
-			'version control'
-		],
+		keywords: ['E-book', 'EPUB', 'SSML', 'W3C', 'co-authoring', 'version control'],
 		links: {
-			実証実験報告書: 'http://www.soumu.go.jp/main_content/000499711.pdf'
-		}
+			実証実験報告書: 'http://www.soumu.go.jp/main_content/000499711.pdf',
+		},
 	},
 	{
 		name: 'BuddaBeautify',
@@ -156,8 +131,8 @@ const projectsArray = [
 		keywords: ['media art', 'motion detection', 'image processing'],
 		links: {
 			'ε-フィルタを用いたリアルタイム顔画像美観化システム':
-				'https://www.ieice.org/iss/jpn/Publications/issposter_2015/data/pdf/ISS-P-78.pdf'
-		}
+				'https://www.ieice.org/iss/jpn/Publications/issposter_2015/data/pdf/ISS-P-78.pdf',
+		},
 	},
 	{
 		name: 'Make if',
@@ -171,9 +146,9 @@ const projectsArray = [
 		keywords: ['programming', 'card game', 'analog game'],
 		links: {
 			商品詳細ページ: 'http://fumblewaals.com/portfolio/make-if/',
-			fumblewaals: 'http://fumblewaals.com'
-		}
-	}
+			fumblewaals: 'http://fumblewaals.com',
+		},
+	},
 ]
 
 export default projectsArray

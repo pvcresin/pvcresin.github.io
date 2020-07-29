@@ -1,41 +1,52 @@
 <projectDetail>
-    <div class="container">
-        <section>
-            <div class="video-frame" if="{project.video !== undefined}"><iframe src="https://www.youtube.com/embed/{project.video}?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen"></iframe></div>
-            <div class="img-frame" if="{project.video === undefined}">
-                <webp src="{project.img}"></webp>
-            </div>
-            <h1>
-                <p>{project.name + ': '}</p><span>{project.sub}</span></h1>
-            <tags tags="{project.keywords}"></tags>
-            <div class="chapter">
-                <div class="chapter-title">
-                    <h2>Abstract</h2>
-                    <hr/>
-                </div>
-                <p>{project.text}</p>
-            </div>
-            <div class="chapter">
-                <div class="chapter-title">
-                    <h2>Implementation</h2>
-                    <hr/>
-                </div>
-                <p>{project.implement}</p>
-            </div>
-            <div class="chapter" if="{project.links !== undefined}">
-                <div class="chapter-title">
-                    <h2>Links</h2>
-                    <hr/>
-                </div>
-                <ol>
-                    <li each="{value, key in project.links}"><span>{key + ': '}</span><span><a href="{value}">{value}</a></span></li>
-                </ol>
-            </div>
-        </section>
-    </div>
-    <footer></footer>
-    <style type="scss">
+	<div class="container">
+		<section>
+			<div class="video-frame" if="{project.video !== undefined}">
+				<iframe
+					src="https://www.youtube.com/embed/{project.video}?rel=0"
+					frameborder="0"
+					allow="encrypted-media"
+					allowfullscreen="allowfullscreen"
+				></iframe>
+			</div>
+			<div class="img-frame" if="{project.video === undefined}">
+				<webp src="{project.img}"></webp>
+			</div>
+			<h1>
+				<p>{project.name + ': '}</p>
+				<span>{project.sub}</span>
+			</h1>
+			<tags tags="{project.keywords}"></tags>
+			<div class="chapter">
+				<div class="chapter-title">
+					<h2>Abstract</h2>
+					<hr />
+				</div>
+				<p>{project.text}</p>
+			</div>
+			<div class="chapter">
+				<div class="chapter-title">
+					<h2>Implementation</h2>
+					<hr />
+				</div>
+				<p>{project.implement}</p>
+			</div>
+			<div class="chapter" if="{project.links !== undefined}">
+				<div class="chapter-title">
+					<h2>Links</h2>
+					<hr />
+				</div>
+				<ol>
+					<li each="{value, key in project.links}">
+						<span>{key + ': '}</span><span><a href="{value}">{value}</a></span>
+					</li>
+				</ol>
+			</div>
+		</section>
+	</div>
+	<footer></footer>
 
+	<style type="scss">
 		:scope {
 			min-height: 100vh;
 			display: block;
@@ -116,8 +127,9 @@
 				font-size: 1.3rem;
 			}
 		}
-		</style>
-		<script>
+	</style>
+
+	<script>
 		import projectsArray from '../data'
 		import scroll from '../js/scroll'
 		import tags from '../components/tags'
@@ -131,15 +143,15 @@
 			video: '',
 			text: '',
 			implement: '',
-			keywords: []
+			keywords: [],
 		}
 
-		this.on('route', projectName => {
+		this.on('route', (projectName) => {
 			this.update({
-				project: projectsArray.filter(d => d.name === projectName.replace(/_/g, ' '))[0]
+				project: projectsArray.filter((d) => d.name === projectName.replace(/_/g, ' '))[0],
 			})
 
 			scroll.move()
 		})
-		</script>
+	</script>
 </projectDetail>

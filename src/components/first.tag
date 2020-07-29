@@ -1,14 +1,17 @@
 <first>
-    <nav></nav>
-    <div class="container">
-        <h1>Raika Toriyama</h1>
-        <p>Web / Android Developer</p>
-        <social></social>
-    </div>
-    <div class="container">
-        <div class="arrow"><i class="fas fa-chevron-down fa-3x"></i></div>
-    </div>
-    <style type="scss">
+	<nav></nav>
+	<div class="container">
+		<h1>Raika Toriyama</h1>
+		<p>Web / Android Developer</p>
+		<social></social>
+	</div>
+	<div class="container">
+		<div class="arrow">
+			<i class="fas fa-chevron-down fa-3x"></i>
+		</div>
+	</div>
+
+	<style type="scss">
 		:scope {
 			text-align: center;
 			background: #1a1819;
@@ -32,7 +35,7 @@
 			}
 			> .container {
 				> h1 {
-					font-size: calc(1.0rem + 250%);
+					font-size: calc(1rem + 250%);
 					margin: 0;
 				}
 				> p {
@@ -56,8 +59,9 @@
 				}
 			}
 		}
-		</style>
-		<script>
+	</style>
+
+	<script>
 		import social from './social'
-		</script>
+	</script>
 </first>

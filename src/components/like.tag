@@ -1,35 +1,46 @@
 <like>
-    <h2 class="section-title">Like</h2>
-    <div class="pure-g">
-        <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
-            <div class="like">
-                <h3>Do</h3>
-                <hr>
-                <ul>
-                    <li each="{t, i in do}">{l}<span class="icon">{i}</span><span class="text">{t}</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
-            <div class="like">
-                <h3>Watch</h3>
-                <hr>
-                <ul>
-                    <li each="{t, i in watch}"><span class="icon">{i}</span><span class="text">{t}</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
-            <div class="like">
-                <h3>Eat</h3>
-                <hr>
-                <ul>
-                    <li each="{t, i in eat}"><span class="icon">{i}</span><span class="text">{t}</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <style type="scss">
+	<h2 class="section-title">Like</h2>
+	<div class="pure-g">
+		<div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+			<div class="like">
+				<h3>Do</h3>
+				<hr />
+				<ul>
+					<li each="{t, i in do}">
+						{l}
+						<span class="icon">{i}</span>
+						<span class="text">{t}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+			<div class="like">
+				<h3>Watch</h3>
+				<hr />
+				<ul>
+					<li each="{t, i in watch}">
+						<span class="icon">{i}</span>
+						<span class="text">{t}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+			<div class="like">
+				<h3>Eat</h3>
+				<hr />
+				<ul>
+					<li each="{t, i in eat}">
+						<span class="icon">{i}</span>
+						<span class="text">{t}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<style type="scss">
 		:scope {
 			display: block;
 			> div {
@@ -67,8 +78,9 @@
 				}
 			}
 		}
-		</style>
-		<script>
+	</style>
+
+	<script>
 		this.do = {
 			'💻': 'プログラミング',
 			'👟': '散歩',
@@ -80,14 +92,14 @@
 			'🎬': '映画',
 			'😆': 'お笑いネタ',
 			'👖': '服',
-			'📺': 'メディアアート'
+			'📺': 'メディアアート',
 		}
 
 		this.eat = {
 			'🍣': '寿司',
 			'🍕': 'ピザ',
 			'🍜': 'ラーメン',
-			'🍰': 'ケーキ'
+			'🍰': 'ケーキ',
 		}
-		</script>
+	</script>
 </like>
