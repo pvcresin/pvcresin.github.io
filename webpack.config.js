@@ -16,7 +16,6 @@ module.exports = {
 		rules: [
 			{
 				test: /\.tag$/,
-				enforce: 'pre',
 				exclude: /node_modules/,
 				use: {
 					loader: 'riot-tag-loader',
