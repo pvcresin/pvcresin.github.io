@@ -1,14 +1,19 @@
-projects
-	.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1(each='{w, i in projects}')
-		.card
-			a(href='#projects/{w.name.replace(/ /g, `_`)}')
-				.wrapper
-					webp.thumbnail(src='{w.img}')
-				.content
-					h4 {w.name}
-					p {w.sub}
+<projects>
+    <div class="pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1" each="{w, i in projects}">
+        <div class="card">
+            <a href="#projects/{w.name.replace(/ /g, `_`)}">
+                <div class="wrapper">
+                    <webp class="thumbnail" src="{w.img}"></webp>
+                </div>
+                <div class="content">
+                    <h4>{w.name}</h4>
+                    <p>{w.sub}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <style type="scss">
 
-	style(type='scss').
 		:scope {
 			padding: 0.75rem;
 			display: flex;
@@ -58,10 +63,12 @@ projects
 				}
 			}
 		}
-
-	script.
+		</style>
+		<script>
 		import projectsArray from '../data'
 		import webp from "./webp"
+
+		console.log(projectsArray)
 
 		this.category = 'All'
 		this.projects = (this.opts.limit === undefined)
@@ -81,3 +88,5 @@ projects
 				})
 			}
 		})
+		</script>
+</projects>

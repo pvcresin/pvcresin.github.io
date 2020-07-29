@@ -1,16 +1,15 @@
-list.pure-g.pure-u-1-1
-	ul
-		li(each='{item in opts.items}')
-			h3
-				a(href='{item.link}' target='_blank') {item.title}
-				.right
-					hr
-					span
-						span.date(if='{item.date.length <= 7}') {item.date}
-						span.term(if='{item.date.length > 7}') {item.date}
-			p.sub(each='{t in item.texts}') {t}
-
-	style(type='scss').
+<list class="pure-g pure-u-1-1">
+    <ul>
+        <li each="{item in opts.items}">
+            <h3><a href="{item.link}" target="_blank">{item.title}</a>
+                <div class="right">
+                    <hr/><span><span class="date" if="{item.date.length &lt;= 7}">{item.date}</span><span class="term" if="{item.date.length &gt; 7}">{item.date}</span></span>
+                </div>
+            </h3>
+            <p class="sub" each="{t in item.texts}">{t}</p>
+        </li>
+    </ul>
+    <style type="scss">
 		:scope {
 			> ul {
 				padding: 0.75rem;
@@ -73,3 +72,5 @@ list.pure-g.pure-u-1-1
 				}
 			}
 		}
+		</style>
+</list>

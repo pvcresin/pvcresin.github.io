@@ -1,8 +1,7 @@
-education
-	h2.section-title Education
-	list(items='{schools}')
-
-	script.
+<education>
+    <h2 class="section-title">Education</h2>
+    <list items="{schools}"></list>
+    <script>
 		import list from './list'
 
 		this.schools = [{
@@ -31,3 +30,5 @@ education
 			],
 			link: 'http://www.meiji.ac.jp/ams/professor/FMS.html',
 		}]
+		</script>
+</education>

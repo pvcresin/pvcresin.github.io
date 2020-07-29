@@ -1,29 +1,32 @@
-skills
-	h2.section-title Skills
-	.pure-g
-		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
-			li(each='{ s in skills }')
-				.skill-info
-					span.name {s.name}
-					span.sub {s.sub}
-				.bar
-					.level(style='width:{s.level};')
-		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
-			li(each='{ s in skills1 }')
-				.skill-info
-					span.name {s.name}
-					span.sub {s.sub}
-				.bar
-					.level(style='width:{s.level};')
-		ul.skill-box.pure-u-sm-1-2.pure-u-md-1-3.pure-u-1-1
-			li(each='{ s in skills2 }')
-				.skill-info
-					span.name {s.name}
-					span.sub {s.sub}
-				.bar
-					.level(style='width:{s.level};')
-
-	style(type='scss').
+<skills>
+    <h2 class="section-title">Skills</h2>
+    <div class="pure-g">
+        <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
+            <li each="{ s in skills }">
+                <div class="skill-info"><span class="name">{s.name}</span><span class="sub">{s.sub}</span></div>
+                <div class="bar">
+                    <div class="level" style="width:{s.level};"></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
+            <li each="{ s in skills1 }">
+                <div class="skill-info"><span class="name">{s.name}</span><span class="sub">{s.sub}</span></div>
+                <div class="bar">
+                    <div class="level" style="width:{s.level};"></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
+            <li each="{ s in skills2 }">
+                <div class="skill-info"><span class="name">{s.name}</span><span class="sub">{s.sub}</span></div>
+                <div class="bar">
+                    <div class="level" style="width:{s.level};"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <style type="scss">
 		:scope {
 			> div {
 				padding: 0.75rem;
@@ -58,8 +61,8 @@ skills
 				}
 			}
 		}
-
-	script.
+		</style>
+		<script>
 		this.skills = [{
 			name: 'Android',
 			sub: 'Rx Okhttp Retrofit',
@@ -113,3 +116,5 @@ skills
 			sub: '',
 			level: '30%'
 		}]
+		</script>
+</skills>

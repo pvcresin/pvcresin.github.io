@@ -21,7 +21,7 @@ module.exports = {
 					loader: 'riot-tag-loader',
 					query: {
 						hot: false,
-						template: 'pug',
+						// template: 'pug',
 					},
 				},
 			},

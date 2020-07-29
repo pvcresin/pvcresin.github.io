@@ -1,39 +1,41 @@
-projectDetail
-	.container
-		section
-			.video-frame(if='{project.video !== undefined}')
-				iframe(src="https://www.youtube.com/embed/{project.video}?rel=0"
-						frameborder="0"
-						allow="encrypted-media"
-						allowfullscreen)
-			.img-frame(if='{project.video === undefined}')
-				webp(src='{project.img}')
-			h1
-				p {project.name + ': '}
-				span {project.sub}
-			tags(tags='{project.keywords}')
-			.chapter
-				.chapter-title
-					h2 Abstract
-					hr
-				p {project.text}
-			.chapter
-				.chapter-title
-					h2 Implementation
-					hr
-				p {project.implement}
-			.chapter(if='{project.links !== undefined}')
-				.chapter-title
-					h2 Links
-					hr
-				ol
-					li(each='{value, key in project.links}')
-						span {key + ': '}
-						span
-							a(href='{value}') {value}
-	footer
+<projectDetail>
+    <div class="container">
+        <section>
+            <div class="video-frame" if="{project.video !== undefined}"><iframe src="https://www.youtube.com/embed/{project.video}?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen"></iframe></div>
+            <div class="img-frame" if="{project.video === undefined}">
+                <webp src="{project.img}"></webp>
+            </div>
+            <h1>
+                <p>{project.name + ': '}</p><span>{project.sub}</span></h1>
+            <tags tags="{project.keywords}"></tags>
+            <div class="chapter">
+                <div class="chapter-title">
+                    <h2>Abstract</h2>
+                    <hr/>
+                </div>
+                <p>{project.text}</p>
+            </div>
+            <div class="chapter">
+                <div class="chapter-title">
+                    <h2>Implementation</h2>
+                    <hr/>
+                </div>
+                <p>{project.implement}</p>
+            </div>
+            <div class="chapter" if="{project.links !== undefined}">
+                <div class="chapter-title">
+                    <h2>Links</h2>
+                    <hr/>
+                </div>
+                <ol>
+                    <li each="{value, key in project.links}"><span>{key + ': '}</span><span><a href="{value}">{value}</a></span></li>
+                </ol>
+            </div>
+        </section>
+    </div>
+    <footer></footer>
+    <style type="scss">
 
-	style(type='scss').
 		:scope {
 			min-height: 100vh;
 			display: block;
@@ -114,12 +116,13 @@ projectDetail
 				font-size: 1.3rem;
 			}
 		}
-
-	script.
-		import tags from '../components/tags'
+		</style>
+		<script>
 		import projectsArray from '../data'
-		import webp from '../components/webp'
 		import scroll from '../js/scroll'
+		import tags from '../components/tags'
+		import webp from '../components/webp'
+		import footer from '../components/footer'
 
 		this.project = {
 			name: '',
@@ -138,3 +141,5 @@ projectDetail
 
 			scroll.move()
 		})
+		</script>
+</projectDetail>

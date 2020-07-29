@@ -1,7 +1,6 @@
-awards
-	list(items='{awards}')
-
-	script.
+<awards>
+    <list items="{awards}"></list>
+    <script>
 		import list from './list'
 
 		this.awards = [{
@@ -32,3 +31,5 @@ awards
 			],
 			link: 'http://www.sighci.jp/contents/page/news',
 		}]
+		</script>
+</awards>

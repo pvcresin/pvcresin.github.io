@@ -1,14 +1,14 @@
-first
-	nav
-	.container
-		h1 Raika Toriyama
-		p Web / Android Developer
-		social
-	.container
-		.arrow
-			i.fas.fa-chevron-down.fa-3x
-
-	style(type='scss').
+<first>
+    <nav></nav>
+    <div class="container">
+        <h1>Raika Toriyama</h1>
+        <p>Web / Android Developer</p>
+        <social></social>
+    </div>
+    <div class="container">
+        <div class="arrow"><i class="fas fa-chevron-down fa-3x"></i></div>
+    </div>
+    <style type="scss">
 		:scope {
 			text-align: center;
 			background: #1a1819;
@@ -56,6 +56,8 @@ first
 				}
 			}
 		}
-
-	script.
+		</style>
+		<script>
 		import social from './social'
+		</script>
+</first>

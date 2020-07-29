@@ -1,7 +1,6 @@
-publications
-	list(items='{publications}')
-
-	script.
+<publications>
+    <list items="{publications}"></list>
+    <script>
 		import list from './list'
 
 		this.publications = [{
@@ -33,3 +32,5 @@ publications
 			],
 			link: 'https://research.miyashita.com/papers/D218',
 		}]
+		</script>
+</publications>

@@ -1,7 +1,6 @@
-clubs
-	list(items='{clubs}')
-
-	script.
+<clubs>
+    <list items="{clubs}"></list>
+    <script>
 		import list from './list'
 
 		this.clubs = [{
@@ -31,3 +30,5 @@ clubs
 			],
 			link: 'http://fumblewaals.com/',
 		}]
+		</script>
+</clubs>
