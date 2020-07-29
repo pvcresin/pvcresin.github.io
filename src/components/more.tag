@@ -6,7 +6,7 @@ more
 		:scope {
 			padding: 0 1.5rem 1.5rem 1.5rem;
 			display: flex;
-		    justify-content: center;
+			justify-content: center;
 			> a > span {
 				padding: 0.5rem;
 				background: grey;
