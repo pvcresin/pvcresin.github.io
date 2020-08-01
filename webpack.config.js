@@ -1,14 +1,13 @@
-const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
-  context: path.resolve(__dirname, './src/js'),
+  context: `${__dirname}/src/js`,
   entry: './index.js',
   output: {
-    path: path.join(__dirname, './'),
+    path: __dirname,
     filename: 'index.js',
   },
   devtool: isDev ? 'inline-source-map' : undefined,
