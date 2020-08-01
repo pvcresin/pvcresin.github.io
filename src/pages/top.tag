@@ -1,34 +1,35 @@
 <top>
-  <first></first>
-  <section>
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <about></about>
-      <more text="detail" title="View detailed profile" link="#profile"></more>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <projects limit="3"></projects>
-      <more title="View all projects" link="#projects"></more>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2 class="section-title">Awards</h2>
-      <awards></awards>
-      <h2 class="section-title">Publications</h2>
-      <publications></publications>
-      <h2 class="section-title">Clubs</h2>
-      <clubs></clubs>
-    </div>
-  </section>
-  <footer></footer>
+  <div class="pages-top">
+    <First></First>
+    <section>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <About></About>
+        <More text="detail" title="View detailed profile" link="#profile"></More>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <Projects limit="3"></Projects>
+        <More title="View all projects" link="#projects"></More>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Awards</h2>
+        <Awards></Awards>
+        <h2 class="section-title">Publications</h2>
+        <Publications></Publications>
+        <h2 class="section-title">Clubs</h2>
+        <Clubs></Clubs>
+      </div>
+    </section>
+    <Footer></Footer>
+  </div>
 
   <style type="scss">
-    :scope {
-      display: block;
+    .pages-top {
       min-height: 100vh;
       > section {
         &:nth-child(2n) {
@@ -44,14 +45,14 @@
   </style>
 
   <script>
-    import first from '../components/first'
-    import about from '../components/about'
-    import projects from '../components/projects'
-    import awards from '../components/awards'
-    import publications from '../components/publications'
-    import clubs from '../components/clubs'
-    import more from '../components/more'
-    import footer from '../components/footer'
+    import First from '../components/first'
+    import About from '../components/about'
+    import Projects from '../components/projects'
+    import Awards from '../components/awards'
+    import Publications from '../components/publications'
+    import Clubs from '../components/clubs'
+    import More from '../components/more'
+    import Footer from '../components/footer'
 
     this.on('route', () => {
       const path = window.location.hash

@@ -1,40 +1,42 @@
 <skills>
-  <h2 class="section-title">Skills</h2>
-  <div class="pure-g">
-    <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
-      <li each="{ s in skills }">
-        <div class="skill-info">
-          <span class="name">{s.name}</span><span class="sub">{s.sub}</span>
-        </div>
-        <div class="bar">
-          <div class="level" style="width:{s.level};"></div>
-        </div>
-      </li>
-    </ul>
-    <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
-      <li each="{ s in skills1 }">
-        <div class="skill-info">
-          <span class="name">{s.name}</span><span class="sub">{s.sub}</span>
-        </div>
-        <div class="bar">
-          <div class="level" style="width:{s.level};"></div>
-        </div>
-      </li>
-    </ul>
-    <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
-      <li each="{ s in skills2 }">
-        <div class="skill-info">
-          <span class="name">{s.name}</span><span class="sub">{s.sub}</span>
-        </div>
-        <div class="bar">
-          <div class="level" style="width:{s.level};"></div>
-        </div>
-      </li>
-    </ul>
+  <div class="components-skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="pure-g">
+      <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
+        <li each="{ s in skills }">
+          <div class="skill-info">
+            <span class="name">{s.name}</span><span class="sub">{s.sub}</span>
+          </div>
+          <div class="bar">
+            <div class="level" style="width:{s.level};"></div>
+          </div>
+        </li>
+      </ul>
+      <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
+        <li each="{ s in skills1 }">
+          <div class="skill-info">
+            <span class="name">{s.name}</span><span class="sub">{s.sub}</span>
+          </div>
+          <div class="bar">
+            <div class="level" style="width:{s.level};"></div>
+          </div>
+        </li>
+      </ul>
+      <ul class="skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1">
+        <li each="{ s in skills2 }">
+          <div class="skill-info">
+            <span class="name">{s.name}</span><span class="sub">{s.sub}</span>
+          </div>
+          <div class="bar">
+            <div class="level" style="width:{s.level};"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <style type="scss">
-    :scope {
+    .components-skills {
       > div {
         padding: 0.75rem;
         .skill-box {

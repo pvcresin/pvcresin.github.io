@@ -1,18 +1,19 @@
 <profile>
-  <section>
-    <div class="container">
-      <h2 class="section-title">Profile</h2>
-      <about></about>
-      <like></like>
-      <skills></skills>
-      <education></education>
-    </div>
-  </section>
-  <footer></footer>
+  <div class="pages-profile">
+    <section>
+      <div class="container">
+        <h2 class="section-title">Profile</h2>
+        <About></About>
+        <Like></Like>
+        <Skills></Skills>
+        <Education></Education>
+      </div>
+    </section>
+    <Footer></Footer>
+  </div>
 
   <style type="scss">
-    :scope {
-      display: block;
+    .pages-profile {
       background: #2b2b2b;
       color: #efefef;
     }
@@ -20,11 +21,12 @@
 
   <script>
     import scroll from '../js/scroll'
-    import about from '../components/about'
-    import education from '../components/education'
-    import skills from '../components/skills'
-    import like from '../components/like'
-    import footer from '../components/footer'
+
+    import About from '../components/about'
+    import Education from '../components/education'
+    import Skills from '../components/skills'
+    import Like from '../components/like'
+    import Footer from '../components/footer'
 
     this.on('route', () => {
       scroll.move()

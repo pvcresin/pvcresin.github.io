@@ -1,12 +1,13 @@
 <footer>
-  <div class="container">
-    <social></social>
-    <p>© {year} pvcresin</p>
+  <div class="components-footer">
+    <div class="container">
+      <Social></Social>
+      <p>© {year} pvcresin</p>
+    </div>
   </div>
 
   <style type="scss">
-    :scope {
-      display: block;
+    .components-footer {
       background: #0f0f0f;
       color: white;
       > .container {
@@ -22,7 +23,8 @@
 
   <script>
     import dayjs from 'dayjs'
-    import social from './social'
+
+    import Social from './social'
 
     this.year = dayjs().format('YYYY')
   </script>

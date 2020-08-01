@@ -1,48 +1,49 @@
 <like>
-  <h2 class="section-title">Like</h2>
-  <div class="pure-g">
-    <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <div class="like">
-        <h3>Do</h3>
-        <hr />
-        <ul>
-          <li each="{t, i in do}">
-            {l}
-            <span class="icon">{i}</span>
-            <span class="text">{t}</span>
-          </li>
-        </ul>
+  <div class="components-like">
+    <h2 class="section-title">Like</h2>
+    <div class="pure-g">
+      <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+        <div class="like">
+          <h3>Do</h3>
+          <hr />
+          <ul>
+            <li each="{t, i in do}">
+              {l}
+              <span class="icon">{i}</span>
+              <span class="text">{t}</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <div class="like">
-        <h3>Watch</h3>
-        <hr />
-        <ul>
-          <li each="{t, i in watch}">
-            <span class="icon">{i}</span>
-            <span class="text">{t}</span>
-          </li>
-        </ul>
+      <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+        <div class="like">
+          <h3>Watch</h3>
+          <hr />
+          <ul>
+            <li each="{t, i in watch}">
+              <span class="icon">{i}</span>
+              <span class="text">{t}</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
-      <div class="like">
-        <h3>Eat</h3>
-        <hr />
-        <ul>
-          <li each="{t, i in eat}">
-            <span class="icon">{i}</span>
-            <span class="text">{t}</span>
-          </li>
-        </ul>
+      <div class="like-box pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+        <div class="like">
+          <h3>Eat</h3>
+          <hr />
+          <ul>
+            <li each="{t, i in eat}">
+              <span class="icon">{i}</span>
+              <span class="text">{t}</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
   <style type="scss">
-    :scope {
-      display: block;
+    .components-like {
       > div {
         padding: 0.75rem;
         .like-box {

@@ -1,6 +1,6 @@
 export default class Scroll {
   static init() {
-    window.scrolls = []
+    window.scrolls = {}
 
     window.addEventListener('scroll', () => {
       const posY = window.pageYOffset

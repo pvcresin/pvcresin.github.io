@@ -1,22 +1,24 @@
-<list class="pure-g pure-u-1-1">
-  <ul>
-    <li each="{item in opts.items}">
-      <h3>
-        <a href="{item.link}" target="_blank">{item.title}</a>
-        <div class="right">
-          <hr />
-          <span>
-            <span class="date" if="{item.date.length &lt;= 7}">{item.date}</span>
-            <span class="term" if="{item.date.length &gt; 7}">{item.date}</span>
-          </span>
-        </div>
-      </h3>
-      <p class="sub" each="{t in item.texts}">{t}</p>
-    </li>
-  </ul>
+<list>
+  <div class="pure-g pure-u-1-1 components-list">
+    <ul>
+      <li each="{item in opts.items}">
+        <h3>
+          <a href="{item.link}" target="_blank">{item.title}</a>
+          <div class="right">
+            <hr />
+            <span>
+              <span class="date" if="{item.date.length <= 7}">{item.date}</span>
+              <span class="term" if="{item.date.length > 7}">{item.date}</span>
+            </span>
+          </div>
+        </h3>
+        <p class="sub" each="{t in item.texts}">{t}</p>
+      </li>
+    </ul>
+  </div>
 
   <style type="scss">
-    :scope {
+    .components-list {
       > ul {
         padding: 0.75rem;
         li {
