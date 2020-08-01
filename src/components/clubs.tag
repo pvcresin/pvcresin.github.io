@@ -1,8 +1,8 @@
 <clubs>
-  <list items="{clubs}"></list>
+  <List items="{clubs}"></List>
 
   <script>
-    import list from './list'
+    import List from './list'
 
     this.clubs = [
       {

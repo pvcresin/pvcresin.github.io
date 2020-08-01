@@ -1,13 +1,14 @@
 <webp>
-  <picture>
-    <source srcset="resources/{opts.src||opts.riotSrc}.webp" type="image/webp" />
-    <source srcset="resources/{opts.src||opts.riotSrc}.png" type="image/png" />
-    <img src="resources/{opts.src||opts.riotSrc}.webp" />
-  </picture>
+  <div class="components-webp">
+    <picture>
+      <source srcset="resources/{opts.src||opts.riotSrc}.webp" type="image/webp" />
+      <source srcset="resources/{opts.src||opts.riotSrc}.png" type="image/png" />
+      <img src="resources/{opts.src||opts.riotSrc}.webp" />
+    </picture>
+  </div>
 
   <style type="scss">
-    :scope {
-      display: block;
+    .components-webp {
       > picture {
         width: 100%;
         height: 100%;

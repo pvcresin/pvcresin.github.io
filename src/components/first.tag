@@ -1,18 +1,20 @@
 <first>
-  <nav></nav>
-  <div class="container">
-    <h1>Raika Toriyama</h1>
-    <p>Web / Android Developer</p>
-    <social></social>
-  </div>
-  <div class="container">
-    <div class="arrow">
-      <i class="fas fa-chevron-down fa-3x"></i>
+  <div class="components-first">
+    <nav></nav>
+    <div class="container">
+      <h1>Raika Toriyama</h1>
+      <p>Web / Android Developer</p>
+      <Social></Social>
+    </div>
+    <div class="container">
+      <div class="arrow">
+        <i class="fas fa-chevron-down fa-3x"></i>
+      </div>
     </div>
   </div>
 
   <style type="scss">
-    :scope {
+    .components-first {
       text-align: center;
       background: #1a1819;
       color: white;
@@ -62,6 +64,6 @@
   </style>
 
   <script>
-    import social from './social'
+    import Social from './social'
   </script>
 </first>

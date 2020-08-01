@@ -1,8 +1,8 @@
 <awards>
-  <list items="{awards}"></list>
+  <List items="{awards}"></List>
 
   <script>
-    import list from './list'
+    import List from './list'
 
     this.awards = [
       {

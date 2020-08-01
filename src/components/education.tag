@@ -1,9 +1,9 @@
 <education>
   <h2 class="section-title">Education</h2>
-  <list items="{schools}"></list>
+  <List items="{schools}"></List>
 
   <script>
-    import list from './list'
+    import List from './list'
 
     this.schools = [
       {

@@ -1,13 +1,15 @@
 <other>
-  <section>
-    <div class="container">
-      <h1>Page Not Found</h1>
-    </div>
-  </section>
-  <footer></footer>
+  <div class="pages-other">
+    <section>
+      <div class="container">
+        <h1>Page Not Found</h1>
+      </div>
+    </section>
+    <Footer></Footer>
+  </div>
 
   <style type="scss">
-    :scope {
+    .pages-other {
       text-align: center;
       min-height: 100vh;
       display: flex;
@@ -23,6 +25,6 @@
   </style>
 
   <script>
-    import footer from '../components/footer'
+    import Footer from '../components/footer'
   </script>
 </other>

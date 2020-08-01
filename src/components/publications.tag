@@ -1,8 +1,8 @@
 <publications>
-  <list items="{publications}"></list>
+  <List items="{publications}"></List>
 
   <script>
-    import list from './list'
+    import List from './list'
 
     this.publications = [
       {

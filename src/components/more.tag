@@ -1,10 +1,12 @@
 <more>
-  <a href="{opts.link}" title="{opts.title}">
-    <span class="more-button">{text}</span>
-  </a>
+  <div class="components-more">
+    <a href="{opts.link}" title="{opts.title}">
+      <span class="more-button">{text}</span>
+    </a>
+  </div>
 
   <style type="scss">
-    :scope {
+    .components-more {
       padding: 0 1.5rem 1.5rem 1.5rem;
       display: flex;
       justify-content: center;

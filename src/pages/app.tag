@@ -1,28 +1,29 @@
 <app>
   <router>
     <route path="">
-      <top></top>
+      <Top></Top>
     </route>
     <route path="profile..">
-      <profile></profile>
+      <Profile></Profile>
     </route>
     <route path="projects/*">
-      <projectDetail></projectDetail>
+      <ProjectDetail></ProjectDetail>
     </route>
     <route path="projects..">
-      <projectAll></projectAll>
+      <ProjectAll></ProjectAll>
     </route>
     <route path="..">
-      <other></other>
+      <Other></Other>
     </route>
   </router>
 
   <script>
     import route from 'riot-route/lib/tag'
-    import top from './top'
-    import profile from './profile'
-    import projectAll from './projectAll'
-    import projectDetail from './projectDetail'
-    import other from './other'
+
+    import Top from './top'
+    import Profile from './profile'
+    import ProjectAll from './projectAll'
+    import ProjectDetail from './projectDetail'
+    import Other from './other'
   </script>
 </app>

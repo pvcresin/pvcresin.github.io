@@ -1,20 +1,22 @@
 <projects>
-  <div class="pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1" each="{w, i in projects}">
-    <div class="card">
-      <a href="#projects/{w.name.replace(/ /g, `_`)}">
-        <div class="wrapper">
-          <webp class="thumbnail" src="{w.img}"></webp>
-        </div>
-        <div class="content">
-          <h4>{w.name}</h4>
-          <p>{w.sub}</p>
-        </div>
-      </a>
+  <div class="components-projects">
+    <div class="pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1" each="{w, i in projects}">
+      <div class="card">
+        <a href="#projects/{w.name.replace(/ /g, `_`)}">
+          <div class="wrapper">
+            <Webp class="thumbnail" src="{w.img}"></Webp>
+          </div>
+          <div class="content">
+            <h4>{w.name}</h4>
+            <p>{w.sub}</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
   <style type="scss">
-    :scope {
+    .components-projects {
       padding: 0.75rem;
       display: flex;
       flex-wrap: wrap;
@@ -67,7 +69,7 @@
 
   <script>
     import projectsArray from '../data'
-    import webp from './webp'
+    import Webp from './webp'
 
     this.category = 'All'
     this.projects =

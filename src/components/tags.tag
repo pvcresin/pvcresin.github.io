@@ -1,8 +1,10 @@
 <tags>
-  <span each="{t in opts.tags}">{t}</span>
+  <div class="components-tags">
+    <span each="{t in opts.tags}">{t}</span>
+  </div>
 
   <style type="scss">
-    :scope {
+    .components-tags {
       display: flex;
       flex-wrap: wrap;
       margin: 1rem 0;

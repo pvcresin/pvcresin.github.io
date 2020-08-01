@@ -1,20 +1,22 @@
 <projectAll>
-  <section>
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <ul>
-        <a each="{p in categories}" onclick="{click.bind(this, p)}">
-          <li if="{selectedCategory !== p}">{p}</li>
-          <li class="selected" if="{selectedCategory === p}">{p}</li>
-        </a>
-      </ul>
-      <projects category="{selectedCategory}"></projects>
-    </div>
-  </section>
-  <footer></footer>
+  <div class="pages-project_all">
+    <section>
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <ul>
+          <a each="{p in categories}" onclick="{click.bind(this, p)}">
+            <li if="{selectedCategory !== p}">{p}</li>
+            <li class="selected" if="{selectedCategory === p}">{p}</li>
+          </a>
+        </ul>
+        <Projects category="{selectedCategory}"></Projects>
+      </div>
+    </section>
+    <Footer></Footer>
+  </div>
 
   <style type="scss">
-    :scope {
+    .pages-project_all {
       > section {
         background: #eeeeee;
         color: #222222;
@@ -49,9 +51,11 @@
 
   <script>
     import route from 'riot-route/lib/tag'
+
     import scroll from '../js/scroll'
-    import projects from '../components/projects'
-    import footer from '../components/footer'
+
+    import Projects from '../components/projects'
+    import Footer from '../components/footer'
 
     this.categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
     this.selectedCategory
