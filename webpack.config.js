@@ -21,12 +21,13 @@ module.exports = {
           loader: 'riot-tag-loader',
           query: {
             hot: false,
-            // template: 'pug',
           },
         },
       },
     ],
   },
-  resolve: { extensions: ['.js', '.tag'] },
+  resolve: {
+    extensions: ['.js', '.tag'],
+  },
   plugins: isDev ? [] : [new BundleAnalyzerPlugin()],
 }
