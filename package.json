@@ -9,9 +9,8 @@
     "start:build": "cross-env NODE_ENV=development webpack -w",
     "start:server": "live-server . --watch=index.html,style.css,index.js",
     "next:dev": "next",
-    "next:build": "next build",
     "next:start": "next start",
-    "next:export": "next export"
+    "next:build": "next build && next export"
   },
   "dependencies": {
     "dayjs": "^1.8.23",
