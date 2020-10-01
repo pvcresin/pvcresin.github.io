@@ -10,7 +10,7 @@
     "start:server": "live-server . --watch=index.html,style.css,index.js",
     "next:dev": "next",
     "next:start": "next start",
-    "next:build": "next build && next export"
+    "next:build": "next build && next export -o docs"
   },
   "dependencies": {
     "dayjs": "^1.8.23",
