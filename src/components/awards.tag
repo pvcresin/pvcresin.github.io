@@ -1,6 +1,4 @@
 <awards>
-  <List items="{awards}"></List>
-
   <script>
     import List from './list'
 
@@ -33,4 +31,6 @@
       },
     ]
   </script>
+
+  <List items="{awards}"></List>
 </awards>

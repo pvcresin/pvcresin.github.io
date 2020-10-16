@@ -1,4 +1,31 @@
 <projectDetail>
+  <script>
+    import scroll from '../js/scroll'
+    import projectsArray from '../data'
+
+    import Tags from '../components/tags'
+    import Webp from '../components/webp'
+    import Footer from '../components/footer'
+
+    this.project = {
+      name: '',
+      sub: '',
+      img: '',
+      video: '',
+      text: '',
+      implement: '',
+      keywords: [],
+    }
+
+    this.on('route', (projectName) => {
+      this.update({
+        project: projectsArray.filter((d) => d.name === projectName.replace(/_/g, ' '))[0],
+      })
+
+      scroll.move()
+    })
+  </script>
+
   <div class="pages-project_detail">
     <div class="container">
       <section>
@@ -130,31 +157,4 @@
       }
     }
   </style>
-
-  <script>
-    import scroll from '../js/scroll'
-    import projectsArray from '../data'
-
-    import Tags from '../components/tags'
-    import Webp from '../components/webp'
-    import Footer from '../components/footer'
-
-    this.project = {
-      name: '',
-      sub: '',
-      img: '',
-      video: '',
-      text: '',
-      implement: '',
-      keywords: [],
-    }
-
-    this.on('route', (projectName) => {
-      this.update({
-        project: projectsArray.filter((d) => d.name === projectName.replace(/_/g, ' '))[0],
-      })
-
-      scroll.move()
-    })
-  </script>
 </projectDetail>

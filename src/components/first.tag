@@ -1,4 +1,8 @@
 <first>
+  <script>
+    import Social from './social'
+  </script>
+
   <div class="components-first">
     <nav></nav>
     <div class="container">
@@ -62,8 +66,4 @@
       }
     }
   </style>
-
-  <script>
-    import Social from './social'
-  </script>
 </first>

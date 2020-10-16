@@ -1,6 +1,4 @@
 <publications>
-  <List items="{publications}"></List>
-
   <script>
     import List from './list'
 
@@ -39,4 +37,6 @@
       },
     ]
   </script>
+
+  <List items="{publications}"></List>
 </publications>

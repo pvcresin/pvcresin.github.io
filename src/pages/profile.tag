@@ -1,4 +1,18 @@
 <profile>
+  <script>
+    import scroll from '../js/scroll'
+
+    import About from '../components/about'
+    import Education from '../components/education'
+    import Skills from '../components/skills'
+    import Like from '../components/like'
+    import Footer from '../components/footer'
+
+    this.on('route', () => {
+      scroll.move()
+    })
+  </script>
+
   <div class="pages-profile">
     <section>
       <div class="container">
@@ -18,18 +32,4 @@
       color: #efefef;
     }
   </style>
-
-  <script>
-    import scroll from '../js/scroll'
-
-    import About from '../components/about'
-    import Education from '../components/education'
-    import Skills from '../components/skills'
-    import Like from '../components/like'
-    import Footer from '../components/footer'
-
-    this.on('route', () => {
-      scroll.move()
-    })
-  </script>
 </profile>

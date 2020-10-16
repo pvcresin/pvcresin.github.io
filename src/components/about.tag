@@ -1,4 +1,11 @@
 <about>
+  <script>
+    import dayjs from 'dayjs'
+
+    this.birthday = '1994-07-30'
+    this.age = dayjs().diff(this.birthday, 'years')
+  </script>
+
   <div class="pure-g components-about">
     <div class="about-img pure-u-sm-1-4 pure-u-1-2">
       <div class="face-wrapper pure-u-1-2">
@@ -108,11 +115,4 @@
       }
     }
   </style>
-
-  <script>
-    import dayjs from 'dayjs'
-
-    this.birthday = '1994-07-30'
-    this.age = dayjs().diff(this.birthday, 'years')
-  </script>
 </about>

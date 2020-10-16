@@ -1,4 +1,75 @@
 <skills>
+  <script>
+    this.skills = [
+      {
+        name: 'Android',
+        sub: 'Rx Okhttp Retrofit',
+        level: '70%',
+      },
+      {
+        name: 'Kotlin',
+        sub: 'Anko Ktor',
+        level: '80%',
+      },
+      {
+        name: 'Java',
+        sub: '',
+        level: '85%',
+      },
+      {
+        name: 'Processing',
+        sub: '',
+        level: '90%',
+      },
+    ]
+
+    this.skills1 = [
+      {
+        name: 'HTML',
+        sub: 'Pug Markdown',
+        level: '90%',
+      },
+      {
+        name: 'CSS',
+        sub: 'Sass PostCSS CSS-Modules',
+        level: '85%',
+      },
+      {
+        name: 'JavaScript',
+        sub: 'React Vue Node',
+        level: '90%',
+      },
+      {
+        name: 'PHP',
+        sub: '',
+        level: '40%',
+      },
+    ]
+
+    this.skills2 = [
+      {
+        name: 'Git',
+        sub: '',
+        level: '60%',
+      },
+      {
+        name: 'Illustrator',
+        sub: '',
+        level: '80%',
+      },
+      {
+        name: 'Cacoo',
+        sub: '',
+        level: '40%',
+      },
+      {
+        name: 'Prott',
+        sub: '',
+        level: '30%',
+      },
+    ]
+  </script>
+
   <div class="components-skills">
     <h2 class="section-title">Skills</h2>
     <div class="pure-g">
@@ -71,75 +142,4 @@
       }
     }
   </style>
-
-  <script>
-    this.skills = [
-      {
-        name: 'Android',
-        sub: 'Rx Okhttp Retrofit',
-        level: '70%',
-      },
-      {
-        name: 'Kotlin',
-        sub: 'Anko Ktor',
-        level: '80%',
-      },
-      {
-        name: 'Java',
-        sub: '',
-        level: '85%',
-      },
-      {
-        name: 'Processing',
-        sub: '',
-        level: '90%',
-      },
-    ]
-
-    this.skills1 = [
-      {
-        name: 'HTML',
-        sub: 'Pug Markdown',
-        level: '90%',
-      },
-      {
-        name: 'CSS',
-        sub: 'Sass PostCSS CSS-Modules',
-        level: '85%',
-      },
-      {
-        name: 'JavaScript',
-        sub: 'React Vue Node',
-        level: '90%',
-      },
-      {
-        name: 'PHP',
-        sub: '',
-        level: '40%',
-      },
-    ]
-
-    this.skills2 = [
-      {
-        name: 'Git',
-        sub: '',
-        level: '60%',
-      },
-      {
-        name: 'Illustrator',
-        sub: '',
-        level: '80%',
-      },
-      {
-        name: 'Cacoo',
-        sub: '',
-        level: '40%',
-      },
-      {
-        name: 'Prott',
-        sub: '',
-        level: '30%',
-      },
-    ]
-  </script>
 </skills>

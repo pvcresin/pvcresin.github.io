@@ -1,4 +1,12 @@
 <footer>
+  <script>
+    import dayjs from 'dayjs'
+
+    import Social from './social'
+
+    this.year = dayjs().format('YYYY')
+  </script>
+
   <div class="components-footer">
     <div class="container">
       <Social></Social>
@@ -20,12 +28,4 @@
       }
     }
   </style>
-
-  <script>
-    import dayjs from 'dayjs'
-
-    import Social from './social'
-
-    this.year = dayjs().format('YYYY')
-  </script>
 </footer>

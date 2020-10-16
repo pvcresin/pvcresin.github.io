@@ -1,4 +1,8 @@
 <more>
+  <script>
+    this.text = this.opts.text !== undefined ? this.opts.text : 'more'
+  </script>
+
   <div class="components-more">
     <a href="{opts.link}" title="{opts.title}">
       <span class="more-button">{text}</span>
@@ -24,7 +28,4 @@
       }
     }
   </style>
-  <script>
-    this.text = this.opts.text !== undefined ? this.opts.text : 'more'
-  </script>
 </more>

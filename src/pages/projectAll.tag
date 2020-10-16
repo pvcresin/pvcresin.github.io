@@ -1,4 +1,30 @@
 <projectAll>
+  <script>
+    import route from 'riot-route/lib/tag'
+
+    import scroll from '../js/scroll'
+
+    import Projects from '../components/projects'
+    import Footer from '../components/footer'
+
+    this.categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
+    this.selectedCategory
+
+    this.on('route', () => {
+    	if (route.query().category !== undefined) {
+    		this.update({ selectedCategory: route.query().category })
+    	} else {
+    		this.update({ selectedCategory: this.categories[0] })
+    	}
+
+    	scroll.move()
+    })
+
+    click(p) {
+    	this.update({ selectedCategory: p })
+    }
+  </script>
+
   <div class="pages-project_all">
     <section>
       <div class="container">
@@ -48,30 +74,4 @@
       }
     }
   </style>
-
-  <script>
-    import route from 'riot-route/lib/tag'
-
-    import scroll from '../js/scroll'
-
-    import Projects from '../components/projects'
-    import Footer from '../components/footer'
-
-    this.categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
-    this.selectedCategory
-
-    this.on('route', () => {
-    	if (route.query().category !== undefined) {
-    		this.update({ selectedCategory: route.query().category })
-    	} else {
-    		this.update({ selectedCategory: this.categories[0] })
-    	}
-
-    	scroll.move()
-    })
-
-    click(p) {
-    	this.update({ selectedCategory: p })
-    }
-  </script>
 </projectAll>

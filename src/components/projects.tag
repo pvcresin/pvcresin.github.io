@@ -1,4 +1,27 @@
 <projects>
+  <script>
+    import projectsArray from '../data'
+    import Webp from './webp'
+
+    this.category = 'All'
+    this.projects =
+      this.opts.limit === undefined ? projectsArray : projectsArray.slice(0, this.opts.limit)
+
+    this.on('updated', () => {
+      //- console.log(this.projects, this.opts.category)
+
+      if (this.opts.category && this.opts.category !== this.category) {
+        this.update({
+          category: this.opts.category,
+          projects:
+            this.opts.category === 'All'
+              ? projectsArray
+              : projectsArray.filter((p) => p.category === this.opts.category),
+        })
+      }
+    })
+  </script>
+
   <div class="components-projects">
     <div class="pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1" each="{w, i in projects}">
       <div class="card">
@@ -66,27 +89,4 @@
       }
     }
   </style>
-
-  <script>
-    import projectsArray from '../data'
-    import Webp from './webp'
-
-    this.category = 'All'
-    this.projects =
-      this.opts.limit === undefined ? projectsArray : projectsArray.slice(0, this.opts.limit)
-
-    this.on('updated', () => {
-      //- console.log(this.projects, this.opts.category)
-
-      if (this.opts.category && this.opts.category !== this.category) {
-        this.update({
-          category: this.opts.category,
-          projects:
-            this.opts.category === 'All'
-              ? projectsArray
-              : projectsArray.filter((p) => p.category === this.opts.category),
-        })
-      }
-    })
-  </script>
 </projects>

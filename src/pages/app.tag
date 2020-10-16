@@ -1,4 +1,14 @@
 <app>
+  <script>
+    import route from 'riot-route/lib/tag'
+
+    import Top from './top'
+    import Profile from './profile'
+    import ProjectAll from './projectAll'
+    import ProjectDetail from './projectDetail'
+    import Other from './other'
+  </script>
+
   <router>
     <route path="">
       <Top></Top>
@@ -16,14 +26,4 @@
       <Other></Other>
     </route>
   </router>
-
-  <script>
-    import route from 'riot-route/lib/tag'
-
-    import Top from './top'
-    import Profile from './profile'
-    import ProjectAll from './projectAll'
-    import ProjectDetail from './projectDetail'
-    import Other from './other'
-  </script>
 </app>

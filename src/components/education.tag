@@ -1,7 +1,4 @@
 <education>
-  <h2 class="section-title">Education</h2>
-  <List items="{schools}"></List>
-
   <script>
     import List from './list'
 
@@ -33,4 +30,7 @@
       },
     ]
   </script>
+
+  <h2 class="section-title">Education</h2>
+  <List items="{schools}"></List>
 </education>

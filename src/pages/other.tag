@@ -1,4 +1,8 @@
 <other>
+  <script>
+    import Footer from '../components/footer'
+  </script>
+
   <div class="pages-other">
     <section>
       <div class="container">
@@ -23,8 +27,4 @@
       }
     }
   </style>
-
-  <script>
-    import Footer from '../components/footer'
-  </script>
 </other>

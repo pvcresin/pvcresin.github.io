@@ -1,4 +1,24 @@
 <top>
+  <script>
+    import First from '../components/first'
+    import About from '../components/about'
+    import Projects from '../components/projects'
+    import Awards from '../components/awards'
+    import Publications from '../components/publications'
+    import Clubs from '../components/clubs'
+    import More from '../components/more'
+    import Footer from '../components/footer'
+
+    this.on('route', () => {
+      const path = window.location.hash
+      if (window.scrolls[`${path}`] === undefined) {
+        window.scroll(0, 0)
+      } else {
+        window.scroll(0, window.scrolls[`${path}`])
+      }
+    })
+  </script>
+
   <div class="pages-top">
     <First></First>
     <section>
@@ -43,24 +63,4 @@
       }
     }
   </style>
-
-  <script>
-    import First from '../components/first'
-    import About from '../components/about'
-    import Projects from '../components/projects'
-    import Awards from '../components/awards'
-    import Publications from '../components/publications'
-    import Clubs from '../components/clubs'
-    import More from '../components/more'
-    import Footer from '../components/footer'
-
-    this.on('route', () => {
-      const path = window.location.hash
-      if (window.scrolls[`${path}`] === undefined) {
-        window.scroll(0, 0)
-      } else {
-        window.scroll(0, window.scrolls[`${path}`])
-      }
-    })
-  </script>
 </top>
