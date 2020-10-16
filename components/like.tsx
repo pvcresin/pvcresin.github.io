@@ -1,3 +1,5 @@
-const Like = () => <div>Like</div>
+const Like = () => {
+  return <div>Like</div>
+}
 
 export default Like

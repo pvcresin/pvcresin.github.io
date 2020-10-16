@@ -1,3 +1,5 @@
-const Skills = () => <div>Skills</div>
+const Skills = () => {
+  return <div>Skills</div>
+}
 
 export default Skills

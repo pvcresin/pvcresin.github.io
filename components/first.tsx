@@ -1,3 +1,5 @@
-const First = () => <div>First</div>
+const First = () => {
+  return <div>First</div>
+}
 
 export default First

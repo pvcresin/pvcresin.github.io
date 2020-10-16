@@ -1,3 +1,5 @@
-const Social = () => <div>Social</div>
+const Social = () => {
+  return <div>Social</div>
+}
 
 export default Social

@@ -1,3 +1,5 @@
-const Publications = () => <div>Publications</div>
+const Publications = () => {
+  return <div>Publications</div>
+}
 
 export default Publications

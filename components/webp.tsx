@@ -1,3 +1,5 @@
-const Webp = () => <div>Webp</div>
+const Webp = () => {
+  return <div>Webp</div>
+}
 
 export default Webp

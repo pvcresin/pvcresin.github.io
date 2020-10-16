@@ -1,3 +1,5 @@
-const More = () => <div>More</div>
+const More = () => {
+  return <div>More</div>
+}
 
 export default More
