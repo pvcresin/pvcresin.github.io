@@ -1,0 +1,44 @@
+.components-social {
+  > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: #525252;
+        vertical-align: sub;
+        display: inline-block;
+        width: 3rem;
+
+        &:hover {
+          color: white;
+        }
+
+        .icon-box {
+          margin: auto;
+          width: 2rem;
+          height: 2rem;
+          background: #525252;
+
+          &:hover {
+            background: white;
+          }
+
+          // &.hatena {
+          //   mask-image: url(./resources/icon-hatena.svg);
+          //   -webkit-mask-image: url(./resources/icon-hatena.svg);
+          // }
+
+          // &.wantedly {
+          //   mask-image: url(./resources/icon-wantedly.svg);
+          //   -webkit-mask-image: url(./resources/icon-wantedly.svg);
+          // }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.components-like {
+  > div {
+    padding: 0.75rem;
+
+    .like-box {
+      padding: 0.75rem;
+
+      .like {
+        background: #414141;
+        padding: 0.6rem 1rem;
+        border-radius: 0.3rem;
+
+        h3 {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+        }
+
+        hr {
+          border-radius: 1rem;
+          margin: 0.5rem 0;
+          border: 1.5px solid;
+          border-color: grey;
+          background: gray;
+        }
+
+        ul li {
+          line-height: 2rem;
+
+          .icon {
+            font-size: 1.4rem;
+            width: 2rem;
+            display: inline-flex;
+            justify-content: center;
+          }
+
+          .text {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.pages-project_detail {
+  min-height: 100vh;
+  display: block;
+  background: #2b2b2b;
+  color: #efefef;
+
+  > div > section {
+    padding: 1.5rem;
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+
+      > iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+      }
+    }
+
+    .img-frame {
+      width: 100%;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        background: black;
+      }
+    }
+
+    h1 {
+      color: white;
+      margin: 1rem 0;
+      text-align: justify;
+    }
+
+    .chapter {
+      .chapter-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem 0 1rem 0;
+        > h2 {
+          font-size: 1.5rem;
+          margin-right: 0.5rem;
+          color: white;
+        }
+
+        > hr {
+          flex-grow: 1;
+          border: 1.5px solid gray;
+          border-radius: 1rem;
+          min-width: 1rem;
+          background: gray;
+        }
+      }
+
+      p {
+        margin: 0.6rem 0;
+        text-align: justify;
+      }
+
+      ol {
+        padding-left: 2rem;
+
+        li {
+          list-style-type: decimal;
+          line-height: 1.8rem;
+
+          a {
+            color: #4e9adb;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
