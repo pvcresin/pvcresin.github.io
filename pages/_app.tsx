@@ -1,5 +1,12 @@
 import '../styles/index.scss'
 
+import Head from '../components/head'
+
 export default function MyApp({ Component, pageProps }: any) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head />
+      <Component {...pageProps} />
+    </>
+  )
 }
