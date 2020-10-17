@@ -29,9 +29,9 @@ const Head = () => (
     {/* font awesome */}
     <script src='https://use.fontawesome.com/releases/v5.12.0/js/all.js' defer></script>
 
-    {/* polyfill  */}
+    {/* polyfill */}
     <script
-      crossorigin='anonymous'
+      crossOrigin='anonymous'
       src='https://polyfill.io/v3/polyfill.min.js?features=es2015'
       defer
     ></script>
