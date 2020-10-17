@@ -12,7 +12,7 @@ const List: React.FC<{
         {items.map((item) => (
           <li key={item.title}>
             <h3>
-              <a href='{item.link}' target='_blank'>
+              <a href={item.link} target='_blank'>
                 {item.title}
               </a>
               <div className='right'>

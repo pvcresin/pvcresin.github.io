@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const More: React.FC<{ text?: string; link: string; title: string }> = ({
   text = 'more',
   link,
@@ -5,9 +7,11 @@ const More: React.FC<{ text?: string; link: string; title: string }> = ({
 }) => {
   return (
     <div className='components-more'>
-      <a href={link} title={title}>
-        <span className='more-button'>{text}</span>
-      </a>
+      <Link href={link}>
+        <a>
+          <span className='more-button'>{text}</span>
+        </a>
+      </Link>
     </div>
   )
 }
