@@ -1,4 +1,10 @@
 <webp>
+  <script>
+    this.on('mounted', () => {
+      console.log(this.opts)
+    })
+  </script>
+
   <div class="components-webp">
     <picture>
       <source srcset="resources/{opts.src||opts.riotSrc}.webp" type="image/webp" />
@@ -18,10 +24,4 @@
       }
     }
   </style>
-
-  <script>
-    this.on('mounted', () => {
-      console.log(this.opts)
-    })
-  </script>
 </webp>
