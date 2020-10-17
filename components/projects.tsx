@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import projectsArray from '../data'
 import Webp from './webp'
 
