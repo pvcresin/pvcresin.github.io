@@ -1,42 +1,21 @@
 import { NextPage } from 'next'
 
 // import scroll from '../js/scroll'
-import projectsArray from '../../src/data'
+import projectsArray, { Project } from '../../data'
 
 import Tags from '../../components/tags'
 import Webp from '../../components/webp'
 import Footer from '../../components/footer'
 
-const ProjectDetailPage: NextPage<any> = ({ project }) => {
-  const { name } = project
-
-  // const project = {
-  //   name: '',
-  //   sub: '',
-  //   img: '',
-  //   video: '',
-  //   text: '',
-  //   implement: '',
-  //   keywords: [],
-  // }
-
-  // this.on('route', (projectName) => {
-  //   this.update({
-  //     project: projectsArray.filter((d) => d.name === projectName.replace(/_/g, ' '))[0],
-  //   })
-
-  //   scroll.move()
-  // })
-
+const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => {
   return (
     <div>
-      <h1>ProjectDetailPage: {name}</h1>
       <div className='pages-project_detail'>
         <div className='container'>
           <section>
             {project.video === undefined ? (
               <div className='img-frame'>
-                <Webp src='{project.img}'></Webp>
+                <Webp src={project.img}></Webp>
               </div>
             ) : (
               <div className='video-frame'>
