@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 
-// import scroll from '../js/scroll'
 import projectsArray, { Project } from '../../data'
 
 import Tags from '../../components/tags'

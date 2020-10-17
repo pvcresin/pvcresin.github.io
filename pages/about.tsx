@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 
-// import scroll from '../js/scroll'
 import About from '../components/about'
 import Education from '../components/education'
 import Skills from '../components/skills'
@@ -8,10 +7,6 @@ import Like from '../components/like'
 import Footer from '../components/footer'
 
 const AboutPage: NextPage<{}> = ({}) => {
-  // this.on('route', () => {
-  //   scroll.move()
-  // })
-
   return (
     <div className='pages-profile'>
       <section>

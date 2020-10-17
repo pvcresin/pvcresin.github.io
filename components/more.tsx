@@ -1,9 +1,11 @@
-const More = (props) => {
-  const text = props.text !== undefined ? props.text : 'more'
-
+const More: React.FC<{ text?: string; link: string; title: string }> = ({
+  text = 'more',
+  link,
+  title,
+}) => {
   return (
     <div className='components-more'>
-      <a href={props.link} title={props.title}>
+      <a href={link} title={title}>
         <span className='more-button'>{text}</span>
       </a>
     </div>

@@ -1,8 +1,15 @@
-const List = (props) => {
+const List: React.FC<{
+  items: {
+    title: string
+    link: string
+    date: string
+    texts: string[]
+  }[]
+}> = ({ items }) => {
   return (
     <div className='pure-g pure-u-1-1 components-list'>
       <ul>
-        {props.items.map((item) => (
+        {items.map((item) => (
           <li key={item.title}>
             <h3>
               <a href='{item.link}' target='_blank'>

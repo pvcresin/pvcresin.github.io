@@ -1,7 +1,7 @@
-const Tags = (props) => {
+const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
   return (
     <div className='components-tags'>
-      {props.tags.map((t) => (
+      {tags.map((t) => (
         <span key={t}>{t}</span>
       ))}
     </div>

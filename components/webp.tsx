@@ -1,14 +1,10 @@
-const Webp = (props) => {
-  // this.on('mounted', () => {
-  //   console.log(this.opts)
-  // })
-
+const Webp: React.FC<{ src: string }> = ({ src }) => {
   return (
     <div className='components-webp'>
       <picture>
-        <source srcSet={`resources/${props.src || props.riotSrc}.webp`} type='image/webp' />
-        <source srcSet={`resources/${props.src || props.riotSrc}.png`} type='image/png' />
-        <img src={`resources/${props.src || props.riotSrc}.webp`} />
+        <source srcSet={`resources/${src}.webp`} type='image/webp' />
+        <source srcSet={`resources/${src}.png`} type='image/png' />
+        <img src={`resources/${src}.webp`} />
       </picture>
     </div>
   )

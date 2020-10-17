@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import * as React from 'react'
 import { NextPage } from 'next'
 
 import Projects from '../../components/projects'
@@ -8,7 +8,7 @@ const categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
 const initialSelectedCategory = categories[0]
 
 const ProjectAllPage: NextPage<{}> = ({}) => {
-  const [selectedCategory, setSelectedCategory] = useState(initialSelectedCategory)
+  const [selectedCategory, setSelectedCategory] = React.useState(initialSelectedCategory)
 
   return (
     <div className='pages-project_all'>
