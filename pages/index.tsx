@@ -1,12 +1,10 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
 
-import Head from '../components/head'
 import Footer from '../components/footer'
 
 const IndexPage: NextPage<{}> = ({}) => (
   <div>
-    <Head />
     <h1>Index(Top)Page</h1>
     <p>
       <Link href='/about'>
@@ -15,7 +13,7 @@ const IndexPage: NextPage<{}> = ({}) => (
     </p>
     <p>
       <Link href='/projects'>
-        <a>projects</a>
+        <a>Projects</a>
       </Link>
     </p>
     <p>

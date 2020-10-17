@@ -1,13 +1,31 @@
 import { NextPage } from 'next'
-import Link from 'next/link'
 
-const AboutPage: NextPage<{}> = ({}) => (
-  <div>
-    <h1>About(Profile)Page</h1>
-    <Link href='/'>
-      <a>Index</a>
-    </Link>
-  </div>
-)
+// import scroll from '../js/scroll'
+import About from '../components/about'
+import Education from '../components/education'
+import Skills from '../components/skills'
+import Like from '../components/like'
+import Footer from '../components/footer'
+
+const AboutPage: NextPage<{}> = ({}) => {
+  // this.on('route', () => {
+  //   scroll.move()
+  // })
+
+  return (
+    <div className='pages-profile'>
+      <section>
+        <div className='container'>
+          <h2 className='section-title'>Profile</h2>
+          <About></About>
+          <Like></Like>
+          <Skills></Skills>
+          <Education></Education>
+        </div>
+      </section>
+      <Footer></Footer>
+    </div>
+  )
+}
 
 export default AboutPage

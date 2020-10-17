@@ -1,13 +1,18 @@
 import { NextPage } from 'next'
-import Link from 'next/link'
 
-const NotFoundPage: NextPage<{}> = ({}) => (
-  <div>
-    <h1>NotFound(Other)Page</h1>
-    <Link href='/'>
-      <a>Index</a>
-    </Link>
-  </div>
-)
+import Footer from '../components/footer'
+
+const NotFoundPage: NextPage<{}> = ({}) => {
+  return (
+    <div className='pages-other'>
+      <section>
+        <div className='container'>
+          <h1>Page Not Found</h1>
+        </div>
+      </section>
+      <Footer></Footer>
+    </div>
+  )
+}
 
 export default NotFoundPage
