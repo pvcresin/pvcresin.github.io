@@ -1,29 +1,14 @@
+import { useCallback, useState } from 'react'
 import { NextPage } from 'next'
-
-// import route from 'riot-route/lib/tag'
-
-// import scroll from '../js/scroll'
 
 import Projects from '../../components/projects'
 import Footer from '../../components/footer'
 
+const categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
+const initialSelectedCategory = categories[0]
+
 const ProjectAllPage: NextPage<{}> = ({}) => {
-  const categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
-  const selectedCategory = undefined
-
-  // this.on('route', () => {
-  //   if (route.query().category !== undefined) {
-  //     this.update({ selectedCategory: route.query().category })
-  //   } else {
-  //     this.update({ selectedCategory: this.categories[0] })
-  //   }
-
-  //   scroll.move()
-  // })
-
-  const onClick = (p) => {
-    // this.update({ selectedCategory: p })
-  }
+  const [selectedCategory, setSelectedCategory] = useState(initialSelectedCategory)
 
   return (
     <div className='pages-project_all'>
@@ -31,9 +16,9 @@ const ProjectAllPage: NextPage<{}> = ({}) => {
         <div className='container'>
           <h2 className='section-title'>Projects</h2>
           <ul>
-            {categories.map((p) => (
-              <a onClick={onClick}>
-                {selectedCategory === p ? <li className='selected'>{p}</li> : <li>{p}</li>}
+            {categories.map((c) => (
+              <a onClick={() => setSelectedCategory(c)} key={c}>
+                {selectedCategory === c ? <li className='selected'>{c}</li> : <li>{c}</li>}
               </a>
             ))}
           </ul>
