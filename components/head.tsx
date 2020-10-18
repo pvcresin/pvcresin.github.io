@@ -10,8 +10,8 @@ const Head = () => (
     <meta name='description' content='pvcresin portfolio' />
     <meta name='keywords' content='pvcresin,raika toriyama,鳥山 らいか,鳥山らいか' />
     <meta name='theme-color' content='#1a1819' />
-    <link rel='icon' href='resources/favicon.ico' />
-    <link rel='shortcut icon' href='resources/favicon.ico' />
+    <link rel='icon' href='/favicon.ico' />
+    <link rel='shortcut icon' href='/favicon.ico' />
 
     {/* font */}
     <link rel='stylesheet' href='https://fonts.googleapis.com/earlyaccess/notosansjp.css' />
