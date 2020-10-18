@@ -7,9 +7,9 @@
 
   <div class="components-webp">
     <picture>
-      <source srcset="resources/{opts.src||opts.riotSrc}.webp" type="image/webp" />
-      <source srcset="resources/{opts.src||opts.riotSrc}.png" type="image/png" />
-      <img src="resources/{opts.src||opts.riotSrc}.webp" />
+      <source srcset="public/{opts.src||opts.riotSrc}.webp" type="image/webp" />
+      <source srcset="public/{opts.src||opts.riotSrc}.png" type="image/png" />
+      <img src="public/{opts.src||opts.riotSrc}.webp" />
     </picture>
   </div>
 

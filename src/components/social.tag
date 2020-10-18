@@ -90,12 +90,12 @@
                 background: white;
               }
               &.hatena {
-                mask-image: url(./resources/icon-hatena.svg);
-                -webkit-mask-image: url(./resources/icon-hatena.svg);
+                mask-image: url(./public/icon-hatena.svg);
+                -webkit-mask-image: url(./public/icon-hatena.svg);
               }
               &.wantedly {
-                mask-image: url(./resources/icon-wantedly.svg);
-                -webkit-mask-image: url(./resources/icon-wantedly.svg);
+                mask-image: url(./public/icon-wantedly.svg);
+                -webkit-mask-image: url(./public/icon-wantedly.svg);
               }
             }
           }

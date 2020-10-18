@@ -9,7 +9,7 @@
   <div class="pure-g components-about">
     <div class="about-img pure-u-sm-1-4 pure-u-1-2">
       <div class="face-wrapper pure-u-1-2">
-        <img src="resources/icon-pvcresin.svg" />
+        <img src="public/icon-pvcresin.svg" />
       </div>
     </div>
     <div class="pure-u-sm-1-24 pure-u-1-1"></div>
