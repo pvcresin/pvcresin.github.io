@@ -6,6 +6,8 @@ import Tags from '../../components/tags'
 import Webp from '../../components/webp'
 import Footer from '../../components/footer'
 
+import './projectDetail.scss'
+
 const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => {
   return (
     <div>

@@ -9,6 +9,8 @@ import Clubs from '../components/clubs'
 import More from '../components/more'
 import Footer from '../components/footer'
 
+import './app.scss'
+
 const IndexPage: NextPage<{}> = ({}) => (
   <div className='pages-top'>
     <First></First>

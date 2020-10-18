@@ -2,6 +2,8 @@ import { NextPage } from 'next'
 
 import Footer from '../components/footer'
 
+import './404.scss'
+
 const NotFoundPage: NextPage<{}> = ({}) => {
   return (
     <div className='pages-other'>

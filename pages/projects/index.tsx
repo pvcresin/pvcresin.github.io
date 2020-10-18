@@ -4,6 +4,8 @@ import { NextPage } from 'next'
 import Projects from '../../components/projects'
 import Footer from '../../components/footer'
 
+import './projectAll.scss'
+
 const categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
 const initialSelectedCategory = categories[0]
 

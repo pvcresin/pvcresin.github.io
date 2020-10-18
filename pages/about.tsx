@@ -6,6 +6,8 @@ import Skills from '../components/skills'
 import Like from '../components/like'
 import Footer from '../components/footer'
 
+import './about.scss'
+
 const AboutPage: NextPage<{}> = ({}) => {
   return (
     <div className='pages-profile'>
