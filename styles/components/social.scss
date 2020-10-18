@@ -28,15 +28,15 @@
             background: white;
           }
 
-          // &.hatena {
-          //   mask-image: url(./resources/icon-hatena.svg);
-          //   -webkit-mask-image: url(./resources/icon-hatena.svg);
-          // }
+          &.hatena {
+            mask-image: url(/icon-hatena.svg);
+            -webkit-mask-image: url(/icon-hatena.svg);
+          }
 
-          // &.wantedly {
-          //   mask-image: url(./resources/icon-wantedly.svg);
-          //   -webkit-mask-image: url(./resources/icon-wantedly.svg);
-          // }
+          &.wantedly {
+            mask-image: url(/icon-wantedly.svg);
+            -webkit-mask-image: url(/icon-wantedly.svg);
+          }
         }
       }
     }

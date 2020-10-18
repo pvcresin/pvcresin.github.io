@@ -8,7 +8,7 @@ const About = () => {
     <div className='pure-g components-about'>
       <div className='about-img pure-u-sm-1-4 pure-u-1-2'>
         <div className='face-wrapper pure-u-1-2'>
-          <img src='resources/icon-pvcresin.svg' />
+          <img src='/icon-pvcresin.svg' />
         </div>
       </div>
       <div className='pure-u-sm-1-24 pure-u-1-1'></div>
