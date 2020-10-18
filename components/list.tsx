@@ -1,3 +1,5 @@
+import './list.scss'
+
 const List: React.FC<{
   items: {
     title: string

@@ -2,6 +2,8 @@ import dayjs from 'dayjs'
 
 import Social from './social'
 
+import './footer.scss'
+
 const Footer = () => {
   const year = dayjs().format('YYYY')
 

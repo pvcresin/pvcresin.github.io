@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import './more.scss'
+
 const More: React.FC<{ text?: string; link: string; title: string }> = ({
   text = 'more',
   link,

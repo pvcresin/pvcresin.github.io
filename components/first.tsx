@@ -1,5 +1,7 @@
 import Social from './social'
 
+import './first.scss'
+
 const First = () => {
   return (
     <div className='components-first'>

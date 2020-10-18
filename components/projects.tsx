@@ -3,6 +3,8 @@ import Link from 'next/link'
 import projectsArray from '../data'
 import Webp from './webp'
 
+import './projects.scss'
+
 const initialCategory = 'All'
 
 const Projects: React.FC<{ category?: string; limit?: number }> = ({

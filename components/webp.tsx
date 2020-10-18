@@ -1,3 +1,5 @@
+import './webp.scss'
+
 const Webp: React.FC<{ src: string; className?: string }> = ({ src, className }) => {
   return (
     <div className={className ? `components-webp ${className}` : 'components-webp'}>

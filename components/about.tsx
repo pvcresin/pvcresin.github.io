@@ -1,5 +1,7 @@
 import dayjs from 'dayjs'
 
+import './about.scss'
+
 const About = () => {
   const birthday = '1994-07-30'
   const age = dayjs().diff(birthday, 'year')

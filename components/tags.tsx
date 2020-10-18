@@ -1,3 +1,5 @@
+import './tags.scss'
+
 const Tags: React.FC<{ tags: string[] }> = ({ tags }) => {
   return (
     <div className='components-tags'>

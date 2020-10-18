@@ -1,3 +1,5 @@
+import './social.scss'
+
 const Social = () => {
   return (
     <div className='components-social'>
