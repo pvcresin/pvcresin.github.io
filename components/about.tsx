@@ -34,7 +34,7 @@ const About = () => {
             <div className='icon pure-u-1-12 pure-u-lg-1-24'>
               <i className='fa fa-envelope' aria-hidden='true'></i>
             </div>
-            <div className='right pure-u-11-12'>pvcresin0730@gmail.com</div>
+            <div className='right pure-u-11-12'>pvcresin0730[at]gmail.com</div>
           </li>
           <li className='pure-g'>
             <div className='icon pure-u-1-12 pure-u-lg-1-24'>
