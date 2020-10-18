@@ -16,7 +16,7 @@ const IndexPage: NextPage<{}> = ({}) => (
       <div className='container'>
         <h2 className='section-title'>About Me</h2>
         <About></About>
-        <More text='detail' title='View detailed profile' link='/profile'></More>
+        <More text='detail' title='View detailed profile' link='/about'></More>
       </div>
     </section>
     <section>
