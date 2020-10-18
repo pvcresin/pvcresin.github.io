@@ -6,12 +6,12 @@ import Skills from '../components/skills'
 import Like from '../components/like'
 import Footer from '../components/footer'
 
-const ProfilePage: NextPage<{}> = ({}) => {
+const AboutPage: NextPage<{}> = ({}) => {
   return (
     <div className='pages-profile'>
       <section>
         <div className='container'>
-          <h2 className='section-title'>Profile</h2>
+          <h2 className='section-title'>About</h2>
           <About></About>
           <Like></Like>
           <Skills></Skills>
@@ -23,4 +23,4 @@ const ProfilePage: NextPage<{}> = ({}) => {
   )
 }
 
-export default ProfilePage
+export default AboutPage
