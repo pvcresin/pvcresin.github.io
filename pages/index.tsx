@@ -20,14 +20,14 @@ const IndexPage = () => (
       <div className='container'>
         <h2 className='section-title'>About Me</h2>
         <About />
-        <More text='detail' title='View detailed profile' link='/about' />
+        <More text='detail' link='/about' />
       </div>
     </section>
     <section className={getClassName('section')}>
       <div className='container'>
         <h2 className='section-title'>Projects</h2>
         <Projects limit={3} />
-        <More title='View all projects' link='/projects' />
+        <More link='/projects' />
       </div>
     </section>
     <section className={getClassName('section')}>
