@@ -36,6 +36,10 @@
 
     .arrow {
       display: inline-block;
+
+      svg {
+        height: 3rem;
+      }
     }
   }
 }
