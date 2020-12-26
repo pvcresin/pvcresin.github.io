@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <div className='pure-u-sm-1-24 pure-u-1-1'></div>
       <div className='about-text pure-u-sm-17-24 pure-u-1-1'>
-        Web Frontend　が好きなエンジニア。
+        Web Front-End が好きなエンジニア。
         <br />
         学生時代はインタラクション（HCI）を専攻し、主にモバイル /
         ウェアラブルデバイスに関する研究を行う。
@@ -49,7 +49,7 @@ const About = () => {
               <i className='fa fa-suitcase' aria-hidden='true'></i>
             </div>
             <div className='right pure-u-11-12'>
-              <span>Frontend Engineer </span>
+              <span>Front-End Engineer </span>
               <a className='company' href='https://jp.corp-sansan.com/' target='_blank'>
                 @ Sansan
               </a>
