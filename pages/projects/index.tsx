@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { NextPage } from 'next'
 
-import Projects from '../../components/projects'
-import Footer from '../../components/footer'
+import Projects from '@/components/projects'
+import Footer from '@/components/footer'
 
 import './projectAll.scss'
 

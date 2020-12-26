@@ -1,13 +1,13 @@
 import { NextPage } from 'next'
 
-import First from '../components/first'
-import About from '../components/about'
-import Projects from '../components/projects'
-import Awards from '../components/awards'
-import Publications from '../components/publications'
-import Clubs from '../components/clubs'
-import More from '../components/more'
-import Footer from '../components/footer'
+import First from '@/components/first'
+import About from '@/components/about'
+import Projects from '@/components/projects'
+import Awards from '@/components/awards'
+import Publications from '@/components/publications'
+import Clubs from '@/components/clubs'
+import More from '@/components/more'
+import Footer from '@/components/footer'
 
 import './app.scss'
 

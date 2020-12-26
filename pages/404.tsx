@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 
-import Footer from '../components/footer'
+import Footer from '@/components/footer'
 
 import './404.scss'
 

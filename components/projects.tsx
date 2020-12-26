@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import projectsArray from '../data'
+import projectsArray from '@/data/index'
 import Webp from './webp'
 
 import './projects.scss'

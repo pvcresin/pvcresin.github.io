@@ -1,10 +1,10 @@
 import { NextPage } from 'next'
 
-import projectsArray, { Project } from '../../data'
+import projectsArray, { Project } from '@/data/index'
 
-import Tags from '../../components/tags'
-import Webp from '../../components/webp'
-import Footer from '../../components/footer'
+import Tags from '@/components/tags'
+import Webp from '@/components/webp'
+import Footer from '@/components/footer'
 
 import './projectDetail.scss'
 
