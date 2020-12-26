@@ -10,7 +10,7 @@ import './about.scss'
 
 const getClassName = getClassNameFunction('pages-profile')
 
-const AboutPage: NextPage = () => (
+const AboutPage = () => (
   <div className={getClassName()}>
     <section>
       <div className='container'>
