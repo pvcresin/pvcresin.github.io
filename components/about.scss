@@ -1,76 +1,67 @@
 .components-about {
   padding: 0.75rem;
 
-  > .about-img {
+  &__about-image {
     text-align: center;
     padding: 0.75rem;
     margin: 0 auto;
-
-    .face-wrapper {
-      position: relative;
-      width: 100%;
-
-      &:before {
-        content: '';
-        display: block;
-        padding-top: 100%;
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        border-radius: 50%;
-        width: 100%;
-        background: gray;
-      }
-    }
   }
 
-  > .about-text {
+  &__face-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+  }
+
+  &__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    width: 100%;
+    background: gray;
+  }
+
+  &__about-text {
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0.75rem;
     font-size: 1.1rem;
+  }
 
-    ul {
-      li {
-        display: flex;
-        margin-top: 0.5rem;
+  &__info {
+    display: flex;
+    margin-top: 0.5rem;
+  }
 
-        .icon {
-          display: flex;
-          justify-content: center;
-          align-items: baseline;
-          font-size: 1.5rem;
+  &__info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.5rem;
 
-          svg {
-            height: 1.5rem;
-          }
-        }
+    svg {
+      height: 1.5rem;
+    }
+  }
 
-        .right {
-          display: flex;
-          align-items: center;
-          padding-left: 0.5rem;
+  &__right {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    white-space: pre-wrap;
+  }
 
-          a {
-            color: #4e9adb;
+  &__link {
+    color: #4e9adb;
 
-            &:hover {
-              text-decoration: underline;
-            }
-
-            &.company {
-              margin-left: 0.3rem;
-            }
-          }
-        }
-      }
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

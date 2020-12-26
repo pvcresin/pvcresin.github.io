@@ -1,6 +1,6 @@
-import List from './list'
+import List, { Item } from './list'
 
-const schools = [
+const schools: Item[] = [
   {
     date: '2010-04 - 2013-03',
     title: '本郷高等学校',
@@ -28,13 +28,11 @@ const schools = [
   },
 ]
 
-const Education = () => {
-  return (
-    <>
-      <h2 className='section-title'>Education</h2>
-      <List items={schools}></List>
-    </>
-  )
-}
+const Education = () => (
+  <>
+    <h2 className='section-title'>Education</h2>
+    <List items={schools} />
+  </>
+)
 
 export default Education

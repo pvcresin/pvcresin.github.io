@@ -1,6 +1,6 @@
-import List from './list'
+import List, { Item } from './list'
 
-const awards = [
+const awards: Item[] = [
   {
     date: '2015-05',
     title: 'Cloud n アプリケーションコンテスト',
@@ -29,8 +29,6 @@ const awards = [
   },
 ]
 
-const Awards = () => {
-  return <List items={awards}></List>
-}
+const Awards = () => <List items={awards} />
 
 export default Awards

@@ -1,71 +1,62 @@
 .components-list {
-  > ul {
+  padding: 0.75rem;
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__item-title {
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+
+  &__link {
+    color: #4e9adb;
     padding: 0.75rem;
+    text-align: justify;
 
-    li {
-      margin-bottom: 1rem;
-
-      h3 {
-        display: flex;
-        margin: auto;
-        align-items: center;
-
-        a {
-          color: #4e9adb;
-          padding: 0.75rem;
-          text-align: justify;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-
-        .right {
-          display: inline-flex;
-          flex-grow: 1;
-          align-items: center;
-
-          hr {
-            display: inline-flex;
-            flex-grow: 1;
-            border: 1.5px solid gray;
-            border-radius: 1rem;
-            min-width: 1rem;
-            background: gray;
-          }
-
-          span {
-            padding: 0.75rem;
-            display: inline-flex;
-
-            span {
-              background: #555;
-              color: white;
-              padding: 0.1rem 0.3rem;
-              border-radius: 0.3rem;
-              display: inline-block;
-              text-align: center;
-              font-size: 0.8rem;
-              font-weight: normal;
-
-              &.date {
-                min-width: 4rem;
-              }
-
-              &.term {
-                min-width: 8rem;
-              }
-            }
-          }
-        }
-      }
-
-      .sub {
-        color: #bdbdbd;
-        padding: 0 0.75rem;
-        font-weight: 300;
-        text-align: justify;
-      }
+    &:hover {
+      text-decoration: underline;
     }
+  }
+
+  &__right {
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  &__line {
+    display: inline-flex;
+    flex-grow: 1;
+    border: 1.5px solid gray;
+    border-radius: 1rem;
+    min-width: 1rem;
+    background: gray;
+  }
+
+  &__date-container {
+    padding: 0.75rem;
+    display: inline-flex;
+  }
+
+  &__date {
+    background: #555;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+
+  &__sub {
+    color: #bdbdbd;
+    padding: 0 0.75rem;
+    font-weight: 300;
+    text-align: justify;
   }
 }

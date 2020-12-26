@@ -1,4 +1,8 @@
+import { getClassNameFunction } from 'utils'
+
 import './skills.scss'
+
+const getClassName = getClassNameFunction('components-skills')
 
 const skills = [
   {
@@ -69,53 +73,51 @@ const skills2 = [
   },
 ]
 
-const Skills = () => {
-  return (
-    <div className='components-skills'>
-      <h2 className='section-title'>Skills</h2>
-      <div className='pure-g'>
-        <ul className='skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1'>
-          {skills.map((s) => (
-            <li key={s.name}>
-              <div className='skill-info'>
-                <span className='name'>{s.name}</span>
-                <span className='sub'>{s.sub}</span>
-              </div>
-              <div className='bar'>
-                <div className='level' style={{ width: s.level }}></div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <ul className='skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1'>
-          {skills1.map((s) => (
-            <li key={s.name}>
-              <div className='skill-info'>
-                <span className='name'>{s.name}</span>
-                <span className='sub'>{s.sub}</span>
-              </div>
-              <div className='bar'>
-                <div className='level' style={{ width: s.level }}></div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <ul className='skill-box pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1'>
-          {skills2.map((s) => (
-            <li key={s.name}>
-              <div className='skill-info'>
-                <span className='name'>{s.name}</span>
-                <span className='sub'>{s.sub}</span>
-              </div>
-              <div className='bar'>
-                <div className='level' style={{ width: s.level }}></div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+const Skills = () => (
+  <div className={getClassName()}>
+    <h2 className='section-title'>Skills</h2>
+    <div className={`pure-g ${getClassName('skill-container')}`}>
+      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skill-box')}`}>
+        {skills.map((s) => (
+          <li className={getClassName('skill')} key={s.name}>
+            <div className={getClassName('skill-info')}>
+              <span className={getClassName('name')}>{s.name}</span>
+              <span className={getClassName('sub')}>{s.sub}</span>
+            </div>
+            <div className={getClassName('bar')}>
+              <div className={getClassName('level')} style={{ width: s.level }}></div>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skill-box')}`}>
+        {skills1.map((s) => (
+          <li className={getClassName('skill')} key={s.name}>
+            <div className={getClassName('skill-info')}>
+              <span className={getClassName('name')}>{s.name}</span>
+              <span className={getClassName('sub')}>{s.sub}</span>
+            </div>
+            <div className={getClassName('bar')}>
+              <div className={getClassName('level')} style={{ width: s.level }}></div>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skill-box')}`}>
+        {skills2.map((s) => (
+          <li className={getClassName('skill')} key={s.name}>
+            <div className={getClassName('skill-info')}>
+              <span className={getClassName('name')}>{s.name}</span>
+              <span className={getClassName('sub')}>{s.sub}</span>
+            </div>
+            <div className={getClassName('bar')}>
+              <div className={getClassName('level')} style={{ width: s.level }}></div>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  </div>
+)
 
 export default Skills

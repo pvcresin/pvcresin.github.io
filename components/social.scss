@@ -1,27 +1,27 @@
 .components-social {
-  > ul {
+  &__icon-list {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+  }
 
-    li {
-      display: inline-block;
+  &__icon-list-item {
+    display: inline-block;
+  }
 
-      a {
-        color: #525252;
-        vertical-align: sub;
-        display: inline-block;
-        width: 3rem;
+  &__link {
+    color: #525252;
+    vertical-align: sub;
+    display: inline-block;
+    width: 3rem;
 
-        &:hover {
-          color: white;
-        }
+    &:hover {
+      color: white;
+    }
 
-        > svg {
-          height: 2rem;
-        }
-      }
+    > svg {
+      height: 2rem;
     }
   }
 }

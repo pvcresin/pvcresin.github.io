@@ -1,6 +1,6 @@
-import List from './list'
+import List, { Item } from './list'
 
-const clubs = [
+const clubs: Item[] = [
   {
     date: '2013-04 - 2017-03',
     title: '総合コンテンツ制作サークル',
@@ -32,8 +32,6 @@ const clubs = [
   },
 ]
 
-const Clubs = () => {
-  return <List items={clubs}></List>
-}
+const Clubs = () => <List items={clubs} />
 
 export default Clubs

@@ -1,6 +1,6 @@
-import List from './list'
+import List, { Item } from './list'
 
-const publications = [
+const publications: Item[] = [
   {
     date: '2015-12',
     title: 'SensorPipe',
@@ -35,8 +35,6 @@ const publications = [
   },
 ]
 
-const Publications = () => {
-  return <List items={publications}></List>
-}
+const Publications = () => <List items={publications} />
 
 export default Publications

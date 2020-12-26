@@ -1,17 +1,21 @@
 import dayjs from 'dayjs'
 
+import { getClassNameFunction } from 'utils'
+
 import Social from './social'
 
 import './footer.scss'
+
+const getClassName = getClassNameFunction('components-footer')
 
 const Footer = () => {
   const year = dayjs().format('YYYY')
 
   return (
-    <div className='components-footer'>
-      <div className='container'>
-        <Social></Social>
-        <p>© {year} pvcresin</p>
+    <div className={getClassName()}>
+      <div className={`container ${getClassName('container')}`}>
+        <Social />
+        <p className={getClassName('copyright')}>© {year} pvcresin</p>
       </div>
     </div>
   )
