@@ -6,16 +6,6 @@ const Social = () => {
       <ul>
         <li>
           <a
-            href='https://www.facebook.com/raika.toriyama'
-            target='_blank'
-            title='Facebook'
-            rel='noopener noreferrer'
-          >
-            <i className='fab fa-facebook-f fa-2x'></i>
-          </a>
-        </li>
-        <li>
-          <a
             href='https://twitter.com/pvcresin/'
             target='_blank'
             title='Twitter'
@@ -51,17 +41,7 @@ const Social = () => {
             title='Hatena Blog'
             rel='noopener noreferrer'
           >
-            <div className='icon-box hatena'></div>
-          </a>
-        </li>
-        <li>
-          <a
-            href='https://www.wantedly.com/users/18220619'
-            target='_blank'
-            title='Wantedly'
-            rel='noopener noreferrer'
-          >
-            <div className='icon-box wantedly'></div>
+            <i className='fas fa-rss fa-2x'></i>
           </a>
         </li>
       </ul>
