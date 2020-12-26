@@ -7,8 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "ndev": "next",
-    "nbuild": "next build && next export -o docs"
+    "dev": "next",
+    "export": "next build && next export"
   },
   "dependencies": {
     "dayjs": "^1.8.23",
