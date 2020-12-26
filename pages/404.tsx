@@ -1,20 +1,20 @@
-import { NextPage } from 'next'
+import { getClassNameFunction } from 'utils'
 
-import Footer from '@/components/footer'
+import Footer from 'components/footer'
 
 import './404.scss'
 
-const NotFoundPage: NextPage<{}> = ({}) => {
-  return (
-    <div className='pages-other'>
-      <section>
-        <div className='container'>
-          <h1>Page Not Found</h1>
-        </div>
-      </section>
-      <Footer></Footer>
-    </div>
-  )
-}
+const getClassName = getClassNameFunction('pages-other')
+
+const NotFoundPage = () => (
+  <div className={getClassName()}>
+    <section className={getClassName('content')}>
+      <div className='container'>
+        <h1>Page Not Found</h1>
+      </div>
+    </section>
+    <Footer />
+  </div>
+)
 
 export default NotFoundPage

@@ -1,77 +1,74 @@
 import { NextPage } from 'next'
 
-import projectsArray, { Project } from '@/data/index'
+import projectsArray, { Project } from 'data'
 
-import Tags from '@/components/tags'
-import Webp from '@/components/webp'
-import Footer from '@/components/footer'
+import { getClassNameFunction } from 'utils'
 
-import './projectDetail.scss'
+import Tags from 'components/tags'
+import Webp from 'components/webp'
+import Footer from 'components/footer'
 
-const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => {
-  return (
-    <div>
-      <div className='pages-project_detail'>
-        <div className='container'>
-          <section>
-            {project.video === undefined ? (
-              <div className='img-frame'>
-                <Webp src={project.img}></Webp>
-              </div>
-            ) : (
-              <div className='video-frame'>
-                <iframe
-                  src='https://www.youtube.com/embed/{project.video}?rel=0'
-                  frameBorder='0'
-                  allow='encrypted-media'
-                  allowFullScreen
-                ></iframe>
-              </div>
-            )}
-            <h1>
-              <p>{project.name + ': '}</p>
-              <span>{project.sub}</span>
-            </h1>
-            <Tags tags={project.keywords}></Tags>
-            <div className='chapter'>
-              <div className='chapter-title'>
-                <h2>Abstract</h2>
-                <hr />
-              </div>
-              <p>{project.text}</p>
-            </div>
-            <div className='chapter'>
-              <div className='chapter-title'>
-                <h2>Implementation</h2>
-                <hr />
-              </div>
-              <p>{project.implement}</p>
-            </div>
-            {project.links !== undefined && (
-              <div className='chapter'>
-                <div className='chapter-title'>
-                  <h2>Links</h2>
-                  <hr />
-                </div>
-                <ol>
-                  {Object.entries(project.links).map(([key, value]) => (
-                    <li key={key}>
-                      <span>{key + ': '}</span>
-                      <span>
-                        <a href={value}>{value}</a>
-                      </span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            )}
-          </section>
+import './[projectName].scss'
+
+const getClassName = getClassNameFunction('pages-project_detail')
+
+const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
+  <div className={getClassName()}>
+    <div className='container'>
+      <section className={getClassName('section')}>
+        {!project.video ? (
+          <div className={getClassName('image-container')}>
+            <Webp src={project.img} />
+          </div>
+        ) : (
+          <div className={getClassName('video-frame-container')}>
+            <iframe
+              className={getClassName('video-frame')}
+              src={`https://www.youtube.com/embed/${project.video}?rel=0`}
+              frameBorder='0'
+              allow='encrypted-media'
+              allowFullScreen
+            />
+          </div>
+        )}
+        <h1 className={getClassName('project-name')}>
+          <p className={getClassName('paragraph')}>{project.name + ': '}</p>
+          {project.sub}
+        </h1>
+        <Tags tags={project.keywords} />
+        <div className={getClassName('chapter-title')}>
+          <h2 className={getClassName('chapter-title-text')}>Abstract</h2>
+          <hr className={getClassName('chapter-line')} />
         </div>
-        <Footer></Footer>
-      </div>
+        <p className={getClassName('paragraph')}>{project.text}</p>
+        <div className={getClassName('chapter-title')}>
+          <h2 className={getClassName('chapter-title-text')}>Implementation</h2>
+          <hr className={getClassName('chapter-line')} />
+        </div>
+        <p className={getClassName('paragraph')}>{project.implement}</p>
+        {!!project.links && (
+          <>
+            <div className={getClassName('chapter-title')}>
+              <h2 className={getClassName('chapter-title-text')}>Links</h2>
+              <hr className={getClassName('chapter-line')} />
+            </div>
+            <ol className={getClassName('link-list')}>
+              {Object.entries(project.links).map(([key, value]) => (
+                <li className={getClassName('link-list-item')} key={key}>
+                  {key + ': '}
+                  <a className={getClassName('link')} href={value}>
+                    {value}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </>
+        )}
+      </section>
     </div>
-  )
-}
+    <Footer />
+  </div>
+)
 
 export async function getStaticPaths() {
   const projectNames = projectsArray.map((p) => p.name)

@@ -1,33 +1,42 @@
 import * as React from 'react'
-import { NextPage } from 'next'
 
-import Projects from '@/components/projects'
-import Footer from '@/components/footer'
+import { getClassNameFunction } from 'utils'
 
-import './projectAll.scss'
+import Projects from 'components/projects'
+import Footer from 'components/footer'
 
-const categories = ['All', 'Android', 'Web', 'Desktop', 'Design']
-const initialSelectedCategory = categories[0]
+import './index.scss'
 
-const ProjectAllPage: NextPage<{}> = ({}) => {
-  const [selectedCategory, setSelectedCategory] = React.useState(initialSelectedCategory)
+const getClassName = getClassNameFunction('pages-project_all')
+
+const categories = ['All', 'Android', 'Web', 'Desktop', 'Design'] as const
+type Category = typeof categories[number]
+
+const ProjectAllPage = () => {
+  const [selectedCategory, setSelectedCategory] = React.useState<Category>(categories[0])
 
   return (
-    <div className='pages-project_all'>
-      <section>
+    <div className={getClassName()}>
+      <section className={getClassName('section')}>
         <div className='container'>
           <h2 className='section-title'>Projects</h2>
-          <ul>
+          <ul className={getClassName('project-buttons')}>
             {categories.map((c) => (
               <a onClick={() => setSelectedCategory(c)} key={c}>
-                {selectedCategory === c ? <li className='selected'>{c}</li> : <li>{c}</li>}
+                <li
+                  className={`${getClassName('project-button')}${
+                    selectedCategory === c ? ` ${getClassName('project-button-selected')}` : ''
+                  }`}
+                >
+                  {c}
+                </li>
               </a>
             ))}
           </ul>
-          <Projects category={selectedCategory}></Projects>
+          <Projects category={selectedCategory} />
         </div>
       </section>
-      <Footer></Footer>
+      <Footer />
     </div>
   )
 }
