@@ -32,7 +32,7 @@ const Head = () => (
     {/* polyfill */}
     <script
       crossOrigin='anonymous'
-      src='https://polyfill.io/v3/polyfill.min.js?features=es2015'
+      src='https://polyfill.io/v3/polyfill.min.js?features=default'
       defer
     ></script>
   </NextHead>
