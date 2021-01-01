@@ -1,4 +1,11 @@
 import dayjs from 'dayjs'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faBirthdayCake,
+  faEnvelope,
+  faMapMarkedAlt,
+  faSuitcase,
+} from '@fortawesome/free-solid-svg-icons'
 
 import styles from './about.module.scss'
 
@@ -26,7 +33,7 @@ const About = () => {
         <ul>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <i className='fa fa-birthday-cake' aria-hidden='true'></i>
+              <FontAwesomeIcon icon={faBirthdayCake} />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>
               {birthday} (Age: {age})
@@ -34,19 +41,19 @@ const About = () => {
           </li>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <i className='fa fa-envelope' aria-hidden='true'></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>pvcresin0730[at]gmail.com</div>
           </li>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <i className='fa fa-map-marker-alt' aria-hidden='true'></i>
+              <FontAwesomeIcon icon={faMapMarkedAlt} />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>Tokyo, Japan</div>
           </li>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <i className='fa fa-suitcase' aria-hidden='true'></i>
+              <FontAwesomeIcon icon={faSuitcase} />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>
               <span>Front-End Engineer </span>
