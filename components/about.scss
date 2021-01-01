@@ -1,13 +1,13 @@
 .componentsAbout {
   padding: 0.75rem;
 
-  &__about-image {
+  &__aboutImage {
     text-align: center;
     padding: 0.75rem;
     margin: 0 auto;
   }
 
-  &__face-wrapper {
+  &__faceWrapper {
     position: relative;
     width: 100%;
     padding-top: 100%;
@@ -25,7 +25,7 @@
     background: gray;
   }
 
-  &__about-text {
+  &__aboutText {
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
     margin-top: 0.5rem;
   }
 
-  &__info-icon {
+  &__infoIcon {
     display: flex;
     justify-content: center;
     align-items: baseline;

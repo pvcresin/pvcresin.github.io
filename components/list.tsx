@@ -15,13 +15,13 @@ const List: React.FC<{ items: Item[] }> = ({ items }) => (
   <ul className={`pure-g pure-u-1-1 ${getClassName()}`}>
     {items.map((item) => (
       <li className={getClassName('item')} key={item.title}>
-        <h3 className={getClassName('item-title')}>
+        <h3 className={getClassName('itemTitle')}>
           <a className={getClassName('link')} href={item.link} target='_blank'>
             {item.title}
           </a>
           <div className={getClassName('right')}>
             <hr className={getClassName('line')} />
-            <span className={getClassName('date-container')}>
+            <span className={getClassName('dateContainer')}>
               <span className={getClassName('date')}>{item.date}</span>
             </span>
           </div>

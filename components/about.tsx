@@ -12,13 +12,13 @@ const About = () => {
 
   return (
     <div className={`pure-g ${getClassName()}`}>
-      <div className={`pure-u-sm-1-4 pure-u-1-2 ${getClassName('about-image')}`}>
-        <div className={`pure-u-1-2 ${getClassName('face-wrapper')}`}>
+      <div className={`pure-u-sm-1-4 pure-u-1-2 ${getClassName('aboutImage')}`}>
+        <div className={`pure-u-1-2 ${getClassName('faceWrapper')}`}>
           <img className={getClassName('face')} src='/icon-pvcresin.svg' />
         </div>
       </div>
       <div className='pure-u-sm-1-24 pure-u-1-1'></div>
-      <div className={`pure-u-sm-17-24 pure-u-1-1 ${getClassName('about-text')}`}>
+      <div className={`pure-u-sm-17-24 pure-u-1-1 ${getClassName('aboutText')}`}>
         Web Front-End が好きなエンジニア。
         <br />
         学生時代はインタラクション（HCI）を専攻し、主にモバイル /
@@ -29,7 +29,7 @@ const About = () => {
         新しいものが好きなので、貪欲に学んでいく。
         <ul>
           <li className={`pure-g ${getClassName('info')}`}>
-            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('info-icon')}`}>
+            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('infoIcon')}`}>
               <i className='fa fa-birthday-cake' aria-hidden='true'></i>
             </div>
             <div className={`pure-u-11-12 ${getClassName('right')}`}>
@@ -37,19 +37,19 @@ const About = () => {
             </div>
           </li>
           <li className={`pure-g ${getClassName('info')}`}>
-            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('info-icon')}`}>
+            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('infoIcon')}`}>
               <i className='fa fa-envelope' aria-hidden='true'></i>
             </div>
             <div className={`pure-u-11-12 ${getClassName('right')}`}>pvcresin0730[at]gmail.com</div>
           </li>
           <li className={`pure-g ${getClassName('info')}`}>
-            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('info-icon')}`}>
+            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('infoIcon')}`}>
               <i className='fa fa-map-marker-alt' aria-hidden='true'></i>
             </div>
             <div className={`pure-u-11-12 ${getClassName('right')}`}>Omotesando, Tokyo</div>
           </li>
           <li className={`pure-g ${getClassName('info')}`}>
-            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('info-icon')}`}>
+            <div className={`pure-u-1-12 pure-u-lg-1-24 ${getClassName('infoIcon')}`}>
               <i className='fa fa-suitcase' aria-hidden='true'></i>
             </div>
             <div className={`pure-u-11-12 ${getClassName('right')}`}>

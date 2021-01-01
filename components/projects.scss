@@ -19,7 +19,7 @@
     }
   }
 
-  &__image-wrapper {
+  &__imageWrapper {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
@@ -37,16 +37,16 @@
     border-bottom: 1px solid #ddd;
   }
 
-  &__project-info {
+  &__projectInfo {
     padding: 0.8rem 1rem;
   }
 
-  &__project-name {
+  &__projectName {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
   }
 
-  &__project-description {
+  &__projectDescription {
     font-size: 0.9rem;
   }
 }

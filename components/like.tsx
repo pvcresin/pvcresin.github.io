@@ -29,7 +29,7 @@ const Like = () => (
   <div className={getClassName()}>
     <h2 className='section-title'>Like</h2>
     <div className={`pure-g ${getClassName('content')}`}>
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('like-box')}`}>
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('likeBox')}`}>
         <div className={getClassName('like')}>
           <h3 className={getClassName('category')}>Do</h3>
           <hr className={getClassName('line')} />
@@ -43,7 +43,7 @@ const Like = () => (
           </ul>
         </div>
       </div>
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('like-box')}`}>
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('likeBox')}`}>
         <div className={getClassName('like')}>
           <h3 className={getClassName('category')}>Watch</h3>
           <hr className={getClassName('line')} />
@@ -57,7 +57,7 @@ const Like = () => (
           </ul>
         </div>
       </div>
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('like-box')}`}>
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('likeBox')}`}>
         <div className={getClassName('like')}>
           <h3 className={getClassName('category')}>Eat</h3>
           <hr className={getClassName('line')} />

@@ -5,7 +5,7 @@
     min-height: 100vh;
   }
 
-  &__project-buttons {
+  &__projectButtons {
     display: flex;
     justify-content: space-between;
     max-width: 400px;
@@ -13,7 +13,7 @@
     margin: 1rem auto 0 auto;
   }
 
-  &__project-button {
+  &__projectButton {
     font-size: 0.8rem;
     display: inline-block;
     color: gray;
@@ -24,7 +24,7 @@
     text-align: center;
   }
 
-  &__project-button-selected {
+  &__projectButtonSelected {
     color: white;
     background: gray;
     border-color: gray;

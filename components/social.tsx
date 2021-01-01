@@ -6,8 +6,8 @@ const getClassName = getClassNameFunction('componentsSocial')
 
 const Social = () => (
   <div className={getClassName()}>
-    <ul className={getClassName('icon-list')}>
-      <li className={getClassName('icon-list-item')}>
+    <ul className={getClassName('iconList')}>
+      <li className={getClassName('iconListItem')}>
         <a
           className={getClassName('link')}
           href='https://twitter.com/pvcresin/'
@@ -18,7 +18,7 @@ const Social = () => (
           <i className='fab fa-twitter fa-2x'></i>
         </a>
       </li>
-      <li className={getClassName('icon-list-item')}>
+      <li className={getClassName('iconListItem')}>
         <a
           className={getClassName('link')}
           href='https://github.com/pvcresin/'
@@ -29,7 +29,7 @@ const Social = () => (
           <i className='fab fa-github fa-2x'></i>
         </a>
       </li>
-      <li className={getClassName('icon-list-item')}>
+      <li className={getClassName('iconListItem')}>
         <a
           className={getClassName('link')}
           href='https://www.instagram.com/pvcresin/'
@@ -40,7 +40,7 @@ const Social = () => (
           <i className='fab fa-instagram fa-2x'></i>
         </a>
       </li>
-      <li className={getClassName('icon-list-item')}>
+      <li className={getClassName('iconListItem')}>
         <a
           className={getClassName('link')}
           href='https://pvcresin.hatenablog.com/'

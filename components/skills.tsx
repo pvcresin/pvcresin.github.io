@@ -76,11 +76,11 @@ const skills2 = [
 const Skills = () => (
   <div className={getClassName()}>
     <h2 className='section-title'>Skills</h2>
-    <div className={`pure-g ${getClassName('skill-container')}`}>
-      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skill-box')}`}>
+    <div className={`pure-g ${getClassName('skillContainer')}`}>
+      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skillBox')}`}>
         {skills.map((s) => (
           <li className={getClassName('skill')} key={s.name}>
-            <div className={getClassName('skill-info')}>
+            <div className={getClassName('skillInfo')}>
               <span className={getClassName('name')}>{s.name}</span>
               <span className={getClassName('sub')}>{s.sub}</span>
             </div>
@@ -90,10 +90,10 @@ const Skills = () => (
           </li>
         ))}
       </ul>
-      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skill-box')}`}>
+      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skillBox')}`}>
         {skills1.map((s) => (
           <li className={getClassName('skill')} key={s.name}>
-            <div className={getClassName('skill-info')}>
+            <div className={getClassName('skillInfo')}>
               <span className={getClassName('name')}>{s.name}</span>
               <span className={getClassName('sub')}>{s.sub}</span>
             </div>
@@ -103,10 +103,10 @@ const Skills = () => (
           </li>
         ))}
       </ul>
-      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skill-box')}`}>
+      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${getClassName('skillBox')}`}>
         {skills2.map((s) => (
           <li className={getClassName('skill')} key={s.name}>
-            <div className={getClassName('skill-info')}>
+            <div className={getClassName('skillInfo')}>
               <span className={getClassName('name')}>{s.name}</span>
               <span className={getClassName('sub')}>{s.sub}</span>
             </div>

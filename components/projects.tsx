@@ -27,12 +27,12 @@ const Projects: React.FC<{ category?: string; limit?: number }> = ({
         >
           <Link href={`/projects/${w.name}`}>
             <div className={getClassName('card')}>
-              <div className={getClassName('image-wrapper')}>
+              <div className={getClassName('imageWrapper')}>
                 <Webp imageClassName={getClassName('image')} src={w.img}></Webp>
               </div>
-              <div className={getClassName('project-info')}>
-                <h4 className={getClassName('project-name')}>{w.name}</h4>
-                <p className={getClassName('project-description')}>{w.sub}</p>
+              <div className={getClassName('projectInfo')}>
+                <h4 className={getClassName('projectName')}>{w.name}</h4>
+                <p className={getClassName('projectDescription')}>{w.sub}</p>
               </div>
             </div>
           </Link>

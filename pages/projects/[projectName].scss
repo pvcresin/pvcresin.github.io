@@ -8,18 +8,18 @@
     padding: 1.5rem;
   }
 
-  &__image-container {
+  &__imageContainer {
     background: black;
     width: 100%;
   }
 
-  &__video-frame-container {
+  &__videoFrameContainer {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
   }
 
-  &__video-frame {
+  &__videoFrame {
     position: absolute;
     top: 0;
     right: 0;
@@ -28,7 +28,7 @@
     background: black;
   }
 
-  &__project-name {
+  &__projectName {
     color: white;
     margin: 1rem 0;
     text-align: justify;
@@ -38,14 +38,14 @@
     }
   }
 
-  &__chapter-title {
+  &__chapterTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1.5rem 0 1rem 0;
   }
 
-  &__chapter-title-text {
+  &__chapterTitleText {
     font-size: 1.5rem;
     margin-right: 0.5rem;
     color: white;
@@ -55,7 +55,7 @@
     }
   }
 
-  &__chapter-line {
+  &__chapterLine {
     flex-grow: 1;
     border: 1.5px solid gray;
     border-radius: 1rem;
@@ -68,11 +68,11 @@
     text-align: justify;
   }
 
-  &__link-list {
+  &__linkList {
     padding-left: 2rem;
   }
 
-  &__link-list-item {
+  &__linkListItem {
     list-style-type: decimal;
     line-height: 1.8rem;
   }

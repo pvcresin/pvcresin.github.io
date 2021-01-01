@@ -9,7 +9,7 @@ const getClassName = getClassNameFunction('componentsMore')
 const More: React.FC<{ text?: string; link: string }> = ({ text = 'more', link }) => (
   <div className={getClassName()}>
     <Link href={link}>
-      <span className={getClassName('more-button')}>{text}</span>
+      <span className={getClassName('moreButton')}>{text}</span>
     </Link>
   </div>
 )

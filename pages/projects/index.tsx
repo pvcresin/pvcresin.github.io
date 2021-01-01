@@ -20,12 +20,12 @@ const ProjectAllPage = () => {
       <section className={getClassName('section')}>
         <div className='container'>
           <h2 className='section-title'>Projects</h2>
-          <ul className={getClassName('project-buttons')}>
+          <ul className={getClassName('projectButtons')}>
             {categories.map((c) => (
               <a onClick={() => setSelectedCategory(c)} key={c}>
                 <li
-                  className={`${getClassName('project-button')}${
-                    selectedCategory === c ? ` ${getClassName('project-button-selected')}` : ''
+                  className={`${getClassName('projectButton')}${
+                    selectedCategory === c ? ` ${getClassName('projectButtonSelected')}` : ''
                   }`}
                 >
                   {c}
