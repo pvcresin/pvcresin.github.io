@@ -17,7 +17,7 @@ const About = () => {
     <div className={`pure-g ${styles.root}`}>
       <div className={`pure-u-sm-1-4 pure-u-1-2 ${styles.aboutImage}`}>
         <div className={`pure-u-1-2 ${styles.faceWrapper}`}>
-          <img className={styles.face} src='/icon-pvcresin.svg' />
+          <img className={styles.face} src='/icon-pvcresin.svg' alt='pvcresinのアイコン画像' />
         </div>
       </div>
       <div className='pure-u-sm-1-24 pure-u-1-1'></div>
