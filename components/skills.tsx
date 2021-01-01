@@ -2,7 +2,7 @@ import { getClassNameFunction } from 'utils'
 
 import './skills.scss'
 
-const getClassName = getClassNameFunction('components-skills')
+const getClassName = getClassNameFunction('componentsSkills')
 
 const skills = [
   {

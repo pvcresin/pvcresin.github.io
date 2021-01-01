@@ -2,7 +2,7 @@ import { getClassNameFunction } from 'utils'
 
 import './list.scss'
 
-const getClassName = getClassNameFunction('components-list')
+const getClassName = getClassNameFunction('componentsList')
 
 export type Item = {
   title: string

@@ -8,7 +8,7 @@ import Webp from './webp'
 
 import './projects.scss'
 
-const getClassName = getClassNameFunction('components-projects')
+const getClassName = getClassNameFunction('componentsProjects')
 
 const initialCategory = 'All'
 

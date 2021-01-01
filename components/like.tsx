@@ -2,7 +2,7 @@ import { getClassNameFunction } from 'utils'
 
 import './like.scss'
 
-const getClassName = getClassNameFunction('components-like')
+const getClassName = getClassNameFunction('componentsLike')
 
 const hobby = {
   '💻': 'プログラミング',

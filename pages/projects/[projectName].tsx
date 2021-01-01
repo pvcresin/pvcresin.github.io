@@ -10,7 +10,7 @@ import Footer from 'components/footer'
 
 import './[projectName].scss'
 
-const getClassName = getClassNameFunction('pages-project_detail')
+const getClassName = getClassNameFunction('pagesProjectDetail')
 
 const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
   <div className={getClassName()}>

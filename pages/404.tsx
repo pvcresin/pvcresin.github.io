@@ -4,7 +4,7 @@ import Footer from 'components/footer'
 
 import './404.scss'
 
-const getClassName = getClassNameFunction('pages-other')
+const getClassName = getClassNameFunction('pagesOther')
 
 const NotFoundPage = () => (
   <div className={getClassName()}>

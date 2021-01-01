@@ -2,7 +2,7 @@ import { getClassNameFunction } from 'utils'
 
 import './webp.scss'
 
-const getClassName = getClassNameFunction('components-webp')
+const getClassName = getClassNameFunction('componentsWebp')
 
 const Webp: React.FC<{ src: string; imageClassName?: string }> = ({ src, imageClassName }) => (
   <div className={getClassName()}>

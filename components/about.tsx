@@ -4,7 +4,7 @@ import { getClassNameFunction } from 'utils'
 
 import './about.scss'
 
-const getClassName = getClassNameFunction('components-about')
+const getClassName = getClassNameFunction('componentsAbout')
 
 const About = () => {
   const birthday = '1994-07-30'

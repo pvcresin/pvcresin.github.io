@@ -2,7 +2,7 @@ import { getClassNameFunction } from 'utils'
 
 import './tags.scss'
 
-const getClassName = getClassNameFunction('components-tags')
+const getClassName = getClassNameFunction('componentsTags')
 
 const Tags: React.FC<{ tags: string[] }> = ({ tags }) => (
   <div className={getClassName()}>

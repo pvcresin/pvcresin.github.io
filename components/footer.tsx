@@ -6,7 +6,7 @@ import Social from './social'
 
 import './footer.scss'
 
-const getClassName = getClassNameFunction('components-footer')
+const getClassName = getClassNameFunction('componentsFooter')
 
 const Footer = () => {
   const year = dayjs().format('YYYY')

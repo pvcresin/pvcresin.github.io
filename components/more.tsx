@@ -4,7 +4,7 @@ import { getClassNameFunction } from 'utils'
 
 import './more.scss'
 
-const getClassName = getClassNameFunction('components-more')
+const getClassName = getClassNameFunction('componentsMore')
 
 const More: React.FC<{ text?: string; link: string }> = ({ text = 'more', link }) => (
   <div className={getClassName()}>

@@ -7,7 +7,7 @@ import Footer from 'components/footer'
 
 import './index.scss'
 
-const getClassName = getClassNameFunction('pages-project_all')
+const getClassName = getClassNameFunction('pagesProjectAll')
 
 const categories = ['All', 'Android', 'Web', 'Desktop', 'Design'] as const
 type Category = typeof categories[number]

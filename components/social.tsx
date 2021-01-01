@@ -2,7 +2,7 @@ import { getClassNameFunction } from 'utils'
 
 import './social.scss'
 
-const getClassName = getClassNameFunction('components-social')
+const getClassName = getClassNameFunction('componentsSocial')
 
 const Social = () => (
   <div className={getClassName()}>

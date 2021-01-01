@@ -4,7 +4,7 @@ import Social from './social'
 
 import './first.scss'
 
-const getClassName = getClassNameFunction('components-first')
+const getClassName = getClassNameFunction('componentsFirst')
 
 const First = () => (
   <div className={getClassName()}>

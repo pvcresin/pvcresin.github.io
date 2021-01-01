@@ -8,7 +8,7 @@ import Footer from 'components/footer'
 
 import './about.scss'
 
-const getClassName = getClassNameFunction('pages-profile')
+const getClassName = getClassNameFunction('pagesProfile')
 
 const AboutPage = () => (
   <div className={getClassName()}>

@@ -11,7 +11,7 @@ import Footer from 'components/footer'
 
 import './app.scss'
 
-const getClassName = getClassNameFunction('pages-top')
+const getClassName = getClassNameFunction('pagesTop')
 
 const IndexPage = () => (
   <div className={getClassName()}>
