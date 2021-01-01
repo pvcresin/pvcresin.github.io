@@ -24,7 +24,7 @@ const Projects: React.FC<{ category?: string; limit?: number }> = ({
                 <Webp imageClassName={styles.image} src={w.img}></Webp>
               </div>
               <div className={styles.projectInfo}>
-                <h4 className={styles.projectName}>{w.name}</h4>
+                <h3 className={styles.projectName}>{w.name}</h3>
                 <p className={styles.projectDescription}>{w.sub}</p>
               </div>
             </div>
