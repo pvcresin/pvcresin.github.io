@@ -42,7 +42,7 @@ const About = () => {
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
               <i className='fa fa-map-marker-alt' aria-hidden='true'></i>
             </div>
-            <div className={`pure-u-11-12 ${styles.right}`}>Omotesando, Tokyo</div>
+            <div className={`pure-u-11-12 ${styles.right}`}>Tokyo, Japan</div>
           </li>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
