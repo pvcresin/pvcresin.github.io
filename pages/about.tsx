@@ -1,17 +1,13 @@
-import { getClassNameFunction } from 'utils'
-
 import About from 'components/about'
 import Education from 'components/education'
 import Skills from 'components/skills'
 import Like from 'components/like'
 import Footer from 'components/footer'
 
-import './about.scss'
-
-const getClassName = getClassNameFunction('pagesProfile')
+import styles from './about.module.scss'
 
 const AboutPage = () => (
-  <div className={getClassName()}>
+  <div className={styles.root}>
     <section>
       <div className='container'>
         <h2 className='section-title'>About</h2>

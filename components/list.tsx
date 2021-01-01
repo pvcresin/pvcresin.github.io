@@ -1,8 +1,4 @@
-import { getClassNameFunction } from 'utils'
-
-import './list.scss'
-
-const getClassName = getClassNameFunction('componentsList')
+import styles from './list.module.scss'
 
 export type Item = {
   title: string
@@ -12,22 +8,22 @@ export type Item = {
 }
 
 const List: React.FC<{ items: Item[] }> = ({ items }) => (
-  <ul className={`pure-g pure-u-1-1 ${getClassName()}`}>
+  <ul className={`pure-g pure-u-1-1 ${styles.root}`}>
     {items.map((item) => (
-      <li className={getClassName('item')} key={item.title}>
-        <h3 className={getClassName('itemTitle')}>
-          <a className={getClassName('link')} href={item.link} target='_blank'>
+      <li className={styles.item} key={item.title}>
+        <h3 className={styles.itemTitle}>
+          <a className={styles.link} href={item.link} target='_blank'>
             {item.title}
           </a>
-          <div className={getClassName('right')}>
-            <hr className={getClassName('line')} />
-            <span className={getClassName('dateContainer')}>
-              <span className={getClassName('date')}>{item.date}</span>
+          <div className={styles.right}>
+            <hr className={styles.line} />
+            <span className={styles.dateContainer}>
+              <span className={styles.date}>{item.date}</span>
             </span>
           </div>
         </h3>
         {item.texts.map((t) => (
-          <p className={getClassName('sub')} key={t}>
+          <p className={styles.sub} key={t}>
             {t}
           </p>
         ))}

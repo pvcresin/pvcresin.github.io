@@ -1,0 +1,62 @@
+.root {
+  padding: 0.75rem;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.itemTitle {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.link {
+  color: #4e9adb;
+  padding: 0.75rem;
+  text-align: justify;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.right {
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.line {
+  display: inline-flex;
+  flex-grow: 1;
+  border: 1.5px solid gray;
+  border-radius: 1rem;
+  min-width: 1rem;
+  background: gray;
+}
+
+.dateContainer {
+  padding: 0.75rem;
+  display: inline-flex;
+}
+
+.date {
+  background: #555;
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.sub {
+  color: #bdbdbd;
+  padding: 0 0.75rem;
+  font-weight: 300;
+  text-align: justify;
+}

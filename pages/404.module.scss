@@ -1,14 +1,14 @@
-.pagesOther {
+.root {
   text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: #2b2b2b;
   color: #efefef;
+}
 
-  &__content {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-  }
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }

@@ -1,8 +1,4 @@
-import { getClassNameFunction } from 'utils'
-
-import './like.scss'
-
-const getClassName = getClassNameFunction('componentsLike')
+import styles from './like.module.scss'
 
 const hobby = {
   '💻': 'プログラミング',
@@ -26,46 +22,46 @@ const eat = {
 } as const
 
 const Like = () => (
-  <div className={getClassName()}>
+  <div>
     <h2 className='section-title'>Like</h2>
-    <div className={`pure-g ${getClassName('content')}`}>
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('likeBox')}`}>
-        <div className={getClassName('like')}>
-          <h3 className={getClassName('category')}>Do</h3>
-          <hr className={getClassName('line')} />
+    <div className={`pure-g ${styles.content}`}>
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${styles.likeBox}`}>
+        <div className={styles.like}>
+          <h3 className={styles.category}>Do</h3>
+          <hr className={styles.line} />
           <ul>
             {Object.entries(hobby).map(([i, t]) => (
-              <li className={getClassName('item')} key={i}>
-                <span className={getClassName('icon')}>{i}</span>
-                <span className={getClassName('text')}>{t}</span>
+              <li className={styles.item} key={i}>
+                <span className={styles.icon}>{i}</span>
+                <span className={styles.text}>{t}</span>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('likeBox')}`}>
-        <div className={getClassName('like')}>
-          <h3 className={getClassName('category')}>Watch</h3>
-          <hr className={getClassName('line')} />
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${styles.likeBox}`}>
+        <div className={styles.like}>
+          <h3 className={styles.category}>Watch</h3>
+          <hr className={styles.line} />
           <ul>
             {Object.entries(watch).map(([i, t]) => (
-              <li className={getClassName('item')} key={i}>
-                <span className={getClassName('icon')}>{i}</span>
-                <span className={getClassName('text')}>{t}</span>
+              <li className={styles.item} key={i}>
+                <span className={styles.icon}>{i}</span>
+                <span className={styles.text}>{t}</span>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${getClassName('likeBox')}`}>
-        <div className={getClassName('like')}>
-          <h3 className={getClassName('category')}>Eat</h3>
-          <hr className={getClassName('line')} />
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${styles.likeBox}`}>
+        <div className={styles.like}>
+          <h3 className={styles.category}>Eat</h3>
+          <hr className={styles.line} />
           <ul>
             {Object.entries(eat).map(([i, t]) => (
-              <li className={getClassName('item')} key={i}>
-                <span className={getClassName('icon')}>{i}</span>
-                <span className={getClassName('text')}>{t}</span>
+              <li className={styles.item} key={i}>
+                <span className={styles.icon}>{i}</span>
+                <span className={styles.text}>{t}</span>
               </li>
             ))}
           </ul>

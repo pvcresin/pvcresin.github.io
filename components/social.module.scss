@@ -1,0 +1,25 @@
+.iconList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.iconListItem {
+  display: inline-block;
+}
+
+.link {
+  color: #525252;
+  vertical-align: sub;
+  display: inline-block;
+  width: 3rem;
+
+  &:hover {
+    color: white;
+  }
+
+  > svg {
+    height: 2rem;
+  }
+}

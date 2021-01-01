@@ -1,22 +1,18 @@
-import { getClassNameFunction } from 'utils'
-
 import Social from './social'
 
-import './first.scss'
-
-const getClassName = getClassNameFunction('componentsFirst')
+import styles from './first.module.scss'
 
 const First = () => (
-  <div className={getClassName()}>
+  <div className={styles.root}>
     {/* for vertical centering */}
     <nav />
     <div className='container'>
-      <h1 className={getClassName('name')}>Raika Toriyama</h1>
-      <p className={getClassName('description')}>Web / Android Developer</p>
+      <h1 className={styles.name}>Raika Toriyama</h1>
+      <p className={styles.description}>Web / Android Developer</p>
       <Social />
     </div>
     <div className='container'>
-      <div className={getClassName('arrow')}>
+      <div className={styles.arrow}>
         <i className='fas fa-chevron-down fa-3x'></i>
       </div>
     </div>

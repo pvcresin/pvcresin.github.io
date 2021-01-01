@@ -1,15 +1,11 @@
 import Link from 'next/link'
 
-import { getClassNameFunction } from 'utils'
-
-import './more.scss'
-
-const getClassName = getClassNameFunction('componentsMore')
+import styles from './more.module.scss'
 
 const More: React.FC<{ text?: string; link: string }> = ({ text = 'more', link }) => (
-  <div className={getClassName()}>
+  <div className={styles.root}>
     <Link href={link}>
-      <span className={getClassName('moreButton')}>{text}</span>
+      <span className={styles.moreButton}>{text}</span>
     </Link>
   </div>
 )
