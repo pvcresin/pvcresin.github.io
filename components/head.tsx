@@ -20,9 +20,6 @@ const Head = () => (
       rel='stylesheet'
     />
 
-    {/* font awesome */}
-    <script src='https://use.fontawesome.com/releases/v5.12.0/js/all.js' defer></script>
-
     {/* polyfill */}
     <script
       crossOrigin='anonymous'

@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
 import Social from './social'
 
 import styles from './first.module.scss'
@@ -13,7 +16,7 @@ const First = () => (
     </div>
     <div className='container'>
       <div className={styles.arrow}>
-        <i className='fas fa-chevron-down fa-3x'></i>
+        <FontAwesomeIcon icon={faChevronDown} size='3x' />
       </div>
     </div>
   </div>
