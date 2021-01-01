@@ -57,7 +57,12 @@ const About = () => {
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>
               <span>Front-End Engineer </span>
-              <a className={styles.link} href='https://jp.corp-sansan.com/' target='_blank'>
+              <a
+                className={styles.link}
+                href='https://jp.corp-sansan.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 @ Sansan
               </a>
             </div>
