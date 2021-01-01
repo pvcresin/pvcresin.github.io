@@ -14,8 +14,11 @@ const Head = () => (
     <link rel='shortcut icon' href='/favicon.ico' />
 
     {/* font */}
-    <link rel='stylesheet' href='https://fonts.googleapis.com/earlyaccess/notosansjp.css' />
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP&display=swap'
+      rel='stylesheet'
+    />
 
     {/* font awesome */}
     <script src='https://use.fontawesome.com/releases/v5.12.0/js/all.js' defer></script>
