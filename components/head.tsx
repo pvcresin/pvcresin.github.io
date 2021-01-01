@@ -17,15 +17,6 @@ const Head = () => (
     <link rel='stylesheet' href='https://fonts.googleapis.com/earlyaccess/notosansjp.css' />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' />
 
-    {/* pure */}
-    <link
-      rel='stylesheet'
-      href='https://unpkg.com/purecss@1.0.0/build/pure-min.css'
-      integrity='sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w'
-      crossOrigin='anonymous'
-    />
-    <link rel='stylesheet' href='https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css' />
-
     {/* font awesome */}
     <script src='https://use.fontawesome.com/releases/v5.12.0/js/all.js' defer></script>
 
