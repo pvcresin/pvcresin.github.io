@@ -1,12 +1,9 @@
-name: github pages
+name: Compressed Size
 
-on:
-  push:
-    branches:
-      - master
+on: [pull_request]
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,14 +25,8 @@ jobs:
       - name: install
         run: yarn install --frozen-lockfile
 
-      - name: export
-        run: yarn export
-
-      - name: add nojekyll
-        run: touch ./out/.nojekyll
-
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: preactjs/compressed-size-action@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          build-script: 'export'
+          pattern: './out/**/*.{js,css,html,json}'
