@@ -18,7 +18,7 @@ const awards: Item[] = [
     link: 'https://shinshu-futureapp.net/information/contest/',
   },
   {
-    date: '2010-03',
+    date: '2019-03',
     title: '第182回 HCI研究会',
     texts: [
       '学生奨励賞 受賞',
