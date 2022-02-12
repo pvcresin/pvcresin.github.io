@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FaChevronDown } from 'react-icons/fa'
 
 import Social from './social'
 
@@ -16,7 +15,7 @@ const First = () => (
     </div>
     <div className='container'>
       <div className={styles.arrow}>
-        <FontAwesomeIcon icon={faChevronDown} size='3x' />
+        <FaChevronDown size='3x' />
       </div>
     </div>
   </div>

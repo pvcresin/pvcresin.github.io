@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faMapMarkedAlt, faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { FaEnvelope, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 
 import styles from './about.module.scss'
 
@@ -24,19 +23,19 @@ const About = () => {
         <ul>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FaEnvelope />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>pvcresin0730[at]gmail.com</div>
           </li>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <FontAwesomeIcon icon={faMapMarkedAlt} />
+              <FaMapMarkerAlt />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>Tokyo, Japan</div>
           </li>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <FontAwesomeIcon icon={faSuitcase} />
+              <FaSuitcase />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>
               <span>Web Frontend Engineer </span>

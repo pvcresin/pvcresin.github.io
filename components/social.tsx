@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faRss } from '@fortawesome/free-solid-svg-icons'
+import { FaTwitter, FaGithub, FaInstagram, FaPenSquare } from 'react-icons/fa'
 
 import styles from './social.module.scss'
 
@@ -14,7 +12,7 @@ const Social = () => (
         title='Twitter'
         rel='noopener noreferrer'
       >
-        <FontAwesomeIcon icon={faTwitter} size='2x' />
+        <FaTwitter size='2x' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -25,7 +23,7 @@ const Social = () => (
         title='GitHub'
         rel='noopener noreferrer'
       >
-        <FontAwesomeIcon icon={faGithub} size='2x' />
+        <FaGithub size='2x' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -36,7 +34,7 @@ const Social = () => (
         title='Instagram'
         rel='noopener noreferrer'
       >
-        <FontAwesomeIcon icon={faInstagram} size='2x' />
+        <FaInstagram size='2x' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -47,7 +45,7 @@ const Social = () => (
         title='Hatena Blog'
         rel='noopener noreferrer'
       >
-        <FontAwesomeIcon icon={faRss} size='2x' />
+        <FaPenSquare size='2x' />
       </a>
     </li>
   </ul>
