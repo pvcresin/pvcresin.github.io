@@ -1,18 +1,9 @@
-import dayjs from 'dayjs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBirthdayCake,
-  faEnvelope,
-  faMapMarkedAlt,
-  faSuitcase,
-} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faMapMarkedAlt, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './about.module.scss'
 
 const About = () => {
-  const birthday = '1994-07-30'
-  const age = dayjs().diff(birthday, 'year')
-
   return (
     <div className={`pure-g ${styles.root}`}>
       <div className={`pure-u-sm-1-4 pure-u-1-2 ${styles.aboutImage}`}>
@@ -33,14 +24,6 @@ const About = () => {
         <ul>
           <li className={`pure-g ${styles.info}`}>
             <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-              <FontAwesomeIcon icon={faBirthdayCake} />
-            </div>
-            <div className={`pure-u-11-12 ${styles.right}`}>
-              {birthday} (Age: {age})
-            </div>
-          </li>
-          <li className={`pure-g ${styles.info}`}>
-            <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>pvcresin0730[at]gmail.com</div>
@@ -56,14 +39,14 @@ const About = () => {
               <FontAwesomeIcon icon={faSuitcase} />
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>
-              <span>Front-End Engineer </span>
+              <span>Web Frontend Engineer </span>
               <a
                 className={styles.link}
                 href='https://jp.corp-sansan.com/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                @ Sansan
+                @ Sansan, Inc.
               </a>
             </div>
           </li>

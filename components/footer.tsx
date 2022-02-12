@@ -1,11 +1,9 @@
-import dayjs from 'dayjs'
-
 import Social from './social'
 
 import styles from './footer.module.scss'
 
 const Footer = () => {
-  const year = dayjs().format('YYYY')
+  const year = new Date().getFullYear()
 
   return (
     <div className={styles.root}>
