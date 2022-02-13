@@ -26,13 +26,17 @@
   background: gray;
 }
 
-.aboutText {
+.aboutTextContainer {
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.75rem;
   font-size: 1.1rem;
+}
+
+.aboutText {
+  line-height: 2;
 }
 
 .info {
@@ -43,7 +47,7 @@
 .infoIcon {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   font-size: 1.5rem;
 
   svg {

@@ -14,7 +14,6 @@ const IndexPage = () => (
     <First />
     <section className={styles.section}>
       <div className='container'>
-        <h2 className='section-title'>About Me</h2>
         <About />
         <More text='detail' link='/about' />
       </div>
@@ -32,8 +31,6 @@ const IndexPage = () => (
         <Awards />
         <h2 className='section-title'>Publications</h2>
         <Publications />
-        <h2 className='section-title'>Clubs</h2>
-        <Clubs />
       </div>
     </section>
     <Footer />

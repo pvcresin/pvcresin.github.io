@@ -8,7 +8,7 @@ const skills = [
   },
   {
     name: 'Kotlin',
-    sub: 'Anko Ktor',
+    sub: 'Jetpack Compose Ktor',
     level: '80%',
   },
   {
@@ -36,7 +36,7 @@ const skills1 = [
   },
   {
     name: 'JavaScript',
-    sub: 'React Vue Node',
+    sub: 'React Webpack Node',
     level: '90%',
   },
   {
@@ -49,6 +49,11 @@ const skills1 = [
 const skills2 = [
   {
     name: 'Git',
+    sub: 'GitHub GitLab',
+    level: '80%',
+  },
+  {
+    name: 'Figma',
     sub: '',
     level: '60%',
   },
@@ -56,11 +61,6 @@ const skills2 = [
     name: 'Illustrator',
     sub: '',
     level: '80%',
-  },
-  {
-    name: 'Cacoo',
-    sub: '',
-    level: '40%',
   },
   {
     name: 'Prott',

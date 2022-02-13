@@ -32,6 +32,11 @@ const clubs: Item[] = [
   },
 ]
 
-const Clubs = () => <List items={clubs} />
+const Clubs = () => (
+  <>
+    <h2 className='section-title'>Clubs</h2>
+    <List items={clubs} />
+  </>
+)
 
 export default Clubs

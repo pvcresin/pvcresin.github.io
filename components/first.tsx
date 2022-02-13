@@ -10,7 +10,7 @@ const First = () => (
     <nav />
     <div className='container'>
       <h1 className={styles.name}>Raika Toriyama</h1>
-      <p className={styles.description}>Web / Android Developer</p>
+      <p className={styles.description}>Software Engineer</p>
       <Social />
     </div>
     <div className='container'>
