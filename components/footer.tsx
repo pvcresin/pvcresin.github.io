@@ -3,13 +3,11 @@ import Social from './social'
 import styles from './footer.module.scss'
 
 const Footer = () => {
-  const year = new Date().getFullYear()
-
   return (
     <div className={styles.root}>
       <div className={`container ${styles.container}`}>
         <Social />
-        <p className={styles.copyright}>© {year} pvcresin</p>
+        <p className={styles.copyright}>© pvcresin</p>
       </div>
     </div>
   )
