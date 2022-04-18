@@ -8,6 +8,7 @@ const Webp: React.FC<{ src: string; imageClassName?: string }> = ({ src, imageCl
       className={`${styles.image}${imageClassName ? ` ${imageClassName}` : ''}`}
       src={`/${src}.webp`}
       alt={`/${src}.webp`}
+      loading='lazy'
     />
   </picture>
 )
