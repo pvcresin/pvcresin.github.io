@@ -15,7 +15,7 @@ const First = () => (
     </div>
     <div className='container'>
       <div className={styles.arrow}>
-        <FaChevronDown size='3x' />
+        <FaChevronDown size='3rem' />
       </div>
     </div>
   </div>

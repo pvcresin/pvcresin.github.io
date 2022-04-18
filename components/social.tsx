@@ -12,7 +12,7 @@ const Social = () => (
         title='Twitter'
         rel='noopener noreferrer'
       >
-        <FaTwitter size='2x' />
+        <FaTwitter size='2rem' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -23,7 +23,7 @@ const Social = () => (
         title='GitHub'
         rel='noopener noreferrer'
       >
-        <FaGithub size='2x' />
+        <FaGithub size='2rem' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -34,7 +34,7 @@ const Social = () => (
         title='Instagram'
         rel='noopener noreferrer'
       >
-        <FaInstagram size='2x' />
+        <FaInstagram size='2rem' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -45,7 +45,7 @@ const Social = () => (
         title='Hatena Blog'
         rel='noopener noreferrer'
       >
-        <FaPenSquare size='2x' />
+        <FaPenSquare size='2rem' />
       </a>
     </li>
   </ul>
