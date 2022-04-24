@@ -5,11 +5,13 @@ import projectsArray, { Project } from 'data'
 import Tags from 'components/tags'
 import Webp from 'components/webp'
 import Footer from 'components/footer'
+import Navigation from 'components/navigation'
 
 import styles from './[projectName].module.scss'
 
 const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
   <div className={styles.root}>
+    <Navigation />
     <div className='container'>
       <section className={styles.section}>
         {!project.video ? (

@@ -3,14 +3,15 @@ import About from 'components/about'
 import Projects from 'components/projects'
 import Awards from 'components/awards'
 import Publications from 'components/publications'
-import Clubs from 'components/clubs'
 import More from 'components/more'
 import Footer from 'components/footer'
+import Navigation from 'components/navigation'
 
 import styles from './index.module.scss'
 
 const IndexPage = () => (
   <div className={styles.root}>
+    <Navigation />
     <First />
     <section className={styles.section}>
       <div className='container'>
