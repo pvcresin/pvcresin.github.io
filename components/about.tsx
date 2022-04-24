@@ -4,7 +4,6 @@ import styles from './about.module.scss'
 
 const About = () => (
   <>
-    <h2 className='section-title'>About</h2>
     <div className={`pure-g ${styles.root}`}>
       <div className={`pure-u-sm-1-4 pure-u-1-2 ${styles.aboutImage}`}>
         <div className={`pure-u-1-2 ${styles.faceWrapper}`}>

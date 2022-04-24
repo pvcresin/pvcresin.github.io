@@ -2,10 +2,12 @@
   text-align: center;
   background: #1a1819;
   color: white;
-  height: 100vh;
+  /* header 40px */
+  height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  position: relative;
 }
 
 .name {
@@ -28,6 +30,14 @@
   }
 }
 
+.arrowContainer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .arrow {
   display: inline-block;
+  margin-bottom: 1rem;
 }

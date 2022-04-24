@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import Projects from 'components/projects'
 import Footer from 'components/footer'
+import Navigation from 'components/navigation'
 
 import styles from './index.module.scss'
 
@@ -13,9 +14,9 @@ const ProjectAllPage = () => {
 
   return (
     <div>
+      <Navigation />
       <section className={styles.section}>
         <div className='container'>
-          <h2 className='section-title'>Projects</h2>
           <ul className={styles.projectButtons}>
             {categories.map((c) => (
               <a onClick={() => setSelectedCategory(c)} key={c}>

@@ -4,12 +4,12 @@
 
 .section {
   &:nth-child(2n) {
-    background: #2b2b2b;
-    color: #efefef;
+    background: #eeeeee;
+    color: #222222;
   }
 
   &:nth-child(2n + 1) {
-    background: #eeeeee;
-    color: #222222;
+    background: #2b2b2b;
+    color: #efefef;
   }
 }
