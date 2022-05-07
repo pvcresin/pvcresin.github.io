@@ -6,7 +6,7 @@ import Talks from 'components/talks'
 import styles from './news.module.scss'
 
 const NewsPage = () => (
-  <div className={styles.root}>
+  <div className={`root ${styles.root}`}>
     <Navigation />
     <section className={styles.content}>
       <div className='container'>

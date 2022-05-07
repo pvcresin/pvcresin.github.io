@@ -10,10 +10,10 @@ import Navigation from 'components/navigation'
 import styles from './[projectName].module.scss'
 
 const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
-  <div className={styles.root}>
+  <div className='root'>
     <Navigation />
-    <div className='container'>
-      <section className={styles.section}>
+    <section className={styles.section}>
+      <div className='container'>
         {project.video ? (
           <div className={styles.videoFrameContainer}>
             <iframe
@@ -62,8 +62,8 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
             </ol>
           </>
         )}
-      </section>
-    </div>
+      </div>
+    </section>
     <Footer />
   </div>
 )

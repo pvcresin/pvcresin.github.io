@@ -2,8 +2,7 @@
   text-align: center;
   background: #1a1819;
   color: white;
-  /* header 40px */
-  height: calc(100vh - 40px);
+  height: calc(100vh - var(--header-height));
   display: flex;
   flex-direction: column;
   justify-content: center;

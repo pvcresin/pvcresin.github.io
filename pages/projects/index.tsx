@@ -13,7 +13,7 @@ const ProjectAllPage = () => {
   const [selectedCategory, setSelectedCategory] = React.useState<Category>(categories[0])
 
   return (
-    <div>
+    <div className='root'>
       <Navigation />
       <section className={styles.section}>
         <div className='container'>

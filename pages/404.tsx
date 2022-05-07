@@ -4,7 +4,7 @@ import Navigation from 'components/navigation'
 import styles from './404.module.scss'
 
 const NotFoundPage = () => (
-  <div className={styles.root}>
+  <div className='root'>
     <Navigation />
     <section className={styles.content}>
       <div className='container'>

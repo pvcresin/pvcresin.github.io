@@ -9,7 +9,7 @@ import Navigation from 'components/navigation'
 import styles from './index.module.scss'
 
 const IndexPage = () => (
-  <div className={styles.root}>
+  <div className='root'>
     <Navigation />
     <First />
     <section className={styles.section}>

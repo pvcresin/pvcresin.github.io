@@ -6,10 +6,8 @@ import Like from 'components/like'
 import Footer from 'components/footer'
 import Navigation from 'components/navigation'
 
-import styles from './about.module.scss'
-
 const AboutPage = () => (
-  <div className={styles.root}>
+  <div className='root'>
     <Navigation />
     <section>
       <div className='container'>
