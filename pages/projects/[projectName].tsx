@@ -14,11 +14,7 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
     <Navigation />
     <div className='container'>
       <section className={styles.section}>
-        {!project.video ? (
-          <div className={styles.imageContainer}>
-            <Webp src={project.img} />
-          </div>
-        ) : (
+        {project.video ? (
           <div className={styles.videoFrameContainer}>
             <iframe
               className={styles.videoFrame}
@@ -27,6 +23,10 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
               allow='encrypted-media'
               allowFullScreen
             />
+          </div>
+        ) : (
+          <div className={styles.imageContainer}>
+            <Webp src={project.img} imageClassName={styles.image} />
           </div>
         )}
         <h1 className={styles.projectName}>
