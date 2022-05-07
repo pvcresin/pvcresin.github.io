@@ -1,5 +1,7 @@
 import styles from './news.module.scss'
 
+import { FaExternalLinkAlt } from 'react-icons/fa'
+
 export type Item = { date: string; siteName?: string; title: string; link: string }
 
 const News: React.FC<{ items: Item[] }> = ({ items }) => (
@@ -12,6 +14,9 @@ const News: React.FC<{ items: Item[] }> = ({ items }) => (
         <a className={styles.link} href={item.link} target='_blank' rel='noopener noreferrer'>
           {item.title}
           {item.siteName ? ` | ${item.siteName}` : ''}
+          <span className={styles.linkIcon}>
+            <FaExternalLinkAlt size='0.8rem' />
+          </span>
         </a>
       </li>
     ))}
