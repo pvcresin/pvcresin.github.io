@@ -1,0 +1,35 @@
+.root {
+  padding: 0.75rem;
+}
+
+.item {
+  display: flex;
+  padding: 0 0.75rem;
+}
+
+.item + .item {
+  margin-top: 0.75rem;
+}
+
+.date {
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.link {
+  font-size: 1rem;
+  color: #4e9adb;
+  word-break: break-all;
+  text-align: left;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
