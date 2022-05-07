@@ -1,12 +1,12 @@
-import styles from './news.module.scss'
+import styles from './newslist.module.scss'
 
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
-export type Item = { date: string; siteName?: string; title: string; link: string }
+export type NewsData = { date: string; siteName?: string; title: string; link: string }
 
-const News: React.FC<{ items: Item[] }> = ({ items }) => (
+const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>
-    {items.map((item) => (
+    {newsData.map((item) => (
       <li className={styles.item} key={item.title}>
         <span className={styles.dateContainer}>
           <span className={styles.date}>{item.date}</span>
@@ -23,4 +23,4 @@ const News: React.FC<{ items: Item[] }> = ({ items }) => (
   </ul>
 )
 
-export default News
+export default NewsList

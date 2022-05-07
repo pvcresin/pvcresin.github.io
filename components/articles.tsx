@@ -1,6 +1,6 @@
-import News, { Item } from './news'
+import NewsList, { NewsData } from './newslist'
 
-const news: Item[] = [
+const news: NewsData[] = [
   {
     date: '2022-04-19',
     title: 'esbuild-loader 試してみたら開発ビルドが 2〜3 倍速くなった話',
@@ -27,6 +27,6 @@ const news: Item[] = [
   },
 ]
 
-const Articles = () => <News items={news} />
+const Articles = () => <NewsList newsData={news} />
 
 export default Articles
