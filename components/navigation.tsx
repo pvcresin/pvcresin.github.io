@@ -34,6 +34,11 @@ const Navigation = () => {
             </span>
           </Link>
         </li>
+        <li className={styles.item}>
+          <Link href='/news'>
+            <span className={pathname === '/news' ? styles.linkActive : styles.link}>News</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   )

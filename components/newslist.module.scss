@@ -1,5 +1,6 @@
 .root {
   padding: 0.75rem;
+  text-align: left;
 }
 
 .item {
@@ -12,7 +13,7 @@
 }
 
 .date {
-  color: white;
+  color: gray;
   padding: 0.1rem 0.3rem;
   border-radius: 0.3rem;
   display: inline-block;
@@ -21,13 +22,13 @@
   font-weight: normal;
   white-space: nowrap;
   margin-right: 0.5rem;
+  font-family: 'Noto Sans JP', monospace;
 }
 
 .link {
   font-size: 1rem;
   color: #4e9adb;
   word-break: break-all;
-  text-align: left;
 
   &:hover {
     text-decoration: underline;
@@ -39,4 +40,10 @@
   height: 1.5rem;
   align-items: center;
   margin-left: 0.3rem;
+}
+
+.siteName {
+  display: inline-flex;
+  white-space: pre;
+  color: gray;
 }
