@@ -20,6 +20,12 @@ const news: NewsData[] = [
     link: 'https://buildersbox.corp-sansan.com/entry/2021/11/04/110000',
   },
   {
+    date: '2021-10-20',
+    title: 'TypeScriptの導入で開発現場はどう変わる？ Sansanの事例に見るメリットとコスト',
+    siteName: 'CodeZine',
+    link: 'https://codezine.jp/article/detail/14849',
+  },
+  {
     date: '2021-06-24',
     title: 'TypeScript を導入して 1 年が経って感じた良かったこと・困ったこと',
     siteName: 'Sansan Builders Blog',
