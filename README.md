@@ -9,3 +9,4 @@
 - [ ] middle drive video resize
 - [ ] Add Cosmetic projects
 - [ ] Add InvisibleFlick video
+- [ ] Add project link to awards
