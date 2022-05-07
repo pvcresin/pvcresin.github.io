@@ -44,10 +44,7 @@ ref
 ## Articles
 
 - Speaker Deck
-- Qiita
-- Zenn
 - Blog
-- SBB
 
 ## Interview
 
