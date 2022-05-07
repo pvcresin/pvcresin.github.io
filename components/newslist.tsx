@@ -7,17 +7,19 @@ export type NewsData = { date: string; at?: string; title: string; link: string 
 const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>
     {newsData.map((item) => (
-      <article className={styles.item} key={item.title}>
-        <time className={styles.date} dateTime={item.date}>
+      <article className={`pure-g ${styles.item}`} key={item.title}>
+        <time className={`pure-u-1-1 pure-u-lg-3-24 ${styles.date}`} dateTime={item.date}>
           {item.date}
         </time>
-        <a className={styles.link} href={item.link} target='_blank' rel='noopener noreferrer'>
-          {item.title}
-          <span className={styles.linkIcon}>
-            <FaExternalLinkAlt size='0.8rem' />
-          </span>
-        </a>
-        <span className={styles.at}>{item.at ? ` | ${item.at}` : ''}</span>
+        <span className={`pure-u-1-1 pure-u-lg-21-24 ${styles.info}`}>
+          <a className={styles.link} href={item.link} target='_blank' rel='noopener noreferrer'>
+            {item.title}
+            <span className={styles.linkIcon}>
+              <FaExternalLinkAlt size='0.8rem' />
+            </span>
+          </a>
+          <span className={styles.at}>{item.at || ''}</span>
+        </span>
       </article>
     ))}
   </ul>
