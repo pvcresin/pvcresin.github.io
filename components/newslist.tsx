@@ -2,7 +2,7 @@ import styles from './newslist.module.scss'
 
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
-export type NewsData = { date: string; siteName?: string; title: string; link: string }
+export type NewsData = { date: string; at?: string; title: string; link: string }
 
 const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>
@@ -20,7 +20,7 @@ const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
               <FaExternalLinkAlt size='0.8rem' />
             </span>
           </a>
-          <span className={styles.siteName}>{item.siteName ? ` | ${item.siteName}` : ''}</span>
+          <span className={styles.at}>{item.at ? ` | ${item.at}` : ''}</span>
         </span>
       </article>
     ))}

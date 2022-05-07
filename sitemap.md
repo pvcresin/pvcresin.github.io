@@ -35,11 +35,7 @@ ref
 ## Talks
 
 - 技育祭
-- Omotesando LT
-- OSS LT
 - 学生向け LT
-- DevSummit2022
-- Builders Stage2021
 
 ## Articles
 
