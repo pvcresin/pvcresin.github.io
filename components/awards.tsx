@@ -27,6 +27,12 @@ const awards: Item[] = [
     ],
     link: 'http://www.sighci.jp/contents/page/news',
   },
+  {
+    date: '2022-02',
+    title: '第2回 ツクってアソぶハッカソン',
+    texts: ['優秀賞 受賞', 'チーム：意識中くらいとして参加', 'プロジェクト: かわりみミーティング'],
+    link: 'http://www.sighci.jp/contents/page/news',
+  },
 ]
 
 const Awards = () => <List items={awards} />
