@@ -48,7 +48,7 @@
 }
 
 .itemLogoActive {
-  composes: item;
+  composes: itemLogo;
   filter: brightness(1);
 }
 
