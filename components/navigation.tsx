@@ -45,7 +45,7 @@ const Navigation = () => {
     <nav className={styles.root}>
       <div className={`container ${styles.container}`}>
         <Link href='/'>
-          <span className={styles.item}>
+          <span className={styles.itemLogo}>
             <img
               className={styles.icon}
               src='/icon-pvcresin.svg'
@@ -56,14 +56,6 @@ const Navigation = () => {
           </span>
         </Link>
         <ul className={styles.wideLinkList}>{linkList}</ul>
-        <details className={styles.menuContainer}>
-          <summary className={styles.menuSummary}>
-            <li className={styles.item}>
-              <FaBars size='1.2rem' />
-            </li>
-          </summary>
-          <ul className={styles.menu}>{linkList}</ul>
-        </details>
       </div>
     </nav>
   )
