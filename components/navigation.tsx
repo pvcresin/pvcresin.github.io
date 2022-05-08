@@ -45,7 +45,7 @@ const Navigation = () => {
     <nav className={styles.root}>
       <div className={`container ${styles.container}`}>
         <Link href='/'>
-          <span className={styles.itemLogo}>
+          <span className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo}>
             <img
               className={styles.icon}
               src='/icon-pvcresin.svg'

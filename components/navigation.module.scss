@@ -21,10 +21,8 @@
 }
 
 .logoText {
+  font-size: 1.2rem;
   margin-left: 0.5rem;
-}
-
-.wideLinkList {
 }
 
 .item {
@@ -47,6 +45,11 @@
 .itemLogo {
   composes: item;
   flex-direction: row;
+}
+
+.itemLogoActive {
+  composes: item;
+  filter: brightness(1);
 }
 
 .itemActive {
