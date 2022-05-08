@@ -11,20 +11,31 @@ export type Project = {
 }
 
 const projectsArray: Project[] = [
-  // {
-  //   name: 'かわりみミーティング',
-  //   sub: 'sub',
-  //   img: 'project-KawarimiMeeting-16-9',
-  //   category: 'Web',
-  //   text: '',
-  //   implement: '',
-  //   keywords: [],
-  //   links: {
-  //     'Chrome ウェブストア':
-  //       'https://chrome.google.com/webstore/detail/%E3%81%8B%E3%82%8F%E3%82%8A%E3%81%BF%E3%83%9F%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/eambcodfdjgfoipcpkohclalfnbjmjol?hl=ja',
-  //     リポジトリ: 'https://github.com/MLOA/KawarimiMeeting',
-  //   },
-  // },
+  {
+    name: 'KawarimiMeeting',
+    sub: '自分の映像をループ動画に差し替えることでZoom会議を離席できるツール',
+    img: 'project-KawarimiMeeting-16-9',
+    category: 'Web',
+    text: 'コロナウィルスによってリモートでのビデオ会議が当たり前になった現代では、途中でトイレに行きたくなったり、宅配物が届いてしまったりしてしばしば離席したい場面が存在する。そこで、ループ映像である「かわりみ」を召喚することで、気づかれずにZoom会議を離席することができるChrome拡張「かわりみミーティング」を制作した。直前の自分の映像を録画しておき、ループ動画と自分の映像と入れ替えることで任意のタイミングでの離席が可能になる。第2回ツクってアソぶハッカソンにて優秀賞を受賞。Chrome ウェブストアにて公開中。',
+    implement:
+      'チームで制作。FigmaによるUIやロゴなどデザイン全般とUI・プロセス間通信の実装を担当。手軽にインストールして使えるようChrome拡張として実装。Media Streams APIを用いてビデオ会議中のカメラ映像を録画し、仮想デバイスとして流し込んでいる。',
+    keywords: [
+      'Chrome Extension',
+      'Web RTC',
+      'Media Streams API',
+      'virtual camera',
+      'online meeting',
+      'Zoom',
+    ],
+    links: {
+      'Chrome ウェブストア':
+        'https://chrome.google.com/webstore/detail/かわりみミーティング/eambcodfdjgfoipcpkohclalfnbjmjol?hl=ja',
+      発表スライド:
+        'https://docs.google.com/presentation/d/16j79SrSendFmfogYXvqhUXqLFZOirwv8ismruczkZTI/edit?usp=sharing',
+      リポジトリ: 'https://github.com/MLOA/KawarimiMeeting',
+      ツクってアソぶハッカソン: 'https://tsukuaso.com/',
+    },
+  },
   {
     name: 'SensorPipe',
     sub: 'PCとスマホを連携させるプログラミングを支援するスマホアプリ',
