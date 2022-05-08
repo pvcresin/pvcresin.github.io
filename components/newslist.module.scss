@@ -29,11 +29,16 @@
   flex-wrap: wrap;
 }
 
-.link {
+.title {
   font-size: 1rem;
-  color: #4e9adb;
   word-break: break-all;
   padding: 0 0.3rem;
+  color: lightgray;
+}
+
+.link {
+  composes: title;
+  color: #4e9adb;
 
   &:hover {
     text-decoration: underline;

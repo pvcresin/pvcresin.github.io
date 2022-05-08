@@ -34,7 +34,6 @@ ref
 
 ## Talks
 
-- 技育祭
 - 学生向け LT
 
 ## Articles
@@ -45,6 +44,5 @@ ref
 ## Interview
 
 - つくアソ 2
-- Wantedly Interview
 
 ## Publications

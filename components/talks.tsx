@@ -1,6 +1,6 @@
 import NewsList, { NewsData } from './newslist'
 
-const news: NewsData[] = [
+const talks: NewsData[] = [
   {
     date: '2022-02-17',
     title: '新言語・フレームワーク導入の勘所～TypeScript・Rust・Flutter～',
@@ -26,6 +26,12 @@ const news: NewsData[] = [
     link: 'https://speakerdeck.com/pvcresin/webapurikesiyonfalseakitekutiyapatankaradu-mijie-kunext-dot-js',
   },
   {
+    date: '2020-07-05',
+    title: '未来を待つのではなく、未来を創る ~CTOと新卒2年目社員の対談~',
+    at: '技育祭 2020',
+    link: 'https://talent.supporterz.jp/geeksai/2020/',
+  },
+  {
     date: '2019-11-20',
     title: 'TS 未経験者が 社内向け JS ライブラリを TS に置き換えている話',
     at: '表参道Web勉強会 #9',
@@ -33,6 +39,6 @@ const news: NewsData[] = [
   },
 ]
 
-const Talks = () => <NewsList newsData={news} />
+const Talks = () => <NewsList newsData={talks} />
 
 export default Talks
