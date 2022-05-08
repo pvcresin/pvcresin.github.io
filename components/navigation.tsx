@@ -1,12 +1,46 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { FaFolder, FaListUl, FaRegAddressCard, FaRegUser, FaUserAlt } from 'react-icons/fa'
+import { useMemo } from 'react'
+import { FaBars, FaFolder, FaListUl, FaRegAddressCard, FaRegUser, FaUserAlt } from 'react-icons/fa'
 
 import styles from './navigation.module.scss'
 
 const Navigation = () => {
   const router = useRouter()
   const { pathname } = router
+
+  const linkList = useMemo(
+    () => (
+      <>
+        <Link href='/about'>
+          <li className={pathname === '/about' ? styles.itemActive : styles.item}>
+            <FaUserAlt size='1.2rem' />
+            <span className={styles.linkText}>About</span>
+          </li>
+        </Link>
+        <Link href='/projects'>
+          <li
+            className={
+              pathname === '/projects' || pathname === '/projects/[projectName]'
+                ? styles.itemActive
+                : styles.item
+            }
+          >
+            <FaFolder size='1.2rem' />
+            <span className={styles.linkText}>Projects</span>
+          </li>
+        </Link>
+        <Link href='/news'>
+          <li className={pathname === '/news' ? styles.itemActive : styles.item}>
+            <FaListUl size='1.2rem' />
+            <span className={styles.linkText}>News</span>
+          </li>
+        </Link>
+      </>
+    ),
+    [pathname],
+  )
+
   return (
     <nav className={styles.root}>
       <div className={`container ${styles.container}`}>
@@ -21,32 +55,15 @@ const Navigation = () => {
             <span className={styles.logoText}>pvcresin</span>
           </span>
         </Link>
-        <ul>
-          <Link href='/about'>
-            <li className={pathname === '/about' ? styles.itemActive : styles.item}>
-              <FaUserAlt size='1.2rem' />
-              <span className={styles.linkText}>About</span>
+        <ul className={styles.wideLinkList}>{linkList}</ul>
+        <details className={styles.menuContainer}>
+          <summary className={styles.menuSummary}>
+            <li className={styles.item}>
+              <FaBars size='1.2rem' />
             </li>
-          </Link>
-          <Link href='/projects'>
-            <li
-              className={
-                pathname === '/projects' || pathname === '/projects/[projectName]'
-                  ? styles.itemActive
-                  : styles.item
-              }
-            >
-              <FaFolder size='1.2rem' />
-              <span className={styles.linkText}>Projects</span>
-            </li>
-          </Link>
-          <Link href='/news'>
-            <li className={pathname === '/news' ? styles.itemActive : styles.item}>
-              <FaListUl size='1.2rem' />
-              <span className={styles.linkText}>News</span>
-            </li>
-          </Link>
-        </ul>
+          </summary>
+          <ul className={styles.menu}>{linkList}</ul>
+        </details>
       </div>
     </nav>
   )
