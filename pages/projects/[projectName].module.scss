@@ -6,18 +6,30 @@
 
 .imageContainer {
   background: black;
+  position: relative;
   width: 100%;
+  padding-top: 56.25%;
+  height: 0;
   border-radius: 1rem;
 }
 
 .image {
   border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
 }
 
 .videoFrameContainer {
+  background: black;
   position: relative;
   width: 100%;
   padding-top: 56.25%;
+  height: 0;
+  border-radius: 1rem;
 }
 
 .videoFrame {
@@ -26,7 +38,6 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: black;
   border-radius: 1rem;
 }
 
