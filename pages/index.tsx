@@ -27,12 +27,12 @@ const IndexPage = () => (
         <Publications />
       </div>
     </section>
-    {/* <section className={styles.section}>
+    <section className={styles.section}>
       <div className='container'>
         <h2 className='section-title'>Experience</h2>
         <Timeline />
       </div>
-    </section> */}
+    </section>
     <Footer />
   </div>
 )

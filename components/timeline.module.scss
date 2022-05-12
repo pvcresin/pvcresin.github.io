@@ -1,4 +1,5 @@
 $rootVerticalSpace: 4rem;
+$lineWidth: 4px;
 
 .root {
   padding: $rootVerticalSpace 1rem 5rem;
@@ -11,10 +12,9 @@ $rootVerticalSpace: 4rem;
 }
 
 .line {
-  $lineWidth: 4px;
   position: absolute;
   top: calc(-1 * $rootVerticalSpace / 2);
-  left: calc(50% - $lineWidth / 2);
+  left: 0.5rem;
   display: inline-flex;
   width: $lineWidth;
   height: calc(100% + $rootVerticalSpace);
@@ -41,7 +41,8 @@ $rootVerticalSpace: 4rem;
 }
 
 .cardWrapper {
-  width: calc(50% - 50px);
+  width: calc(100% - 45px);
+  margin: 1.1em 0 1.1em auto;
 
   > .card {
     &::before {
@@ -57,21 +58,21 @@ $rootVerticalSpace: 4rem;
   }
 
   &:nth-child(even) {
-    margin-bottom: 3rem;
-
     > .card {
       &::before {
-        right: -52px;
+        width: 25px;
+        right: auto;
+        left: -34px;
       }
     }
   }
 
   &:nth-child(odd) {
-    margin: 3rem 0 0 100px;
-
     > .card {
       &::before {
-        left: -52px;
+        width: 25px;
+        right: auto;
+        left: -34px;
       }
     }
   }
@@ -88,8 +89,47 @@ $rootVerticalSpace: 4rem;
 
 .title {
   margin: 0.5rem 0;
+  color: white;
 }
 
 .description {
   white-space: pre-wrap;
+}
+
+@media screen and (min-width: 48em) {
+  .line {
+    left: calc(50% - $lineWidth / 2);
+  }
+
+  .cardWrapper {
+    width: calc(50% - 50px);
+
+    > .card {
+      &::before {
+        width: 36px !important;
+      }
+    }
+
+    &:nth-child(even) {
+      margin: 0 0 3rem 0;
+
+      > .card {
+        &::before {
+          left: auto;
+          right: -52px;
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      margin: 3rem 0 0 100px;
+
+      > .card {
+        &::before {
+          right: auto;
+          left: -52px;
+        }
+      }
+    }
+  }
 }
