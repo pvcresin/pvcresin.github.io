@@ -5,6 +5,7 @@ import Publications from 'components/publications'
 import More from 'components/more'
 import Footer from 'components/footer'
 import Navigation from 'components/navigation'
+import Timeline from 'components/timeline'
 
 import styles from './index.module.scss'
 
@@ -26,6 +27,12 @@ const IndexPage = () => (
         <Publications />
       </div>
     </section>
+    {/* <section className={styles.section}>
+      <div className='container'>
+        <h2 className='section-title'>Experience</h2>
+        <Timeline />
+      </div>
+    </section> */}
     <Footer />
   </div>
 )
