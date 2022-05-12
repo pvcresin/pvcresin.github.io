@@ -30,8 +30,6 @@ const projectsArray: Project[] = [
     links: {
       'Chrome ウェブストア':
         'https://chrome.google.com/webstore/detail/かわりみミーティング/eambcodfdjgfoipcpkohclalfnbjmjol?hl=ja',
-      発表スライド:
-        'https://docs.google.com/presentation/d/16j79SrSendFmfogYXvqhUXqLFZOirwv8ismruczkZTI/edit?usp=sharing',
       リポジトリ: 'https://github.com/MLOA/KawarimiMeeting',
       ツクってアソぶハッカソン: 'https://tsukuaso.com/',
     },
