@@ -6,7 +6,7 @@ export type Item = {
   link: string
   date: string
   texts: string[]
-  projectLink?: { key: string; title: string }
+  workLink?: { key: string; title: string }
 }
 
 const List: React.FC<{ items: Item[] }> = ({ items }) => (
@@ -29,12 +29,12 @@ const List: React.FC<{ items: Item[] }> = ({ items }) => (
             {t}
           </p>
         ))}
-        {item.projectLink ? (
+        {item.workLink && (
           <p className={styles.sub}>
-            {'プロジェクト: '}
-            <Link href={`/projects/${item.projectLink.key}`}>{item.projectLink.title}</Link>
+            {'Work: '}
+            <Link href={`/works/${item.workLink.key}`}>{item.workLink.title}</Link>
           </p>
-        ) : null}
+        )}
       </li>
     ))}
   </ul>

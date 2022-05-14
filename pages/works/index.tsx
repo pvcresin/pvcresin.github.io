@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Projects from 'components/projects'
+import Works from 'components/works'
 import Footer from 'components/footer'
 import Navigation from 'components/navigation'
 
@@ -9,7 +9,7 @@ import styles from './index.module.scss'
 const categories = ['All', 'Android', 'Web', 'Desktop', 'Design'] as const
 type Category = typeof categories[number]
 
-const ProjectAllPage = () => {
+const WorksPage = () => {
   const [selectedCategory, setSelectedCategory] = React.useState<Category>(categories[0])
 
   return (
@@ -17,12 +17,12 @@ const ProjectAllPage = () => {
       <Navigation />
       <section className={styles.section}>
         <div className='container'>
-          <ul className={styles.projectButtons}>
+          <ul className={styles.buttons}>
             {categories.map((c) => (
               <a onClick={() => setSelectedCategory(c)} key={c}>
                 <li
-                  className={`${styles.projectButton}${
-                    selectedCategory === c ? ` ${styles.projectButtonSelected}` : ''
+                  className={`${styles.button}${
+                    selectedCategory === c ? ` ${styles.buttonSelected}` : ''
                   }`}
                 >
                   {c}
@@ -30,7 +30,7 @@ const ProjectAllPage = () => {
               </a>
             ))}
           </ul>
-          <Projects category={selectedCategory} />
+          <Works category={selectedCategory} />
         </div>
       </section>
       <Footer />
@@ -38,4 +38,4 @@ const ProjectAllPage = () => {
   )
 }
 
-export default ProjectAllPage
+export default WorksPage

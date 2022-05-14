@@ -18,16 +18,16 @@ const Navigation = () => {
             <span className={styles.linkText}>About</span>
           </li>
         </Link>
-        <Link href='/projects'>
+        <Link href='/works'>
           <li
             className={
-              pathname === '/projects' || pathname === '/projects/[projectKey]'
+              pathname === '/works' || pathname === '/works/[workKey]'
                 ? styles.itemActive
                 : styles.item
             }
           >
             <FaFolder size='1.2rem' />
-            <span className={styles.linkText}>Projects</span>
+            <span className={styles.linkText}>Works</span>
           </li>
         </Link>
         <Link href='/news'>

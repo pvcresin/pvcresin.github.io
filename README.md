@@ -7,5 +7,5 @@
 - [ ] image sizing
   - width: 1200 x 720 px (16:9)
 - [ ] middle drive video resize
-- [ ] Add Cosmetic projects
+- [ ] Add Cosmetic work
 - [ ] Add InvisibleFlick video

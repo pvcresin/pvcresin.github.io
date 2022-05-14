@@ -1,4 +1,4 @@
-export type Project = {
+export type Work = {
   key: string
   name: string
   sub: string
@@ -11,7 +11,7 @@ export type Project = {
   links?: Record<string, string>
 }
 
-const projectsArray: Project[] = [
+const worksArray: Work[] = [
   {
     key: 'KawarimiMeeting',
     name: 'かわりみミーティング',
@@ -112,8 +112,10 @@ const projectsArray: Project[] = [
     implement:
       'チームで制作。アプリの大部分を担当した。Androidアプリケーションとして実装。Yahoo Map APIを使用して、録音された音声のマッピングを行っている。',
     keywords: ['Android', 'soundscape', 'map', 'record', 'microphone', 'GPS'],
-    // https://www.youtube.com/embed/PYXsetGI7G8?rel=0&amp;start=3217
-    // https://hacku.yahoo.co.jp/open2014/
+    links: {
+      // https://www.youtube.com/embed/PYXsetGI7G8?rel=0&amp;start=3217
+      ページ: 'https://hacku.yahoo.co.jp/open2014/',
+    },
   },
   {
     key: 'WristSlide',
@@ -182,4 +184,4 @@ const projectsArray: Project[] = [
   },
 ]
 
-export default projectsArray
+export default worksArray

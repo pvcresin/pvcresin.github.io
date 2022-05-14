@@ -1,25 +1,25 @@
 import { NextPage } from 'next'
 
-import projectsArray, { Project } from 'data'
+import worksArray, { Work } from 'data'
 
 import Tags from 'components/tags'
 import Webp from 'components/webp'
 import Footer from 'components/footer'
 import Navigation from 'components/navigation'
 
-import styles from './[projectKey].module.scss'
+import styles from './[workKey].module.scss'
 import Link from 'components/link'
 
-const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
+const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
   <div className='root'>
     <Navigation />
     <section className={styles.section}>
       <div className='container'>
-        {project.video ? (
+        {work.video ? (
           <div className={styles.videoFrameContainer}>
             <iframe
               className={styles.videoFrame}
-              src={`https://www.youtube.com/embed/${project.video}?rel=0`}
+              src={`https://www.youtube.com/embed/${work.video}?rel=0`}
               frameBorder='0'
               allow='encrypted-media'
               allowFullScreen
@@ -27,32 +27,32 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
           </div>
         ) : (
           <div className={styles.imageContainer}>
-            <Webp src={project.img} imageClassName={styles.image} />
+            <Webp src={work.img} imageClassName={styles.image} />
           </div>
         )}
-        <h1 className={styles.projectName}>
-          <p className={styles.paragraph}>{project.name + ': '}</p>
-          {project.sub}
+        <h1 className={styles.name}>
+          <p className={styles.paragraph}>{work.name + ': '}</p>
+          {work.sub}
         </h1>
-        <Tags tags={project.keywords} />
+        <Tags tags={work.keywords} />
         <div className={styles.chapterTitle}>
           <h2 className={styles.chapterTitleText}>Abstract</h2>
           <hr className={styles.chapterLine} />
         </div>
-        <p className={styles.paragraph}>{project.text}</p>
+        <p className={styles.paragraph}>{work.text}</p>
         <div className={styles.chapterTitle}>
           <h2 className={styles.chapterTitleText}>Implementation</h2>
           <hr className={styles.chapterLine} />
         </div>
-        <p className={styles.paragraph}>{project.implement}</p>
-        {!!project.links && (
+        <p className={styles.paragraph}>{work.implement}</p>
+        {work.links && (
           <>
             <div className={styles.chapterTitle}>
               <h2 className={styles.chapterTitleText}>Links</h2>
               <hr className={styles.chapterLine} />
             </div>
             <ol className={styles.linkList}>
-              {Object.entries(project.links).map(([key, value]) => (
+              {Object.entries(work.links).map(([key, value]) => (
                 <li className={styles.linkListItem} key={key}>
                   {key + ': '}
                   <Link href={value} isExternalLink withExternalIcon>
@@ -70,22 +70,22 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
 )
 
 export async function getStaticPaths() {
-  const projectKeys = projectsArray.map((p) => p.key)
+  const workKeys = worksArray.map((p) => p.key)
   return {
-    paths: projectKeys.map((projectKey) => ({
-      params: { projectKey },
+    paths: workKeys.map((workKey) => ({
+      params: { workKey },
     })),
     fallback: false,
   }
 }
 
-export async function getStaticProps(context: { params: { projectKey: string } }) {
-  const projectKey = context.params.projectKey
+export async function getStaticProps(context: { params: { workKey: string } }) {
+  const workKey = context.params.workKey
   return {
     props: {
-      project: projectsArray.find((p) => p.key === projectKey),
+      work: worksArray.find((p) => p.key === workKey),
     },
   }
 }
 
-export default ProjectDetailPage
+export default WorkDetailPage

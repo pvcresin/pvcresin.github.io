@@ -2,7 +2,7 @@
   flex-grow: 1;
 }
 
-.projectButtons {
+.buttons {
   display: flex;
   justify-content: space-between;
   max-width: 380px;
@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.projectButton {
+.button {
   font-size: 0.8rem;
   display: inline-block;
   color: gray;
@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-.projectButtonSelected {
+.buttonSelected {
   color: white;
   background: gray;
   border-color: gray;
