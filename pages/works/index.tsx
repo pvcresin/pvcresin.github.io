@@ -18,8 +18,14 @@ const WorksPage = () => {
       <section className={styles.section}>
         <div className='container'>
           <ul className={styles.buttons}>
-            {categories.map((c) => (
-              <a onClick={() => setSelectedCategory(c)} key={c}>
+            {categories.map((c, index) => (
+              <a
+                onClick={() => setSelectedCategory(c)}
+                key={c}
+                role='link'
+                className={styles.link}
+                tabIndex={10 + index}
+              >
                 <li
                   className={`${styles.button}${
                     selectedCategory === c ? ` ${styles.buttonSelected}` : ''

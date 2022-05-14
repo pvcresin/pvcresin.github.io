@@ -10,6 +10,14 @@
   margin: 0 auto;
 }
 
+.link {
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+  }
+}
+
 .button {
   font-size: 0.8rem;
   display: inline-block;
