@@ -21,16 +21,12 @@ const IndexPage = () => (
     </section>
     <section className={styles.section}>
       <div className='container'>
+        <h2 className='section-title'>Timeline</h2>
+        <Timeline />
         <h2 className='section-title'>Awards</h2>
         <Awards />
         <h2 className='section-title'>Publications</h2>
         <Publications />
-      </div>
-    </section>
-    <section className={styles.section}>
-      <div className='container'>
-        <h2 className='section-title'>Timeline</h2>
-        <Timeline />
       </div>
     </section>
     <Footer />
