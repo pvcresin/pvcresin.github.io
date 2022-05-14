@@ -1,4 +1,6 @@
 import Link from './link'
+import type { Work } from 'data'
+
 import styles from './list.module.scss'
 
 export type Item = {
@@ -6,7 +8,7 @@ export type Item = {
   link: string
   date: string
   texts: string[]
-  workLink?: { key: string; title: string }
+  workLink?: { key: Work['key']; title: Work['title'] }
 }
 
 const List: React.FC<{ items: Item[] }> = ({ items }) => (

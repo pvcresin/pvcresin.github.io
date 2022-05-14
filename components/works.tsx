@@ -20,7 +20,7 @@ const Works: React.FC<{ category?: string }> = ({ category = initialCategory }) 
                 <Webp imageClassName={styles.image} src={w.img}></Webp>
               </div>
               <div className={styles.info}>
-                <h3 className={styles.name}>{w.name}</h3>
+                <h3 className={styles.title}>{w.title}</h3>
                 <p className={styles.description}>{w.sub}</p>
               </div>
             </article>

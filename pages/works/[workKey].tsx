@@ -30,8 +30,8 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
             <Webp src={work.img} imageClassName={styles.image} />
           </div>
         )}
-        <h1 className={styles.name}>
-          <p className={styles.paragraph}>{work.name + ': '}</p>
+        <h1 className={styles.title}>
+          <p className={styles.paragraph}>{work.title + ': '}</p>
           {work.sub}
         </h1>
         <Tags tags={work.keywords} />
