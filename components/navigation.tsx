@@ -21,7 +21,7 @@ const Navigation = () => {
         <Link href='/projects'>
           <li
             className={
-              pathname === '/projects' || pathname === '/projects/[projectName]'
+              pathname === '/projects' || pathname === '/projects/[projectKey]'
                 ? styles.itemActive
                 : styles.item
             }
@@ -46,12 +46,7 @@ const Navigation = () => {
       <div className={`container ${styles.container}`}>
         <Link href='/'>
           <span className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo}>
-            <img
-              className={styles.icon}
-              src='/icon-pvcresin.svg'
-              alt='pvcresinのアイコン'
-              loading='lazy'
-            />
+            <img className={styles.icon} src='/icon-pvcresin.svg' alt='' loading='lazy' />
             <span className={styles.logoText}>pvcresin</span>
           </span>
         </Link>

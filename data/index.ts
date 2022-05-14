@@ -166,7 +166,7 @@ const projectsArray: Project[] = [
     },
   },
   {
-    key: 'Make_if',
+    key: 'Makeif',
     name: 'Make if',
     sub: 'カードを並べてif文をつくるプログラミング教育カードゲーム',
     img: 'project-Makeif-16-9',
