@@ -1,4 +1,5 @@
 export type Project = {
+  key: string
   name: string
   sub: string
   img: string
@@ -12,7 +13,8 @@ export type Project = {
 
 const projectsArray: Project[] = [
   {
-    name: 'KawarimiMeeting',
+    key: 'KawarimiMeeting',
+    name: 'かわりみミーティング',
     sub: '自分の映像をループ動画に差し替えることでZoom会議を離席できるツール',
     img: 'project-KawarimiMeeting-16-9',
     category: 'Web',
@@ -35,6 +37,7 @@ const projectsArray: Project[] = [
     },
   },
   {
+    key: 'SensorPipe',
     name: 'SensorPipe',
     sub: 'PCとスマホを連携させるプログラミングを支援するスマホアプリ',
     img: 'project-SensorPipe-16-9',
@@ -49,6 +52,7 @@ const projectsArray: Project[] = [
     },
   },
   {
+    key: 'MiddleDrive',
     name: 'MiddleDrive',
     sub: 'Bluetooth通信によるアドホック型ドキュメント共同編集アプリ',
     img: 'project-MiddleDrive-16-9',
@@ -63,6 +67,7 @@ const projectsArray: Project[] = [
     },
   },
   {
+    key: 'InvisibleFlick',
     name: 'InvisibleFlick',
     sub: '小型タッチスクリーン端末におけるキートップが透明な日本語入力キーボード',
     img: 'project-InvisibleFlick-16-9',
@@ -84,7 +89,8 @@ const projectsArray: Project[] = [
     },
   },
   {
-    name: 'Ichimonitto',
+    key: 'Ichimonitto',
+    name: 'イチモニット',
     sub: 'ビデオチャットをしながらクイズ番組形式で回答する一問一答学習支援サービス',
     img: 'project-Ichimonitto-16-9',
     category: 'Web',
@@ -97,6 +103,7 @@ const projectsArray: Project[] = [
     },
   },
   {
+    key: 'GeoMelody',
     name: 'GeoMelody',
     sub: '環境音を録音してオンライン上に集約するサウンドスケープSNS',
     img: 'project-GeoMelody-16-9',
@@ -109,6 +116,7 @@ const projectsArray: Project[] = [
     // https://hacku.yahoo.co.jp/open2014/
   },
   {
+    key: 'WristSlide',
     name: 'WristSlide',
     sub: 'イメージセンサを用いた手首を滑らせるスマートウォッチの片手操作',
     img: 'project-WristSlide-16-9',
@@ -128,6 +136,7 @@ const projectsArray: Project[] = [
     ],
   },
   {
+    key: 'SoumuSSML',
     name: 'SoumuSSML',
     sub: '視覚障害者のための新しい電子書籍形式に対応したクラウド編集システム',
     img: 'project-SoumuSSML-16-9',
@@ -141,6 +150,7 @@ const projectsArray: Project[] = [
     },
   },
   {
+    key: 'BuddaBeautify',
     name: 'BuddaBeautify',
     sub: '己の精神を磨くことで見た目も美しくなれるメディアアート作品',
     img: 'project-BuddaBeautify-16-9',
@@ -156,6 +166,7 @@ const projectsArray: Project[] = [
     },
   },
   {
+    key: 'Make_if',
     name: 'Make if',
     sub: 'カードを並べてif文をつくるプログラミング教育カードゲーム',
     img: 'project-Makeif-16-9',

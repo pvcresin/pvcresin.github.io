@@ -49,7 +49,7 @@ const Timeline = () => (
     <div className={styles.container}>
       <span className={styles.line} />
       {items.map(({ startYear, endYear, title, titleLinkUrl, description }) => (
-        <div className={styles.cardWrapper}>
+        <div className={styles.cardWrapper} key={title}>
           <div className={styles.card}>
             <span>{`${startYear}  -  ${endYear === undefined ? 'present' : endYear}`}</span>
             <h3 className={styles.title}>

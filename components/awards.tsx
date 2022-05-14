@@ -4,7 +4,7 @@ const awards: Item[] = [
   {
     date: '2015-05',
     title: 'Cloud n アプリケーションコンテスト',
-    texts: ['WebRTC賞 受賞', 'チーム：意識中くらいとして参加', 'プロジェクト: Ichimonitto'],
+    texts: ['WebRTC賞 受賞', 'チーム：意識中くらいとして参加', 'プロジェクト: イチモニット'],
     link: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
   },
   {

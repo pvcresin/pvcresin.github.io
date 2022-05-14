@@ -7,7 +7,7 @@ import Webp from 'components/webp'
 import Footer from 'components/footer'
 import Navigation from 'components/navigation'
 
-import styles from './[projectName].module.scss'
+import styles from './[projectKey].module.scss'
 import Link from 'components/link'
 
 const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
@@ -70,20 +70,20 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
 )
 
 export async function getStaticPaths() {
-  const projectNames = projectsArray.map((p) => p.name)
+  const projectKeys = projectsArray.map((p) => p.key)
   return {
-    paths: projectNames.map((projectName) => ({
-      params: { projectName },
+    paths: projectKeys.map((projectKey) => ({
+      params: { projectKey },
     })),
     fallback: false,
   }
 }
 
-export async function getStaticProps(context: { params: { projectName: string } }) {
-  const projectName = context.params.projectName
+export async function getStaticProps(context: { params: { projectKey: string } }) {
+  const projectKey = context.params.projectKey
   return {
     props: {
-      project: projectsArray.find((p) => p.name === projectName),
+      project: projectsArray.find((p) => p.key === projectKey),
     },
   }
 }
