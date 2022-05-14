@@ -41,6 +41,12 @@
     filter: brightness(1);
     transition: filter 0.3s;
   }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+  }
 }
 
 .itemLogo {

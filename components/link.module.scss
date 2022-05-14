@@ -16,6 +16,12 @@
   &:hover {
     text-decoration: underline;
   }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+  }
 }
 
 .linkIcon {

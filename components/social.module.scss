@@ -18,4 +18,10 @@
   &:hover {
     color: white;
   }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+  }
 }

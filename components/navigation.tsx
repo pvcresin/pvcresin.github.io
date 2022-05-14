@@ -13,7 +13,7 @@ const Navigation = () => {
     () => (
       <>
         <Link href='/about'>
-          <li className={pathname === '/about' ? styles.itemActive : styles.item}>
+          <li className={pathname === '/about' ? styles.itemActive : styles.item} tabIndex={2}>
             <FaUserAlt size='1.2rem' />
             <span className={styles.linkText}>About</span>
           </li>
@@ -25,13 +25,14 @@ const Navigation = () => {
                 ? styles.itemActive
                 : styles.item
             }
+            tabIndex={3}
           >
             <FaFolder size='1.2rem' />
             <span className={styles.linkText}>Works</span>
           </li>
         </Link>
         <Link href='/news'>
-          <li className={pathname === '/news' ? styles.itemActive : styles.item}>
+          <li className={pathname === '/news' ? styles.itemActive : styles.item} tabIndex={4}>
             <FaListUl size='1.2rem' />
             <span className={styles.linkText}>News</span>
           </li>
@@ -45,7 +46,7 @@ const Navigation = () => {
     <nav className={styles.root}>
       <div className={`container ${styles.container}`}>
         <Link href='/'>
-          <span className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo}>
+          <span className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo} tabIndex={1}>
             <img className={styles.icon} src='/icon-pvcresin.svg' alt='' loading='lazy' />
             <span className={styles.logoText}>pvcresin</span>
           </span>
