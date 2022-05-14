@@ -1,3 +1,4 @@
+import Link from './link'
 import styles from './timeline.module.scss'
 
 export type Item = {
@@ -18,21 +19,21 @@ const items: Item[] = [
   {
     startYear: 2016,
     endYear: 2018,
-    title: '株式会社想隆社',
+    title: '株式会社 想隆社',
     description:
       'フロントエンドエンジニア（インターン）。\n- 電子書籍・音声合成関連の研究用システムの開発\n- AIスピーカ・Felicaを用いたサービス開発\n- CMSを用いたWebサイト制作\nに従事。',
   },
   {
     startYear: 2017,
     endYear: 2019,
-    title: '明治大学大学院',
+    title: '明治大学 大学院',
     description:
       '先端数理科学研究科 先端メディアサイエンス専攻  修士（工学）。\nモバイル / ウェアラブルデバイスに関するインタラクションの研究に従事。',
   },
   {
     startYear: 2019,
     endYear: undefined,
-    title: 'Sansan株式会社',
+    title: 'Sansan 株式会社',
     description:
       '2019年 4月新卒でSansan株式会社に入社。\nWebエンジニアとして、\n- Eightを基盤とした採用サービスの開発\n- Web FrontendのDevOpsの改善\nに従事。',
   },

@@ -37,19 +37,8 @@
 }
 
 .link {
-  composes: title;
-  color: #4e9adb;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.linkIcon {
-  display: inline-flex;
-  height: 1.5rem;
-  align-items: center;
-  margin-left: 0.3rem;
+  font-size: 1rem;
+  padding: 0 0.3rem;
 }
 
 .at {

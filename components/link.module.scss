@@ -1,0 +1,26 @@
+.root {
+  word-break: break-all;
+  display: inline-flex;
+  align-items: center;
+}
+
+.text {
+  composes: root;
+  color: lightgray;
+}
+
+.link {
+  composes: text;
+  color: #4e9adb;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.linkIcon {
+  display: inline-flex;
+  height: 1.5rem;
+  align-items: center;
+  margin-left: 0.3rem;
+}

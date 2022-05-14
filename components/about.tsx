@@ -2,6 +2,7 @@ import { FaBirthdayCake, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 import dayjs from 'dayjs'
 
 import styles from './about.module.scss'
+import Link from './link'
 
 const birthday = '1994-07-30'
 
@@ -58,14 +59,9 @@ const About = () => (
             </div>
             <div className={`pure-u-11-12 ${styles.right}`}>
               <span>Web Frontend Engineer </span>
-              <a
-                className={styles.link}
-                href='https://jp.corp-sansan.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <Link className={styles.link} href='https://jp.corp-sansan.com/' isExternalLink>
                 @ Sansan, Inc.
-              </a>
+              </Link>
             </div>
           </li>
         </ul>

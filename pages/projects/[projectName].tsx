@@ -8,6 +8,7 @@ import Footer from 'components/footer'
 import Navigation from 'components/navigation'
 
 import styles from './[projectName].module.scss'
+import Link from 'components/link'
 
 const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
   <div className='root'>
@@ -54,9 +55,9 @@ const ProjectDetailPage: NextPage<{ project: Project }> = ({ project }) => (
               {Object.entries(project.links).map(([key, value]) => (
                 <li className={styles.linkListItem} key={key}>
                   {key + ': '}
-                  <a className={styles.link} href={value}>
+                  <Link href={value} isExternalLink withExternalIcon>
                     {value}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ol>

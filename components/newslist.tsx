@@ -1,6 +1,6 @@
 import styles from './newslist.module.scss'
 
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import Link from './link'
 
 export type NewsData = { date: string; at?: string; title: string; link?: string }
 
@@ -13,12 +13,9 @@ const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
         </time>
         <span className={`pure-u-1-1 pure-u-lg-21-24 ${styles.info}`}>
           {item.link ? (
-            <a className={styles.link} href={item.link} target='_blank' rel='noopener noreferrer'>
+            <Link className={styles.link} href={item.link} isExternalLink withExternalIcon>
               {item.title}
-              <span className={styles.linkIcon}>
-                <FaExternalLinkAlt size='0.8rem' />
-              </span>
-            </a>
+            </Link>
           ) : (
             <span className={styles.title}>{item.title}</span>
           )}
