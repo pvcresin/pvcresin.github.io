@@ -1,8 +1,9 @@
 import dayjs from 'dayjs'
 import { FaBirthdayCake, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 
+import { Link } from '@components/link'
+
 import styles from './about.module.scss'
-import { Link } from './link'
 
 const birthday = '1994-07-30'
 

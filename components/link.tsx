@@ -1,6 +1,7 @@
-import { handlers } from '@utils/keyboardlistener'
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+
+import { handlers } from '@utils/keyboardlistener'
 
 import styles from './link.module.scss'
 

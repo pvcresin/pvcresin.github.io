@@ -1,4 +1,5 @@
-import { NewsList, NewsData } from './newslist'
+import { NewsList } from '@components/newslist'
+import type { NewsData } from '@components/newslist'
 
 const interviews: NewsData[] = [
   {

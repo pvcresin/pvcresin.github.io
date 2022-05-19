@@ -3,8 +3,11 @@ import { Link } from '@components/link'
 import { Navigation } from '@components/navigation'
 import { Tags } from '@components/tags'
 import { Webp } from '@components/webp'
-import { worksArray, Work } from '@data/index'
-import { NextPage } from 'next'
+
+import { worksArray } from '@data/index'
+import type { Work } from '@data/index'
+
+import type { NextPage } from 'next'
 
 import styles from './[workKey].module.scss'
 

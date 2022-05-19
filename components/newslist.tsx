@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Link } from './link'
+import { Link } from '@components/link'
+
 import styles from './newslist.module.scss'
 
 export type NewsData = { date: string; at?: string; title: string; link?: string }

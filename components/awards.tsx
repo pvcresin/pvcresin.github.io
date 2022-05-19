@@ -1,4 +1,5 @@
-import { List, Item } from './list'
+import { List } from '@components/list'
+import type { Item } from '@components/list'
 
 const awards: Item[] = [
   {

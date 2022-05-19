@@ -1,6 +1,7 @@
-import { handlers } from '@utils/keyboardlistener'
 import Link from 'next/link'
 import React from 'react'
+
+import { handlers } from '@utils/keyboardlistener'
 
 import styles from './more.module.scss'
 

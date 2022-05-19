@@ -1,8 +1,8 @@
 import { FaChevronDown } from 'react-icons/fa'
 
-import styles from './first.module.scss'
-import { Social } from './social'
+import { Social } from '@components/social'
 
+import styles from './first.module.scss'
 
 export const First = () => (
   <div className={styles.root}>
