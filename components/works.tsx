@@ -2,9 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { Webp } from '@components/webp'
-
 import { worksArray } from '@data/index'
-
 import { handlers } from '@utils/keyboardlistener'
 
 import styles from './works.module.scss'

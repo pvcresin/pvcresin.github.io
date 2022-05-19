@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Link } from '@components/link'
-
 import type { Work } from '@data/index'
 
 import styles from './list.module.scss'

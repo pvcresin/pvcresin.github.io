@@ -23,22 +23,7 @@ const config = {
         groups: ['builtin', 'external', 'parent', 'index', 'type', 'unknown'],
         pathGroups: [
           {
-            pattern: '@components/**/*',
-            group: 'parent',
-            position: 'before',
-          },
-          {
-            pattern: '@data/**',
-            group: 'parent',
-            position: 'before',
-          },
-          {
-            pattern: '@pages/**',
-            group: 'parent',
-            position: 'before',
-          },
-          {
-            pattern: '@utils/**',
+            pattern: '@**/*',
             group: 'parent',
             position: 'before',
           },

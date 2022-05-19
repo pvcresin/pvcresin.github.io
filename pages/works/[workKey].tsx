@@ -3,7 +3,6 @@ import { Link } from '@components/link'
 import { Navigation } from '@components/navigation'
 import { Tags } from '@components/tags'
 import { Webp } from '@components/webp'
-
 import { worksArray } from '@data/index'
 import type { Work } from '@data/index'
 
