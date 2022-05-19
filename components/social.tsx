@@ -1,4 +1,5 @@
 import { FaTwitter, FaGithub, FaInstagram, FaPenSquare } from 'react-icons/fa'
+import { handlers } from 'utils/keyboardlistener'
 
 import styles from './social.module.scss'
 
@@ -11,6 +12,7 @@ const Social = () => (
         target='_blank'
         title='Twitter'
         rel='noopener noreferrer'
+        {...handlers}
       >
         <FaTwitter size='2rem' />
       </a>
@@ -22,6 +24,7 @@ const Social = () => (
         target='_blank'
         title='GitHub'
         rel='noopener noreferrer'
+        {...handlers}
       >
         <FaGithub size='2rem' />
       </a>
@@ -33,6 +36,7 @@ const Social = () => (
         target='_blank'
         title='Instagram'
         rel='noopener noreferrer'
+        {...handlers}
       >
         <FaInstagram size='2rem' />
       </a>
@@ -44,6 +48,7 @@ const Social = () => (
         target='_blank'
         title='Hatena Blog'
         rel='noopener noreferrer'
+        {...handlers}
       >
         <FaPenSquare size='2rem' />
       </a>

@@ -1,6 +1,7 @@
 import styles from './link.module.scss'
 
 import { FaExternalLinkAlt } from 'react-icons/fa'
+import { handlers } from 'utils/keyboardlistener'
 
 const Link: React.FC<{
   href?: string
@@ -14,6 +15,7 @@ const Link: React.FC<{
       className={`${styles.link} ${className}`}
       href={href}
       {...(isExternalLink ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      {...handlers}
     >
       {children}
       {isExternalLink && withExternalIcon && (

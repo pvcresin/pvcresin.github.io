@@ -17,4 +17,10 @@
   &:hover {
     background: #a3a3a3;
   }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+  }
 }
