@@ -51,7 +51,7 @@ const config = {
         'newlines-between': 'always',
       },
     ],
-    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
   },
 }
 

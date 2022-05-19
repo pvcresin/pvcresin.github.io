@@ -5,7 +5,9 @@ import '../styles/index.scss'
 
 import Head from 'next/head'
 
-const App = ({ Component, pageProps }: any) => (
+import type { AppProps } from 'next/app'
+
+const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
       <title>Raika Toriyama | pvcresin</title>
