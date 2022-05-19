@@ -5,6 +5,7 @@ import Footer from 'components/footer'
 import Navigation from 'components/navigation'
 
 import styles from './index.module.scss'
+import { handlers } from 'utils/keyboardlistener'
 
 const categories = ['All', 'Android', 'Web', 'Desktop', 'Design'] as const
 type Category = typeof categories[number]
@@ -25,6 +26,7 @@ const WorksPage = () => {
                 role='link'
                 className={styles.link}
                 tabIndex={10 + index}
+                {...handlers}
               >
                 <li
                   className={`${styles.button}${
