@@ -1,8 +1,8 @@
-import { Footer } from 'components/footer'
-import { Navigation } from 'components/navigation'
-import { Articles } from 'components/articles'
-import { Talks } from 'components/talks'
-import { Interviews } from 'components/interviews'
+import { Articles } from '@components/articles'
+import { Footer } from '@components/footer'
+import { Interviews } from '@components/interviews'
+import { Navigation } from '@components/navigation'
+import { Talks } from '@components/talks'
 
 import styles from './news.module.scss'
 

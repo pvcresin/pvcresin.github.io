@@ -1,6 +1,8 @@
-import { Link } from './link'
-import type { Work } from 'data'
+import React from 'react'
 
+import type { Work } from '@data/index'
+
+import { Link } from './link'
 import styles from './list.module.scss'
 
 export type Item = {

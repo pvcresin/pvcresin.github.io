@@ -1,5 +1,5 @@
-import { FaBirthdayCake, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 import dayjs from 'dayjs'
+import { FaBirthdayCake, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 
 import styles from './about.module.scss'
 import { Link } from './link'

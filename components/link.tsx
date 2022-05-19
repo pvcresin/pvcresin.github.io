@@ -1,7 +1,8 @@
-import styles from './link.module.scss'
-
+import { handlers } from '@utils/keyboardlistener'
+import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import { handlers } from 'utils/keyboardlistener'
+
+import styles from './link.module.scss'
 
 export const Link: React.FC<{
   href?: string

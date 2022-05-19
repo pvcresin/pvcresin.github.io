@@ -1,3 +1,5 @@
+import React from 'react'
+
 const targetKeyCodes = ['ENTER', 'SPACE']
 
 const onKeyPress = (e: React.KeyboardEvent<HTMLElement>) => {

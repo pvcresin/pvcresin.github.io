@@ -1,6 +1,6 @@
+import styles from './footer.module.scss'
 import { Social } from './social'
 
-import styles from './footer.module.scss'
 
 export const Footer = () => {
   return (

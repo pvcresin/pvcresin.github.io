@@ -1,11 +1,10 @@
+import { worksArray } from '@data/index'
+import { handlers } from '@utils/keyboardlistener'
 import Link from 'next/link'
-
-import { worksArray } from 'data'
+import React from 'react'
 
 import { Webp } from './webp'
-
 import styles from './works.module.scss'
-import { handlers } from 'utils/keyboardlistener'
 
 export const Works: React.FC = () => (
   <div className={styles.root}>

@@ -1,12 +1,10 @@
+import { Footer } from '@components/footer'
+import { Link } from '@components/link'
+import { Navigation } from '@components/navigation'
+import { Tags } from '@components/tags'
+import { Webp } from '@components/webp'
+import { worksArray, Work } from '@data/index'
 import { NextPage } from 'next'
-
-import { worksArray, Work } from 'data'
-
-import { Tags } from 'components/tags'
-import { Webp } from 'components/webp'
-import { Footer } from 'components/footer'
-import { Navigation } from 'components/navigation'
-import { Link } from 'components/link'
 
 import styles from './[workKey].module.scss'
 

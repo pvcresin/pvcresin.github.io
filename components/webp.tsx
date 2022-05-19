@@ -1,3 +1,5 @@
+import React from 'react'
+
 import styles from './webp.module.scss'
 
 export const Webp: React.FC<{ src: string; imageClassName?: string }> = ({

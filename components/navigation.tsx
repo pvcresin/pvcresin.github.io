@@ -1,8 +1,8 @@
+import { handlers } from '@utils/keyboardlistener'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import { FaFolder, FaListUl, FaUserAlt } from 'react-icons/fa'
-import { handlers } from 'utils/keyboardlistener'
 
 import styles from './navigation.module.scss'
 

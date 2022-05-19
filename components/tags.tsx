@@ -1,3 +1,5 @@
+import React from 'react'
+
 import styles from './tags.module.scss'
 
 export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => (
