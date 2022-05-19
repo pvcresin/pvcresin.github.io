@@ -66,6 +66,13 @@
 
 .linkText {
   font-size: 0.8rem;
+  display: none;
+}
+
+@media screen and (min-width: 35.5em) {
+  .linkText {
+    display: inline-flex;
+  }
 }
 
 @media screen and (min-width: 48em) {
