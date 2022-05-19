@@ -1,7 +1,20 @@
 /** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
 const config = {
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+    },
+  },
   plugins: ['import', 'react', '@typescript-eslint'],
   ignorePatterns: ['*.scss'],
   settings: {
@@ -13,6 +26,11 @@ const config = {
         alwaysTryTypes: true,
       },
     },
+  },
+  env: {
+    es6: true,
+    node: true,
+    browser: true,
   },
   rules: {
     'no-undef': 'off',
@@ -36,7 +54,9 @@ const config = {
         'newlines-between': 'always',
       },
     ],
-    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/consistent-type-imports': 'error',
   },
 }
 
