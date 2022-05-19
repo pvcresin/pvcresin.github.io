@@ -22,12 +22,16 @@ type WorkName =
   | 'BuddaBeautify'
   | 'Make if'
 
+export const categories = ['All', 'Android', 'Web', 'Desktop', 'Design'] as const
+
+export type Category = typeof categories[number]
+
 export type Work = {
   key: WorkKey
   title: WorkName
   sub: string
   img: string
-  category: string
+  category: Category
   video?: string
   text: string
   implement: string

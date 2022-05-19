@@ -6,9 +6,7 @@ import Navigation from 'components/navigation'
 
 import styles from './index.module.scss'
 import { handlers } from 'utils/keyboardlistener'
-
-const categories = ['All', 'Android', 'Web', 'Desktop', 'Design'] as const
-type Category = typeof categories[number]
+import { categories, Category } from 'data'
 
 const WorksPage = () => {
   const [selectedCategory, setSelectedCategory] = React.useState<Category>(categories[0])

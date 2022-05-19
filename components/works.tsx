@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
-import worksArray from 'data'
+import worksArray, { Category } from 'data'
 
 import Webp from './webp'
 
 import styles from './works.module.scss'
 
-const initialCategory = 'All'
+const initialCategory: Category = 'All'
 
-const Works: React.FC<{ category?: string }> = ({ category = initialCategory }) => (
+const Works: React.FC<{ category?: Category }> = ({ category }) => (
   <div className={styles.root}>
     {worksArray
       .filter((w) => category === initialCategory || w.category === category)
