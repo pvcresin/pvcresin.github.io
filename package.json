@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "next",
     "export": "next build && next export",
-    "preview": "yarn export && serve out"
+    "preview": "yarn export && serve out",
+    "lint": "eslint './{components,data,pages,utils}/**/*' --ext js,jsx,ts,tsx"
   },
   "dependencies": {
     "dayjs": "^1.11.2",
@@ -21,6 +22,12 @@
   "devDependencies": {
     "@types/node": "^17.0.24",
     "@types/react": "^17.0.27",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.30.0",
     "purecss": "^2.1.0",
     "sass": "^1.50.0",
     "serve": "^13.0.2",
