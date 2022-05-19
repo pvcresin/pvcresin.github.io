@@ -1,36 +1,3 @@
 .section {
   flex-grow: 1;
 }
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  max-width: 380px;
-  padding: 1rem 1.5rem 0;
-  margin: 0 auto;
-}
-
-.link {
-  &:focus-visible {
-    outline-color: cyan;
-    outline-offset: 0;
-    outline-style: solid;
-  }
-}
-
-.button {
-  font-size: 0.8rem;
-  display: inline-block;
-  color: gray;
-  padding: 0.5rem 0.5rem;
-  cursor: pointer;
-  border: 1px solid;
-  border-radius: 0.3rem;
-  text-align: center;
-}
-
-.buttonSelected {
-  color: white;
-  background: gray;
-  border-color: gray;
-}
