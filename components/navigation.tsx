@@ -16,7 +16,7 @@ const Navigation = () => {
         <Link href='/about'>
           <li
             className={pathname === '/about' ? styles.itemActive : styles.item}
-            tabIndex={2}
+            tabIndex={0}
             {...handlers}
           >
             <FaUserAlt size='1.2rem' />
@@ -30,7 +30,7 @@ const Navigation = () => {
                 ? styles.itemActive
                 : styles.item
             }
-            tabIndex={3}
+            tabIndex={0}
             {...handlers}
           >
             <FaFolder size='1.2rem' />
@@ -40,7 +40,7 @@ const Navigation = () => {
         <Link href='/news'>
           <li
             className={pathname === '/news' ? styles.itemActive : styles.item}
-            tabIndex={4}
+            tabIndex={0}
             {...handlers}
           >
             <FaListUl size='1.2rem' />
@@ -58,7 +58,7 @@ const Navigation = () => {
         <Link href='/'>
           <span
             className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo}
-            tabIndex={1}
+            tabIndex={0}
             {...handlers}
           >
             <img className={styles.icon} src='/icon-pvcresin.svg' alt='' loading='lazy' />
