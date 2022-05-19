@@ -1,4 +1,4 @@
-import List, { Item } from './list'
+import { List, Item } from './list'
 
 const awards: Item[] = [
   {
@@ -34,6 +34,4 @@ const awards: Item[] = [
   },
 ]
 
-const Awards = () => <List items={awards} />
-
-export default Awards
+export const Awards = () => <List items={awards} />

@@ -1,4 +1,4 @@
-import List, { Item } from './list'
+import { List, Item } from './list'
 
 const schools: Item[] = [
   {
@@ -28,11 +28,9 @@ const schools: Item[] = [
   },
 ]
 
-const Education = () => (
+export const Education = () => (
   <>
     <h2 className='section-title'>Education</h2>
     <List items={schools} />
   </>
 )
-
-export default Education

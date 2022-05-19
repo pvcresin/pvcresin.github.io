@@ -1,4 +1,4 @@
-import Link from './link'
+import { Link } from './link'
 import styles from './timeline.module.scss'
 
 export type Item = {
@@ -44,7 +44,7 @@ const items: Item[] = [
   },
 ]
 
-const Timeline = () => (
+export const Timeline = () => (
   <div className={styles.root}>
     <div className={styles.container}>
       <span className={styles.line} />
@@ -64,5 +64,3 @@ const Timeline = () => (
     </div>
   </div>
 )
-
-export default Timeline

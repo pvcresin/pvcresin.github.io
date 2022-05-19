@@ -1,4 +1,4 @@
-import List, { Item } from './list'
+import { List, Item } from './list'
 
 const clubs: Item[] = [
   {
@@ -32,11 +32,9 @@ const clubs: Item[] = [
   },
 ]
 
-const Clubs = () => (
+export const Clubs = () => (
   <>
     <h2 className='section-title'>Clubs</h2>
     <List items={clubs} />
   </>
 )
-
-export default Clubs

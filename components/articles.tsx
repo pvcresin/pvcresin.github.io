@@ -1,4 +1,4 @@
-import NewsList, { NewsData } from './newslist'
+import { NewsList, NewsData } from './newslist'
 
 const news: NewsData[] = [
   {
@@ -111,6 +111,4 @@ const news: NewsData[] = [
   },
 ]
 
-const Articles = () => <NewsList newsData={news} />
-
-export default Articles
+export const Articles = () => <NewsList newsData={news} />

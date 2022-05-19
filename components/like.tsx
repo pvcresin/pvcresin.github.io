@@ -21,7 +21,7 @@ const eat = {
   '🍰': 'ケーキ',
 } as const
 
-const Like = () => (
+export const Like = () => (
   <div>
     <h2 className='section-title'>Like</h2>
     <div className={`pure-g ${styles.content}`}>
@@ -70,5 +70,3 @@ const Like = () => (
     </div>
   </div>
 )
-
-export default Like

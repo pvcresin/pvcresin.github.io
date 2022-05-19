@@ -69,7 +69,7 @@ const skills2 = [
   },
 ]
 
-const Skills = () => (
+export const Skills = () => (
   <div>
     <h2 className='section-title'>Skills</h2>
     <div className={`pure-g ${styles.skillContainer}`}>
@@ -115,5 +115,3 @@ const Skills = () => (
     </div>
   </div>
 )
-
-export default Skills

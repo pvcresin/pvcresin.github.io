@@ -3,7 +3,7 @@ import styles from './link.module.scss'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { handlers } from 'utils/keyboardlistener'
 
-const Link: React.FC<{
+export const Link: React.FC<{
   href?: string
   isExternalLink?: boolean
   withExternalIcon?: boolean
@@ -27,5 +27,3 @@ const Link: React.FC<{
   ) : (
     <span className={styles.text}>{children}</span>
   )
-
-export default Link

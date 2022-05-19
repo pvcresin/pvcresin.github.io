@@ -2,11 +2,11 @@ import { FaBirthdayCake, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 import dayjs from 'dayjs'
 
 import styles from './about.module.scss'
-import Link from './link'
+import { Link } from './link'
 
 const birthday = '1994-07-30'
 
-const About = () => (
+export const About = () => (
   <>
     <div className={`pure-g ${styles.root}`}>
       <div className={`pure-u-sm-1-4 pure-u-1-2 ${styles.aboutImage}`}>
@@ -69,5 +69,3 @@ const About = () => (
     </div>
   </>
 )
-
-export default About

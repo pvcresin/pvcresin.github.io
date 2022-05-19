@@ -34,7 +34,7 @@ export type Work = {
   links?: Record<string, string>
 }
 
-const worksArray: Work[] = [
+export const worksArray: Work[] = [
   {
     key: 'KawarimiMeeting',
     title: 'かわりみミーティング',
@@ -205,5 +205,3 @@ const worksArray: Work[] = [
     },
   },
 ]
-
-export default worksArray

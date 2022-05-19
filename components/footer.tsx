@@ -1,8 +1,8 @@
-import Social from './social'
+import { Social } from './social'
 
 import styles from './footer.module.scss'
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className={styles.root}>
       <div className={`container ${styles.container}`}>
@@ -12,5 +12,3 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer

@@ -6,7 +6,7 @@ import { handlers } from 'utils/keyboardlistener'
 
 import styles from './navigation.module.scss'
 
-const Navigation = () => {
+export const Navigation = () => {
   const router = useRouter()
   const { pathname } = router
 
@@ -70,5 +70,3 @@ const Navigation = () => {
     </nav>
   )
 }
-
-export default Navigation

@@ -1,4 +1,4 @@
-import Link from './link'
+import { Link } from './link'
 import type { Work } from 'data'
 
 import styles from './list.module.scss'
@@ -11,7 +11,7 @@ export type Item = {
   workLink?: { key: Work['key']; title: Work['title'] }
 }
 
-const List: React.FC<{ items: Item[] }> = ({ items }) => (
+export const List: React.FC<{ items: Item[] }> = ({ items }) => (
   <ul className={`pure-g pure-u-1-1 ${styles.root}`}>
     {items.map((item) => (
       <li className={styles.item} key={item.title}>
@@ -41,5 +41,3 @@ const List: React.FC<{ items: Item[] }> = ({ items }) => (
     ))}
   </ul>
 )
-
-export default List

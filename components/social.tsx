@@ -3,7 +3,7 @@ import { handlers } from 'utils/keyboardlistener'
 
 import styles from './social.module.scss'
 
-const Social = () => (
+export const Social = () => (
   <ul className={styles.iconList}>
     <li className={styles.iconListItem}>
       <a
@@ -55,5 +55,3 @@ const Social = () => (
     </li>
   </ul>
 )
-
-export default Social

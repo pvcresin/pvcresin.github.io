@@ -1,10 +1,10 @@
-import Footer from 'components/footer'
-import Navigation from 'components/navigation'
-import Articles from 'components/articles'
-import Talks from 'components/talks'
+import { Footer } from 'components/footer'
+import { Navigation } from 'components/navigation'
+import { Articles } from 'components/articles'
+import { Talks } from 'components/talks'
+import { Interviews } from 'components/interviews'
 
 import styles from './news.module.scss'
-import Interviews from 'components/interviews'
 
 const NewsPage = () => (
   <div className={`root ${styles.root}`}>

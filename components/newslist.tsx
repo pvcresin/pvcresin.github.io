@@ -1,10 +1,10 @@
 import styles from './newslist.module.scss'
 
-import Link from './link'
+import { Link } from './link'
 
 export type NewsData = { date: string; at?: string; title: string; link?: string }
 
-const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
+export const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>
     {newsData.map((item) => (
       <li className={`pure-g ${styles.item}`} key={item.title}>
@@ -25,5 +25,3 @@ const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
     ))}
   </ul>
 )
-
-export default NewsList

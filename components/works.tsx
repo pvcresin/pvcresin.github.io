@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-import worksArray from 'data'
+import { worksArray } from 'data'
 
-import Webp from './webp'
+import { Webp } from './webp'
 
 import styles from './works.module.scss'
 import { handlers } from 'utils/keyboardlistener'
 
-const Works: React.FC = () => (
+export const Works: React.FC = () => (
   <div className={styles.root}>
     {worksArray.map((w) => (
       <div className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${styles.content}`} key={w.key}>
@@ -26,5 +26,3 @@ const Works: React.FC = () => (
     ))}
   </div>
 )
-
-export default Works

@@ -1,14 +1,14 @@
 import { NextPage } from 'next'
 
-import worksArray, { Work } from 'data'
+import { worksArray, Work } from 'data'
 
-import Tags from 'components/tags'
-import Webp from 'components/webp'
-import Footer from 'components/footer'
-import Navigation from 'components/navigation'
+import { Tags } from 'components/tags'
+import { Webp } from 'components/webp'
+import { Footer } from 'components/footer'
+import { Navigation } from 'components/navigation'
+import { Link } from 'components/link'
 
 import styles from './[workKey].module.scss'
-import Link from 'components/link'
 
 const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
   <div className='root'>

@@ -1,6 +1,6 @@
 import styles from './tags.module.scss'
 
-const Tags: React.FC<{ tags: string[] }> = ({ tags }) => (
+export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => (
   <div className={styles.root}>
     {tags.map((t) => (
       <span className={styles.tag} key={t}>
@@ -9,5 +9,3 @@ const Tags: React.FC<{ tags: string[] }> = ({ tags }) => (
     ))}
   </div>
 )
-
-export default Tags
