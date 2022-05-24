@@ -7,6 +7,8 @@ import Head from 'next/head'
 
 import type { AppProps } from 'next/app'
 
+import { worksArray } from '@data'
+
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
@@ -18,6 +20,10 @@ const App = ({ Component, pageProps }: AppProps) => (
       <meta name='description' content='pvcresin portfolio' />
       <meta name='keywords' content='pvcresin,raika toriyama,鳥山 らいか,鳥山らいか' />
       <meta name='theme-color' content='#1a1819' />
+      {/* preload images */}
+      {worksArray.map(({ key, img }) => (
+        <link key={key} rel='preload' href={`${img}.webp`} as='image' />
+      ))}
     </Head>
     <Component {...pageProps} />
   </>
