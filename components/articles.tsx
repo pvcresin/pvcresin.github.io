@@ -3,6 +3,12 @@ import type { NewsData } from '@components/newslist'
 
 const news: NewsData[] = [
   {
+    date: '2022-05-25',
+    title: 'JavaScript で Mac のマルチタッチジェスチャによる拡大縮小を無効にする',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/f0b81496e387b2',
+  },
+  {
     date: '2022-04-19',
     title: 'esbuild-loader 試してみたら開発ビルドが 2〜3 倍速くなった話',
     at: 'Sansan Builders Blog',
