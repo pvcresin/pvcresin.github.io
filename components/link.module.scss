@@ -1,6 +1,6 @@
 .root {
   word-break: break-all;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
 }
 
@@ -28,5 +28,6 @@
   display: inline-flex;
   height: 1.5rem;
   align-items: center;
+  vertical-align: baseline;
   margin-left: 0.3rem;
 }
