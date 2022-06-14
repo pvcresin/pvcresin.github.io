@@ -1,117 +1,71 @@
 import styles from './skills.module.scss'
 
-const skills = [
-  {
-    name: 'Android',
-    sub: 'Rx Okhttp Retrofit',
-    level: '70%',
-  },
-  {
-    name: 'Kotlin',
-    sub: 'Jetpack Compose Ktor',
-    level: '80%',
-  },
-  {
-    name: 'Java',
-    sub: '',
-    level: '85%',
-  },
-  {
-    name: 'Processing',
-    sub: '',
-    level: '90%',
-  },
-]
+// logo: https://simpleicons.org/
+type SkillData = { text: string; logo?: string; color?: string }
 
-const skills1 = [
-  {
-    name: 'HTML',
-    sub: 'Pug Markdown',
-    level: '90%',
-  },
-  {
-    name: 'CSS',
-    sub: 'Sass PostCSS CSS-Modules',
-    level: '85%',
-  },
-  {
-    name: 'JavaScript',
-    sub: 'React Webpack Node',
-    level: '90%',
-  },
-  {
-    name: 'PHP',
-    sub: '',
-    level: '40%',
-  },
-]
+// https://shields.io/
+const Skill = ({ text, logo = text, color = '4b4b4b' }: SkillData) => (
+  <img
+    className={styles.skillBadge}
+    alt={text}
+    src={`https://img.shields.io/badge/-${text}-${color}?style=flat-square&logo=${logo}&logoColor=white`}
+    loading='lazy'
+  />
+)
 
-const skills2 = [
+const skillList: { category: string; list: SkillData[] }[] = [
   {
-    name: 'Git',
-    sub: 'GitHub GitLab',
-    level: '80%',
+    category: 'Languages',
+    list: [
+      { text: 'JavaScript' },
+      { text: 'TypeScript' },
+      { text: 'HTML', logo: 'HTML5' },
+      { text: 'CSS', logo: 'CSS3' },
+      { text: 'Java' },
+      { text: 'Kotlin' },
+      { text: 'Processing', logo: 'Processing Foundation' },
+    ],
   },
   {
-    name: 'Figma',
-    sub: '',
-    level: '60%',
+    category: 'Frameworks',
+    list: [
+      { text: 'React' },
+      { text: 'Next.js' },
+      { text: 'Sass' },
+      { text: 'PostCSS' },
+      { text: 'CSS Modules' },
+    ],
   },
   {
-    name: 'Illustrator',
-    sub: '',
-    level: '80%',
+    category: 'DevOps',
+    list: [
+      { text: 'Git' },
+      { text: 'GitHub Actions' },
+      { text: 'CircleCI' },
+      { text: 'OpenAPI', logo: 'OpenAPI Initiative' },
+      { text: 'webpack' },
+    ],
   },
   {
-    name: 'Prott',
-    sub: '',
-    level: '30%',
+    category: 'Design tools',
+    list: [{ text: 'Figma' }, { text: 'Adobe Illustrator' }],
   },
 ]
 
 export const Skills = () => (
   <div>
     <h2 className='section-title'>Skills</h2>
-    <div className={`pure-g ${styles.skillContainer}`}>
-      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${styles.skillBox}`}>
-        {skills.map((s) => (
-          <li className={styles.skill} key={s.name}>
-            <div className={styles.skillInfo}>
-              <span className={styles.name}>{s.name}</span>
-              <span className={styles.sub}>{s.sub}</span>
-            </div>
-            <div className={styles.bar}>
-              <div className={styles.level} style={{ width: s.level }}></div>
-            </div>
-          </li>
-        ))}
-      </ul>
-      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${styles.skillBox}`}>
-        {skills1.map((s) => (
-          <li className={styles.skill} key={s.name}>
-            <div className={styles.skillInfo}>
-              <span className={styles.name}>{s.name}</span>
-              <span className={styles.sub}>{s.sub}</span>
-            </div>
-            <div className={styles.bar}>
-              <div className={styles.level} style={{ width: s.level }}></div>
-            </div>
-          </li>
-        ))}
-      </ul>
-      <ul className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${styles.skillBox}`}>
-        {skills2.map((s) => (
-          <li className={styles.skill} key={s.name}>
-            <div className={styles.skillInfo}>
-              <span className={styles.name}>{s.name}</span>
-              <span className={styles.sub}>{s.sub}</span>
-            </div>
-            <div className={styles.bar}>
-              <div className={styles.level} style={{ width: s.level }}></div>
-            </div>
-          </li>
-        ))}
-      </ul>
+    <div className={styles.skillContainer}>
+      {skillList.map(({ category, list }) => (
+        <ul className={styles.skillBox} key={category}>
+          <h3 className={styles.skillSectionTitle}>{category}</h3>
+          {list.map(({ text, logo }) => (
+            <li key={text} className={styles.skillBadgeContainer}>
+              <Skill logo={logo} text={text} />
+            </li>
+          ))}
+        </ul>
+      ))}
     </div>
   </div>
 )
