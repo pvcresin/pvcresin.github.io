@@ -21,7 +21,7 @@ const skillList: { category: string; list: SkillData[] }[] = [
       { text: 'TypeScript' },
       { text: 'HTML', logo: 'HTML5' },
       { text: 'CSS', logo: 'CSS3' },
-      { text: 'Java' },
+      { text: 'Java', logo: 'OpenJDK' },
       { text: 'Kotlin' },
       { text: 'Processing', logo: 'Processing Foundation' },
     ],
