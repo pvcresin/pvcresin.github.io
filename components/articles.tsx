@@ -3,6 +3,12 @@ import type { NewsData } from '@components/newslist'
 
 const news: NewsData[] = [
   {
+    date: '2022-07-28',
+    title: 'Eight で Internet Explorer のサポートを終了するために行ったこと',
+    at: 'Sansan Builders Blog',
+    link: 'https://buildersbox.corp-sansan.com/entry/kill-ie',
+  },
+  {
     date: '2022-05-25',
     title: 'JavaScript で Mac のマルチタッチジェスチャによる拡大縮小を無効にする',
     at: 'Zenn',
