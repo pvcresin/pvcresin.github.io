@@ -55,7 +55,7 @@ export const worksArray: Work[] = [
       'Chrome ウェブストア':
         'https://chrome.google.com/webstore/detail/かわりみミーティング/eambcodfdjgfoipcpkohclalfnbjmjol?hl=ja',
       リポジトリ: 'https://github.com/MLOA/KawarimiMeeting',
-      ツクってアソぶハッカソン: 'https://tsukuaso.com/',
+      ツクってアソぶハッカソン: 'https://tsukuaso.com/news/3p1__r_e34ox',
     },
   },
   {

@@ -31,7 +31,7 @@ const awards: Item[] = [
     title: '第2回 ツクってアソぶハッカソン',
     texts: ['優秀賞 受賞', 'チーム：意識中くらいとして参加'],
     workLink: { key: 'KawarimiMeeting', title: 'かわりみミーティング' },
-    link: 'https://tsukuaso.com/',
+    link: 'https://tsukuaso.com/news/3p1__r_e34ox',
   },
 ]
 
