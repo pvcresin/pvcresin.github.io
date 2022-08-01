@@ -4,7 +4,7 @@ import type { NewsData } from '@components/newslist'
 const interviews: NewsData[] = [
   {
     date: ' 2022-07-25',
-    title: '「第２回ツクってアソぶハッカソン」受賞者インタビュー③ 優秀賞',
+    title: '「第2回 ツクってアソぶハッカソン」受賞者インタビュー③ 優秀賞',
     at: 'ツクってアソぶハッカソン',
     link: 'https://tsukuaso.com/news/3p1__r_e34ox',
   },
