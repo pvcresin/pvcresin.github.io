@@ -43,3 +43,20 @@ body {
   padding-top: 1rem;
   font-weight: bold;
 }
+
+.invisible {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade-in-animation 1.5s ease-out forwards;
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
