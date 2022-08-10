@@ -10,6 +10,7 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
+    forceSwcTransforms: true,
     scrollRestoration: true,
   },
 }
