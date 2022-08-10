@@ -5,7 +5,7 @@ export const FadeInSection: React.FC<{ children: React.ReactNode }> = ({ childre
   const { ref, inView } = useInView({
     threshold: 0,
     rootMargin: '-100px',
-    // triggerOnce: true,
+    triggerOnce: true,
   })
 
   return (
