@@ -1,3 +1,4 @@
+import { FadeInSection } from '@components/FadeInSection'
 import { Footer } from '@components/footer'
 import { Link } from '@components/link'
 import { Navigation } from '@components/navigation'
@@ -30,39 +31,49 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
             <Webp src={work.img} imageClassName={styles.image} />
           </div>
         )}
-        <h1 className={styles.title}>
-          <p className={styles.paragraph}>{work.title + ': '}</p>
-          {work.sub}
-        </h1>
-        <Tags tags={work.keywords} />
+        <FadeInSection>
+          <h1 className={styles.title}>
+            <p className={styles.paragraph}>{work.title + ': '}</p>
+            {work.sub}
+          </h1>
+        </FadeInSection>
+        <FadeInSection>
+          <Tags tags={work.keywords} />
+        </FadeInSection>
         <div className={styles.chapterTitle}>
           <h2 className={styles.chapterTitleText}>Abstract</h2>
           <hr className={styles.chapterLine} />
         </div>
-        <p className={styles.paragraph}>{work.text}</p>
+        <FadeInSection>
+          <p className={styles.paragraph}>{work.text}</p>
+        </FadeInSection>
         <div className={styles.chapterTitle}>
           <h2 className={styles.chapterTitleText}>Implementation</h2>
           <hr className={styles.chapterLine} />
         </div>
-        <p className={styles.paragraph}>{work.implement}</p>
-        {work.links && (
-          <>
-            <div className={styles.chapterTitle}>
-              <h2 className={styles.chapterTitleText}>Links</h2>
-              <hr className={styles.chapterLine} />
-            </div>
-            <ol className={styles.linkList}>
-              {Object.entries(work.links).map(([key, value]) => (
-                <li className={styles.linkListItem} key={key}>
-                  {key + ': '}
-                  <Link href={value} isExternalLink withExternalIcon>
-                    {value}
-                  </Link>
-                </li>
-              ))}
-            </ol>
-          </>
-        )}
+        <FadeInSection>
+          <p className={styles.paragraph}>{work.implement}</p>
+        </FadeInSection>
+        <FadeInSection>
+          {work.links && (
+            <>
+              <div className={styles.chapterTitle}>
+                <h2 className={styles.chapterTitleText}>Links</h2>
+                <hr className={styles.chapterLine} />
+              </div>
+              <ol className={styles.linkList}>
+                {Object.entries(work.links).map(([key, value]) => (
+                  <li className={styles.linkListItem} key={key}>
+                    {key + ': '}
+                    <Link href={value} isExternalLink withExternalIcon>
+                      {value}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </>
+          )}
+        </FadeInSection>
       </div>
     </section>
     <Footer />

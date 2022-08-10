@@ -1,5 +1,6 @@
 import { Link } from '@components/link'
 
+import { FadeInSection } from './FadeInSection'
 import styles from './timeline.module.scss'
 
 export type Item = {
@@ -52,13 +53,15 @@ export const Timeline = () => (
       {items.map(({ startYear, endYear, title, titleLinkUrl, description }) => (
         <div className={styles.cardWrapper} key={title}>
           <div className={styles.card}>
-            <span>{`${startYear}  -  ${endYear === undefined ? 'present' : endYear}`}</span>
-            <h3 className={styles.title}>
-              <Link href={titleLinkUrl} isExternalLink>
-                {title}
-              </Link>
-            </h3>
-            <p className={styles.description}>{description}</p>
+            <FadeInSection>
+              <span>{`${startYear}  -  ${endYear === undefined ? 'present' : endYear}`}</span>
+              <h3 className={styles.title}>
+                <Link href={titleLinkUrl} isExternalLink>
+                  {title}
+                </Link>
+              </h3>
+              <p className={styles.description}>{description}</p>
+            </FadeInSection>
           </div>
         </div>
       ))}

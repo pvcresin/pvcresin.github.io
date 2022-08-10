@@ -1,3 +1,4 @@
+import { FadeInSection } from './FadeInSection'
 import styles from './skills.module.scss'
 
 // logo: https://simpleicons.org/
@@ -59,11 +60,13 @@ export const Skills = () => (
       {skillList.map(({ category, list }) => (
         <ul className={styles.skillBox} key={category}>
           <h3 className={styles.skillSectionTitle}>{category}</h3>
-          {list.map(({ text, logo }) => (
-            <li key={text} className={styles.skillBadgeContainer}>
-              <Skill logo={logo} text={text} />
-            </li>
-          ))}
+          <FadeInSection>
+            {list.map(({ text, logo }) => (
+              <li key={text} className={styles.skillBadgeContainer}>
+                <Skill logo={logo} text={text} />
+              </li>
+            ))}
+          </FadeInSection>
         </ul>
       ))}
     </div>
