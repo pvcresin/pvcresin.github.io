@@ -54,13 +54,13 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
         <FadeInSection>
           <p className={styles.paragraph}>{work.implement}</p>
         </FadeInSection>
-        <FadeInSection>
-          {work.links && (
-            <>
-              <div className={styles.chapterTitle}>
-                <h2 className={styles.chapterTitleText}>Links</h2>
-                <hr className={styles.chapterLine} />
-              </div>
+        {work.links && (
+          <>
+            <div className={styles.chapterTitle}>
+              <h2 className={styles.chapterTitleText}>Links</h2>
+              <hr className={styles.chapterLine} />
+            </div>
+            <FadeInSection>
               <ol className={styles.linkList}>
                 {Object.entries(work.links).map(([key, value]) => (
                   <li className={styles.linkListItem} key={key}>
@@ -71,9 +71,9 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
                   </li>
                 ))}
               </ol>
-            </>
-          )}
-        </FadeInSection>
+            </FadeInSection>
+          </>
+        )}
       </div>
     </section>
     <Footer />
