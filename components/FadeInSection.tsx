@@ -1,7 +1,7 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
 
-export const FadeInSection: React.FC<{ className: string; children: React.ReactNode }> = ({
+export const FadeInSection: React.FC<{ className?: string; children: React.ReactNode }> = ({
   className,
   children,
 }) => {
