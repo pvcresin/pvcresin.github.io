@@ -10,16 +10,16 @@ const NewsPage = () => (
     <Navigation />
     <section className={styles.content}>
       <div className='container'>
-        <h2 className='section-title'>Articles</h2>
-        <NewsList newsData={articles} />
+        <h2 className='section-title'>Interviews</h2>
+        <NewsList newsData={interviews} />
       </div>
       <div className='container'>
         <h2 className='section-title'>Talks</h2>
         <NewsList newsData={talks} />
       </div>
       <div className='container'>
-        <h2 className='section-title'>Interviews</h2>
-        <NewsList newsData={interviews} />
+        <h2 className='section-title'>Articles</h2>
+        <NewsList newsData={articles} />
       </div>
     </section>
     <Footer />

@@ -41,8 +41,4 @@ ref
 - Speaker Deck
 - Blog
 
-## Interview
-
-- つくアソ 2
-
 ## Publications
