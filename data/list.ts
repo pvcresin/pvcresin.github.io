@@ -10,21 +10,21 @@ export type Item = {
 
 export const awards: Item[] = [
   {
-    date: '2015-05',
+    date: '2015-05-31',
     title: 'Cloud n アプリケーションコンテスト',
     texts: ['WebRTC賞 受賞', 'チーム「意識中くらい」として参加'],
-    link: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
+    link: 'https://weekly.ascii.jp/elem/000/002/634/2634921/',
     workLink: { key: 'Ichimonitto', title: 'イチモニット' },
   },
   {
-    date: '2017-12',
+    date: '2017-12-09',
     title: '信州未来アプリコンテスト0',
     texts: ['信越情報通信懇談会会長賞 受賞', 'チーム「意識中くらい」として参加'],
     link: 'https://shinshu-futureapp.net/information/contest/',
     workLink: { key: 'MiddleDrive', title: 'MiddleDrive' },
   },
   {
-    date: '2019-03',
+    date: '2019-03-19',
     title: '第182回 HCI研究会',
     texts: [
       '学生奨励賞 受賞',
@@ -34,7 +34,7 @@ export const awards: Item[] = [
     workLink: { key: 'InvisibleFlick', title: 'InvisibleFlick' },
   },
   {
-    date: '2022-02',
+    date: '2022-02-25',
     title: '第2回 ツクってアソぶハッカソン',
     texts: ['優秀賞 受賞', 'チーム「意識中くらい」として参加'],
     workLink: { key: 'KawarimiMeeting', title: 'かわりみミーティング' },
@@ -44,7 +44,7 @@ export const awards: Item[] = [
 
 export const publications: Item[] = [
   {
-    date: '2015-12',
+    date: '2015-12-02',
     title: 'SensorPipe',
     texts: [
       '鳥山 らいか, 宮下 芳明. SensorPipe: スマートフォン側のプログラミングを一切行わないスマートフォン連携プログラミング, 第23回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2015), 2015.',
@@ -53,7 +53,7 @@ export const publications: Item[] = [
     workLink: { key: 'SensorPipe', title: 'SensorPipe' },
   },
   {
-    date: '2018-03',
+    date: '2018-02-26',
     title: 'インタラクティブパッケージ',
     texts: [
       '加藤邦拓, 薄羽大樹, 鳥山らいか, 竹内まゆ, 野崎玲那, 細谷美月, 宮下芳明. タッチパネルを拡張する紙製インタフェースを搭載したインタラクティブパッケージの開発, インタラクション2018論文集, pp.889-894, 2018.',
@@ -61,7 +61,7 @@ export const publications: Item[] = [
     link: 'https://research.miyashita.com/2018/D193/',
   },
   {
-    date: '2018-09',
+    date: '2018-09-26',
     title: '透明キーボード',
     texts: [
       '鳥山らいか, 宮下芳明. スマートウォッチ向けのキートップが透明な日本語かな入力インタフェース, 第26回インタラクティブシステムとソフトウェアに関するワークショップ論文集 (WISS 2018), 2018.',
@@ -69,7 +69,7 @@ export const publications: Item[] = [
     link: 'https://research.miyashita.com/papers/D202',
   },
   {
-    date: '2019-03',
+    date: '2019-03-11',
     title: 'InvisibleFlick',
     texts: [
       '鳥山らいか, 宮下芳明. InvisibleFlick: 小型タッチスクリーン端末におけるキートップが透明な日本語入力キーボード, 研究報告ヒューマンコンピュータインタラクション(HCI), Vol.2019-HCI-182, Issue.27, pp. 1-8, 2019.',
