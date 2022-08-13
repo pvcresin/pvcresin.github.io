@@ -10,7 +10,7 @@ export const First = () => (
     <div className='container'>
       <FadeInSection>
         <h1 className={styles.name}>Raika Toriyama</h1>
-        <p className={styles.description}>Software Engineer</p>
+        <p className={styles.description}>Software Engineer a.k.a. pvcresin</p>
         <Social />
       </FadeInSection>
     </div>
