@@ -12,7 +12,7 @@ export const FadeInSection: React.FC<{ className?: string; children: React.React
   })
 
   return (
-    <div className={`${className} ${inView ? 'fade-in' : 'invisible'}`} ref={ref}>
+    <div className={[className || '', inView ? 'fade-in' : 'invisible'].join(' ')} ref={ref}>
       {children}
     </div>
   )
