@@ -4,8 +4,8 @@ import { Link } from '@components/link'
 import { Navigation } from '@components/navigation'
 import { Tags } from '@components/tags'
 import { Webp } from '@components/webp'
-import { worksArray } from '@data/index'
-import type { Work } from '@data/index'
+import { worksArray } from '@data/works'
+import type { Work } from '@data/works'
 
 import type { NextPage } from 'next'
 

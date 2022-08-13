@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link } from '@components/link'
-import type { Work } from '@data/index'
+import type { Work } from '@data/works'
 
 import { FadeInSection } from './FadeInSection'
 import styles from './list.module.scss'

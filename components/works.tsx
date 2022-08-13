@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { Webp } from '@components/webp'
-import { worksArray } from '@data/index'
+import { worksArray } from '@data/works'
 import { handlers } from '@utils/keyboardlistener'
 
 import { FadeInSection } from './FadeInSection'
