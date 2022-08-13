@@ -1,8 +1,7 @@
-import { Articles } from '@components/articles'
 import { Footer } from '@components/footer'
-import { Interviews } from '@components/interviews'
 import { Navigation } from '@components/navigation'
-import { Talks } from '@components/talks'
+import { NewsList } from '@components/newslist'
+import { articles, talks, interviews } from '@data/news'
 
 import styles from './news.module.scss'
 
@@ -12,15 +11,15 @@ const NewsPage = () => (
     <section className={styles.content}>
       <div className='container'>
         <h2 className='section-title'>Articles</h2>
-        <Articles />
+        <NewsList newsData={articles} />
       </div>
       <div className='container'>
         <h2 className='section-title'>Talks</h2>
-        <Talks />
+        <NewsList newsData={talks} />
       </div>
       <div className='container'>
         <h2 className='section-title'>Interviews</h2>
-        <Interviews />
+        <NewsList newsData={interviews} />
       </div>
     </section>
     <Footer />

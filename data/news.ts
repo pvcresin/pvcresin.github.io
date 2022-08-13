@@ -1,7 +1,6 @@
-import { NewsList } from '@components/newslist'
-import type { NewsData } from '@components/newslist'
+export type NewsData = { date: string; at?: string; title: string; link?: string }
 
-const news: NewsData[] = [
+export const articles: NewsData[] = [
   {
     date: '2022-07-28',
     title: 'Eight で Internet Explorer のサポートを終了するために行ったこと',
@@ -124,4 +123,56 @@ const news: NewsData[] = [
   },
 ]
 
-export const Articles = () => <NewsList newsData={news} />
+export const talks: NewsData[] = [
+  {
+    date: '2022-02-17',
+    title: '新言語・フレームワーク導入の勘所～TypeScript・Rust・Flutter～',
+    at: 'Developers Summit 2022',
+    link: 'https://event.shoeisha.jp/devsumi/20220217/session/3677/',
+  },
+  {
+    date: '2021-11-05',
+    title: 'Eight Webフロントエンドの開発者体験（DX）向上のための取り組み',
+    at: 'Sansan Builders Stage 2021',
+    link: 'https://jp.corp-sansan.com/engineering/buildersstage2021/?session=a2',
+  },
+  {
+    date: '2021-08-18',
+    title: 'ステップアップOSSコントリビュート',
+    at: 'ラクス OSS LT会 vol.2',
+    link: 'https://rakus.connpass.com/event/218573/',
+  },
+  {
+    date: '2020-11-06',
+    title: 'Webアプリケーションのアーキテクチャパターンから読み解くNext.js',
+    at: 'Eight Engineer Meetup #1',
+    link: 'https://speakerdeck.com/pvcresin/webapurikesiyonfalseakitekutiyapatankaradu-mijie-kunext-dot-js',
+  },
+  {
+    date: '2020-07-05',
+    title: '未来を待つのではなく、未来を創る ~CTOと新卒2年目社員の対談~',
+    at: '技育祭 2020',
+    link: 'https://talent.supporterz.jp/geeksai/2020/',
+  },
+  {
+    date: '2019-11-20',
+    title: 'TS 未経験者が 社内向け JS ライブラリを TS に置き換えている話',
+    at: '表参道Web勉強会 #9',
+    link: 'https://oweb.connpass.com/event/149918/',
+  },
+]
+
+export const interviews: NewsData[] = [
+  {
+    date: ' 2022-07-25',
+    title: '「第2回 ツクってアソぶハッカソン」受賞者インタビュー③ 優秀賞',
+    at: 'ツクってアソぶハッカソン',
+    link: 'https://tsukuaso.com/news/3p1__r_e34ox',
+  },
+  {
+    date: ' 2019-10-03',
+    title: '【Sansan19卒新卒インタビューVol.02】新卒エンジニアに聞いたSansanへの入社理由。',
+    at: 'Wantedly',
+    link: 'https://www.wantedly.com/companies/Sansan/post_articles/189105',
+  },
+]
