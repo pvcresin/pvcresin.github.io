@@ -26,7 +26,7 @@ const items: Item[] = [
     title: '株式会社 想隆社',
     titleLinkUrl: 'https://soryu-sha.jp/',
     description:
-      'フロントエンドエンジニア（インターン）。\n- 電子書籍・音声合成関連の研究用システムの開発\n- AIスピーカ・Felica・LINE botを用いたサービス開発\n- CMSを用いたWebサイト制作\nに従事。',
+      'フロントエンドエンジニア（インターン）。\n- 電子書籍・音声合成関連の研究用システムの開発\n- AIスピーカー・Felica・LINE botを用いたサービス開発\n- CMSを用いたWebサイト制作\nに従事。',
   },
   {
     startYear: '2017-04',
