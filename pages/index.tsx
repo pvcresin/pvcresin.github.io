@@ -1,11 +1,11 @@
 import { About } from '@components/about'
-import { Awards } from '@components/awards'
 import { First } from '@components/first'
 import { Footer } from '@components/footer'
+import { List } from '@components/list'
 import { More } from '@components/more'
 import { Navigation } from '@components/navigation'
-import { Publications } from '@components/publications'
 import { Timeline } from '@components/timeline'
+import { awards, publications } from '@data/list'
 
 import styles from './index.module.scss'
 
@@ -24,9 +24,9 @@ const IndexPage = () => (
         <h2 className='section-title'>Timeline</h2>
         <Timeline />
         <h2 className='section-title'>Awards</h2>
-        <Awards />
+        <List items={awards} />
         <h2 className='section-title'>Publications</h2>
-        <Publications />
+        <List items={publications} />
       </div>
     </section>
     <Footer />
