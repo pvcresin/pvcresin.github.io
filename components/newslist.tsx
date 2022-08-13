@@ -9,8 +9,8 @@ import styles from './newslist.module.scss'
 export const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>
     {newsData.map((item) => (
-      <FadeInSection key={item.title}>
-        <li className={`pure-g ${styles.item}`}>
+      <li className={`pure-g ${styles.item}`} key={item.title}>
+        <FadeInSection className={styles.row}>
           <time className={`pure-u-1-1 pure-u-lg-3-24 ${styles.date}`} dateTime={item.date}>
             {item.date}
           </time>
@@ -24,8 +24,8 @@ export const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
             )}
             <span className={styles.at}>{item.at || ''}</span>
           </span>
-        </li>
-      </FadeInSection>
+        </FadeInSection>
+      </li>
     ))}
   </ul>
 )
