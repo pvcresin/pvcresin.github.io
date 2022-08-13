@@ -7,31 +7,35 @@ import { FadeInSection } from './FadeInSection'
 import styles from './list.module.scss'
 
 export const List: React.FC<{ items: Item[] }> = ({ items }) => (
-  <ul className={`pure-g pure-u-1-1 ${styles.root}`}>
+  <ul className={styles.root}>
     {items.map((item) => (
-      <FadeInSection key={item.title}>
-        <li className={styles.item}>
-          <time className={styles.date}>{item.date}</time>
-          <div className={styles.info}>
-            <p className={styles.title}>
-              <Link href={item.link} isExternalLink>
-                {item.title}
-              </Link>
-            </p>
-            {item.texts.map((t) => (
-              <p className={styles.sub} key={t}>
-                {t}
+      <li className={styles.row} key={item.title}>
+        <FadeInSection>
+          <div className={styles.item}>
+            <time className={styles.date} dateTime={item.date}>
+              {item.date}
+            </time>
+            <div>
+              <p className={styles.title}>
+                <Link href={item.link} isExternalLink withExternalIcon>
+                  {item.title}
+                </Link>
               </p>
-            ))}
-            {item.workLink && (
-              <p className={styles.sub}>
-                {'Work: '}
-                <Link href={`/works/${item.workLink.key}`}>{item.workLink.title}</Link>
-              </p>
-            )}
+              <div className={styles.sub}>
+                {item.texts.map((t) => (
+                  <p key={t}>{t}</p>
+                ))}
+                {item.workLink && (
+                  <p>
+                    {'Work: '}
+                    <Link href={`/works/${item.workLink.key}`}>{item.workLink.title}</Link>
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
-        </li>
-      </FadeInSection>
+        </FadeInSection>
+      </li>
     ))}
   </ul>
 )

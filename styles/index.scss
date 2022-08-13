@@ -45,10 +45,12 @@ body {
 }
 
 .invisible {
+  width: 100%;
   opacity: 0;
 }
 
 .fade-in {
+  width: 100%;
   animation: fade-in-animation 1s ease-out forwards;
 }
 

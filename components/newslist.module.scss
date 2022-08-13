@@ -3,18 +3,17 @@
   text-align: left;
 }
 
-.item {
-  padding: 0.5rem;
+.row {
   border-top: 1px solid #2b2b2b;
   border-bottom: 1px solid #2b2b2b;
 }
 
-.item + .item {
+.row + .row {
   border-top: 0;
 }
 
-.row {
-  width: 100%;
+.item {
+  padding: 0.5rem;
 }
 
 .date {
