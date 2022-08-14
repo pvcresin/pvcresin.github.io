@@ -51,7 +51,7 @@ export const Skills = () => (
     {skillList.map(({ category, list }) => (
       <FadeInSection key={category}>
         <div className={styles.item}>
-          <h3>{category}</h3>
+          <h3 className={styles.category}>{category}</h3>
           <div className={styles.badgeContainer}>
             {list.map(({ text, logo = text }) => (
               <img

@@ -83,15 +83,15 @@ export const publications: Item[] = [
 
 export const schools: Item[] = [
   {
-    dateStart: '2010-04',
-    dateEnd: '2013-03',
+    dateStart: '2010-04-01',
+    dateEnd: '2013-03-31',
     title: '本郷高等学校',
     texts: ['東京・巣鴨にある私立の中高一貫校', '生徒会・料理研究会・美術部に所属'],
     link: 'http://www.hongo.ed.jp/',
   },
   {
-    dateStart: '2013-04',
-    dateEnd: '2017-03',
+    dateStart: '2013-04-01',
+    dateEnd: '2017-03-31',
     title: '明治大学',
     texts: [
       '総合数理学部 先端メディアサイエンス学科 1期生',
@@ -100,8 +100,8 @@ export const schools: Item[] = [
     link: 'http://www.meiji.ac.jp/ims/subject/fms/',
   },
   {
-    dateStart: '2017-04',
-    dateEnd: '2019-03',
+    dateStart: '2017-04-01',
+    dateEnd: '2019-03-31',
     title: '明治大学大学院',
     texts: [
       '先端数理科学研究科 先端メディアサイエンス専攻 修士（工学）',
@@ -114,8 +114,8 @@ export const schools: Item[] = [
 
 export const clubs: Item[] = [
   {
-    dateStart: '2013-04',
-    dateEnd: '2017-03',
+    dateStart: '2013-04-01',
+    dateEnd: '2017-03-31',
     title: '総合コンテンツ制作サークル',
     texts: [
       'デジタルコンテンツ制作（音楽・動画・ゲーム・イラスト・文芸）を行う大学内のサークル',
@@ -125,8 +125,8 @@ export const clubs: Item[] = [
     link: 'https://sokon.jp/',
   },
   {
-    dateStart: '2016-04',
-    dateEnd: '2017-06',
+    dateStart: '2016-04-01',
+    dateEnd: '2017-06-31',
     title: 'Nakano Computer Club',
     texts: [
       'プログラミングに関する情報共有や勉強会の実施を行う大学内のサークル',
@@ -135,8 +135,8 @@ export const clubs: Item[] = [
     link: 'https://meiji-ncc.tech/',
   },
   {
-    dateStart: '2017-04',
-    dateEnd: '2019-03',
+    dateStart: '2017-04-01',
+    dateEnd: '2019-03-31',
     title: 'fumble waals',
     texts: [
       'オリジナルボードゲームの制作を行う有志によるサークル',

@@ -1,3 +1,5 @@
+import dayjs from 'dayjs'
+
 import { Link } from '@components/link'
 
 import { FadeInSection } from './FadeInSection'
@@ -13,31 +15,31 @@ export type Item = {
 
 const items: Item[] = [
   {
-    startYear: '2013-04',
-    endYear: '2017-03',
+    startYear: '2013-04-01',
+    endYear: '2017-03-31',
     title: '明治大学',
     titleLinkUrl: 'https://www.meiji.ac.jp/',
     description:
       '総合数理学部 先端メディアサイエンス学科  学士（理学）。\nモバイル / ウェアラブルデバイスのインタラクションに関する研究に従事。',
   },
   {
-    startYear: '2016-10',
-    endYear: '2019-02',
+    startYear: '2016-10-01',
+    endYear: '2019-02-31',
     title: '株式会社 想隆社',
     titleLinkUrl: 'https://soryu-sha.jp/',
     description:
       'フロントエンドエンジニア（インターン）。\n- 電子書籍・音声合成関連の研究用システムの開発\n- AIスピーカー・Felica・LINE botを用いたサービス開発\n- CMSを用いたWebサイト制作\nに従事。',
   },
   {
-    startYear: '2017-04',
-    endYear: '2019-03',
+    startYear: '2017-04-01',
+    endYear: '2019-03-31',
     title: '明治大学 大学院',
     titleLinkUrl: 'https://www.meiji.ac.jp/dai_in/faculty/02.html',
     description:
       '先端数理科学研究科 先端メディアサイエンス専攻  修士（工学）。\nモバイル / ウェアラブルデバイスに関するインタラクションの研究に従事。',
   },
   {
-    startYear: '2019-04',
+    startYear: '2019-04-01',
     endYear: undefined,
     title: 'Sansan 株式会社',
     titleLinkUrl: 'https://jp.corp-sansan.com/',
@@ -54,7 +56,11 @@ export const Timeline = () => (
         <div className={styles.cardWrapper} key={title}>
           <div className={styles.card}>
             <FadeInSection>
-              <span>{`${startYear}  -  ${endYear === undefined ? 'present' : endYear}`}</span>
+              <span>{dayjs(startYear, 'YYYY-MM-DD').format('YYYY-MM')}</span>
+              <span>{`  -  `}</span>
+              <span>
+                {endYear === undefined ? 'present' : dayjs(endYear, 'YYYY-MM-DD').format('YYYY-MM')}
+              </span>
               <h3 className={styles.title}>
                 <Link href={titleLinkUrl} isExternalLink>
                   {title}

@@ -20,8 +20,8 @@ const IndexPage = () => (
     </section>
     <section className={styles.section}>
       <div className='container'>
-        <h2 className='section-title'>Timeline</h2>
-        <Timeline />
+        <h2 className='section-title'>Like</h2>
+        <Like />
       </div>
     </section>
     <section className={styles.section}>
@@ -32,7 +32,8 @@ const IndexPage = () => (
     </section>
     <section className={styles.section}>
       <div className='container'>
-        <Like />
+        <h2 className='section-title'>Timeline</h2>
+        <Timeline />
       </div>
     </section>
     <section className={styles.section}>

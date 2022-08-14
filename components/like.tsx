@@ -19,25 +19,22 @@ const eat: LikeData = {
 }
 
 export const Like = () => (
-  <div>
-    <h2 className='section-title'>Like</h2>
-    <div className={`pure-g ${styles.content}`}>
-      {[hobby, watch, eat].map((like, index) => (
-        <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${styles.likeBox}`} key={index}>
-          <FadeInSection>
-            <div className={styles.like}>
-              <h3 className={styles.category}>{like.title}</h3>
-              <ul>
-                {like.texts.map((text) => (
-                  <li className={styles.item} key={text}>
-                    {text}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </FadeInSection>
-        </div>
-      ))}
-    </div>
+  <div className={`pure-g ${styles.content}`}>
+    {[hobby, watch, eat].map((like, index) => (
+      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${styles.likeBox}`} key={index}>
+        <FadeInSection>
+          <div className={styles.like}>
+            <h3 className={styles.category}>{like.title}</h3>
+            <ul>
+              {like.texts.map((text) => (
+                <li className={styles.item} key={text}>
+                  {text}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </FadeInSection>
+      </div>
+    ))}
   </div>
 )
