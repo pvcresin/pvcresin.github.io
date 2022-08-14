@@ -12,9 +12,11 @@ export const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
       <li className={`pure-g ${styles.row}`} key={item.title}>
         <FadeInSection>
           <div className={styles.item}>
-            <time className={`pure-u-1-1 pure-u-lg-3-24 ${styles.date}`} dateTime={item.date}>
-              {item.date}
-            </time>
+            <span className='pure-u-1-1 pure-u-lg-3-24'>
+              <time className={styles.date} dateTime={item.date}>
+                {item.date}
+              </time>
+            </span>
             <span className={`pure-u-1-1 pure-u-lg-21-24 ${styles.info}`}>
               {item.link ? (
                 <Link className={styles.link} href={item.link} isExternalLink withExternalIcon>

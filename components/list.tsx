@@ -22,7 +22,7 @@ export const List: React.FC<{ items: Item[] }> = ({ items }) => (
                   <time className={styles.time} dateTime={item.dateStart}>
                     {item.dateStart}
                   </time>
-                  {' - '}
+                  {'  -  '}
                   <time className={styles.time} dateTime={item.dateEnd}>
                     {item.dateEnd}
                   </time>
