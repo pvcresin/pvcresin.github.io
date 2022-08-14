@@ -12,9 +12,23 @@ export const List: React.FC<{ items: Item[] }> = ({ items }) => (
       <li className={styles.row} key={item.title}>
         <FadeInSection>
           <div className={styles.item}>
-            <time className={styles.date} dateTime={item.date}>
-              {item.date}
-            </time>
+            <div className={styles.dateSection}>
+              {item.date ? (
+                <time className={styles.time} dateTime={item.date}>
+                  {item.date}
+                </time>
+              ) : (
+                <>
+                  <time className={styles.time} dateTime={item.dateStart}>
+                    {item.dateStart}
+                  </time>
+                  {' - '}
+                  <time className={styles.time} dateTime={item.dateEnd}>
+                    {item.dateEnd}
+                  </time>
+                </>
+              )}
+            </div>
             <div>
               <p className={styles.title}>
                 <Link href={item.link} isExternalLink withExternalIcon>
