@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
-import { FaFolder, FaListUl, FaUserAlt } from 'react-icons/fa'
+import { FaFolder, FaListUl } from 'react-icons/fa'
 
 import { handlers } from '@utils/keyboardlistener'
 
@@ -14,16 +14,6 @@ export const Navigation = () => {
   const linkList = useMemo(
     () => (
       <>
-        <Link href='/about'>
-          <li
-            className={pathname === '/about' ? styles.itemActive : styles.item}
-            tabIndex={0}
-            {...handlers}
-          >
-            <FaUserAlt size='1.2rem' />
-            <span className={styles.linkText}>About</span>
-          </li>
-        </Link>
         <Link href='/works'>
           <li
             className={
