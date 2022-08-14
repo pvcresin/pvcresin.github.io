@@ -1,67 +1,34 @@
-.skillSectionTitle {
-  margin-bottom: 0.6rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  &::after {
-    content: '';
-    flex-grow: 1;
-    border: 1.5px solid #4b4b4b;
-    border-radius: 1.5px;
-    display: inline-block;
-  }
+.root {
+  padding: 0.5rem;
 }
 
-.skillBadgeContainer {
+.row {
+  padding: 0 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.row + .row {
+  margin-top: 1rem;
+}
+
+.badgeContainer {
   display: inline-block;
   // for CLS
   min-height: 36.8px;
 }
 
-.skillBadge {
+.badge {
   height: 1.8rem;
   border-radius: 0.3rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.skillContainer {
-  padding: 0.75rem;
-}
-
-.skillBox {
-  padding: 0.75rem;
-}
-
-.skill {
-  margin-bottom: 1.2rem;
-}
-
-.skillInfo {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.name {
-  font-size: 1.3em;
-  margin-right: 0.5rem;
-  font-weight: 300;
-}
-
-.sub {
-  font-size: 0.85rem;
-  color: #bdbdbd;
-}
-
-.bar {
-  background-color: #4b4b4b;
-  border-radius: 1rem;
-}
-
-.level {
-  height: 0.7rem;
-  border-radius: 1rem;
-  background-color: #eaeaea;
+@media screen and (min-width: 48em) {
+  .row {
+    grid-template-columns: 150px 1fr;
+  }
 }

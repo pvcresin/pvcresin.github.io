@@ -26,6 +26,7 @@ const IndexPage = () => (
     </section>
     <section className={styles.section}>
       <div className='container'>
+        <h2 className='section-title'>Skills</h2>
         <Skills />
       </div>
     </section>
