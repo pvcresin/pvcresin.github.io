@@ -1,5 +1,16 @@
 .skillSectionTitle {
   margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::after {
+    content: '';
+    flex-grow: 1;
+    border: 1.5px solid #4b4b4b;
+    border-radius: 1.5px;
+    display: inline-block;
+  }
 }
 
 .skillBadgeContainer {
