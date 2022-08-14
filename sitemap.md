@@ -15,15 +15,6 @@ ref
 - Awards
   - https://www.wantedly.com/id/pvcresin
 
-# About
-
-- Skills
-  - Level
-  - (+ Icon)
-  - Language
-  - Framework
-  - Dev Ops, Other Tools
-
 # News
 
 欲しい情報
@@ -40,5 +31,3 @@ ref
 
 - Speaker Deck
 - Blog
-
-## Publications
