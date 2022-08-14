@@ -81,37 +81,6 @@ export const publications: Item[] = [
   },
 ]
 
-export const schools: Item[] = [
-  {
-    dateStart: '2017-04-01',
-    dateEnd: '2019-03-31',
-    title: '明治大学大学院',
-    texts: [
-      '先端数理科学研究科 先端メディアサイエンス専攻 修士（工学）',
-      'モバイル / ウェアラブルデバイスに関するインタラクションの研究',
-      'アルバイトでフロントエンドエンジニアとして働く',
-    ],
-    link: 'http://www.meiji.ac.jp/ams/professor/FMS.html',
-  },
-  {
-    dateStart: '2013-04-01',
-    dateEnd: '2017-03-31',
-    title: '明治大学',
-    texts: [
-      '総合数理学部 先端メディアサイエンス学科 1期生',
-      'PCでコンテンツ制作をするサークルを立ち上げ、幹事長を務める',
-    ],
-    link: 'http://www.meiji.ac.jp/ims/subject/fms/',
-  },
-  {
-    dateStart: '2010-04-01',
-    dateEnd: '2013-03-31',
-    title: '本郷高等学校',
-    texts: ['東京・巣鴨にある私立の中高一貫校', '生徒会・料理研究会・美術部に所属'],
-    link: 'http://www.hongo.ed.jp/',
-  },
-]
-
 export const clubs: Item[] = [
   {
     dateStart: '2017-04-01',

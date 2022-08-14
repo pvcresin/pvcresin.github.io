@@ -28,7 +28,7 @@ const items: Item[] = [
     title: '明治大学 大学院',
     titleLinkUrl: 'https://www.meiji.ac.jp/dai_in/faculty/02.html',
     description:
-      '先端数理科学研究科 先端メディアサイエンス専攻。\n修士（工学）。\nHCI（Human-Computer Interaction）を専攻し、モバイル / ウェアラブルデバイスに関するインタラクションの研究を行う。',
+      '先端数理科学研究科 先端メディアサイエンス専攻 1期生。\n修士（工学）。\nHCI（Human-Computer Interaction）を専攻し、モバイル / ウェアラブルデバイスに関するインタラクションの研究を行う。',
   },
   {
     startYear: '2016-10-01',
@@ -44,7 +44,15 @@ const items: Item[] = [
     title: '明治大学',
     titleLinkUrl: 'https://www.meiji.ac.jp/',
     description:
-      '総合数理学部 先端メディアサイエンス学科。\n学士（理学）。\nHCI（Human-Computer Interaction）を専攻し、モバイル / ウェアラブルデバイスのインタラクションに関する研究を行う。',
+      '総合数理学部 先端メディアサイエンス学科 1期生。\n学士（理学）。\nHCI（Human-Computer Interaction）を専攻し、モバイル / ウェアラブルデバイスのインタラクションに関する研究を行う。\nまた、PCでコンテンツ制作をするサークルを立ち上げ、幹事長を務める。',
+  },
+
+  {
+    startYear: '2010-04-01',
+    endYear: '2013-03-31',
+    title: '本郷高等学校',
+    titleLinkUrl: 'http://www.hongo.ed.jp/',
+    description: '東京・巣鴨にある私立の中高一貫校。\n生徒会・料理研究部・美術部に所属。',
   },
 ]
 
@@ -62,7 +70,7 @@ export const Timeline = () => (
                 {endYear === undefined ? 'present' : dayjs(endYear, 'YYYY-MM-DD').format('YYYY-MM')}
               </span>
               <h3 className={styles.title}>
-                <Link href={titleLinkUrl} isExternalLink>
+                <Link href={titleLinkUrl} isExternalLink withExternalIcon>
                   {title}
                 </Link>
               </h3>
