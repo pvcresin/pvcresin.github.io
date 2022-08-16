@@ -1,12 +1,9 @@
-import dayjs from 'dayjs'
-import { FaBirthdayCake, FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 
 import { Link } from '@components/link'
 
 import { FadeInSection } from './FadeInSection'
 import styles from './about.module.scss'
-
-const birthday = '1994-07-30'
 
 export const About = () => (
   <div className={styles.root}>
@@ -45,14 +42,6 @@ export const About = () => (
               }
             </div>
             <ul>
-              <li className={`pure-g ${styles.info}`}>
-                <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
-                  <FaBirthdayCake />
-                </div>
-                <div className={`pure-u-11-12 ${styles.right}`}>
-                  {`${birthday} (Age: ${dayjs().diff(birthday, 'year')})`}
-                </div>
-              </li>
               <li className={`pure-g ${styles.info}`}>
                 <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
                   <FaMapMarkerAlt />
