@@ -3,7 +3,7 @@
   width: 100%;
   position: fixed;
   z-index: 1;
-  background: #1a1819;
+  background-color: #1a1819;
   box-shadow: 0px 1px 6px 0px black;
   left: 0;
   top: 0;
@@ -19,7 +19,7 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: #2b2b2b;
+  background-color: #2b2b2b;
 }
 
 .logoText {
@@ -67,7 +67,6 @@
 
 .linkText {
   font-size: 0.8rem;
-  display: none;
 }
 
 @media screen and (min-width: 35.5em) {

@@ -43,11 +43,14 @@
 
 .aboutText {
   line-height: 2;
+  white-space: pre-line;
+  font-size: 1rem;
 }
 
 .info {
   display: flex;
   margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 .infoIcon {

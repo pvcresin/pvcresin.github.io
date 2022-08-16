@@ -1,6 +1,7 @@
 .root {
   padding: 1rem;
   text-align: left;
+  font-size: 0.9rem;
 }
 
 .row {
@@ -23,7 +24,7 @@
   white-space: nowrap;
   font-family: 'Noto Sans JP', monospace;
   text-align: left;
-  vertical-align: baseline;
+  vertical-align: middle;
   color: #ccc;
   background-color: #4b4b4b;
   padding: 0 0.3rem;
@@ -33,24 +34,24 @@
 .info {
   display: inline-flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .title {
-  font-size: 1rem;
   word-break: break-all;
   color: lightgray;
 }
 
 .link {
   display: inline-block;
-  font-size: 1rem;
 }
 
 .at {
   white-space: pre;
   color: #aaa;
   margin-left: auto;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  padding-left: 0.3rem;
 }
 
 @media screen and (min-width: 64em) {
