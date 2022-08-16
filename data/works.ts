@@ -126,7 +126,7 @@ export const worksArray: Work[] = [
       'チームで制作。フロントエンドを担当。Google Speech APIを使うことで、しっかりと認識されるような正確な発音での回答のみ正解とする点がポイント。現在接続しているユーザなどの管理にSkywayのAPIを利用。',
     keywords: ['Web RTC', 'quiz', 'video chat', 'Google Speech API'],
     links: {
-      受賞ページ: 'http://www.cloudn-service.com/cam04-deven/decon/tohyo/',
+      ページ: 'https://weekly.ascii.jp/elem/000/002/634/2634921/',
     },
   },
   {
