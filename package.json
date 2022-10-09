@@ -11,7 +11,7 @@
     "build": "next build && next export",
     "preview": "yarn build && serve out",
     "test": "yarn test:lint && yarn test:typecheck",
-    "test:lint": "eslint './{components,data,pages,utils}/**/*' --ext js,jsx,ts,tsx && prettier --check './{components,data,pages,utils}/**/*'",
+    "test:lint": "eslint './{components,data,pages,utils}/**/*' && prettier --check './{components,data,pages,utils}/**/*'",
     "test:typecheck": "tsc --noEmit"
   },
   "dependencies": {
