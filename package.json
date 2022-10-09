@@ -39,6 +39,6 @@
     "typescript": "4.8.4"
   },
   "browserslist": [
-    "last 1 Chrome major versions, IE 11"
+    "defaults"
   ]
 }
