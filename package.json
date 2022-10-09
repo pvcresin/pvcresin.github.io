@@ -23,20 +23,20 @@
     "react-intersection-observer": "^9.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.8.3",
-    "@types/react": "^17.0.27",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.25.0",
-    "eslint": "^8.15.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-react": "^7.30.0",
-    "prettier": "^2.7.1",
-    "purecss": "^2.1.0",
-    "sass": "^1.50.0",
-    "serve": "^13.0.2",
-    "typescript": "^4.6.3"
+    "@types/node": "18.8.3",
+    "@types/react": "17.0.39",
+    "@typescript-eslint/eslint-plugin": "5.39.0",
+    "@typescript-eslint/parser": "5.25.0",
+    "eslint": "8.15.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "2.7.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-react": "7.30.0",
+    "prettier": "2.7.1",
+    "purecss": "2.1.0",
+    "sass": "1.50.0",
+    "serve": "13.0.2",
+    "typescript": "4.6.3"
   },
   "browserslist": [
     "last 1 Chrome major versions, IE 11"
