@@ -10,8 +10,9 @@
     "dev": "next",
     "build": "next build && next export",
     "preview": "yarn build && serve out",
-    "test": "yarn lint",
-    "lint": "eslint './{components,data,pages,utils}/**/*' --ext js,jsx,ts,tsx && prettier --check './{components,data,pages,utils}/**/*'"
+    "test": "yarn test:lint && yarn test:typecheck",
+    "test:lint": "eslint './{components,data,pages,utils}/**/*' --ext js,jsx,ts,tsx && prettier --check './{components,data,pages,utils}/**/*'",
+    "test:typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "dayjs": "^1.11.2",
