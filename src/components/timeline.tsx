@@ -46,7 +46,6 @@ const items: Item[] = [
     description:
       '総合数理学部 先端メディアサイエンス学科 1期生。\n学士（理学）。\nHCI（Human-Computer Interaction）を専攻し、モバイル / ウェアラブルデバイスのインタラクションに関する研究を行う。\nまた、PCでコンテンツ制作をするサークルを立ち上げ、幹事長を務める。',
   },
-
   {
     startYear: '2010-04-01',
     endYear: '2013-03-31',
