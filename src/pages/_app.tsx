@@ -1,5 +1,3 @@
-import 'purecss/build/pure-min.css'
-
 import '../styles/index.scss'
 
 import Head from 'next/head'
