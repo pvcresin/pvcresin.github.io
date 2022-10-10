@@ -31,22 +31,11 @@
   font-size: 0.8rem;
   white-space: pre-wrap;
   min-width: 150px;
-
-  @include mixin.md {
-    font-size: 0.9rem;
-  }
 }
 
 .time {
   font-family: 'Noto Sans JP', monospace;
-  background-color: #4b4b4b;
-  padding: 0 0.3rem;
-  border-radius: 0.3rem;
-
-  @include mixin.md {
-    background-color: unset;
-    padding: 0;
-  }
+  color: #aaa;
 }
 
 .title {
@@ -55,6 +44,6 @@
 }
 
 .sub {
-  color: #ccc;
-  font-size: 0.9rem;
+  color: #aaa;
+  font-size: 0.8rem;
 }
