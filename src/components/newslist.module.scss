@@ -1,3 +1,5 @@
+@use '../styles/mixin';
+
 .root {
   padding: 1rem;
   text-align: left;
@@ -29,6 +31,14 @@
   background-color: #4b4b4b;
   padding: 0 0.3rem;
   border-radius: 0.3rem;
+
+  @include mixin.lg {
+    font-size: 0.8rem;
+    color: #aaa;
+    background-color: unset;
+    padding: 0;
+    border-radius: 0;
+  }
 }
 
 .info {
@@ -52,14 +62,4 @@
   margin-left: auto;
   font-size: 0.8rem;
   padding-left: 0.3rem;
-}
-
-@media screen and (min-width: 64em) {
-  .date {
-    font-size: 0.8rem;
-    color: #aaa;
-    background-color: unset;
-    padding: 0;
-    border-radius: 0;
-  }
 }

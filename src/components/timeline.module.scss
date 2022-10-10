@@ -1,3 +1,5 @@
+@use '../styles/mixin';
+
 $rootVerticalSpace: 4rem;
 $lineWidth: 4px;
 
@@ -38,6 +40,10 @@ $lineWidth: 4px;
     border-width: 0 8px 25px 8px;
     border-color: transparent transparent gray transparent;
   }
+
+  @include mixin.md {
+    left: calc(50% - $lineWidth / 2);
+  }
 }
 
 .cardWrapper {
@@ -76,34 +82,8 @@ $lineWidth: 4px;
       }
     }
   }
-}
 
-.card {
-  background-color: #2b2b2b;
-  padding: 1rem;
-  margin-bottom: 0;
-  border-radius: 0.3rem;
-  position: relative;
-  white-space: pre-wrap;
-}
-
-.title {
-  margin: 0.5rem 0;
-  color: white;
-  font-size: 1rem;
-}
-
-.description {
-  white-space: pre-wrap;
-  font-size: 0.9rem;
-}
-
-@media screen and (min-width: 48em) {
-  .line {
-    left: calc(50% - $lineWidth / 2);
-  }
-
-  .cardWrapper {
+  @include mixin.md {
     width: calc(50% - 50px);
 
     > .card {
@@ -134,4 +114,24 @@ $lineWidth: 4px;
       }
     }
   }
+}
+
+.card {
+  background-color: #2b2b2b;
+  padding: 1rem;
+  margin-bottom: 0;
+  border-radius: 0.3rem;
+  position: relative;
+  white-space: pre-wrap;
+}
+
+.title {
+  margin: 0.5rem 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.description {
+  white-space: pre-wrap;
+  font-size: 0.9rem;
 }

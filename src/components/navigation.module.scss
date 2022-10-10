@@ -1,3 +1,5 @@
+@use '../styles/mixin';
+
 .root {
   color: white;
   width: 100%;
@@ -48,6 +50,10 @@
     outline-offset: 0;
     outline-style: solid;
   }
+
+  @include mixin.md {
+    flex-direction: row;
+  }
 }
 
 .itemLogo {
@@ -67,20 +73,9 @@
 
 .linkText {
   font-size: 0.8rem;
-}
+  display: inline-flex;
 
-@media screen and (min-width: 35.5em) {
-  .linkText {
-    display: inline-flex;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .item {
-    flex-direction: row;
-  }
-
-  .linkText {
+  @include mixin.md {
     font-size: 1rem;
     margin-left: 0.5rem;
   }
