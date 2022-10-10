@@ -9,15 +9,15 @@ import styles from './newslist.module.scss'
 export const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>
     {newsData.map((item) => (
-      <li className={`pure-g ${styles.row}`} key={item.title}>
+      <li className={styles.row} key={item.title}>
         <FadeInSection>
           <div className={styles.item}>
-            <span className='pure-u-1-1 pure-u-lg-3-24'>
+            <span className={styles.dateWrapper}>
               <time className={styles.date} dateTime={item.date}>
                 {item.date}
               </time>
             </span>
-            <span className={`pure-u-1-1 pure-u-lg-21-24 ${styles.info}`}>
+            <span className={styles.info}>
               {item.link ? (
                 <Link className={styles.link} href={item.link} isExternalLink withExternalIcon>
                   {item.title}

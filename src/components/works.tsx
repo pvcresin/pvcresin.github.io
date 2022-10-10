@@ -11,7 +11,7 @@ import styles from './works.module.scss'
 export const Works: React.FC = () => (
   <div className={styles.root}>
     {worksArray.map((w) => (
-      <div className={`pure-u-sm-1-2 pure-u-md-1-3 pure-u-1-1 ${styles.content}`} key={w.key}>
+      <div className={styles.content} key={w.key}>
         <FadeInSection>
           <Link href={`/works/${w.key}`}>
             <article className={styles.card} role='link' tabIndex={0} {...handlers}>

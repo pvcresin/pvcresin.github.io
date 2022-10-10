@@ -16,10 +16,10 @@ const aboutText = [
 export const About = () => (
   <div className={styles.root}>
     <div className='container'>
-      <div className={`pure-g ${styles.contents}`}>
-        <div className={`pure-u-sm-1-4 pure-u-1-2 ${styles.aboutImage}`}>
+      <div className={styles.contents}>
+        <div className={styles.aboutImage}>
           <FadeInSection>
-            <div className={`pure-u-1-2 ${styles.faceWrapper}`}>
+            <div className={styles.faceWrapper}>
               <img
                 className={styles.face}
                 src='/icon-pvcresin.svg'
@@ -29,22 +29,21 @@ export const About = () => (
             </div>
           </FadeInSection>
         </div>
-        <div className='pure-u-sm-1-24 pure-u-1-1'></div>
-        <div className={`pure-u-sm-17-24 pure-u-1-1 ${styles.aboutTextContainer}`}>
+        <div className={styles.aboutTextContainer}>
           <FadeInSection>
             <div className={styles.aboutText}>{aboutText}</div>
             <ul>
-              <li className={`pure-g ${styles.info}`}>
-                <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
+              <li className={styles.info}>
+                <div className={styles.infoIcon}>
                   <FaMapMarkerAlt />
                 </div>
-                <div className={`pure-u-11-12 ${styles.right}`}>Tokyo / Kanagawa, Japan</div>
+                <div className={styles.right}>Tokyo / Kanagawa, Japan</div>
               </li>
-              <li className={`pure-g ${styles.info}`}>
-                <div className={`pure-u-1-12 pure-u-lg-1-24 ${styles.infoIcon}`}>
+              <li className={styles.info}>
+                <div className={styles.infoIcon}>
                   <FaSuitcase />
                 </div>
-                <div className={`pure-u-11-12 ${styles.right}`}>
+                <div className={styles.right}>
                   <span>Web Frontend Engineer </span>
                   <Link className={styles.link} href='https://jp.corp-sansan.com/' isExternalLink>
                     @ Sansan, Inc.

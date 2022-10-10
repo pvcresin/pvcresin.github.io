@@ -19,9 +19,9 @@ const eat: LikeData = {
 }
 
 export const Like = () => (
-  <div className={`pure-g ${styles.content}`}>
+  <div className={styles.content}>
     {[hobby, watch, eat].map((like, index) => (
-      <div className={`pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3 ${styles.likeBox}`} key={index}>
+      <div className={styles.likeBox} key={index}>
         <FadeInSection>
           <div className={styles.like}>
             <h3 className={styles.category}>{like.title}</h3>

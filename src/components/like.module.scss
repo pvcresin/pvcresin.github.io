@@ -1,10 +1,23 @@
+@use '../styles/mixin.scss';
+
 .content {
   padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .likeBox {
   padding: 0.5rem;
+  width: 100%;
+
+  @include mixin.sm {
+    width: 50%;
+  }
+
+  @include mixin.md {
+    width: 33.3%;
+  }
 }
 
 .like {

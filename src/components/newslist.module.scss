@@ -16,35 +16,38 @@
 }
 
 .item {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0.5rem;
+}
+
+.dateWrapper {
+  width: 100%;
+
+  @include mixin.lg {
+    width: 12.5%;
+  }
 }
 
 .date {
   display: inline-block;
   text-align: center;
-  font-size: 0.9rem;
   white-space: nowrap;
   font-family: 'Noto Sans JP', monospace;
   text-align: left;
   vertical-align: middle;
-  color: #ccc;
-  background-color: #4b4b4b;
-  padding: 0 0.3rem;
-  border-radius: 0.3rem;
-
-  @include mixin.lg {
-    font-size: 0.8rem;
-    color: #aaa;
-    background-color: unset;
-    padding: 0;
-    border-radius: 0;
-  }
+  font-size: 0.8rem;
+  color: #aaa;
+  background-color: unset;
+  padding: 0;
+  border-radius: 0;
 }
 
 .info {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-grow: 1;
 }
 
 .title {
