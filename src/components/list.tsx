@@ -41,8 +41,9 @@ export const List: React.FC<{ items: Item[] }> = ({ items }) => (
                 ))}
                 {item.workLink && (
                   <p>
-                    {'Work: '}
-                    <Link href={`/works/${item.workLink.key}`}>{item.workLink.title}</Link>
+                    <Link href={`/works/${item.workLink.key}`}>
+                      {`Works / ${item.workLink.title}`}
+                    </Link>
                   </p>
                 )}
               </div>
