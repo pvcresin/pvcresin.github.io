@@ -33,33 +33,25 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
         )}
         <FadeInSection>
           <h1 className={styles.title}>
-            <p className={styles.paragraph}>{work.title + ': '}</p>
+            {work.title + ': '}
+            <br />
             {work.sub}
           </h1>
         </FadeInSection>
         <FadeInSection>
           <Tags tags={work.keywords} />
         </FadeInSection>
-        <div className={styles.chapterTitle}>
-          <h2 className={styles.chapterTitleText}>Abstract</h2>
-          <hr className={styles.chapterLine} />
-        </div>
+        <h2 className={styles.chapterTitle}>Abstract</h2>
         <FadeInSection>
           <p className={styles.paragraph}>{work.text}</p>
         </FadeInSection>
-        <div className={styles.chapterTitle}>
-          <h2 className={styles.chapterTitleText}>Implementation</h2>
-          <hr className={styles.chapterLine} />
-        </div>
+        <h2 className={styles.chapterTitle}>Implementation</h2>
         <FadeInSection>
           <p className={styles.paragraph}>{work.implement}</p>
         </FadeInSection>
         {work.links && (
           <>
-            <div className={styles.chapterTitle}>
-              <h2 className={styles.chapterTitleText}>Links</h2>
-              <hr className={styles.chapterLine} />
-            </div>
+            <h2 className={styles.chapterTitle}>Links</h2>
             <FadeInSection>
               <ol className={styles.linkList}>
                 {Object.entries(work.links).map(([key, value]) => (

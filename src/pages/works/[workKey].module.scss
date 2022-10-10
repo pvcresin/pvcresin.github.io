@@ -44,40 +44,19 @@
   color: white;
   margin: 1rem 0;
   text-align: justify;
-
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
 }
 
 .chapterTitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1.5rem 0 1rem 0;
-}
-
-.chapterTitleText {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  color: white;
-
-  @media (max-width: 768px) {
-    font-size: 1.3rem;
-  }
-}
-
-.chapterLine {
-  flex-grow: 1;
-  border: 1.5px solid gray;
-  border-radius: 0.3rem;
-  min-width: 1rem;
-  background-color: gray;
+  font-size: 1.3rem;
+  color: #efefef;
+  margin: 1.5rem 0 0.75rem;
 }
 
 .paragraph {
-  margin: 0.6rem 0;
   text-align: justify;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .linkList {
