@@ -31,6 +31,7 @@
     outline-color: cyan;
     outline-offset: 0;
     outline-style: solid;
+    border-radius: 0.3rem;
   }
 }
 
@@ -53,16 +54,18 @@
 }
 
 .info {
-  padding: 0.8rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
+  margin-top: 0.5rem;
   font-size: 1.2rem;
-  margin-bottom: 0.3rem;
   color: #efefef;
 }
 
 .description {
+  margin-top: 0.3rem;
   font-size: 0.9rem;
   color: #ccc;
 }

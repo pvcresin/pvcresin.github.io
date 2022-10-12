@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
 }
 
 .iconListItem {
@@ -23,5 +22,6 @@
     outline-color: cyan;
     outline-offset: 0;
     outline-style: solid;
+    border-radius: 0.3rem;
   }
 }

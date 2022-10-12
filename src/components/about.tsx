@@ -45,7 +45,12 @@ export const About = () => (
                 </div>
                 <div className={styles.right}>
                   <span>Web Frontend Engineer </span>
-                  <Link className={styles.link} href='https://jp.corp-sansan.com/' isExternalLink>
+                  <Link
+                    className={styles.link}
+                    href='https://jp.corp-sansan.com/'
+                    isExternalLink
+                    withExternalIcon
+                  >
                     @ Sansan, Inc.
                   </Link>
                 </div>

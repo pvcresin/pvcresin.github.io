@@ -1,11 +1,13 @@
 @use '../styles/mixin';
 
 .root {
-  padding: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .item {
-  padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr;
   align-items: flex-start;
@@ -24,7 +26,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  // for CLS
   min-height: 1.8rem;
 }
 
