@@ -1,5 +1,6 @@
-import { FadeInSection } from './FadeInSection'
-import styles from './like.module.scss'
+import { FadeInSection } from '@components/FadeInSection'
+
+import styles from './Like.module.scss'
 
 type LikeData = { title: string; texts: string[] }
 

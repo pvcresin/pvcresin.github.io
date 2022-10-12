@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Link } from '@components/link'
+import { FadeInSection } from '@components/FadeInSection'
+import { Link } from '@components/Link'
 import type { Item } from '@data/list'
 
-import { FadeInSection } from './FadeInSection'
-import styles from './list.module.scss'
+import styles from './List.module.scss'
 
 export const List: React.FC<{ items: Item[] }> = ({ items }) => (
   <ul className={styles.root}>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './tags.module.scss'
+import styles from './Tags.module.scss'
 
 export const Tags: React.FC<{ tags: string[] }> = ({ tags }) => (
   <div className={styles.root}>

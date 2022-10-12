@@ -1,9 +1,9 @@
 import dayjs from 'dayjs'
 
-import { Link } from '@components/link'
+import { FadeInSection } from '@components/FadeInSection'
+import { Link } from '@components/Link'
 
-import { FadeInSection } from './FadeInSection'
-import styles from './timeline.module.scss'
+import styles from './Timeline.module.scss'
 
 export type Item = {
   startYear: number | string

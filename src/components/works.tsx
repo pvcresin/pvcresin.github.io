@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
-import { Webp } from '@components/webp'
+import { FadeInSection } from '@components/FadeInSection'
+import { Webp } from '@components/Webp'
 import { worksArray } from '@data/works'
 import { handlers } from '@utils/keyboardlistener'
 
-import { FadeInSection } from './FadeInSection'
-import styles from './works.module.scss'
+import styles from './Works.module.scss'
 
 export const Works: React.FC = () => (
   <div className={styles.root}>

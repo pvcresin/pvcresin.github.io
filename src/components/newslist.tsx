@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Link } from '@components/link'
+import { FadeInSection } from '@components/FadeInSection'
+import { Link } from '@components/Link'
 import type { NewsData } from '@data/news'
 
-import { FadeInSection } from './FadeInSection'
-import styles from './newslist.module.scss'
+import styles from './Newslist.module.scss'
 
 export const NewsList: React.FC<{ newsData: NewsData[] }> = ({ newsData }) => (
   <ul className={styles.root}>

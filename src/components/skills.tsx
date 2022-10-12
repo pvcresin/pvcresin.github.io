@@ -1,5 +1,6 @@
-import { FadeInSection } from './FadeInSection'
-import styles from './skills.module.scss'
+import { FadeInSection } from '@components/FadeInSection'
+
+import styles from './Skills.module.scss'
 
 // logo: https://simpleicons.org/
 type SkillData = { text: string; logo?: string; backgroundColor?: string }

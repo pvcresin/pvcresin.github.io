@@ -1,9 +1,9 @@
 import { FaChevronDown } from 'react-icons/fa'
 
-import { Social } from '@components/social'
+import { FadeInSection } from '@components/FadeInSection'
+import { Social } from '@components/Social'
 
-import { FadeInSection } from './FadeInSection'
-import styles from './first.module.scss'
+import styles from './First.module.scss'
 
 export const First = () => (
   <div className={styles.root}>

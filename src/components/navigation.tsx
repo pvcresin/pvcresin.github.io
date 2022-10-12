@@ -4,7 +4,7 @@ import { FaFolder, FaListUl } from 'react-icons/fa'
 
 import { handlers } from '@utils/keyboardlistener'
 
-import styles from './navigation.module.scss'
+import styles from './Navigation.module.scss'
 
 export const Navigation = () => {
   const { pathname } = useRouter()
@@ -25,11 +25,7 @@ export const Navigation = () => {
         <ul className={styles.wideLinkList}>
           <Link href='/works'>
             <li
-              className={
-                pathname === '/works' || pathname === '/works/[workKey]'
-                  ? styles.itemActive
-                  : styles.item
-              }
+              className={pathname.startsWith('/works') ? styles.itemActive : styles.item}
               tabIndex={0}
               {...handlers}
             >
@@ -39,7 +35,7 @@ export const Navigation = () => {
           </Link>
           <Link href='/news'>
             <li
-              className={pathname === '/news' ? styles.itemActive : styles.item}
+              className={pathname.startsWith('/news') ? styles.itemActive : styles.item}
               tabIndex={0}
               {...handlers}
             >
