@@ -1,6 +1,6 @@
 import { FaTwitter, FaGithub, FaInstagram, FaPenSquare } from 'react-icons/fa'
 
-import { handlers } from '@utils/keyboardlistener'
+import { handlers } from '@utils/keyboardListener'
 
 import styles from './Social.module.scss'
 
