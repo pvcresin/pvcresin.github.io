@@ -10,7 +10,7 @@
     "dev": "next",
     "build": "next build && next export",
     "preview": "yarn build && serve out",
-    "test": "yarn test:lint && yarn test:typecheck",
+    "test": "yarn test:lint && yarn test:typecheck && yarn build",
     "test:lint": "eslint src && prettier --check src",
     "test:typecheck": "tsc --noEmit"
   },
