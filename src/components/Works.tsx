@@ -4,7 +4,7 @@ import React from 'react'
 import { FadeInSection } from '@/components/FadeInSection'
 import { Webp } from '@/components/Webp'
 import { worksArray } from '@/data/works'
-import { handlers } from '@/utils/keyboardListener'
+import { handlers } from '@/utils/KeyboardListener'
 
 import styles from './Works.module.scss'
 
