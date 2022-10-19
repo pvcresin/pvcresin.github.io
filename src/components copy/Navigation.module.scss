@@ -1,0 +1,83 @@
+@use '../styles/mixin';
+
+.root {
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #1a1819;
+  box-shadow: 0px 1px 6px 0px black;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+}
+
+.logoText {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.item {
+  padding: 0 1rem;
+  cursor: pointer;
+  height: var(--header-height);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(1);
+    transition: filter 0.3s;
+  }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+    border-radius: 0.3rem;
+  }
+
+  @include mixin.md {
+    flex-direction: row;
+  }
+}
+
+.itemLogo {
+  composes: item;
+  flex-direction: row;
+}
+
+.itemLogoActive {
+  composes: itemLogo;
+  filter: brightness(1);
+}
+
+.itemActive {
+  composes: item;
+  filter: brightness(1);
+}
+
+.linkText {
+  font-size: 0.8rem;
+  display: inline-flex;
+
+  @include mixin.md {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+}
