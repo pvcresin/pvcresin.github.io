@@ -8,8 +8,8 @@ import styles from './First.module.scss'
 export const First = () => (
   <div className={styles.root}>
     <div className='container'>
+      <h1 className={styles.name}>Raika Toriyama</h1>
       <FadeInSection>
-        <h1 className={styles.name}>Raika Toriyama</h1>
         <p className={styles.description}>Software Engineer a.k.a. pvcresin</p>
         <Social />
       </FadeInSection>
