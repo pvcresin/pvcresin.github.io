@@ -1,0 +1,34 @@
+.root {
+  word-break: break-all;
+  display: inline-block;
+  align-items: center;
+}
+
+.text {
+  composes: root;
+  color: lightgray;
+}
+
+.link {
+  composes: text;
+  color: #5ab3ff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+    border-radius: 0.3rem;
+  }
+}
+
+.linkIcon {
+  display: inline-flex;
+  height: 1.5rem;
+  align-items: center;
+  vertical-align: baseline;
+  margin-left: 0.3rem;
+}

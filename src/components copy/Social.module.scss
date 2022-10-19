@@ -1,0 +1,27 @@
+.iconList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconListItem {
+  display: inline-block;
+}
+
+.link {
+  color: gray;
+  vertical-align: sub;
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  &:hover {
+    color: white;
+  }
+
+  &:focus-visible {
+    outline-color: cyan;
+    outline-offset: 0;
+    outline-style: solid;
+    border-radius: 0.3rem;
+  }
+}

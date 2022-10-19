@@ -1,0 +1,49 @@
+@use '../styles/mixin';
+
+.root {
+  padding: 1rem;
+}
+
+.row {
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.row + .row {
+  border-top: 0;
+}
+
+.item {
+  padding: 0.5rem 0;
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem 1rem;
+
+  @include mixin.md {
+    grid-template-columns: 170px 1fr;
+  }
+}
+
+.dateSection {
+  color: #ccc;
+  display: inline-block;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  min-width: 150px;
+}
+
+.time {
+  font-family: 'Noto Sans JP', monospace;
+  color: #aaa;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.sub {
+  color: #aaa;
+  font-size: 0.8rem;
+}
