@@ -22,7 +22,7 @@ export const Navigation = () => {
             <span className={styles.logoText}>pvcresin</span>
           </div>
         </Link>
-        <ul className={styles.wideLinkList}>
+        <ul>
           <Link href='/works'>
             <li
               className={pathname.startsWith('/works') ? styles.itemActive : styles.item}
