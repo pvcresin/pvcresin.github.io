@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "labels": ["dependencies"],
-  "extends": ["config:base", ":timezone(Asia/Tokyo)", ":prHourlyLimitNone", ":automergeMinor"]
+  "extends": ["config:base", ":timezone(Asia/Tokyo)", ":prHourlyLimitNone", ":automergeMinor"],
+  "platformAutomerge": true
 }
