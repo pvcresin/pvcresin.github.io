@@ -1,4 +1,4 @@
-import type { Work } from '@data/works'
+import type { Work } from '@/data/works'
 
 export type Item = {
   title: string

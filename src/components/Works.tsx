@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 
-import { FadeInSection } from '@components/FadeInSection'
-import { Webp } from '@components/Webp'
-import { worksArray } from '@data/works'
-import { handlers } from '@utils/keyboardListener'
+import { FadeInSection } from '@/components/FadeInSection'
+import { Webp } from '@/components/Webp'
+import { worksArray } from '@/data/works'
+import { handlers } from '@/utils/keyboardListener'
 
 import styles from './Works.module.scss'
 

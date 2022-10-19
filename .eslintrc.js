@@ -41,7 +41,7 @@ const config = {
         groups: ['builtin', 'external', 'parent', 'index', 'type', 'unknown'],
         pathGroups: [
           {
-            pattern: '@**/*',
+            pattern: '@/**',
             group: 'parent',
             position: 'before',
           },

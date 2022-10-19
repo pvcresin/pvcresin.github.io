@@ -1,7 +1,7 @@
 import { FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
 
-import { FadeInSection } from '@components/FadeInSection'
-import { Link } from '@components/Link'
+import { FadeInSection } from '@/components/FadeInSection'
+import { Link } from '@/components/Link'
 
 import styles from './About.module.scss'
 

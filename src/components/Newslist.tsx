@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { FadeInSection } from '@components/FadeInSection'
-import { Link } from '@components/Link'
-import type { NewsData } from '@data/news'
+import { FadeInSection } from '@/components/FadeInSection'
+import { Link } from '@/components/Link'
+import type { NewsData } from '@/data/news'
 
 import styles from './Newslist.module.scss'
 

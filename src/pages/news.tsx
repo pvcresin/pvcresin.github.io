@@ -1,7 +1,7 @@
-import { Footer } from '@components/Footer'
-import { Navigation } from '@components/Navigation'
-import { NewsList } from '@components/Newslist'
-import { articles, talks, interviews } from '@data/news'
+import { Footer } from '@/components/Footer'
+import { Navigation } from '@/components/Navigation'
+import { NewsList } from '@/components/Newslist'
+import { articles, talks, interviews } from '@/data/news'
 
 import styles from './news.module.scss'
 

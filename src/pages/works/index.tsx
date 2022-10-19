@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Footer } from '@components/Footer'
-import { Navigation } from '@components/Navigation'
-import { Works } from '@components/Works'
+import { Footer } from '@/components/Footer'
+import { Navigation } from '@/components/Navigation'
+import { Works } from '@/components/Works'
 
 import styles from './index.module.scss'
 

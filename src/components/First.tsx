@@ -1,7 +1,7 @@
 import { FaChevronDown } from 'react-icons/fa'
 
-import { FadeInSection } from '@components/FadeInSection'
-import { Social } from '@components/Social'
+import { FadeInSection } from '@/components/FadeInSection'
+import { Social } from '@/components/Social'
 
 import styles from './First.module.scss'
 

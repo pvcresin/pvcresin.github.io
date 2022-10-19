@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { FadeInSection } from '@components/FadeInSection'
-import { Link } from '@components/Link'
-import type { Item } from '@data/list'
+import { FadeInSection } from '@/components/FadeInSection'
+import { Link } from '@/components/Link'
+import type { Item } from '@/data/list'
 
 import styles from './List.module.scss'
 

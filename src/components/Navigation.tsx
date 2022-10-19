@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { FaFolder, FaListUl } from 'react-icons/fa'
 
-import { handlers } from '@utils/keyboardListener'
+import { handlers } from '@/utils/keyboardListener'
 
 import styles from './Navigation.module.scss'
 

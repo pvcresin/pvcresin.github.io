@@ -1,4 +1,4 @@
-import { FadeInSection } from '@components/FadeInSection'
+import { FadeInSection } from '@/components/FadeInSection'
 
 import styles from './Like.module.scss'
 

@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 
-import { FadeInSection } from '@components/FadeInSection'
-import { Link } from '@components/Link'
+import { FadeInSection } from '@/components/FadeInSection'
+import { Link } from '@/components/Link'
 
 import styles from './Timeline.module.scss'
 
