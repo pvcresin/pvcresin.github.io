@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Like } from '@/components/Like'
 import { List } from '@/components/List'
 import { Navigation } from '@/components/Navigation'
+import { SectionTitle } from '@/components/SectionTitle'
 import { Skills } from '@/components/Skills'
 import { Timeline } from '@/components/Timeline'
 import { awards, clubs, publications } from '@/data/list'
@@ -19,29 +20,29 @@ const IndexPage = () => (
     </section>
     <section className={styles.section}>
       <div className='container'>
-        <h2 className='section-title'>Like</h2>
+        <SectionTitle>Like</SectionTitle>
         <Like />
       </div>
     </section>
     <section className={styles.section}>
       <div className='container'>
-        <h2 className='section-title'>Skills</h2>
+        <SectionTitle>Skills</SectionTitle>
         <Skills />
       </div>
     </section>
     <section className={styles.section}>
       <div className='container'>
-        <h2 className='section-title'>Timeline</h2>
+        <SectionTitle>Timeline</SectionTitle>
         <Timeline />
       </div>
     </section>
     <section className={styles.section}>
       <div className='container'>
-        <h2 className='section-title'>Awards</h2>
+        <SectionTitle>Awards</SectionTitle>
         <List items={awards} />
-        <h2 className='section-title'>Publications</h2>
+        <SectionTitle>Publications</SectionTitle>
         <List items={publications} />
-        <h2 className='section-title'>Clubs</h2>
+        <SectionTitle>Clubs</SectionTitle>
         <List items={clubs} />
       </div>
     </section>

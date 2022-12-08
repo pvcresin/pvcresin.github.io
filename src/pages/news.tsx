@@ -1,6 +1,7 @@
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { NewsList } from '@/components/Newslist'
+import { SectionTitle } from '@/components/SectionTitle'
 import { articles, talks, interviews } from '@/data/news'
 
 import styles from './news.module.scss'
@@ -10,15 +11,15 @@ const NewsPage = () => (
     <Navigation />
     <section className={styles.content}>
       <div className='container'>
-        <h2 className='section-title'>Interviews</h2>
+        <SectionTitle>Interviews</SectionTitle>
         <NewsList newsData={interviews} />
       </div>
       <div className='container'>
-        <h2 className='section-title'>Talks</h2>
+        <SectionTitle>Talks</SectionTitle>
         <NewsList newsData={talks} />
       </div>
       <div className='container'>
-        <h2 className='section-title'>Articles</h2>
+        <SectionTitle>Articles</SectionTitle>
         <NewsList newsData={articles} />
       </div>
     </section>
