@@ -14,38 +14,37 @@ export const Navigation = () => {
     <nav className={styles.root}>
       <WidthContainer>
         <div className={styles.container}>
-          <Link href='/'>
-            <div
-              className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo}
-              tabIndex={0}
-              {...handlers}
-            >
+          <Link
+            href='/'
+            className={pathname === '/' ? styles.itemLogoActive : styles.itemLogo}
+            tabIndex={0}
+            {...handlers}
+          >
+            <div>
               <img className={styles.icon} src='/icon-pvcresin.svg' alt='' loading='lazy' />
               <span className={styles.logoText}>pvcresin</span>
             </div>
           </Link>
-          <ul>
-            <Link href='/works'>
-              <li
-                className={pathname.startsWith('/works') ? styles.itemActive : styles.item}
-                tabIndex={0}
-                {...handlers}
-              >
-                <FaFolder size='1.2rem' />
-                <span className={styles.linkText}>Works</span>
-              </li>
+          <div>
+            <Link
+              href='/works'
+              className={pathname.startsWith('/works') ? styles.itemActive : styles.item}
+              tabIndex={0}
+              {...handlers}
+            >
+              <FaFolder size='1.2rem' />
+              <span className={styles.linkText}>Works</span>
             </Link>
-            <Link href='/news'>
-              <li
-                className={pathname.startsWith('/news') ? styles.itemActive : styles.item}
-                tabIndex={0}
-                {...handlers}
-              >
-                <FaListUl size='1.2rem' />
-                <span className={styles.linkText}>News</span>
-              </li>
+            <Link
+              href='/news'
+              className={pathname.startsWith('/news') ? styles.itemActive : styles.item}
+              tabIndex={0}
+              {...handlers}
+            >
+              <FaListUl size='1.2rem' />
+              <span className={styles.linkText}>News</span>
             </Link>
-          </ul>
+          </div>
         </div>
       </WidthContainer>
     </nav>
