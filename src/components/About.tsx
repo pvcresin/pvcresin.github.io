@@ -4,6 +4,7 @@ import { FadeInSection } from '@/components/FadeInSection'
 import { Link } from '@/components/Link'
 
 import styles from './About.module.scss'
+import { WidthContainer } from './WidthContainer'
 
 const aboutText = [
   'Web Frontend とデザインが好きなソフトウェアエンジニア。',
@@ -15,7 +16,7 @@ const aboutText = [
 
 export const About = () => (
   <div className={styles.root}>
-    <div className='container'>
+    <WidthContainer>
       <div className={styles.contents}>
         <div className={styles.aboutImage}>
           <FadeInSection>
@@ -59,6 +60,6 @@ export const About = () => (
           </FadeInSection>
         </div>
       </div>
-    </div>
+    </WidthContainer>
   </div>
 )

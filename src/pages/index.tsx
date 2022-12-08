@@ -7,6 +7,7 @@ import { Navigation } from '@/components/Navigation'
 import { SectionTitle } from '@/components/SectionTitle'
 import { Skills } from '@/components/Skills'
 import { Timeline } from '@/components/Timeline'
+import { WidthContainer } from '@/components/WidthContainer'
 import { awards, clubs, publications } from '@/data/list'
 
 import styles from './index.module.scss'
@@ -15,36 +16,36 @@ const IndexPage = () => (
   <div className='root'>
     <Navigation />
     <First />
-    <section className={[styles.section, styles.section].join(' ')}>
+    <section className={styles.section}>
       <About />
     </section>
     <section className={styles.section}>
-      <div className='container'>
+      <WidthContainer>
         <SectionTitle>Like</SectionTitle>
         <Like />
-      </div>
+      </WidthContainer>
     </section>
     <section className={styles.section}>
-      <div className='container'>
+      <WidthContainer>
         <SectionTitle>Skills</SectionTitle>
         <Skills />
-      </div>
+      </WidthContainer>
     </section>
     <section className={styles.section}>
-      <div className='container'>
+      <WidthContainer>
         <SectionTitle>Timeline</SectionTitle>
         <Timeline />
-      </div>
+      </WidthContainer>
     </section>
     <section className={styles.section}>
-      <div className='container'>
+      <WidthContainer>
         <SectionTitle>Awards</SectionTitle>
         <List items={awards} />
         <SectionTitle>Publications</SectionTitle>
         <List items={publications} />
         <SectionTitle>Clubs</SectionTitle>
         <List items={clubs} />
-      </div>
+      </WidthContainer>
     </section>
     <Footer />
   </div>

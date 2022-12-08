@@ -4,6 +4,7 @@ import { Link } from '@/components/Link'
 import { Navigation } from '@/components/Navigation'
 import { Tags } from '@/components/Tags'
 import { Webp } from '@/components/Webp'
+import { WidthContainer } from '@/components/WidthContainer'
 import { worksArray } from '@/data/works'
 import type { Work } from '@/data/works'
 
@@ -15,13 +16,12 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
   <div className='root'>
     <Navigation />
     <section className={styles.section}>
-      <div className='container'>
+      <WidthContainer>
         {work.video ? (
           <div className={styles.videoFrameContainer}>
             <iframe
               className={styles.videoFrame}
               src={`https://www.youtube.com/embed/${work.video}?rel=0`}
-              frameBorder='0'
               allow='encrypted-media'
               allowFullScreen
             />
@@ -66,7 +66,7 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
             </FadeInSection>
           </>
         )}
-      </div>
+      </WidthContainer>
     </section>
     <Footer />
   </div>
