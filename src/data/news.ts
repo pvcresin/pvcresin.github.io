@@ -171,7 +171,8 @@ export const talks: NewsData[] = [
 export const interviews: NewsData[] = [
   {
     date: '2022-12-16',
-    title: '移行作業は？ 人材育成はどうする？ TypeScriptを導入して分かったリアルなメリットと課題とは',
+    title:
+      '移行作業は？ 人材育成はどうする？ TypeScriptを導入して分かったリアルなメリットと課題とは',
     at: 'CodeZine',
     link: 'https://codezine.jp/article/detail/16905',
   },
