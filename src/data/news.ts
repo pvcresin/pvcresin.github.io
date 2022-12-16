@@ -125,6 +125,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2022-12-16',
+    title: 'Web IDEの進化とそれを支える技術',
+    at: 'Eight LT 2022',
+    link: 'https://speakerdeck.com/pvcresin/evolution-of-web-ides-and-supporting-technologies',
+  },
+  {
     date: '2022-02-17',
     title: '新言語・フレームワーク導入の勘所～TypeScript・Rust・Flutter～',
     at: 'Developers Summit 2022',
@@ -145,7 +151,7 @@ export const talks: NewsData[] = [
   {
     date: '2020-11-06',
     title: 'Webアプリケーションのアーキテクチャパターンから読み解くNext.js',
-    at: 'Eight Engineer Meetup #1',
+    at: 'Eight LT 2020',
     link: 'https://speakerdeck.com/pvcresin/webapurikesiyonfalseakitekutiyapatankaradu-mijie-kunext-dot-js',
   },
   {
@@ -163,6 +169,12 @@ export const talks: NewsData[] = [
 ]
 
 export const interviews: NewsData[] = [
+  {
+    date: '2022-12-16',
+    title: '移行作業は？ 人材育成はどうする？ TypeScriptを導入して分かったリアルなメリットと課題とは',
+    at: 'CodeZine',
+    link: 'https://codezine.jp/article/detail/16905',
+  },
   {
     date: '2022-07-25',
     title: '「第2回 ツクってアソぶハッカソン」受賞者インタビュー③ 優秀賞',
