@@ -65,3 +65,4 @@ typings/
 
 # TypeScript
 tsconfig.tsbuildinfo
+storybook-static
