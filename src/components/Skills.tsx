@@ -2,66 +2,43 @@ import { FadeInSection } from '@/components/FadeInSection'
 
 import styles from './Skills.module.scss'
 
-// logo: https://simpleicons.org/
-type SkillData = { text: string; logo?: string; backgroundColor?: string }
+export type SkillImageData = { text: string; dataUrl: string }
 
-const skillList: { category: string; list: SkillData[] }[] = [
+export const skillList = [
   {
     category: 'Languages',
-    list: [
-      { text: 'JavaScript' },
-      { text: 'TypeScript' },
-      { text: 'HTML', logo: 'HTML5' },
-      { text: 'CSS', logo: 'CSS3' },
-      { text: 'Java', logo: 'OpenJDK' },
-      { text: 'Kotlin' },
-      { text: 'Processing', logo: 'Processing Foundation' },
-    ],
+    list: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'Java', 'Kotlin', 'Processing'],
   },
   {
     category: 'Frameworks',
-    list: [
-      { text: 'React' },
-      { text: 'Next.js' },
-      { text: 'Sass' },
-      { text: 'PostCSS' },
-      { text: 'CSS Modules' },
-    ],
+    list: ['React', 'Next.js', 'Sass', 'PostCSS', 'CSS Modules'],
   },
   {
     category: 'DevOps',
-    list: [
-      { text: 'Git' },
-      { text: 'GitHub Actions' },
-      { text: 'CircleCI' },
-      { text: 'OpenAPI', logo: 'OpenAPI Initiative' },
-      { text: 'webpack' },
-    ],
+    list: ['Git', 'GitHub Actions', 'CircleCI', 'OpenAPI', 'webpack'],
   },
   {
     category: 'Design Tools',
-    list: [{ text: 'Figma' }, { text: 'Adobe Illustrator' }],
+    list: ['Figma', 'Adobe Illustrator'],
   },
 ]
 
-const backgroundColor = '3b3b3b'
-const textColor = 'ccc'
-
-export const Skills = () => (
+export const Skills: React.FC<{ skillImageData: SkillImageData[] }> = ({ skillImageData }) => (
   <div className={styles.root}>
     {skillList.map(({ category, list }) => (
       <FadeInSection key={category}>
         <div className={styles.item}>
           <h3 className={styles.category}>{category}</h3>
           <div className={styles.badgeContainer}>
-            {list.map(({ text, logo = text }) => (
+            {list.map((text) => (
               <img
                 key={text}
                 className={styles.badge}
                 alt={text}
-                // https://shields.io/
-                src={`https://img.shields.io/badge/-${text}-${backgroundColor}?style=flat-square&logo=${logo}&logoColor=${textColor}`}
+                src={skillImageData.find((data) => data.text === text)?.dataUrl}
                 loading='lazy'
+                width={'auto'}
+                height={28.8}
               />
             ))}
           </div>
