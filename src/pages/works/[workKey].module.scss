@@ -45,18 +45,18 @@
   color: white;
   margin: 1rem 0;
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: var(--font-size-md);
 }
 
 .chapterTitle {
-  font-size: 1.3rem;
+  font-size: var(--font-size-sm);
   color: #efefef;
   margin: 1.5rem 0 0.75rem;
 }
 
 .paragraph {
   text-align: justify;
-  font-size: 0.9rem;
+  font-size: var(--font-size-xs);
   color: #ccc;
 }
 

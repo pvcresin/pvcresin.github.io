@@ -25,7 +25,7 @@
 }
 
 .logoText {
-  font-size: 1.2rem;
+  font-size: var(--font-size-sm);
   margin-left: 0.5rem;
 }
 
@@ -73,11 +73,11 @@
 }
 
 .linkText {
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   display: inline-flex;
 
   @include mixin.md {
-    font-size: 1rem;
+    font-size: var(--font-size-xs);
     margin-left: 0.5rem;
   }
 }

@@ -128,10 +128,10 @@ $lineWidth: 4px;
 .title {
   margin: 0.5rem 0;
   color: white;
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
 }
 
 .description {
   white-space: pre-wrap;
-  font-size: 0.9rem;
+  font-size: var(--font-size-xs);
 }

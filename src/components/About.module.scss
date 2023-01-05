@@ -46,27 +46,26 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  font-size: 1.1rem;
   word-break: break-all;
 }
 
 .aboutText {
   line-height: 2;
   white-space: pre-line;
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
 }
 
 .info {
   display: flex;
   margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
 }
 
 .infoIcon {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: var(--font-size-md);
 
   svg {
     height: 1.5rem;

@@ -3,7 +3,7 @@
 .root {
   padding: 1rem;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: var(--font-size-xs);
 }
 
 .row {
@@ -36,7 +36,7 @@
   font-family: 'Noto Sans JP', monospace;
   text-align: left;
   vertical-align: middle;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   color: #aaa;
   background-color: unset;
   padding: 0;
@@ -63,6 +63,6 @@
   white-space: pre;
   color: #aaa;
   margin-left: auto;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   padding-left: 0.3rem;
 }

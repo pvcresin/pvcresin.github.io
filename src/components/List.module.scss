@@ -28,7 +28,7 @@
 .dateSection {
   color: #ccc;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
   white-space: pre-wrap;
   min-width: 150px;
 }
@@ -39,11 +39,11 @@
 }
 
 .title {
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
   margin-bottom: 0.25rem;
 }
 
 .sub {
   color: #aaa;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xs);
 }

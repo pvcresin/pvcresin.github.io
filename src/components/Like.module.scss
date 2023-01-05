@@ -27,12 +27,12 @@
 }
 
 .category {
-  font-size: 1.1rem;
+  font-size: var(--font-size-xs);
   margin-bottom: 0.5rem;
 }
 
 .item {
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
   list-style: disc;
   margin-left: 1rem;
 }
