@@ -125,6 +125,10 @@ $lineWidth: 4px;
   white-space: pre-wrap;
 }
 
+.date {
+  font-size: var(--font-size-xs);
+}
+
 .title {
   margin: 0.5rem 0;
   color: white;

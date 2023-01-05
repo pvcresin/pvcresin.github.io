@@ -8,14 +8,12 @@ import { WidthContainer } from './WidthContainer'
 
 export const First = () => (
   <div className={styles.root}>
-    <WidthContainer>
-      <h1 className={styles.name}>Raika Toriyama</h1>
-      <FadeInSection>
+    <FadeInSection>
+      <WidthContainer>
+        <h1 className={styles.name}>Raika Toriyama</h1>
         <p className={styles.description}>Software Engineer a.k.a. pvcresin</p>
         <Social />
-      </FadeInSection>
-    </WidthContainer>
-    <FadeInSection>
+      </WidthContainer>
       <div className={styles.arrowContainer}>
         <div className={styles.arrow}>
           <FaChevronDown size='3rem' />

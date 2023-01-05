@@ -63,7 +63,7 @@ export const Timeline = () => (
         <div className={styles.cardWrapper} key={title}>
           <div className={styles.card}>
             <FadeInSection>
-              <p>
+              <p className={styles.date}>
                 {dayjs(startYear, 'YYYY-MM-DD').format('YYYY-MM')}
                 {`  -  `}
                 {endYear === undefined ? 'present' : dayjs(endYear, 'YYYY-MM-DD').format('YYYY-MM')}
