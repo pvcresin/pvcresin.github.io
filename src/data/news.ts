@@ -125,6 +125,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2023-01-18',
+    title: 'ビルドツール・パネルディスカッション',
+    at: 'PWA Night vol.47',
+    link: 'https://pwanight.connpass.com/event/271883/',
+  },
+  {
     date: '2022-12-16',
     title: 'Web IDEの進化とそれを支える技術',
     at: 'Eight LT 2022',
