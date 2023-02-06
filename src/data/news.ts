@@ -2,6 +2,13 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2023-02-06',
+    title:
+      '複数のサービスを横断して Web フロントエンド開発の支援を行う、Frontend Enabling 業務の紹介',
+    at: 'Sansan Tech Blog',
+    link: 'https://buildersbox.corp-sansan.com/entry/frontend-enabling',
+  },
+  {
     date: '2022-07-28',
     title: 'Eight で Internet Explorer のサポートを終了するために行ったこと',
     at: 'Sansan Tech Blog',
