@@ -15,7 +15,7 @@ export const skillList = [
   },
   {
     category: 'DevOps',
-    list: ['Git', 'GitHub Actions', 'CircleCI', 'OpenAPI', 'webpack'],
+    list: ['Git', 'GitHub Actions', 'CircleCI', 'OpenAPI', 'webpack', 'Vite'],
   },
   {
     category: 'Design Tools',

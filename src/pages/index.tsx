@@ -75,6 +75,7 @@ const skillDataList: SkillData[] = [
   { text: 'CircleCI' },
   { text: 'OpenAPI', logo: 'OpenAPI Initiative' },
   { text: 'webpack' },
+  { text: 'Vite', logo: 'vite' },
   { text: 'Figma' },
   { text: 'Adobe Illustrator' },
 ]
