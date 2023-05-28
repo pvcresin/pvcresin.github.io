@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2023-05-21',
+    title: 'いろいろな TypeScript コンパイラの出⼒を⽐較してみる',
+    at: "O'CREILLY",
+    link: 'https://techbookfest.org/product/9JSrGPY3uzvT0sCbmqP1AZ?productVariantID=rvz32NvPaMXnNPpVnpQ5uP',
+  },
+  {
     date: '2023-02-06',
     title:
       '複数のサービスを横断して Web フロントエンド開発の支援を行う、Frontend Enabling 業務の紹介',
