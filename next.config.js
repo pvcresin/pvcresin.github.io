@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   trailingSlash: true,
-  swcMinify: true,
+  // swcMinify: true,
   images: {
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    forceSwcTransforms: true,
+    // forceSwcTransforms: true,
     scrollRestoration: true,
   },
 }
