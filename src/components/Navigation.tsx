@@ -20,7 +20,7 @@ export const Navigation = () => {
             tabIndex={0}
             {...handlers}
           >
-            <div>
+            <div className={styles.topLinkContainer}>
               <img className={styles.icon} src='/icon-pvcresin.svg' alt='' loading='lazy' />
               <span className={styles.logoText}>pvcresin</span>
             </div>
