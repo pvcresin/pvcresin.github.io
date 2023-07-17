@@ -11,7 +11,7 @@ export const First = () => (
     <FadeInSection>
       <WidthContainer>
         <h1 className={styles.name}>Raika Toriyama</h1>
-        <p className={styles.description}>Software Engineer a.k.a. pvcresin</p>
+        <p className={styles.description}>Software Engineer as @pvcresin</p>
         <Social />
       </WidthContainer>
       <div className={styles.arrowContainer}>
