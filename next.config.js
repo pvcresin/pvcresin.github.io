@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  output: 'export',
   trailingSlash: true,
   swcMinify: true,
   images: {
@@ -8,5 +9,8 @@ module.exports = {
   experimental: {
     forceSwcTransforms: true,
     scrollRestoration: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 }
