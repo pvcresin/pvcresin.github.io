@@ -19,9 +19,11 @@ const eat: LikeData = {
   texts: ['オムライス', '寿司', 'スイーツ', 'フレンチ全般'],
 }
 
+const likes = [hobby, watch, eat] as const
+
 export const Like = () => (
   <div className={styles.content}>
-    {[hobby, watch, eat].map((like, index) => (
+    {likes.map((like, index) => (
       <div className={styles.likeBox} key={index}>
         <FadeInSection>
           <div className={styles.like}>
