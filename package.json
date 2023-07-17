@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "preview": "yarn build && serve out",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
