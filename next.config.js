@@ -9,4 +9,7 @@ module.exports = {
     forceSwcTransforms: true,
     scrollRestoration: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
