@@ -159,7 +159,7 @@ export const talks: NewsData[] = [
     date: '2021-11-05',
     title: 'Eight Webフロントエンドの開発者体験（DX）向上のための取り組み',
     at: 'Sansan Builders Stage 2021',
-    link: 'https://jp.corp-sansan.com/engineering/buildersstage2021/?session=a2',
+    link: 'https://speakerdeck.com/sansanbuildersbox/approaches-to-improve-the-developer-experience-of-eight-web-frontend',
   },
   {
     date: '2021-08-18',
