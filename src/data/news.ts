@@ -138,6 +138,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2023-10-24',
+    title: 'パネルディスカッション <若手が活躍できる環境について>',
+    at: '若手エンジニア寿司パ',
+    link: 'https://sansan.connpass.com/event/296670/',
+  },
+  {
     date: '2023-01-18',
     title: 'ビルドツール・パネルディスカッション',
     at: 'PWA Night vol.47',
