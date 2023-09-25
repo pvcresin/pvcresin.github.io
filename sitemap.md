@@ -23,10 +23,6 @@ ref
 - プラットフォーム名（＋アイコン）
 - タイトル
 
-## Talks
-
-- 学生向け LT
-
 ## Articles
 
 - Speaker Deck

@@ -186,6 +186,12 @@ export const talks: NewsData[] = [
     link: 'https://talent.supporterz.jp/geeksai/2020/',
   },
   {
+    date: '2020-06-17',
+    title: 'Eight WebフロントエンドのDX向上に関する取り組み',
+    at: '22卒向け LT座談会',
+    link: 'https://speakerdeck.com/pvcresin/eight-webhurontoendofalsedxxiang-shang-niguan-suruqu-rizu-mi',
+  },
+  {
     date: '2019-11-20',
     title: 'TS 未経験者が 社内向け JS ライブラリを TS に置き換えている話',
     at: '表参道Web勉強会 #9',
