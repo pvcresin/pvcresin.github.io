@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "dev": "next",
     "build": "rm -rf ./out && next build",
     "preview": "yarn build && serve out",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "test": "yarn test:lint && yarn test:typecheck && yarn build && yarn build-storybook",
+    "sb": "storybook dev -p 6006",
+    "sb:build": "storybook build",
+    "test": "yarn test:lint && yarn test:typecheck && yarn build && yarn sb:build",
     "test:lint": "eslint src && prettier --check src",
     "test:typecheck": "tsc --noEmit"
   },
@@ -26,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.23.0",
-    "@next/eslint-plugin-next": "^13.4.10",
+    "@next/eslint-plugin-next": "13.4.10",
     "@storybook/addon-actions": "7.0.27",
     "@storybook/addon-essentials": "7.0.27",
     "@storybook/addon-interactions": "7.0.27",
