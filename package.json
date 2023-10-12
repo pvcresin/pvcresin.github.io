@@ -22,7 +22,7 @@
     "react-intersection-observer": "9.5.2"
   },
   "devDependencies": {
-    "@babel/core": "7.23.0",
+    "@babel/core": "7.23.2",
     "@next/eslint-plugin-next": "13.4.10",
     "@storybook/addon-actions": "7.0.27",
     "@storybook/addon-essentials": "7.0.27",
