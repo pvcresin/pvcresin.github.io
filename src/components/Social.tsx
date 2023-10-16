@@ -1,4 +1,4 @@
-import { FaTwitter, FaGithub, FaInstagram, FaPenSquare } from 'react-icons/fa'
+import { FaXTwitter, FaGithub, FaInstagram, FaBookOpen } from 'react-icons/fa6'
 
 import { handlers } from '@/utils/KeyboardListener'
 
@@ -9,13 +9,13 @@ export const Social = () => (
     <li className={styles.iconListItem}>
       <a
         className={styles.link}
-        href='https://twitter.com/pvcresin/'
+        href='https://x.com/pvcresin/'
         target='_blank'
-        title='Twitter'
+        title='X'
         rel='noopener noreferrer'
         {...handlers}
       >
-        <FaTwitter size='2rem' />
+        <FaXTwitter size='2rem' />
       </a>
     </li>
     <li className={styles.iconListItem}>
@@ -47,11 +47,11 @@ export const Social = () => (
         className={styles.link}
         href='https://pvcresin.hatenablog.com/'
         target='_blank'
-        title='Hatena Blog'
+        title='Blog'
         rel='noopener noreferrer'
         {...handlers}
       >
-        <FaPenSquare size='2rem' />
+        <FaBookOpen size='2rem' />
       </a>
     </li>
   </ul>

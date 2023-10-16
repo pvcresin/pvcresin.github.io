@@ -1,4 +1,4 @@
-import { FaChevronDown } from 'react-icons/fa'
+import { FaChevronDown } from 'react-icons/fa6'
 
 import { FadeInSection } from '@/components/FadeInSection'
 import { Social } from '@/components/Social'

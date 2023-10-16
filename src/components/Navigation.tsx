@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { FaFolder, FaListUl } from 'react-icons/fa'
+import { FaFolder, FaListUl } from 'react-icons/fa6'
 
 import { handlers } from '@/utils/KeyboardListener'
 

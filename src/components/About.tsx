@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaSuitcase } from 'react-icons/fa'
+import { FaMap, FaSuitcase } from 'react-icons/fa6'
 
 import { FadeInSection } from '@/components/FadeInSection'
 import { Link } from '@/components/Link'
@@ -36,7 +36,7 @@ export const About = () => (
             <ul>
               <li className={styles.info}>
                 <div className={styles.infoIcon}>
-                  <FaMapMarkerAlt />
+                  <FaMap />
                 </div>
                 <div className={styles.right}>Tokyo / Kanagawa, Japan</div>
               </li>

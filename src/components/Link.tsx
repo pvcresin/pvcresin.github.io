@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { FaUpRightFromSquare } from 'react-icons/fa6'
 
 import { handlers } from '@/utils/KeyboardListener'
 
@@ -21,7 +21,7 @@ export const Link: React.FC<{
     {children}
     {isExternalLink && withExternalIcon && (
       <span className={styles.linkIcon}>
-        <FaExternalLinkAlt size='0.8rem' />
+        <FaUpRightFromSquare size='0.8rem' />
       </span>
     )}
   </a>
