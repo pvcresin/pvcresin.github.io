@@ -59,6 +59,7 @@ const config = {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/consistent-type-imports': 'error',
+    '@next/next/no-img-element': 'off',
   },
 }
 
