@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2023-10-30',
+    title: 'Eight の Node.js を 16 から 20 にアップデートしました',
+    at: 'Sansan Tech Blog',
+    link: 'https://buildersbox.corp-sansan.com/entry/eight-node20',
+  },
+  {
     date: '2023-05-21',
     title: 'いろいろな TypeScript コンパイラの出⼒を⽐較してみる',
     at: "O'CREILLY",
