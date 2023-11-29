@@ -31,7 +31,7 @@
     "@storybook/nextjs": "7.0.27",
     "@storybook/react": "7.0.27",
     "@storybook/testing-library": "0.2.2",
-    "@types/node": "18.18.13",
+    "@types/node": "18.18.14",
     "@types/react": "18.2.39",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
