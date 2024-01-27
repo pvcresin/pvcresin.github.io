@@ -8,7 +8,7 @@ import styles from './Navigation.module.scss'
 import { WidthContainer } from './WidthContainer'
 
 export const Navigation = () => {
-  const pathname = usePathname()
+  const pathname = usePathname() || ''
 
   return (
     <nav className={styles.root}>
