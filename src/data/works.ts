@@ -1,4 +1,4 @@
-type WorkKey =
+export type WorkKey =
   | 'KawarimiMeeting'
   | 'SensorPipe'
   | 'MiddleDrive'
