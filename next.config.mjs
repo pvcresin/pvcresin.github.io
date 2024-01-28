@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const config = {
   output: 'export',
   trailingSlash: true,
   swcMinify: true,
@@ -14,3 +14,5 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
 }
+
+export default config
