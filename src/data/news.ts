@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2024-01-28',
+    title: 'Next.jsでSSGしてたサイトをPages RouterからApp Routerに載せ替えた',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2024/01/28/Next.js%E3%81%A7SSG%E3%81%97%E3%81%A6%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92Pages_Router%E3%81%8B%E3%82%89App_Router%E3%81%AB%E8%BC%89%E3%81%9B%E6%9B%BF%E3%81%88%E3%81%9F',
+  },
+  {
     date: '2023-10-30',
     title: 'Eight の Node.js を 16 から 20 にアップデートしました',
     at: 'Sansan Tech Blog',
@@ -27,10 +33,22 @@ export const articles: NewsData[] = [
     link: 'https://buildersbox.corp-sansan.com/entry/kill-ie',
   },
   {
+    date: '2022-06-17',
+    title: 'IE卒業式に参加してきたら青春時代を思い出した',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2022/06/17/IE%E5%8D%92%E6%A5%AD%E5%BC%8F%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F%E3%82%89%E9%9D%92%E6%98%A5%E6%99%82%E4%BB%A3%E3%82%92%E6%80%9D%E3%81%84%E5%87%BA%E3%81%97%E3%81%9F',
+  },
+  {
     date: '2022-05-25',
     title: 'JavaScript で Mac のマルチタッチジェスチャによる拡大縮小を無効にする',
     at: 'Zenn',
     link: 'https://zenn.dev/pvcresin/articles/f0b81496e387b2',
+  },
+  {
+    date: '2022-05-22',
+    title: '電動昇降デスクを導入した',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2022/05/22/%E9%9B%BB%E5%8B%95%E6%98%87%E9%99%8D%E3%83%87%E3%82%B9%E3%82%AF%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%9F',
   },
   {
     date: '2022-04-19',
@@ -45,6 +63,12 @@ export const articles: NewsData[] = [
     link: 'https://zenn.dev/pvcresin/articles/7cc9df5d4e23f5',
   },
   {
+    date: '2021-11-08',
+    title: '8年半使っていたアイコンを変更した話',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2021/11/08/8%E5%B9%B4%E5%8D%8A%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%9F%E8%A9%B1',
+  },
+  {
     date: '2021-11-04',
     title: 'GIF しか残ってなかったオリジナルのローディングを CSS アニメーションで再現した話',
     at: 'Sansan Tech Blog',
@@ -55,6 +79,12 @@ export const articles: NewsData[] = [
     title: 'TypeScriptの導入で開発現場はどう変わる？ Sansanの事例に見るメリットとコスト',
     at: 'CodeZine',
     link: 'https://codezine.jp/article/detail/14849',
+  },
+  {
+    date: '2021-08-10',
+    title: 'npm に glob-extension-changer を publish しました',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2021/08/10/npm_%E3%81%AB_glob-extension-changer_%E3%82%92_publish_%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F',
   },
   {
     date: '2021-06-24',
@@ -85,6 +115,12 @@ export const articles: NewsData[] = [
     title: 'TypeScript の Conditional Types で複数条件をマージする',
     at: 'Zenn',
     link: 'https://zenn.dev/pvcresin/articles/073dc774eb241c',
+  },
+  {
+    date: '2020-12-29',
+    title: 'Riot.js から Next.js に移行した話',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2020/12/29/Riot.js_%E3%81%8B%E3%82%89_Next.js_%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%97%E3%81%9F%E8%A9%B1',
   },
   {
     date: '2020-12-22',
@@ -129,6 +165,36 @@ export const articles: NewsData[] = [
     link: 'https://qiita.com/pvcresin/items/614cbd363af82e11c204',
   },
   {
+    date: '2019-09-23',
+    title: '技術書展7に行ってきた',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2019/09/23/%E6%8A%80%E8%A1%93%E6%9B%B8%E5%B1%957%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F',
+  },
+  {
+    date: '2019-09-15',
+    title: 'VSCode でファイル保存時に1 回でフォーマットしきらないときの対処法',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2019/09/15/VSCode_%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%BF%9D%E5%AD%98%E6%99%82%E3%81%AB_Prettier_%E3%81%A8_ESLint_%E3%81%A7%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%82%92%E3%81%8B',
+  },
+  {
+    date: '2019-03-30',
+    title: '山手線，徒歩で一周してきた',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2019/03/30/%E5%B1%B1%E6%89%8B%E7%B7%9A%EF%BC%8C%E5%BE%92%E6%AD%A9%E3%81%A7%E4%B8%80%E5%91%A8%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F',
+  },
+  {
+    date: '2019-02-03',
+    title: 'Laravelでプロジェクト作って，VueでHMRするまで',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2019/02/03/',
+  },
+  {
+    date: '2018-09-07',
+    title: 'Kotlin Fest 2018 に行ってきた',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2018/09/07/Kotlin_Fest_2018_%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F',
+  },
+  {
     date: '2017-10-03',
     title: 'pugで書くRiot Routerの開発環境メモ',
     at: 'Qiita',
@@ -139,6 +205,78 @@ export const articles: NewsData[] = [
     title: 'pugで書くRiotの開発環境メモ',
     at: 'Qiita',
     link: 'https://qiita.com/pvcresin/items/3b49600720c8ecefedd4',
+  },
+  {
+    date: '2017-06-24',
+    title: 'Kotlin/Native v0.3がWin対応したので触ってみた',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2017/06/24/Kotlin/Native_v0.3%E3%81%8CWin%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F%E3%81%AE%E3%81%A7%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F',
+  },
+  {
+    date: '2016-10-13',
+    title: 'Mode Template for Processing 3.x を作った',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/10/13/Mode_Template_for_Processing_3.x_%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F',
+  },
+  {
+    date: '2016-08-04',
+    title: 'String.prepend, String.append, String.minusの話',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/08/04/String_prepend%2C_String_append%2C_String_minus%E3%81%AE%E8%A9%B1',
+  },
+  {
+    date: '2016-07-04',
+    title: 'Stringに掛け算の演算子オーバーロードしたら捗った',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/07/04/String%E3%81%AB%E6%8E%9B%E3%81%91%E7%AE%97%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%AD%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E6%8D%97%E3%81%A3%E3%81%9F',
+  },
+  {
+    date: '2016-04-15',
+    title: 'ProcessingのTemplate Modeでビルドするときにスケッチ名とコードを取得する',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/04/15/Processing%E3%81%AETemplate_Mode%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AB%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E5%90%8D%E3%81%A8%E3%82%B3%E3%83%BC%E3%83%89',
+  },
+  {
+    date: '2016-04-01',
+    title: 'KotlinのAnyを引数に持つ同名関数の優先順位について',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/04/01/Kotlin%E3%81%AEAny%E3%82%92%E5%BC%95%E6%95%B0%E3%81%AB%E6%8C%81%E3%81%A4%E5%90%8C%E5%90%8D%E9%96%A2%E6%95%B0%E3%81%AE%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6',
+  },
+  {
+    date: '2016-03-17',
+    title: 'Processing 3.0.2で動く自作ライブラリ（.jar）を作ろう',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/03/17/223048',
+  },
+  {
+    date: '2016-03-17',
+    title: 'Create original Mode for Processing 3.0.2',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/03/17/210135',
+  },
+  {
+    date: '2016-03-17',
+    title: 'Create original Tool for Processing 3.0.2',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/03/17/192129',
+  },
+  {
+    date: '2016-03-14',
+    title: 'EclipseでProcessing 3.0.2 を動かす話',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/03/14/185813',
+  },
+  {
+    date: '2016-02-14',
+    title: 'KotlinをAndroid Studioで書いて，アプリもビルドしてみる',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/02/14/224707',
+  },
+  {
+    date: '2016-02-14',
+    title: 'VirtualBoxで"VT-x is not available"のエラーが出た時の解決策',
+    at: 'はてなブログ',
+    link: 'https://pvcresin.hatenablog.com/entry/2016/02/14/212949',
   },
 ]
 
