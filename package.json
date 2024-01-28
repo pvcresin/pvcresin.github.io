@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "packageManager": "yarn@4.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "yarn": ">=4.0.0",
+    "npm": "please_use_yarn_instead"
+  },
   "scripts": {
     "dev": "next",
     "build": "rm -rf ./out && next build",
