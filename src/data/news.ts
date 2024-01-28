@@ -3,6 +3,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 export const articles: NewsData[] = [
   {
     date: '2024-01-28',
+    title: 'corepackでYarn v4使おうとしてCIで怒られたときの対処法',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/0e498e08063993',
+  },
+  {
+    date: '2024-01-28',
     title: 'Next.jsでSSGしてたサイトをPages RouterからApp Routerに載せ替えた',
     at: 'はてなブログ',
     link: 'https://pvcresin.hatenablog.com/entry/2024/01/28/Next.js%E3%81%A7SSG%E3%81%97%E3%81%A6%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92Pages_Router%E3%81%8B%E3%82%89App_Router%E3%81%AB%E8%BC%89%E3%81%9B%E6%9B%BF%E3%81%88%E3%81%9F',
