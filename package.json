@@ -49,7 +49,7 @@
     "typescript": "5.3.3"
   },
   "resolutions": {
-    "string-width": "4.2.3",
+    "string-width": "7.1.0",
     "strip-ansi": "6.0.1"
   },
   "browserslist": [
