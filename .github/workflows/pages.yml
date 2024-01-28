@@ -20,25 +20,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Enable corepack
-        run: corepack enable yarn
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - run: corepack enable yarn
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: yarn
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Build
-        run: yarn build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
