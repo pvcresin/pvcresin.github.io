@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "packageManager": "yarn@4.0.2",
   "scripts": {
     "dev": "next",
     "build": "rm -rf ./out && next build",

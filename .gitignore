@@ -66,3 +66,4 @@ typings/
 # TypeScript
 tsconfig.tsbuildinfo
 storybook-static
+.yarn
