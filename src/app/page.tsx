@@ -26,7 +26,7 @@ const skillDataList: SkillData[] = [
   { text: 'Adobe Illustrator' },
 ]
 
-async function toDataURL(url: string) {
+const toDataURL = async (url: string) => {
   const response = await fetch(url, { cache: 'force-cache' })
   const blob = await response.blob()
   const binaryText = await blob.text()
@@ -43,10 +43,12 @@ const skillDataToSkillImageData = async ({ text, logo = text }: SkillData) => {
   return { text, dataUrl }
 }
 
-export default async function Page() {
+const Page = async () => {
   const skillImageData = await Promise.all(
     skillDataList.map((skillData) => skillDataToSkillImageData(skillData)),
   )
 
   return <IndexPage skillImageData={skillImageData} />
 }
+
+export default Page
