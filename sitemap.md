@@ -26,4 +26,3 @@ ref
 ## Articles
 
 - Speaker Deck
-- Blog
