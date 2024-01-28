@@ -1,19 +1,24 @@
+'use client'
+
+import React from 'react'
+
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { WidthContainer } from '@/components/WidthContainer'
+import { Works } from '@/components/Works'
 
-import styles from './404.module.scss'
+import styles from './page.module.scss'
 
-const NotFoundPage = () => (
+const WorksPage = () => (
   <div className='root'>
     <Navigation />
-    <section className={styles.content}>
+    <section className={styles.section}>
       <WidthContainer>
-        <h1>Page Not Found</h1>
+        <Works />
       </WidthContainer>
     </section>
     <Footer />
   </div>
 )
 
-export default NotFoundPage
+export default WorksPage

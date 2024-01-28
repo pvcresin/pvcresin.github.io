@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import { FaFolder, FaListUl } from 'react-icons/fa6'
 
 import { handlers } from '@/utils/KeyboardListener'
@@ -8,7 +8,7 @@ import styles from './Navigation.module.scss'
 import { WidthContainer } from './WidthContainer'
 
 export const Navigation = () => {
-  const { pathname } = useRouter()
+  const pathname = usePathname() || ''
 
   return (
     <nav className={styles.root}>

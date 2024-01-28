@@ -1,3 +1,5 @@
+'use client'
+
 import { FadeInSection } from '@/components/FadeInSection'
 import { Footer } from '@/components/Footer'
 import { Link } from '@/components/Link'
@@ -5,12 +7,11 @@ import { Navigation } from '@/components/Navigation'
 import { Tags } from '@/components/Tags'
 import { Webp } from '@/components/Webp'
 import { WidthContainer } from '@/components/WidthContainer'
-import { worksArray } from '@/data/works'
 import type { Work } from '@/data/works'
 
 import type { NextPage } from 'next'
 
-import styles from './[workKey].module.scss'
+import styles from './index.module.scss'
 
 const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
   <div className='root'>
@@ -71,24 +72,5 @@ const WorkDetailPage: NextPage<{ work: Work }> = ({ work }) => (
     <Footer />
   </div>
 )
-
-export async function getStaticPaths() {
-  const workKeys = worksArray.map((p) => p.key)
-  return {
-    paths: workKeys.map((workKey) => ({
-      params: { workKey },
-    })),
-    fallback: false,
-  }
-}
-
-export async function getStaticProps(context: { params: { workKey: string } }) {
-  const workKey = context.params.workKey
-  return {
-    props: {
-      work: worksArray.find((p) => p.key === workKey),
-    },
-  }
-}
 
 export default WorkDetailPage
