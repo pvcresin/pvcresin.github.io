@@ -4160,7 +4160,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.48, @types/react@npm:>=16":
+"@types/react@npm:18.2.51":
+  version: 18.2.51
+  resolution: "@types/react@npm:18.2.51"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/409f684dc1cb03ed542e1f185da7e84f81186d7945119adb553fe0e4e28bad3468213fce9096e1867b358c87fb57fc80b53a3e544a3779f7080ddde7c1b99eb1
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:>=16":
   version: 18.2.48
   resolution: "@types/react@npm:18.2.48"
   dependencies:
@@ -11263,7 +11274,7 @@ __metadata:
     "@storybook/react": "npm:7.6.12"
     "@storybook/testing-library": "npm:0.2.2"
     "@types/node": "npm:20.11.15"
-    "@types/react": "npm:18.2.48"
+    "@types/react": "npm:18.2.51"
     "@typescript-eslint/eslint-plugin": "npm:6.20.0"
     "@typescript-eslint/parser": "npm:6.20.0"
     dayjs: "npm:1.11.10"
