@@ -288,6 +288,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2023-02-21',
+    title: '名刺アプリ Eight における Frontend Ops',
+    at: 'GENBA #2',
+    link: 'https://timeedev.connpass.com/event/308783/',
+  },
+  {
     date: '2023-10-24',
     title: 'パネルディスカッション <若手が活躍できる環境について>',
     at: '若手エンジニア寿司パ',
