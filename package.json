@@ -49,7 +49,7 @@
     "eslint-plugin-react": "7.34.0",
     "eslint-plugin-storybook": "0.8.0",
     "prettier": "3.2.5",
-    "sass": "1.71.1",
+    "sass": "1.72.0",
     "serve": "14.2.1",
     "storybook": "7.6.17",
     "typescript": "5.4.2"
