@@ -288,7 +288,7 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
-    date: '2023-02-21',
+    date: '2024-02-21',
     title: '名刺アプリ Eight における Frontend Ops',
     at: 'GENBA #2',
     link: 'https://timeedev.connpass.com/event/308783/',
