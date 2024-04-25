@@ -22,8 +22,8 @@
   "dependencies": {
     "dayjs": "1.11.10",
     "next": "14.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.0",
+    "react-dom": "18.3.0",
     "react-icons": "5.1.0",
     "react-intersection-observer": "9.8.2"
   },
@@ -38,7 +38,7 @@
     "@storybook/react": "7.6.18",
     "@storybook/testing-library": "0.2.2",
     "@types/node": "20.12.7",
-    "@types/react": "18.2.79",
+    "@types/react": "18.3.0",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.57.0",
