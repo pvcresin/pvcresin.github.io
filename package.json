@@ -50,7 +50,7 @@
     "eslint-plugin-storybook": "0.8.0",
     "prettier": "3.2.5",
     "sass": "1.75.0",
-    "serve": "14.2.2",
+    "serve": "14.2.3",
     "storybook": "7.6.18",
     "typescript": "5.4.5"
   },
