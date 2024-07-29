@@ -14,12 +14,12 @@ const NewsPage = () => (
     <Navigation />
     <section className={styles.content}>
       <WidthContainer>
-        <SectionTitle>Interviews</SectionTitle>
-        <NewsList newsData={interviews} />
         <SectionTitle>Talks</SectionTitle>
         <NewsList newsData={talks} />
         <SectionTitle>Articles</SectionTitle>
         <NewsList newsData={articles} />
+        <SectionTitle>Interviews</SectionTitle>
+        <NewsList newsData={interviews} />
       </WidthContainer>
     </section>
     <Footer />
