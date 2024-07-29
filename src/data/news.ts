@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2024-07-29',
+    title: 'HTML用ERBファイルのフォーマットを統一した話',
+    at: 'Sansan Tech Blog',
+    link: 'https://buildersbox.corp-sansan.com/entry/2024/07/29/110000',
+  },
+  {
     date: '2024-06-07',
     title: 'EightのエンジニアでRubyKaigi 2024に参加してきました！',
     at: 'Sansan Tech Blog',
