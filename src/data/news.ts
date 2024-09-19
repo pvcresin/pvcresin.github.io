@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2024-09-19',
+    title: 'Sassが好きな7つの理由',
+    at: 'Findy Engineer Lab',
+    link: 'https://findy-code.io/engineer-lab/reason-pvcresin',
+  },
+  {
     date: '2024-07-29',
     title: 'HTML用ERBファイルのフォーマットを統一した話',
     at: 'Sansan Tech Blog',
