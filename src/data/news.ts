@@ -2,6 +2,18 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2024-11-29',
+    title: 'YAMLを読み込んでプロパティを生成しているRubyクラスにSorbetで型を当てる方法',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/d87dc2c13d3375',
+  },
+  {
+    date: '2024-11-08',
+    title: 'Sorbetのruntimeでの型チェック抑制方法まとめ',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/cf21841533a878',
+  },
+  {
     date: '2024-09-19',
     title: 'Sassが好きな7つの理由',
     at: 'Findy Engineer Lab',
