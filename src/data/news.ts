@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2024-12-14',
+    title: '1年間、Rubyコミュニティに参加してみた感想',
+    at: 'Sansan Tech Blog',
+    link: 'https://buildersbox.corp-sansan.com/entry/ruby-community',
+  },
+  {
     date: '2024-11-29',
     title: 'YAMLを読み込んでプロパティを生成しているRubyクラスにSorbetで型を当てる方法',
     at: 'Zenn',
