@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2025-02-10',
+    title: 'Sorbetで子クラス内の定数を動的に参照しようとして怒られる場合',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/b8bee3661562ab',
+  },
+  {
     date: '2024-12-14',
     title: '1年間、Rubyコミュニティに参加してみた感想',
     at: 'Sansan Tech Blog',
