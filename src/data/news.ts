@@ -330,6 +330,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2024-12-23',
+    title: 'React Routerで実現する型安全なSPAルーティング',
+    at: 'TypeScriptを活用した型安全なチーム開発 2024',
+    link: 'https://sansan.connpass.com/event/337268/',
+  },
+  {
     date: '2024-02-21',
     title: '名刺アプリ Eight における Frontend Ops',
     at: 'GENBA #2',
