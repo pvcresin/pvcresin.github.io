@@ -330,6 +330,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2025-04-09',
+    title: 'RubyKaigiに初めて参加して広がった世界',
+    at: 'RubyKaigiの歩き方',
+    link: 'https://wantedly.connpass.com/event/347654/',
+  },
+  {
     date: '2024-12-23',
     title: 'React Routerで実現する型安全なSPAルーティング',
     at: 'TypeScriptを活用した型安全なチーム開発 2024',
