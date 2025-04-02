@@ -2,10 +2,29 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
-    date: '2025-02-10',
-    title: 'Sorbetで子クラス内の定数を動的に参照しようとして怒られる場合',
+    date: '2025-04-02',
+    title: '[Sorbet] テストを実行するだけで型(sig)を書いてくれるツール「gelauto」の紹介',
     at: 'Zenn',
-    link: 'https://zenn.dev/pvcresin/articles/b8bee3661562ab',
+    link: 'https://zenn.dev/pvcresin/articles/3f541187aefa39',
+  },
+  {
+    date: '2025-02-25',
+    title: '[Sorbet] mixes_in_class_methodsでmoduleがクラスに生やしたメソッドを認識させる',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/6ded8a87693c0e',
+  },
+  {
+    date: '2025-02-24',
+    title:
+      '[Sorbet] requires_ancestorでmoduleが特定のクラスを継承したクラスにincludeされることを保証する',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/68f466a195f533',
+  },
+  {
+    date: '2025-02-21',
+    title: 'Sorbetが親クラスやincludeしたmodule内で定義された定数を認識しない場合',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/e737cc80f3241a',
   },
   {
     date: '2024-12-14',
