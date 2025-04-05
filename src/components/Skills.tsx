@@ -1,54 +1,110 @@
-import type { SkillText } from '@/app/page'
 import { FadeInSection } from '@/components/FadeInSection'
 
 import styles from './Skills.module.scss'
 
-export type SkillImageData = { text: SkillText; dataUrl: string }
-
-export const skillList = [
+// logo: https://simpleicons.org/
+const skillCategories = [
   {
     category: 'Languages',
-    list: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Ruby'],
+    skills: [
+      { text: 'HTML', logo: 'HTML5' },
+      { text: 'CSS', logo: 'CSS3' },
+      { text: 'JavaScript' },
+      { text: 'TypeScript' },
+      { text: 'Java', logo: 'OpenJDK' },
+      { text: 'Kotlin' },
+      { text: 'Ruby' },
+    ],
   },
   {
     category: 'Libraries',
-    list: ['React', 'Sass', 'PostCSS', 'CSS Modules', 'webpack', 'Vite', 'Sorbet'],
+    skills: [
+      { text: 'React' },
+      { text: 'Sass' },
+      { text: 'PostCSS' },
+      { text: 'CSS Modules' },
+      { text: 'webpack' },
+      { text: 'Vite', logo: 'vite' },
+      { text: 'Sorbet' },
+    ],
   },
   {
     category: 'Frameworks',
-    list: ['Next.js', 'Electron', 'Ruby on Rails'],
+    skills: [{ text: 'Next.js' }, { text: 'Electron' }, { text: 'Ruby on Rails' }],
   },
   {
     category: 'DevOps',
-    list: ['Git', 'Docker', 'GitHub Actions', 'CircleCI', 'OpenAPI'],
+    skills: [
+      { text: 'Git' },
+      { text: 'Docker' },
+      { text: 'GitHub Actions' },
+      { text: 'CircleCI' },
+      { text: 'OpenAPI', logo: 'OpenAPI Initiative' },
+    ],
   },
   {
     category: 'Design',
-    list: ['Figma', 'Adobe Illustrator'],
+    skills: [{ text: 'Figma' }, { text: 'Adobe Illustrator' }],
   },
-] satisfies { category: string; list: SkillText[] }[]
+]
 
-export const Skills: React.FC<{ skillImageData: SkillImageData[] }> = ({ skillImageData }) => (
-  <div className={styles.root}>
-    {skillList.map(({ category, list }) => (
-      <FadeInSection key={category}>
-        <div className={styles.item}>
-          <h3 className={styles.category}>{category}</h3>
-          <div className={styles.badgeContainer}>
-            {list.map((text) => (
-              <img
-                key={text}
-                className={styles.badge}
-                alt={text}
-                src={skillImageData.find((data) => data.text === text)?.dataUrl}
-                loading='lazy'
-                width={'auto'}
-                height={28.8}
-              />
-            ))}
+const toDataURL = async (url: string) => {
+  const response = await fetch(url, { cache: 'force-cache' })
+  const blob = await response.blob()
+  const binaryText = await blob.text()
+  const buffer = Buffer.from(binaryText)
+  return 'data:' + blob.type + ';base64,' + buffer.toString('base64')
+}
+
+const backgroundColor = '3b3b3b'
+const textColor = 'ccc'
+
+const getSkillData = async ({ text, logo = text }: { text: string; logo?: string }) => {
+  const url = `https://img.shields.io/badge/-${text}-${backgroundColor}?style=flat-square&logo=${logo}&logoColor=${textColor}`
+  const imageDataUrl = await toDataURL(url)
+  return { text, imageDataUrl }
+}
+
+export type SkillDataList = {
+  category: string
+  skills: {
+    text: string
+    imageDataUrl: string
+  }[]
+}[]
+
+export const getSkillDataList = (): Promise<SkillDataList> => {
+  return Promise.all(
+    skillCategories.map(async ({ category, skills }) => ({
+      category,
+      skills: await Promise.all(skills.map((skill) => getSkillData(skill))),
+    })),
+  )
+}
+
+export const Skills: React.FC<{ skillDataList: SkillDataList }> = ({ skillDataList }) => {
+  return (
+    <div className={styles.root}>
+      {skillDataList.map(({ category, skills }) => (
+        <FadeInSection key={category}>
+          <div className={styles.item}>
+            <h3 className={styles.category}>{category}</h3>
+            <div className={styles.badgeContainer}>
+              {skills.map(({ text, imageDataUrl }) => (
+                <img
+                  key={text}
+                  className={styles.badge}
+                  alt={text}
+                  src={imageDataUrl}
+                  loading='lazy'
+                  width={'auto'}
+                  height={28.8}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </FadeInSection>
-    ))}
-  </div>
-)
+        </FadeInSection>
+      ))}
+    </div>
+  )
+}

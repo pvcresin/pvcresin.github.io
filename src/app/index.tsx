@@ -7,7 +7,7 @@ import { Like } from '@/components/Like'
 import { List } from '@/components/List'
 import { Navigation } from '@/components/Navigation'
 import { SectionTitle } from '@/components/SectionTitle'
-import type { SkillImageData } from '@/components/Skills'
+import type { SkillDataList } from '@/components/Skills'
 import { Skills } from '@/components/Skills'
 import { Timeline } from '@/components/Timeline'
 import { WidthContainer } from '@/components/WidthContainer'
@@ -17,7 +17,7 @@ import type { NextPage } from 'next'
 
 import styles from './index.module.scss'
 
-const IndexPage: NextPage<{ skillImageData: SkillImageData[] }> = ({ skillImageData }) => (
+const IndexPage: NextPage<{ skillDataList: SkillDataList }> = ({ skillDataList }) => (
   <div className='root'>
     <Navigation />
     <First />
@@ -33,7 +33,7 @@ const IndexPage: NextPage<{ skillImageData: SkillImageData[] }> = ({ skillImageD
     <section className={styles.section}>
       <WidthContainer>
         <SectionTitle>Skills</SectionTitle>
-        <Skills skillImageData={skillImageData} />
+        <Skills skillDataList={skillDataList} />
       </WidthContainer>
     </section>
     <section className={styles.section}>
