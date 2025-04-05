@@ -20,7 +20,7 @@ const items: Item[] = [
     title: 'Sansan 株式会社',
     titleLinkUrl: 'https://jp.corp-sansan.com/',
     description:
-      '2019年 4月新卒でSansan株式会社に入社。\nWebエンジニアとして、\n- Eightを基盤とした採用サービスの開発\n- Web FrontendのDevOpsの改善\nに従事。',
+      '2019年 4月新卒でSansan株式会社に入社。\nWebエンジニアとして、\n- 個人向け名刺管理サービス「Eight」の機能開発\n- 技術的課題の解決による開発者体験の向上\nに従事。',
   },
   {
     startYear: '2017-04-01',
