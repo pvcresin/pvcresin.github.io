@@ -3,20 +3,23 @@ import IndexPage from './index'
 // logo: https://simpleicons.org/
 type SkillData = { text: string; logo?: string }
 
-const skillDataList: SkillData[] = [
+const skillDataList = [
   { text: 'JavaScript' },
   { text: 'TypeScript' },
   { text: 'HTML', logo: 'HTML5' },
   { text: 'CSS', logo: 'CSS3' },
   { text: 'Java', logo: 'OpenJDK' },
   { text: 'Kotlin' },
-  { text: 'Processing', logo: 'Processing Foundation' },
+  { text: 'Ruby' },
   { text: 'React' },
+  { text: 'Electron' },
   { text: 'Next.js' },
+  { text: 'Ruby on Rails' },
   { text: 'Sass' },
   { text: 'PostCSS' },
   { text: 'CSS Modules' },
   { text: 'Git' },
+  { text: 'Docker' },
   { text: 'GitHub Actions' },
   { text: 'CircleCI' },
   { text: 'OpenAPI', logo: 'OpenAPI Initiative' },
@@ -24,7 +27,10 @@ const skillDataList: SkillData[] = [
   { text: 'Vite', logo: 'vite' },
   { text: 'Figma' },
   { text: 'Adobe Illustrator' },
-]
+  { text: 'Sorbet' },
+] as const satisfies SkillData[]
+
+export type SkillText = (typeof skillDataList)[number]['text']
 
 const toDataURL = async (url: string) => {
   const response = await fetch(url, { cache: 'force-cache' })
@@ -37,7 +43,13 @@ const toDataURL = async (url: string) => {
 const backgroundColor = '3b3b3b'
 const textColor = 'ccc'
 
-const skillDataToSkillImageData = async ({ text, logo = text }: SkillData) => {
+const skillDataToSkillImageData = async ({
+  text,
+  logo = text,
+}: {
+  text: SkillText
+  logo?: string
+}) => {
   const url = `https://img.shields.io/badge/-${text}-${backgroundColor}?style=flat-square&logo=${logo}&logoColor=${textColor}`
   const dataUrl = await toDataURL(url)
   return { text, dataUrl }
