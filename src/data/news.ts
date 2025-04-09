@@ -352,19 +352,19 @@ export const talks: NewsData[] = [
     date: '2025-04-09',
     title: 'RubyKaigiに初めて参加して広がった世界',
     at: 'RubyKaigiの歩き方',
-    link: 'https://wantedly.connpass.com/event/347654/',
+    link: 'https://speakerdeck.com/sansantech/20250409',
   },
   {
     date: '2024-12-23',
     title: 'React Routerで実現する型安全なSPAルーティング',
     at: 'TypeScriptを活用した型安全なチーム開発 2024',
-    link: 'https://sansan.connpass.com/event/337268/',
+    link: 'https://speakerdeck.com/sansantech/20241223-3',
   },
   {
     date: '2024-02-21',
     title: '名刺アプリ Eight における Frontend Ops',
     at: 'GENBA #2',
-    link: 'https://timeedev.connpass.com/event/308783/',
+    link: 'https://speakerdeck.com/sansantech/sansan-20210221',
   },
   {
     date: '2023-10-24',
@@ -400,7 +400,7 @@ export const talks: NewsData[] = [
     date: '2021-08-18',
     title: 'ステップアップOSSコントリビュート',
     at: 'ラクス OSS LT会 vol.2',
-    link: 'https://rakus.connpass.com/event/218573/',
+    link: 'https://speakerdeck.com/pvcresin/sutetuhuatuhuosskontorihiyuto',
   },
   {
     date: '2020-11-06',
@@ -424,7 +424,7 @@ export const talks: NewsData[] = [
     date: '2019-11-20',
     title: 'TS 未経験者が 社内向け JS ライブラリを TS に置き換えている話',
     at: '表参道Web勉強会 #9',
-    link: 'https://oweb.connpass.com/event/149918/',
+    link: 'https://speakerdeck.com/pvcresin/ts-wei-jing-yan-zhe-ga-she-nei-xiang-ke-js-raiburariwo-ts-nizhi-kihuan-eteiruhua',
   },
 ]
 
