@@ -349,6 +349,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2025-05-16',
+    title: 'インラインRBSコメントに鯛pe checkersもニッコリ',
+    at: 'RubyKaigi 2025事後勉強会',
+    link: 'https://speakerdeck.com/sansantech/20250516',
+  },
+  {
     date: '2025-04-09',
     title: 'RubyKaigiに初めて参加して広がった世界',
     at: 'RubyKaigiの歩き方',
