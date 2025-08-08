@@ -349,6 +349,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2025-08-07',
+    title: 'テストを実行してSorbetのsigを書こう！',
+    at: 'Omotesando.rb #112',
+    link: 'https://speakerdeck.com/sansantech/20250807',
+  },
+  {
     date: '2025-05-16',
     title: 'インラインRBSコメントに鯛pe checkersもニッコリ',
     at: 'RubyKaigi 2025事後勉強会',
