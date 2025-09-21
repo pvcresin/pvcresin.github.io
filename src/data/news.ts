@@ -349,6 +349,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2025-09-21',
+    title: 'Reduxモダナイズ　〜コードのモダン化を通して、将来のライブラリ移行に備える〜',
+    at: 'フロントエンドカンファレンス東京 2025',
+    link: 'https://speakerdeck.com/pvcresin/reduxmodanaizu-kodonomodanhua-wotong-site-jiang-lai-noraiburariyi-xing-nibei-eru',
+  },
+  {
     date: '2025-08-07',
     title: 'テストを実行してSorbetのsigを書こう！',
     at: 'Omotesando.rb #112',
