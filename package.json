@@ -52,7 +52,7 @@
     "sass": "1.91.0",
     "serve": "14.2.5",
     "storybook": "7.6.20",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "browserslist": [
     "defaults"
