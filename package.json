@@ -51,7 +51,7 @@
     "prettier": "3.7.4",
     "sass": "1.94.2",
     "serve": "14.2.5",
-    "storybook": "7.6.20",
+    "storybook": "7.6.21",
     "typescript": "5.9.3"
   },
   "browserslist": [
