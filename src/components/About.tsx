@@ -1,4 +1,4 @@
-import { FaMap, FaSuitcase } from 'react-icons/fa6'
+import { FaMapLocationDot, FaBuilding } from 'react-icons/fa6'
 
 import { FadeInSection } from '@/components/FadeInSection'
 import { Link } from '@/components/Link'
@@ -7,7 +7,7 @@ import styles from './About.module.scss'
 import { WidthContainer } from './WidthContainer'
 
 const aboutText = [
-  'Web フロントエンドとデザインと Minimalism が好きなソフトウェアエンジニア。',
+  'デザインと Minimalism を大切にしているソフトウェアエンジニア。',
   '大学・大学院では HCI（Human-Computer Interaction）を専攻し、インタラクションデザインを学ぶ。',
   '2019年より Sansan 株式会社の Eight の開発組織に所属。',
   '複数のサービスを横断して Web フロントエンドの開発サポートを行いつつ、技術負債の解消・ビルド周りの改善・デザインシステム構築など開発者体験（DX）の向上に取り組む。',
@@ -36,16 +36,16 @@ export const About = () => (
             <ul>
               <li className={styles.info}>
                 <div className={styles.infoIcon}>
-                  <FaMap />
+                  <FaMapLocationDot />
                 </div>
                 <div className={styles.right}>Tokyo / Kanagawa, Japan</div>
               </li>
               <li className={styles.info}>
                 <div className={styles.infoIcon}>
-                  <FaSuitcase />
+                  <FaBuilding />
                 </div>
                 <div className={styles.right}>
-                  <span>Web Frontend Engineer </span>
+                  <span>Software Engineer (Tech Lead) </span>
                   <Link
                     className={styles.link}
                     href='https://jp.corp-sansan.com/'

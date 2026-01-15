@@ -3,8 +3,8 @@ import '../styles/index.scss'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Raika Toriyama | pvcresin',
-  description: 'pvcresin portfolio',
+  title: 'pvcresin’s Portfolio',
+  description: 'pvcresin’s Portfolio',
   keywords: ['pvcresin', 'raika toriyama', '鳥山 らいか', '鳥山らいか'],
   authors: [{ url: 'https://pvcresin.github.io/', name: 'pvcresin' }],
 }

@@ -10,8 +10,8 @@ export const First = () => (
   <div className={styles.root}>
     <FadeInSection>
       <WidthContainer>
-        <h1 className={styles.name}>Raika Toriyama</h1>
-        <p className={styles.description}>Software Engineer as @pvcresin</p>
+        <h1 className={styles.name}>Hi, I'm pvcresin.</h1>
+        <p className={styles.description}>Software engineer who values minimalism.</p>
         <Social />
       </WidthContainer>
       <div className={styles.arrowContainer}>
