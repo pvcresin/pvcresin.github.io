@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2025-12-19',
+    title: '技術トピックに縛られないLT会「Eight LT」を今年も開催しました',
+    at: 'Sansan Tech Blog',
+    link: 'https://buildersbox.corp-sansan.com/entry/eight-lt-2025',
+  },
+  {
     date: '2025-04-02',
     title: '[Sorbet] テストを実行するだけで型(sig)を書いてくれるツール「gelauto」の紹介',
     at: 'Zenn',
