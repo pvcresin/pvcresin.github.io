@@ -355,8 +355,14 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2026-02-09',
+    title: 'Ruby版 JSXのRuxが気になる',
+    at: 'Omotesando.rb #118',
+    link: 'https://speakerdeck.com/sansantech/20260205',
+  },
+  {
     date: '2026-01-20',
-    title: ' 持続可能な開発のためのミニマリズム',
+    title: '持続可能な開発のためのミニマリズム',
     at: 'TECH BATON in 東京',
     link: 'https://speakerdeck.com/sansantech/20260120',
   },
