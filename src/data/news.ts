@@ -355,6 +355,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2026-05-09',
+    title: 'リセットCSSを1行消したらアクセシビリティが向上した話',
+    at: 'フロントエンドカンファレンス名古屋 2026',
+    link: 'https://speakerdeck.com/pvcresin/risetutocsswo1xing-xiao-sitaraakusesibiriteigaxiang-shang-sitahua',
+  },
+  {
     date: '2026-02-09',
     title: 'Ruby版 JSXのRuxが気になる',
     at: 'Omotesando.rb #118',
