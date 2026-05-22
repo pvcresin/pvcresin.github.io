@@ -355,6 +355,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2026-05-22',
+    title: '関係性から理解する"同一性"の型用語たち',
+    at: 'TSKaigi 2026',
+    link: 'https://speakerdeck.com/pvcresin/guan-xi-xing-karali-jie-suru-tong-xing-noxing-yong-yu-tati',
+  },
+  {
     date: '2026-05-09',
     title: 'リセットCSSを1行消したらアクセシビリティが向上した話',
     at: 'フロントエンドカンファレンス名古屋 2026',
