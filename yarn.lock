@@ -13449,7 +13449,7 @@ __metadata:
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
     react-icons: "npm:5.5.0"
-    react-intersection-observer: "npm:9.16.0"
+    react-intersection-observer: "npm:10.1.0"
     sass: "npm:1.97.1"
     serve: "npm:14.2.5"
     storybook: "npm:7.6.21"
@@ -13643,16 +13643,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:9.16.0":
-  version: 9.16.0
-  resolution: "react-intersection-observer@npm:9.16.0"
+"react-intersection-observer@npm:10.1.0":
+  version: 10.1.0
+  resolution: "react-intersection-observer@npm:10.1.0"
   peerDependencies:
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/2aee5103fb460c6e5a3ab5a4fdc8c69a5215e23699a12d7857f25ba765fed48eacbed94ca835d79edf00c0edcc9c4fbb5bb057a373402d0551718546810e0e48
+  checksum: 10c0/b6f52dc4aad79bf2fa97821e25654d24c23e10b86a8bb7edf7dcd3fd87cbbb9ba0e1393745714d72ca85ad12e9b579b03648729a9417917679b652982ccdbddb
   languageName: node
   linkType: hard
 
