@@ -363,7 +363,7 @@ export const talks: NewsData[] = [
   {
     date: '2026-08-06',
     title: 'プロポーザルを書いてもらう',
-    at: 'TechBrew',
+    at: 'TechBrew in 東京',
     link: 'https://speakerdeck.com/pvcresin/2026-dot-08-dot-06-hurohosaruwoshu-itemorau-tech-brew',
   },
   {
