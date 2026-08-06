@@ -361,6 +361,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2026-08-06',
+    title: 'プロポーザルを書いてもらう',
+    at: 'TechBrew',
+    link: 'https://speakerdeck.com/pvcresin/2026-dot-08-dot-06-hurohosaruwoshu-itemorau-tech-brew',
+  },
+  {
     date: '2026-05-22',
     title: '関係性から理解する"同一性"の型用語たち',
     at: 'TSKaigi 2026',
@@ -483,6 +489,13 @@ export const talks: NewsData[] = [
 ]
 
 export const interviews: NewsData[] = [
+  {
+    date: '2025-06-11',
+    title:
+      'ToC・ToB・新機能・エンハンス・イベント。ものづくりのすべてが詰まった「Eight」開発チームのリアル',
+    at: 'mimi',
+    link: 'https://jp.corp-sansan.com/mimi/2025/06/interview-121',
+  },
   {
     date: '2022-12-16',
     title:
