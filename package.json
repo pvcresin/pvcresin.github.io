@@ -38,7 +38,7 @@
     "@storybook/react": "7.6.21",
     "@storybook/testing-library": "0.2.2",
     "@types/node": "22.19.3",
-    "@types/react": "18.3.27",
+    "@types/react": "18.3.31",
     "@typescript-eslint/eslint-plugin": "8.53.0",
     "@typescript-eslint/parser": "8.53.0",
     "eslint": "8.57.1",
