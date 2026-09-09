@@ -4561,12 +4561,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.19.3":
-  version: 22.19.3
-  resolution: "@types/node@npm:22.19.3"
+"@types/node@npm:22.20.2":
+  version: 22.20.2
+  resolution: "@types/node@npm:22.20.2"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/a30a75d503da795ddbd5f8851014f3e91925c2a63fa3f14128d54c998f25d682dfba96dc9589c73cf478b87a16d88beb790b11697bb8cd5bee913079237a58f2
+  checksum: 10c0/1940dbec0c65a454c3651a282970fbfc998e0f0a5492bf5e067d8d9185f0c47cacc0d028153c481c4e6ecd19381ab03bf3f2efadb0cfacd702e74b6d5e4b212e
   languageName: node
   linkType: hard
 
@@ -13432,7 +13432,7 @@ __metadata:
     "@storybook/nextjs": "npm:7.6.21"
     "@storybook/react": "npm:7.6.21"
     "@storybook/testing-library": "npm:0.2.2"
-    "@types/node": "npm:22.19.3"
+    "@types/node": "npm:22.20.2"
     "@types/react": "npm:18.3.27"
     "@typescript-eslint/eslint-plugin": "npm:8.53.0"
     "@typescript-eslint/parser": "npm:8.53.0"
