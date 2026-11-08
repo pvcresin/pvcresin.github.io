@@ -2,6 +2,12 @@ export type NewsData = { date: string; at?: string; title: string; link?: string
 
 export const articles: NewsData[] = [
   {
+    date: '2026-11-08',
+    title: '関係性から理解する"同一性"の型用語たち',
+    at: 'Zenn',
+    link: 'https://zenn.dev/pvcresin/articles/e2fdf5e20d133a',
+  },
+  {
     date: '2026-05-21',
     title: 'EightのエンジニアでRubyKaigi 2026に参加してきました！',
     at: 'Sansan Tech Blog',
