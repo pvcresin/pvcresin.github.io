@@ -10,7 +10,7 @@ export const First = () => (
   <div className={styles.root}>
     <FadeInSection>
       <WidthContainer>
-        <h1 className={styles.name}>Hi, I'm pvcresin.</h1>
+        <h1 className={styles.name}>{"Hi, I'm pvcresin."}</h1>
         <p className={styles.description}>Software engineer who values minimalism.</p>
         <Social />
       </WidthContainer>
