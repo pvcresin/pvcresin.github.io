@@ -30,12 +30,12 @@
   "devDependencies": {
     "@babel/core": "7.29.13",
     "@next/eslint-plugin-next": "14.2.35",
-    "@storybook/addon-actions": "7.6.21",
-    "@storybook/addon-essentials": "7.6.21",
-    "@storybook/addon-interactions": "7.6.21",
-    "@storybook/addon-links": "7.6.21",
-    "@storybook/nextjs": "7.6.21",
-    "@storybook/react": "7.6.21",
+    "@storybook/addon-actions": "7.6.24",
+    "@storybook/addon-essentials": "7.6.24",
+    "@storybook/addon-interactions": "7.6.24",
+    "@storybook/addon-links": "7.6.24",
+    "@storybook/nextjs": "7.6.24",
+    "@storybook/react": "7.6.24",
     "@storybook/testing-library": "0.2.2",
     "@types/node": "22.19.3",
     "@types/react": "18.3.31",
@@ -51,7 +51,7 @@
     "prettier": "3.7.4",
     "sass": "1.97.1",
     "serve": "14.2.5",
-    "storybook": "7.6.21",
+    "storybook": "7.6.24",
     "typescript": "5.9.3"
   },
   "browserslist": [
