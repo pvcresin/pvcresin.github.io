@@ -367,6 +367,12 @@ export const articles: NewsData[] = [
 
 export const talks: NewsData[] = [
   {
+    date: '2026-11-14',
+    title: 'コード生成時代のAPI定義を支えるRequest Spec移行',
+    at: '北陸Ruby会議02',
+    link: 'https://speakerdeck.com/pvcresin/kodo-seisei-jidai-no-api-teigi-o-sasaeru-request-spec-ikou',
+  },
+  {
     date: '2026-08-06',
     title: 'プロポーザルを書いてもらう',
     at: 'TechBrew in 東京',
